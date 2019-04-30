@@ -1,0 +1,45 @@
+header {
+    padding: 25px 10px 25px 22px;
+}
+header .navbar {
+    cursor: pointer;
+}
+
+header .navbar .navbar-toggler {
+    border: none;
+}
+
+header .navbar .navbar-collapse ul.navbar-nav {
+    padding: 50px 0 50px 0;
+}
+
+header .navbar .navbar-collapse ul.navbar-nav li.buy-ticket {
+    margin: 50px 0 0 0;
+    min-width: 115px;
+}
+
+header .navbar .navbar-collapse ul.navbar-nav li.mta {
+    min-width: 112px;
+}
+
+header .navbar .navbar-collapse ul.navbar-nav li a {
+    color: #000;
+}
+
+header .navbar .navbar-collapse ul.navbar-nav li.buy-ticket a {
+    padding: 5px 25px;
+    color: #fff;
+    background: #EF3024;
+    border-radius: 100px;
+    font-weight: 500;
+}
+
+/* /////////////////////////////////////@media///////////////////////////////// */
+@media (min-width: 576px) {
+    header .navbar .navbar-collapse ul.navbar-nav {
+        padding: 0;
+    }
+    header .navbar .navbar-collapse ul.navbar-nav li.buy-ticket {
+        margin: 0 0 0 50px;
+    }
+}
