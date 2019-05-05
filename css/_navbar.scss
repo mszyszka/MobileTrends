@@ -1,0 +1,118 @@
+@import 'variables';
+
+.navbar {
+    padding: 25px 10px 25px 22px;
+    cursor: pointer;
+    .navbar-toggler {
+        border: none;
+        outline: none;
+    }
+    .navbar-collapse {
+        ul.navbar-nav {
+            padding: 50px 0 50px 0;
+            li a {
+                color: #000;
+            }
+            li.mta {
+                min-width: 112px;
+            }
+            li.buy-ticket {
+                margin: 50px 0 0 0;
+                min-width: 115px;
+            }
+            li.buy-ticket a {
+                padding: 5px 25px;
+                color: #fff;
+                background: $logo-red;
+                border-radius: 100px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+//////////////hamburger styles/////////////
+.icon-bar {
+	width: 22px; 
+	height: 2px;
+	background-color: $logo-red;
+	display: block;
+	transition: all 0.2s;
+	margin-top: 4px
+}
+ 
+.navbar-toggler {
+  border: none;
+  outline: none;
+  background: transparent !important;
+}
+
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+   
+  .navbar-toggler .middle-bar {
+    opacity: 0;
+  }
+   
+  .navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+   
+  .navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+  }
+   
+  .navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+  }
+   
+  .navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+  }
+
+/* /////////////////////////////////////@media///////////////////////////////// */
+@media (min-width: 576px) {
+    .navbar {
+        //padding is smaler on right, becouse hamburger have own.
+        padding: 25px 30px 25px 42px;
+        .navbar-collapse ul.navbar-nav {
+            padding: 0;
+
+        }
+    }
+}
+
+@media (min-width: 768px) { 
+    .navbar {
+        padding: 25px 60px 25px 72px;
+    }    
+ }
+ @media (min-width: 992px) { 
+    .navbar {
+        padding: 25px 60px 25px 72px;
+        .navbar-collapse {
+            ul.navbar-nav {
+                li.buy-ticket {
+                    margin: 0 0 0 50px;
+                }
+            }
+        }
+    }
+ }
+
+
+@media (min-width: 1200px) { 
+    .navbar {
+        padding: 50px 128px 50px 140px;
+    }
+}
+
+@media (min-width: 1480px) { 
+    .navbar {
+        padding: 50px 0 50px 0;
+        max-width: 1200px;
+    }
+}
