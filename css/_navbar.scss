@@ -2,14 +2,14 @@
 
 .navbar {
     padding: 25px 10px 25px 22px;
-    cursor: pointer;
+    max-width: 1638px;
     .navbar-toggler {
         border: none;
         outline: none;
     }
     .navbar-collapse {
         ul.navbar-nav {
-            padding: 50px 0 50px 0;
+            // padding: 50px 0 50px 0;
             li a {
                 color: #000;
             }
@@ -78,10 +78,6 @@
     .navbar {
         //padding is smaler on right, becouse hamburger have own.
         padding: 25px 30px 25px 42px;
-        .navbar-collapse ul.navbar-nav {
-            padding: 0;
-
-        }
     }
 }
 
@@ -92,11 +88,11 @@
  }
  @media (min-width: 992px) { 
     .navbar {
-        padding: 25px 60px 25px 72px;
+        padding: 25px 72px 25px 72px;
         .navbar-collapse {
             ul.navbar-nav {
                 li.buy-ticket {
-                    margin: 0 0 0 50px;
+                    margin: 0 0 0 30px;
                 }
             }
         }
@@ -106,13 +102,25 @@
 
 @media (min-width: 1200px) { 
     .navbar {
-        padding: 50px 128px 50px 140px;
+        padding: 36px 72px 36px 72px;
+        .navbar-collapse {
+            ul.navbar-nav {
+                li.buy-ticket {
+                    margin: 0 0 0 150px;
+                }
+            }
+        }
     }
 }
 
-@media (min-width: 1480px) { 
+//min-width is set to 1918px(on this width max-width of .navbar is applay),
+//becouse max-width of .navbar is 1638px and left + right padding = 280px
+
+@media (min-width: 1918px) { 
     .navbar {
         padding: 50px 0 50px 0;
-        max-width: 1200px;
+        //mayby ?
+        // padding: 36px 72px 36px 72px;
     }
 }
+
