@@ -1,8 +1,22 @@
 //Imports
-@import 'navbar';
 @import 'variables';
+@import 'mixins';
 @import 'header';
+@import 'navbar';
+@import 'about';
+@import 'is-It-Worth-Investing';
+@import 'carousel-1';
+@import 'confirm-your-presence';
+@import 'they-will-perform';
+
+
 
 * {
     font-family: 'Poppins', sans-serif;  
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin-bottom: 200px;
 }

@@ -1,0 +1,44 @@
+.carousel-1-section {
+    .carousel-1 .carousel-inner{
+        padding: 38px 30px;
+    }
+    .carousel-control-next-icon {
+       background-image: url('/img/arrow-rightx2.png');
+       width: 12px;
+    }
+    .carousel-control-prev-icon {
+        background-image: url('/img/arrow-point-to-left\ \(2\).png');
+        width: 12px;
+    }
+    .myItem {
+        display: block;
+        margin: auto;
+        max-width: 340px;
+        padding: 34px;
+        border-radius: 49px;
+        -webkit-box-shadow: 5px 10px 50px 0px rgba(239,239,239,0.75);
+        -moz-box-shadow: 5px 10px 50px 0px rgba(239,239,239,0.75);
+        box-shadow: 5px 10px 50px 0px rgba(239,239,239,0.75);
+        // zmiana
+        // -webkit-box-shadow: 5px 10px 8px 0px rgba(239,239,239,1);
+        // -moz-box-shadow: 5px 10px 8px 0px rgba(239,239,239,1);
+        // box-shadow: 5px 10px 8px 0px rgba(239,239,239,1);       
+        .icon {
+            margin: 0 0 30px 0;
+            width: 30px;
+        }
+        h2 {
+            margin: 0 0 30px 0;
+            font-size: 24px;
+            font-weight: 700;
+            span {
+                color: $logo-red;
+            }
+        }
+        p {
+            color: $content-txt-color;
+            font-weight: 500;
+            font-size: 15px;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+section.they-will-perform {
+    padding: 0 35px;
+    h2 {
+        font-size: 16px;
+        color: $logo-red;
+        font-weight: 700;
+    }
+    p {
+        font-size: 30px;
+        font-weight: 700;
+        span {
+            color: $logo-red;
+        }
+    }
+    .carousel-2 {
+        padding: 0 15px;
+        a.carousel-control-prev {
+            left: -35px;
+        }
+        a.carousel-control-next {
+            right: -35px;
+        }
+        .carousel-control-next-icon {
+            background-image: url('/img/arrow-rightx2.png');
+            width: 12px;
+         }
+         .carousel-control-prev-icon {
+             background-image: url('/img/arrow-point-to-left\ \(2\).png');
+             width: 12px;
+         }
+        .carousel-item {
+            img {
+                width: 100%;
+                margin: 0 0 27px 0;
+            }
+            .person-name {
+                font-size: 17px;
+                font-weight: 700;
+            }
+            .company-name {
+                font-size: 12px;
+                color: $logo-red;
+                font-weight: 600;
+                margin: 0 0 33px 0;
+            }
+        }
+    }
+    .see-everyone {
+        @include red-button;
+    }
+
+}

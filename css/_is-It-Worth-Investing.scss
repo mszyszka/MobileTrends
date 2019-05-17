@@ -1,0 +1,41 @@
+.is-it-worth-investing {
+    // margin: 0 0 8px 0;
+    h2 {
+        font-size: 16px;
+        font-weight: 700;
+        color: $logo-red;
+        padding: $txt-padding-xs;
+        margin: 0 0 10px 0;
+    }
+    h3 {
+        padding: $txt-padding-xs;
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0 0 67px 0;
+        span {
+            color: $logo-red;
+        }
+    }
+    p {
+        padding: $txt-padding-xs;
+        font-size: 12px;
+        color: $content-txt-color;
+        line-height: $line-height-xs;
+        margin: 0;
+    }
+    ul.why {
+        margin-bottom: 0;
+        padding: 0 20px 0 43px;
+        list-style-image: url(/img/arrow-left.png);
+        li {
+            font-size: 12px;
+            color: $content-txt-color;
+            padding: 0 0 0 18px;
+            margin: 0 0 43px 0;
+            font-weight: 500;
+            &:last-of-type {
+                margin: 0 0 0 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+section.confirm-your-presence {
+    margin: 0 0 107px 0;
+    img {
+        width: 100%;
+        padding: 0 17px;
+        margin: 0 0 64px 0;
+    }
+
+    section.take-action {
+        padding: 0 35px;
+        p {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0 0 50px 0;
+        }
+        .buy-a-ticket {
+            @include red-button;
+        }
+    }
+}
