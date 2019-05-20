@@ -6,12 +6,52 @@
     padding: 14px 52px;
     font-size: 14px;
     font-weight: 700;
-    border-radius: 24px;
+    border-radius: 50px;;
+    transition: all ease-in-out 0.2s;
+    &:hover, &:active {
+        border: 3px solid $logo-red;
+        padding: 11px 49px;
+        background: #FFFFFF;
+        color: $logo-red;
+        outline: none;
+        // -webkit-box-shadow: inset 0px 0px 10px 5px rgba(239,48,36,1);
+        // -moz-box-shadow: inset 0px 0px 10px 5px rgba(239,48,36,1);
+        // box-shadow: inset 0px 0px 10px 5px rgba(239,48,36,1);
+    }
+}
+
+@mixin white-button-with-red-border {
+    margin: 0;
+    border: 3px solid $logo-red;
+    background: #FFFFFF;
+    color: $logo-red;
+    padding: 12px 0;
+    width: 168px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50px;;
     transition: all ease-in-out 0.2s;
     &:hover, &:active {
         background: #FF4135;
+        color: #FFFFFF;
         outline: none;
-        letter-spacing: 1px;
-        padding: 14px 47.5px;
+        // border: none;
+        -webkit-box-shadow: inset 0px 0px 10px 5px rgba(239,48,36,1);
+        -moz-box-shadow: inset 0px 0px 10px 5px rgba(239,48,36,1);
+        box-shadow: inset 0px 0px 10px 5px rgba(239,48,36,1);
+    }
+}
+
+@mixin section-h2 {
+    font-size: 16px;
+    color: $logo-red;
+    font-weight: 700;
+}
+
+@mixin section-first-p {
+    font-size: 30px;
+    font-weight: 700;
+    span {
+        color: $logo-red;
     }
 }

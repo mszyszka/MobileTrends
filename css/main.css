@@ -22,7 +22,8 @@
     font-weight: 700;
     padding: 30px;
     position: relative;
-    z-index: 100; }
+    z-index: 100;
+    text-transform: uppercase; }
   .site-header .place-date {
     background: #FFFFFF;
     width: 332px;
@@ -221,9 +222,9 @@
   max-width: 340px;
   padding: 34px;
   border-radius: 49px;
-  -webkit-box-shadow: 5px 10px 50px 0px rgba(239, 239, 239, 0.75);
-  -moz-box-shadow: 5px 10px 50px 0px rgba(239, 239, 239, 0.75);
-  box-shadow: 5px 10px 50px 0px rgba(239, 239, 239, 0.75); }
+  -webkit-box-shadow: 4px 9px 8px 4px #efefef;
+  -moz-box-shadow: 4px 9px 8px 4px #efefef;
+  box-shadow: 4px 9px 8px 4px #efefef; }
   .carousel-1-section .myItem .icon {
     margin: 0 0 30px 0;
     width: 30px; }
@@ -239,7 +240,7 @@
     font-size: 15px; }
 
 section.confirm-your-presence {
-  margin: 0 0 107px 0; }
+  margin: 0 0 100px 0; }
   section.confirm-your-presence img {
     width: 100%;
     padding: 0 17px;
@@ -258,15 +259,17 @@ section.confirm-your-presence {
       padding: 14px 52px;
       font-size: 14px;
       font-weight: 700;
-      border-radius: 24px;
+      border-radius: 50px;
       transition: all ease-in-out 0.2s; }
       section.confirm-your-presence section.take-action .buy-a-ticket:hover, section.confirm-your-presence section.take-action .buy-a-ticket:active {
-        background: #FF4135;
-        outline: none;
-        letter-spacing: 1px;
-        padding: 14px 47.5px; }
+        border: 3px solid #EF3024;
+        padding: 11px 49px;
+        background: #FFFFFF;
+        color: #EF3024;
+        outline: none; }
 
 section.they-will-perform {
+  margin: 0 0 100px 0;
   padding: 0 35px; }
   section.they-will-perform h2 {
     font-size: 16px;
@@ -308,13 +311,158 @@ section.they-will-perform {
     padding: 14px 52px;
     font-size: 14px;
     font-weight: 700;
-    border-radius: 24px;
+    border-radius: 50px;
     transition: all ease-in-out 0.2s; }
     section.they-will-perform .see-everyone:hover, section.they-will-perform .see-everyone:active {
-      background: #FF4135;
-      outline: none;
-      letter-spacing: 1px;
-      padding: 14px 47.5px; }
+      border: 3px solid #EF3024;
+      padding: 11px 49px;
+      background: #FFFFFF;
+      color: #EF3024;
+      outline: none; }
+
+section.year-ago-video {
+  margin: 0 0 100px 0; }
+  section.year-ago-video div.heading {
+    padding: 0 35px; }
+    section.year-ago-video div.heading h2 {
+      font-size: 16px;
+      color: #EF3024;
+      font-weight: 700; }
+    section.year-ago-video div.heading p {
+      font-size: 30px;
+      font-weight: 700; }
+      section.year-ago-video div.heading p span {
+        color: #EF3024; }
+  section.year-ago-video img {
+    max-width: 100%;
+    padding: 0 20px; }
+
+section.next-edition-schedule {
+  margin: 0 0 100px 0; }
+  section.next-edition-schedule img.schedule {
+    width: 100%;
+    padding: 20px;
+    margin: 0 0 50px; }
+  section.next-edition-schedule section.action {
+    padding: 0 35px; }
+    section.next-edition-schedule section.action h2 {
+      font-size: 16px;
+      color: #EF3024;
+      font-weight: 700; }
+    section.next-edition-schedule section.action p {
+      font-size: 30px;
+      font-weight: 700; }
+      section.next-edition-schedule section.action p span {
+        color: #EF3024; }
+    section.next-edition-schedule section.action .first-day {
+      margin: 0;
+      border: none;
+      background: #EF3024;
+      color: #fff;
+      padding: 14px 52px;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 50px;
+      transition: all ease-in-out 0.2s;
+      margin: 0 0 35px 0;
+      width: 168px;
+      padding: 14px 0; }
+      section.next-edition-schedule section.action .first-day:hover, section.next-edition-schedule section.action .first-day:active {
+        border: 3px solid #EF3024;
+        padding: 11px 49px;
+        background: #FFFFFF;
+        color: #EF3024;
+        outline: none; }
+    section.next-edition-schedule section.action .second-day {
+      margin: 0;
+      border: 3px solid #EF3024;
+      background: #FFFFFF;
+      color: #EF3024;
+      padding: 12px 0;
+      width: 168px;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 50px;
+      transition: all ease-in-out 0.2s; }
+      section.next-edition-schedule section.action .second-day:hover, section.next-edition-schedule section.action .second-day:active {
+        background: #FF4135;
+        color: #FFFFFF;
+        outline: none;
+        -webkit-box-shadow: inset 0px 0px 10px 5px #ef3024;
+        -moz-box-shadow: inset 0px 0px 10px 5px #ef3024;
+        box-shadow: inset 0px 0px 10px 5px #ef3024; }
+
+section.opinions div.heading {
+  padding: 0 35px; }
+  section.opinions div.heading h2 {
+    font-size: 16px;
+    color: #EF3024;
+    font-weight: 700; }
+  section.opinions div.heading p {
+    font-size: 30px;
+    font-weight: 700; }
+    section.opinions div.heading p span {
+      color: #EF3024; }
+section.opinions .carousel-3 .carousel-inner {
+  padding: 38px 30px;
+  margin-bottom: 12px; }
+section.opinions .carousel-control-next-icon {
+  background-image: url("/img/arrow-rightx2.png");
+  width: 12px; }
+section.opinions .carousel-control-prev-icon {
+  background-image: url("/img/arrow-point-to-left (2).png");
+  width: 12px; }
+section.opinions .myItem {
+  display: block;
+  margin: auto;
+  max-width: 340px;
+  padding: 34px;
+  border-radius: 49px;
+  -webkit-box-shadow: 4px 9px 8px 4px #efefef;
+  -moz-box-shadow: 4px 9px 8px 4px #efefef;
+  box-shadow: 4px 9px 8px 4px #efefef; }
+  section.opinions .myItem .icon {
+    margin: 0 0 30px 0;
+    width: 60px; }
+  section.opinions .myItem span.person-name {
+    margin: 0 0 5px 0;
+    font-size: 24px;
+    font-weight: 700; }
+  section.opinions .myItem span.company-name {
+    color: #EF3024;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 30px; }
+  section.opinions .myItem p {
+    color: #7B7B7B;
+    font-weight: 500;
+    font-size: 15px; }
+
+section.join-today {
+  padding: 0 40px; }
+  section.join-today img {
+    width: 100%;
+    margin: 0 0 40px 0; }
+  section.join-today h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 40px 0; }
+  section.join-today .buy-a-ticket {
+    margin: 0;
+    border: none;
+    background: #EF3024;
+    color: #fff;
+    padding: 14px 52px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all ease-in-out 0.2s; }
+    section.join-today .buy-a-ticket:hover, section.join-today .buy-a-ticket:active {
+      border: 3px solid #EF3024;
+      padding: 11px 49px;
+      background: #FFFFFF;
+      color: #EF3024;
+      outline: none; }
 
 * {
   font-family: 'Poppins', sans-serif;

@@ -1,0 +1,27 @@
+section.next-edition-schedule {
+    margin: 0 0 100px 0;
+    img.schedule {
+        width: 100%;
+        padding: 20px;
+        margin: 0 0 50px;
+    }
+    section.action {
+        padding: 0 35px;
+        h2 {
+            @include section-h2;
+        }
+        p {
+            @include section-first-p;
+        }
+        .first-day {
+            @include red-button;
+            margin: 0 0 35px 0;
+            width: 168px;
+            padding: 14px 0;
+        }
+        .second-day {
+            @include white-button-with-red-border;
+
+        }
+    }
+}

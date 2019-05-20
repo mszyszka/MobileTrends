@@ -26,6 +26,7 @@
           //position relative is needed to make h1 node first on z-axis(befor linear-gradient)
           position: relative;
           z-index: 100;
+          text-transform: uppercase;
         }
         .place-date {
           background: $white;

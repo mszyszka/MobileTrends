@@ -1,0 +1,17 @@
+section.year-ago-video {
+    margin: 0 0 100px 0;
+    div.heading {
+        padding: 0 35px;
+        h2 {
+            @include section-h2;
+        }
+        p {
+            @include section-first-p;
+        }
+    }
+    img {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+}

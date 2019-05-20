@@ -1,16 +1,11 @@
 section.they-will-perform {
+    margin: 0 0 100px 0;
     padding: 0 35px;
     h2 {
-        font-size: 16px;
-        color: $logo-red;
-        font-weight: 700;
+        @include section-h2;
     }
     p {
-        font-size: 30px;
-        font-weight: 700;
-        span {
-            color: $logo-red;
-        }
+        @include section-first-p;
     }
     .carousel-2 {
         padding: 0 15px;
