@@ -1,0 +1,87 @@
+section.sponsors {
+    padding: 0 35px;
+    div.heading {
+        h2 {
+            @include section-h2;
+        }
+        p {
+            @include section-first-p;
+            margin: 0 0 50px 0;
+            span {
+                font-size: 30px;
+            }
+        }
+    }
+    span {
+        color: $logo-red;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 2.1;
+    }
+    .logo-container {
+        border-radius: 100%;
+        -webkit-box-shadow: 4px 9px 8px 4px rgba(239,239,239,1);
+        -moz-box-shadow: 4px 9px 8px 4px rgba(239,239,239,1);
+        box-shadow: 4px 9px 8px 4px rgba(239,239,239,1); 
+    }
+    section.gold-sponsor {
+        margin: 0 0 85px 0;
+        .santander-logo-container {
+            width: 290px;
+            height: 290px;
+            margin: 25px 0 0 0;
+            img {
+                width: 284px;
+            }
+        }
+    }
+    section.organizer {
+        margin: 0 0 85px 0;
+        .organizer-logo-container {
+            width: 250px;
+            height: 250px;
+            margin: 25px 0 0 0;
+            img {
+                width: 135px;
+            }
+        }
+    }
+    section.rest-of-sponsors {
+        margin: 0 0 100px 0;
+        span {
+            display: block;
+            margin: 0 0 18px 0;
+        }
+        .sponsor-logo-container {
+            width: 185px;
+            height: 185px;
+            margin: 0 0 45px 0;
+            img {
+                width: 115px;
+            }
+        }
+    }
+    section.honorary-patronage {
+        span {
+            display: block;
+            margin: 0 0 35px 0;
+        }
+        div.row {
+            .col {
+                padding-right: 5px;
+                padding-left: 5px;
+                .patron-logo-container {
+                    width: 125px;
+                    height: 125px;
+                    margin: 0 0 50px 0;
+                    img {
+                        width: 85px;
+                    }
+                }
+            }
+            .second-col {
+                padding-top: 85px;
+            } 
+        }
+    }
+}

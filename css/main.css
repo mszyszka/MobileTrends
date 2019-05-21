@@ -255,6 +255,7 @@ section.confirm-your-presence {
       margin: 0;
       border: none;
       background: #EF3024;
+      text-align: center;
       color: #fff;
       padding: 14px 52px;
       font-size: 14px;
@@ -307,6 +308,7 @@ section.they-will-perform {
     margin: 0;
     border: none;
     background: #EF3024;
+    text-align: center;
     color: #fff;
     padding: 14px 52px;
     font-size: 14px;
@@ -358,6 +360,7 @@ section.next-edition-schedule {
       margin: 0;
       border: none;
       background: #EF3024;
+      text-align: center;
       color: #fff;
       padding: 14px 52px;
       font-size: 14px;
@@ -439,7 +442,8 @@ section.opinions .myItem {
     font-size: 15px; }
 
 section.join-today {
-  padding: 0 40px; }
+  padding: 0 40px;
+  margin: 0 0 100px 0; }
   section.join-today img {
     width: 100%;
     margin: 0 0 40px 0; }
@@ -451,6 +455,7 @@ section.join-today {
     margin: 0;
     border: none;
     background: #EF3024;
+    text-align: center;
     color: #fff;
     padding: 14px 52px;
     font-size: 14px;
@@ -463,6 +468,163 @@ section.join-today {
       background: #FFFFFF;
       color: #EF3024;
       outline: none; }
+
+section.year-ago-pictures {
+  margin: 0 0 100px 0; }
+  section.year-ago-pictures div.heading {
+    padding: 0 35px; }
+    section.year-ago-pictures div.heading h2 {
+      font-size: 16px;
+      color: #EF3024;
+      font-weight: 700; }
+    section.year-ago-pictures div.heading p {
+      font-size: 30px;
+      font-weight: 700; }
+      section.year-ago-pictures div.heading p span {
+        color: #EF3024; }
+  section.year-ago-pictures div.carousel-4 div.carousel-inner div.carousel-item img {
+    max-width: 100%; }
+  section.year-ago-pictures div.carousel-4 div.carousel-inner a.carousel-control-prev span.carousel-control-prev-icon {
+    background-image: url("/img/arrow-point-to-left-year-ago-pictures2x.png"); }
+  section.year-ago-pictures div.carousel-4 div.carousel-inner a.carousel-control-next span.carousel-control-next-icon {
+    display: none;
+    background-image: url("/img/arrow-point-to-right-year-ago-pictures2x.png"); }
+
+section.conference-location {
+  margin: 0 0 100px 0; }
+  section.conference-location div.heading {
+    padding: 0 35px; }
+    section.conference-location div.heading h2 {
+      font-size: 16px;
+      color: #EF3024;
+      font-weight: 700; }
+    section.conference-location div.heading p {
+      font-size: 30px;
+      font-weight: 700;
+      margin: 0 0 40px 0; }
+      section.conference-location div.heading p span {
+        color: #EF3024; }
+  section.conference-location img.logo {
+    width: 200px;
+    margin: 0 0 50px 0; }
+  section.conference-location article.old-depot-article img.depot-article-header-img {
+    width: 100%; }
+  section.conference-location article.old-depot-article div.article-txt {
+    background: #ffffff;
+    width: 90%;
+    padding: 30px 50px 30px 30px;
+    position: relative;
+    bottom: 40px; }
+    section.conference-location article.old-depot-article div.article-txt p {
+      color: #7B7B7B;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 3; }
+  section.conference-location article.old-depot-article button.learn-more {
+    margin: 0;
+    border: none;
+    background: #EF3024;
+    text-align: center;
+    color: #fff;
+    padding: 14px 52px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all ease-in-out 0.2s;
+    padding: 14px 40px;
+    width: 220px;
+    margin: 0 0 22px 0; }
+    section.conference-location article.old-depot-article button.learn-more:hover, section.conference-location article.old-depot-article button.learn-more:active {
+      border: 3px solid #EF3024;
+      padding: 11px 49px;
+      background: #FFFFFF;
+      color: #EF3024;
+      outline: none; }
+  section.conference-location article.old-depot-article button.how-to-get {
+    margin: 0;
+    border: 3px solid #EF3024;
+    background: #FFFFFF;
+    color: #EF3024;
+    padding: 12px 0;
+    width: 168px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all ease-in-out 0.2s;
+    width: 220px; }
+    section.conference-location article.old-depot-article button.how-to-get:hover, section.conference-location article.old-depot-article button.how-to-get:active {
+      background: #FF4135;
+      color: #FFFFFF;
+      outline: none;
+      -webkit-box-shadow: inset 0px 0px 10px 5px #ef3024;
+      -moz-box-shadow: inset 0px 0px 10px 5px #ef3024;
+      box-shadow: inset 0px 0px 10px 5px #ef3024; }
+
+section.sponsors {
+  padding: 0 35px; }
+  section.sponsors div.heading h2 {
+    font-size: 16px;
+    color: #EF3024;
+    font-weight: 700; }
+  section.sponsors div.heading p {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 50px 0; }
+    section.sponsors div.heading p span {
+      color: #EF3024; }
+    section.sponsors div.heading p span {
+      font-size: 30px; }
+  section.sponsors span {
+    color: #EF3024;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 2.1; }
+  section.sponsors .logo-container {
+    border-radius: 100%;
+    -webkit-box-shadow: 4px 9px 8px 4px #efefef;
+    -moz-box-shadow: 4px 9px 8px 4px #efefef;
+    box-shadow: 4px 9px 8px 4px #efefef; }
+  section.sponsors section.gold-sponsor {
+    margin: 0 0 85px 0; }
+    section.sponsors section.gold-sponsor .santander-logo-container {
+      width: 290px;
+      height: 290px;
+      margin: 25px 0 0 0; }
+      section.sponsors section.gold-sponsor .santander-logo-container img {
+        width: 284px; }
+  section.sponsors section.organizer {
+    margin: 0 0 85px 0; }
+    section.sponsors section.organizer .organizer-logo-container {
+      width: 250px;
+      height: 250px;
+      margin: 25px 0 0 0; }
+      section.sponsors section.organizer .organizer-logo-container img {
+        width: 135px; }
+  section.sponsors section.rest-of-sponsors {
+    margin: 0 0 100px 0; }
+    section.sponsors section.rest-of-sponsors span {
+      display: block;
+      margin: 0 0 18px 0; }
+    section.sponsors section.rest-of-sponsors .sponsor-logo-container {
+      width: 185px;
+      height: 185px;
+      margin: 0 0 45px 0; }
+      section.sponsors section.rest-of-sponsors .sponsor-logo-container img {
+        width: 115px; }
+  section.sponsors section.honorary-patronage span {
+    display: block;
+    margin: 0 0 35px 0; }
+  section.sponsors section.honorary-patronage div.row .col {
+    padding-right: 5px;
+    padding-left: 5px; }
+    section.sponsors section.honorary-patronage div.row .col .patron-logo-container {
+      width: 125px;
+      height: 125px;
+      margin: 0 0 50px 0; }
+      section.sponsors section.honorary-patronage div.row .col .patron-logo-container img {
+        width: 85px; }
+  section.sponsors section.honorary-patronage div.row .second-col {
+    padding-top: 85px; }
 
 * {
   font-family: 'Poppins', sans-serif;
