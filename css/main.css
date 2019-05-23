@@ -90,12 +90,23 @@
   .navbar .navbar-collapse ul.navbar-nav li.buy-ticket {
     margin: 50px 0 0 0;
     min-width: 115px; }
-  .navbar .navbar-collapse ul.navbar-nav li.buy-ticket a {
-    padding: 5px 25px;
-    color: #fff;
+  .navbar .navbar-collapse ul.navbar-nav li.buy-ticket .buy-a-ticket {
+    margin: 0;
+    border: 3px solid #EF3024;
     background: #EF3024;
-    border-radius: 100px;
-    font-weight: 500; }
+    text-align: center;
+    color: #fff;
+    padding: 11px 50px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all ease-in-out 0.2s;
+    padding: 8px 40px; }
+    .navbar .navbar-collapse ul.navbar-nav li.buy-ticket .buy-a-ticket:hover, .navbar .navbar-collapse ul.navbar-nav li.buy-ticket .buy-a-ticket:active {
+      border: 3px solid #EF3024;
+      background: #FFFFFF;
+      color: #EF3024;
+      outline: none; }
 
 .icon-bar {
   width: 22px;
@@ -156,7 +167,7 @@
   .navbar {
     padding: 50px 0 50px 0; } }
 .about img.speaking-lady {
-  padding: 35px 45px 0 12px; }
+  padding: 35px 40px 0 12px; }
 .about h2 {
   font-size: 16px;
   font-weight: 700;
@@ -174,7 +185,7 @@
   color: #7B7B7B;
   line-height: 2.5;
   margin: 0;
-  font-weight: 500; }
+  font-weight: 600; }
 
 .is-it-worth-investing h2 {
   font-size: 16px;
@@ -204,43 +215,44 @@
     color: #7B7B7B;
     padding: 0 0 0 18px;
     margin: 0 0 43px 0;
-    font-weight: 500; }
+    font-weight: 600; }
     .is-it-worth-investing ul.why li:last-of-type {
       margin: 0 0 0 0; }
 
-.carousel-1-section .carousel-1 .carousel-inner {
-  padding: 38px 30px; }
-.carousel-1-section .carousel-control-next-icon {
-  background-image: url("/img/arrow-rightx2.png");
-  width: 12px; }
-.carousel-1-section .carousel-control-prev-icon {
-  background-image: url("/img/arrow-point-to-left (2).png");
-  width: 12px; }
-.carousel-1-section .myItem {
-  display: block;
-  margin: auto;
-  max-width: 340px;
-  padding: 34px;
-  border-radius: 49px;
-  -webkit-box-shadow: 4px 9px 8px 4px #efefef;
-  -moz-box-shadow: 4px 9px 8px 4px #efefef;
-  box-shadow: 4px 9px 8px 4px #efefef; }
-  .carousel-1-section .myItem .icon {
-    margin: 0 0 30px 0;
-    width: 30px; }
-  .carousel-1-section .myItem h2 {
-    margin: 0 0 30px 0;
-    font-size: 24px;
-    font-weight: 700; }
-    .carousel-1-section .myItem h2 span {
-      color: #EF3024; }
-  .carousel-1-section .myItem p {
-    color: #7B7B7B;
-    font-weight: 500;
-    font-size: 15px; }
+.carousel-1-section {
+  margin: 30px 0 0 0; }
+  .carousel-1-section .carousel-1 .carousel-control-next-icon {
+    background-image: url("/img/arrow-rightx2.png");
+    width: 12px; }
+  .carousel-1-section .carousel-1 .carousel-control-prev-icon {
+    background-image: url("/img/arrow-point-to-left (2).png");
+    width: 12px; }
+  .carousel-1-section .carousel-1 .carousel-item {
+    padding: 0 0 25px 0; }
+    .carousel-1-section .carousel-1 .carousel-item .item-container {
+      height: 400px;
+      max-width: 300px;
+      padding: 34px;
+      border-radius: 49px;
+      -webkit-box-shadow: 4px 9px 8px 4px #efefef;
+      -moz-box-shadow: 4px 9px 8px 4px #efefef;
+      box-shadow: 4px 9px 8px 4px #efefef; }
+    .carousel-1-section .carousel-1 .carousel-item .icon {
+      margin: 0 0 30px 0;
+      width: 30px; }
+    .carousel-1-section .carousel-1 .carousel-item h2 {
+      margin: 0 0 30px 0;
+      font-size: 24px;
+      font-weight: 700; }
+      .carousel-1-section .carousel-1 .carousel-item h2 span {
+        color: #EF3024; }
+    .carousel-1-section .carousel-1 .carousel-item p {
+      color: #7B7B7B;
+      font-weight: 600;
+      font-size: 15px; }
 
 section.confirm-your-presence {
-  margin: 0 0 100px 0; }
+  margin: 15px 0 100px 0; }
   section.confirm-your-presence img {
     width: 100%;
     padding: 0 17px;
@@ -253,40 +265,42 @@ section.confirm-your-presence {
       margin: 0 0 50px 0; }
     section.confirm-your-presence section.take-action .buy-a-ticket {
       margin: 0;
-      border: none;
+      border: 3px solid #EF3024;
       background: #EF3024;
       text-align: center;
       color: #fff;
-      padding: 14px 52px;
+      padding: 11px 50px;
       font-size: 14px;
       font-weight: 700;
       border-radius: 50px;
       transition: all ease-in-out 0.2s; }
       section.confirm-your-presence section.take-action .buy-a-ticket:hover, section.confirm-your-presence section.take-action .buy-a-ticket:active {
         border: 3px solid #EF3024;
-        padding: 11px 49px;
         background: #FFFFFF;
         color: #EF3024;
         outline: none; }
 
 section.they-will-perform {
-  margin: 0 0 100px 0;
-  padding: 0 35px; }
-  section.they-will-perform h2 {
-    font-size: 16px;
-    color: #EF3024;
-    font-weight: 700; }
-  section.they-will-perform p {
-    font-size: 30px;
-    font-weight: 700; }
-    section.they-will-perform p span {
-      color: #EF3024; }
+  margin: 0 0 100px 0; }
+  section.they-will-perform div.heading {
+    padding: 0 35px;
+    margin: 0 0 62px 0; }
+    section.they-will-perform div.heading h2 {
+      font-size: 16px;
+      color: #EF3024;
+      font-weight: 700; }
+    section.they-will-perform div.heading p {
+      font-size: 30px;
+      font-weight: 700;
+      margin: 0; }
+      section.they-will-perform div.heading p span {
+        color: #EF3024; }
   section.they-will-perform .carousel-2 {
-    padding: 0 15px; }
+    padding: 0 50px; }
     section.they-will-perform .carousel-2 a.carousel-control-prev {
-      left: -35px; }
+      height: 75%; }
     section.they-will-perform .carousel-2 a.carousel-control-next {
-      right: -35px; }
+      height: 75%; }
     section.they-will-perform .carousel-2 .carousel-control-next-icon {
       background-image: url("/img/arrow-rightx2.png");
       width: 12px; }
@@ -295,7 +309,8 @@ section.they-will-perform {
       width: 12px; }
     section.they-will-perform .carousel-2 .carousel-item img {
       width: 100%;
-      margin: 0 0 27px 0; }
+      margin: 0 0 27px 0;
+      max-width: 340px; }
     section.they-will-perform .carousel-2 .carousel-item .person-name {
       font-size: 17px;
       font-weight: 700; }
@@ -306,18 +321,17 @@ section.they-will-perform {
       margin: 0 0 33px 0; }
   section.they-will-perform .see-everyone {
     margin: 0;
-    border: none;
+    border: 3px solid #EF3024;
     background: #EF3024;
     text-align: center;
     color: #fff;
-    padding: 14px 52px;
+    padding: 11px 50px;
     font-size: 14px;
     font-weight: 700;
     border-radius: 50px;
     transition: all ease-in-out 0.2s; }
     section.they-will-perform .see-everyone:hover, section.they-will-perform .see-everyone:active {
       border: 3px solid #EF3024;
-      padding: 11px 49px;
       background: #FFFFFF;
       color: #EF3024;
       outline: none; }
@@ -358,21 +372,19 @@ section.next-edition-schedule {
         color: #EF3024; }
     section.next-edition-schedule section.action .first-day {
       margin: 0;
-      border: none;
+      border: 3px solid #EF3024;
       background: #EF3024;
       text-align: center;
       color: #fff;
-      padding: 14px 52px;
+      padding: 11px 50px;
       font-size: 14px;
       font-weight: 700;
       border-radius: 50px;
       transition: all ease-in-out 0.2s;
       margin: 0 0 35px 0;
-      width: 168px;
-      padding: 14px 0; }
+      width: 220px; }
       section.next-edition-schedule section.action .first-day:hover, section.next-edition-schedule section.action .first-day:active {
         border: 3px solid #EF3024;
-        padding: 11px 49px;
         background: #FFFFFF;
         color: #EF3024;
         outline: none; }
@@ -381,19 +393,16 @@ section.next-edition-schedule {
       border: 3px solid #EF3024;
       background: #FFFFFF;
       color: #EF3024;
-      padding: 12px 0;
-      width: 168px;
+      padding: 12px 50px;
       font-size: 14px;
       font-weight: 700;
       border-radius: 50px;
-      transition: all ease-in-out 0.2s; }
+      transition: all ease-in-out 0.2s;
+      width: 220px; }
       section.next-edition-schedule section.action .second-day:hover, section.next-edition-schedule section.action .second-day:active {
-        background: #FF4135;
+        background: #EF3024;
         color: #FFFFFF;
-        outline: none;
-        -webkit-box-shadow: inset 0px 0px 10px 5px #ef3024;
-        -moz-box-shadow: inset 0px 0px 10px 5px #ef3024;
-        box-shadow: inset 0px 0px 10px 5px #ef3024; }
+        outline: none; }
 
 section.opinions div.heading {
   padding: 0 35px; }
@@ -407,39 +416,41 @@ section.opinions div.heading {
     section.opinions div.heading p span {
       color: #EF3024; }
 section.opinions .carousel-3 .carousel-inner {
-  padding: 38px 30px;
   margin-bottom: 12px; }
+  section.opinions .carousel-3 .carousel-inner .item-container {
+    height: 450px;
+    max-width: 300px;
+    padding: 34px;
+    border-radius: 49px;
+    -webkit-box-shadow: 4px 9px 8px 4px #efefef;
+    -moz-box-shadow: 4px 9px 8px 4px #efefef;
+    box-shadow: 4px 9px 8px 4px #efefef; }
+    section.opinions .carousel-3 .carousel-inner .item-container .icon {
+      margin: 0 0 30px 0;
+      width: 60px; }
+    section.opinions .carousel-3 .carousel-inner .item-container span.person-name {
+      display: block;
+      margin: 0 0 5px 0;
+      font-size: 24px;
+      font-weight: 700; }
+    section.opinions .carousel-3 .carousel-inner .item-container span.company-name {
+      display: block;
+      color: #EF3024;
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 30px; }
+    section.opinions .carousel-3 .carousel-inner .item-container p {
+      color: #7B7B7B;
+      font-weight: 600;
+      font-size: 15px; }
 section.opinions .carousel-control-next-icon {
   background-image: url("/img/arrow-rightx2.png");
-  width: 12px; }
+  width: 14px; }
 section.opinions .carousel-control-prev-icon {
   background-image: url("/img/arrow-point-to-left (2).png");
-  width: 12px; }
-section.opinions .myItem {
-  display: block;
-  margin: auto;
-  max-width: 340px;
-  padding: 34px;
-  border-radius: 49px;
-  -webkit-box-shadow: 4px 9px 8px 4px #efefef;
-  -moz-box-shadow: 4px 9px 8px 4px #efefef;
-  box-shadow: 4px 9px 8px 4px #efefef; }
-  section.opinions .myItem .icon {
-    margin: 0 0 30px 0;
-    width: 60px; }
-  section.opinions .myItem span.person-name {
-    margin: 0 0 5px 0;
-    font-size: 24px;
-    font-weight: 700; }
-  section.opinions .myItem span.company-name {
-    color: #EF3024;
-    font-weight: 700;
-    font-size: 16px;
-    margin-bottom: 30px; }
-  section.opinions .myItem p {
-    color: #7B7B7B;
-    font-weight: 500;
-    font-size: 15px; }
+  width: 14px; }
+section.opinions .carousel-item {
+  padding: 0 0 25px 0; }
 
 section.join-today {
   padding: 0 40px;
@@ -453,18 +464,17 @@ section.join-today {
     margin: 0 0 40px 0; }
   section.join-today .buy-a-ticket {
     margin: 0;
-    border: none;
+    border: 3px solid #EF3024;
     background: #EF3024;
     text-align: center;
     color: #fff;
-    padding: 14px 52px;
+    padding: 11px 50px;
     font-size: 14px;
     font-weight: 700;
     border-radius: 50px;
     transition: all ease-in-out 0.2s; }
     section.join-today .buy-a-ticket:hover, section.join-today .buy-a-ticket:active {
       border: 3px solid #EF3024;
-      padding: 11px 49px;
       background: #FFFFFF;
       color: #EF3024;
       outline: none; }
@@ -484,11 +494,32 @@ section.year-ago-pictures {
         color: #EF3024; }
   section.year-ago-pictures div.carousel-4 div.carousel-inner div.carousel-item img {
     max-width: 100%; }
-  section.year-ago-pictures div.carousel-4 div.carousel-inner a.carousel-control-prev span.carousel-control-prev-icon {
-    background-image: url("/img/arrow-point-to-left-year-ago-pictures2x.png"); }
-  section.year-ago-pictures div.carousel-4 div.carousel-inner a.carousel-control-next span.carousel-control-next-icon {
-    display: none;
-    background-image: url("/img/arrow-point-to-right-year-ago-pictures2x.png"); }
+  section.year-ago-pictures div.carousel-4 a.carousel-control-prev {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,3e3e3e+0&1+0,0+100,0+100 */
+    background: -moz-linear-gradient(left, #3e3e3e 0%, rgba(62, 62, 62, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #3e3e3e 0%, rgba(62, 62, 62, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #3e3e3e 0%, rgba(62, 62, 62, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e3e3e', endColorstr='#003e3e3e',GradientType=1 );
+    /* IE6-9 */ }
+    section.year-ago-pictures div.carousel-4 a.carousel-control-prev span.carousel-control-prev-icon {
+      width: 14px;
+      background-image: url("/img/arrow-point-to-left-year-ago-pictures2x.png"); }
+  section.year-ago-pictures div.carousel-4 a.carousel-control-next {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,3e3e3e+0&1+0,0+100,0+100 */
+    background: -moz-linear-gradient(right, #3e3e3e 0%, rgba(62, 62, 62, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(right, #3e3e3e 0%, rgba(62, 62, 62, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to left, #3e3e3e 0%, rgba(62, 62, 62, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e3e3e', endColorstr='#003e3e3e',GradientType=1 );
+    /* IE6-9 */ }
+    section.year-ago-pictures div.carousel-4 a.carousel-control-next span.carousel-control-next-icon {
+      width: 14px;
+      background-image: url("/img/arrow-point-to-right-year-ago-pictures2x.png"); }
 
 section.conference-location {
   margin: 0 0 100px 0; }
@@ -522,21 +553,18 @@ section.conference-location {
       line-height: 3; }
   section.conference-location article.old-depot-article button.learn-more {
     margin: 0;
-    border: none;
+    border: 3px solid #EF3024;
     background: #EF3024;
     text-align: center;
     color: #fff;
-    padding: 14px 52px;
+    padding: 11px 50px;
     font-size: 14px;
     font-weight: 700;
     border-radius: 50px;
     transition: all ease-in-out 0.2s;
-    padding: 14px 40px;
-    width: 220px;
     margin: 0 0 22px 0; }
     section.conference-location article.old-depot-article button.learn-more:hover, section.conference-location article.old-depot-article button.learn-more:active {
       border: 3px solid #EF3024;
-      padding: 11px 49px;
       background: #FFFFFF;
       color: #EF3024;
       outline: none; }
@@ -545,20 +573,15 @@ section.conference-location {
     border: 3px solid #EF3024;
     background: #FFFFFF;
     color: #EF3024;
-    padding: 12px 0;
-    width: 168px;
+    padding: 12px 50px;
     font-size: 14px;
     font-weight: 700;
     border-radius: 50px;
-    transition: all ease-in-out 0.2s;
-    width: 220px; }
+    transition: all ease-in-out 0.2s; }
     section.conference-location article.old-depot-article button.how-to-get:hover, section.conference-location article.old-depot-article button.how-to-get:active {
-      background: #FF4135;
+      background: #EF3024;
       color: #FFFFFF;
-      outline: none;
-      -webkit-box-shadow: inset 0px 0px 10px 5px #ef3024;
-      -moz-box-shadow: inset 0px 0px 10px 5px #ef3024;
-      box-shadow: inset 0px 0px 10px 5px #ef3024; }
+      outline: none; }
 
 section.sponsors {
   padding: 0 35px; }
@@ -626,12 +649,99 @@ section.sponsors {
   section.sponsors section.honorary-patronage div.row .second-col {
     padding-top: 85px; }
 
+section.contact {
+  background: #FEF4F3;
+  padding: 60px 40px; }
+  section.contact p.para {
+    color: #7B7B7B;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 0 35px 0; }
+  section.contact article.stay-in-touch {
+    margin: 0 0 30px 0; }
+    section.contact article.stay-in-touch div.heading h2 {
+      font-size: 16px;
+      color: #EF3024;
+      font-weight: 700; }
+    section.contact article.stay-in-touch div.heading p {
+      font-size: 30px;
+      font-weight: 700; }
+      section.contact article.stay-in-touch div.heading p span {
+        color: #EF3024; }
+    section.contact article.stay-in-touch p {
+      max-width: 80%; }
+  section.contact section.social-media {
+    margin: 0 0 70px 0;
+    height: 40px; }
+    section.contact section.social-media a img {
+      width: 20px;
+      transition: all ease-in-out 0.3s; }
+    section.contact section.social-media a:hover img {
+      width: 24px; }
+  section.contact section.newsletter h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 45px 0; }
+    section.contact section.newsletter h2 span {
+      color: #EF3024; }
+  section.contact section.newsletter input.user-email {
+    border: none;
+    outline: none;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 100px;
+    padding: 18px 0;
+    margin: 0 0 30px 0;
+    text-indent: 27px;
+    font-size: 14px;
+    font-weight: 600;
+    -webkit-box-shadow: 10px 10px 9px 0px #fee6e4;
+    -moz-box-shadow: 10px 10px 9px 0px #fee6e4;
+    box-shadow: 10px 10px 9px 0px #fee6e4; }
+    section.contact section.newsletter input.user-email::placeholder {
+      font-size: 14px;
+      font-weight: 600;
+      text-indent: 27px; }
+  section.contact section.newsletter button.sign-in {
+    margin: 0;
+    border: 3px solid #EF3024;
+    background: #EF3024;
+    text-align: center;
+    color: #fff;
+    padding: 11px 50px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all ease-in-out 0.2s;
+    margin: 0 0 40px 0; }
+    section.contact section.newsletter button.sign-in:hover, section.contact section.newsletter button.sign-in:active {
+      border: 3px solid #EF3024;
+      background: #FFFFFF;
+      color: #EF3024;
+      outline: none; }
+
+footer {
+  text-transform: uppercase;
+  color: #7B7B7B;
+  font-weight: 700;
+  text-align: center;
+  padding: 50px 0; }
+  footer h2 {
+    font-size: 14px;
+    font-weight: 700; }
+    footer h2 a:link, footer h2 a:visited, footer h2 a:hover, footer h2 a:active {
+      color: #EF3024; }
+  footer nav a:link, footer nav a:visited, footer nav a:hover, footer nav a:active {
+    font-size: 12px;
+    color: #7B7B7B;
+    padding: 10px 5px; }
+
 * {
   font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0; }
 
-body {
-  margin-bottom: 200px; }
+a {
+  text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */

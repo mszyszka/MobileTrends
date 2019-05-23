@@ -1,0 +1,21 @@
+footer {
+    text-transform: uppercase;
+    color: $content-txt-color;
+    font-weight: 700;
+    text-align: center;
+    padding: 50px 0;
+    h2 {
+        font-size: 14px;
+        font-weight: 700;
+        a:link,a:visited,a:hover,a:active {
+            color: $logo-red;
+        }
+    }
+    nav {
+        a:link,a:visited,a:hover,a:active {
+            font-size: 12px;
+            color: $content-txt-color;
+            padding: 10px 5px;
+        }
+    }
+}

@@ -1,11 +1,8 @@
 <!-- After page is loaded. button.navbar-toggler should be hamburger not X. -->
 <!-- Check hamburger and logo padding/margin -->
-<!-- Carousel-1 is showing all divs and cutting shadow -->
-<!-- Carousel-2 - next and previous arrows position -->
-<!-- Carousel-2 is showing all divs -->
-<!-- .first-day button in section.next-edition-schedule after click and hover -->
-<!-- section.year-ago-pictures - change previous end next arrow icons -->
-
+<!-- Carousel-2 next and prev not working -->
+<!-- Carousel-3 next and prev not working -->
+<!-- Carousel-4 next and prev not working -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +34,7 @@
                <li class="nav-item d-flex justify-content-center"><a href="#" class="nav-link">miejsce</a></li>
                <li class="nav-item d-flex justify-content-center"><a href="#" class="nav-link">sponsorzy</a></li>
                <li class="nav-item d-flex justify-content-center"><a href="#" class="nav-link">kontakt</a></li>
-               <li class="nav-item d-flex justify-content-center buy-ticket d-flex align-items-center"><a href="#" class="nav-link">kup bilet</a></li>
+               <li class="nav-item d-flex justify-content-center buy-ticket d-flex align-items-center"><button class="buy-a-ticket" type="button">kup bilet</button></li>
            </ul>
        </div>
     </nav>
@@ -124,61 +121,70 @@
 
         <section class="carousel-1-section">
             
-            <div class="carousel-1 carousel slide" data-ride="carousel">
-                
+            <!-- Carousel -->
+            <div id="carouselExampleControls" class="carousel-1 carousel slide" data-ride="carousel">
+
                 <div class="carousel-inner">
-                  <!-- Item 1 -->
-                  <div class="carousel-item active myItem item1">
-                        <img src="./img/user2x.png" class="icon d-block">
-                        <h2>300+</br>
-                            uczestników</br> 
-                            konferencji <span>.</span>
-                        </h1>
-                        <p>
-                            Jeżeli chcesz poznać ekspertów 
-                            branży mobile i nawiązać cenne 
-                            kontakty biznesowe.
-                        </p>
-                  </div>
-                  <!-- Item 2 -->
-                  <!-- <div class="carousel-item myItem item2">
-                        <img src="./img/case2x.png" class="icon d-block">
-                        <h2>75% właścicieli firm</br>
-                            oraz managerów</br>
-                            wysokiego szczebla<span>.</span>
-                        </h2>
-                        <p>
-                            Jeżeli chcesz poznać ekspertów 
-                            branży mobile i nawiązać cenne 
-                            kontakty biznesowe.
-                        </p>
-                  </div> -->
-                  <!-- Item 3 -->
-                  <!-- <div class="carousel-item myItem item3">
-                        <img src="./img/presentation2x.png" class="icon d-block">
-                        <h2>25+ merytorycznych</br> 
-                            prelekcji</br> 
-                            i case study<span>.</span>
-                        </h2>
-                        <p>
-                            Jeżeli chcesz poznać ekspertów 
-                            branży mobile i nawiązać cenne 
-                            kontakty biznesowe.
-                        </p>
-                  </div> -->
-                  <!-- Item 4 -->
-                  <!-- <div class="carousel-item myItem item4">
-                        <img src="./img/refresh-ccw2x.png" class="icon d-block">
-                        <h2>1000+ wymienionych</br> 
-                            wizytówek pomiędzy</br> 
-                            uczestnikami<span>.</span>
-                        </h2>
-                        <p>
-                            Jeżeli chcesz poznać ekspertów 
-                            branży mobile i nawiązać cenne 
-                            kontakty biznesowe.
-                        </p>
-                  </div> -->
+                    <!-- Item 1 -->
+                    <div class="carousel-item active">
+                        <div class="item-container ml-auto mr-auto">
+                            <img src="./img/user2x.png" class="icon">
+                            <h2>300+</br>
+                                uczestników</br> 
+                                konferencji <span>.</span>
+                            </h1>
+                            <p>
+                                Jeżeli chcesz poznać ekspertów 
+                                branży mobile i nawiązać cenne 
+                                kontakty biznesowe.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="carousel-item ">
+                        <div class="item-container ml-auto mr-auto">
+                            <img src="./img/case2x.png" class="icon">
+                            <h2>75% właścicieli firm</br>
+                                oraz managerów</br>
+                                wysokiego szczebla<span>.</span>
+                            </h2>
+                            <p>
+                                Jeżeli chcesz poznać ekspertów 
+                                branży mobile i nawiązać cenne 
+                                kontakty biznesowe.
+                            </p>
+                        </div>
+                    </div> 
+                    <!-- Item 3 -->
+                    <div class="carousel-item ">
+                        <div class="item-container ml-auto mr-auto">
+                            <img src="./img/presentation2x.png" class="icon">
+                            <h2>25+ merytorycznych</br> 
+                                prelekcji</br> 
+                                i case study<span>.</span>
+                            </h2>
+                            <p>
+                                Jeżeli chcesz poznać ekspertów 
+                                branży mobile i nawiązać cenne 
+                                kontakty biznesowe.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="carousel-item">
+                        <div class="item-container ml-auto mr-auto">
+                            <img src="./img/refresh-ccw2x.png" class="icon d-block">
+                            <h2>1000+ wymienionych</br> 
+                                wizytówek pomiędzy</br> 
+                                uczestnikami<span>.</span>
+                            </h2>
+                            <p>
+                                Jeżeli chcesz poznać ekspertów 
+                                branży mobile i nawiązać cenne 
+                                kontakty biznesowe.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <!-- Controls -->
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -209,73 +215,96 @@
         </section>
 
         <section class="they-will-perform d-flex flex-column">
-            
-            <h2>To oni u nas wystąpią.</h1>
-            <p>Prelegenci<span>.</span></p>
+
+            <div class="heading d-flex flex-column align-items-start">
+                <h2>To oni u nas wystąpią.</h2>
+                <p>Prelegenci<span>.</span></p>
+            </div>
+
             <!-- Carousel -->
             <div id="carouselExampleControls" class="carousel-2 carousel slide" data-ride="carousel">
                 
                 <div class="carousel-inner">
-                  <!-- Item 1 -->
-                  <div class="carousel-item active myItem d-flex flex-column align-items-center">
-                        <img src="./img/they-will-perform/kamilBolek2x.png" class="icon d-block">
-                        <span class="person-name">Kamil Bolek</span>
-                        <span class="company-name">LifeTube</span>
+                    <!-- Item 1 -->
+                    <div class="carousel-item active myItem">
+                        <img src="./img/they-will-perform/kamilBolek2x.png" class="icon">
+                        <figcaption class="d-flex flex-column align-items-center">
+                            <span class="person-name">Kamil Bolek</span>
+                            <span class="company-name">LifeTube</span>
+                        </figcaption>
                   </div>
-                  <!-- Item 2 -->
-                  <!-- <div class="carousel-item myItem d-flex flex-column align-items-center">
-                        <img src="./img/they-will-perform/PawełDunia2x.png" class="icon d-block">
-                        <span class="person-name">Paweł Dunia</span>
-                        <span class="company-name">Artegence</span>
-                  </div> -->
-                  <!-- Item 3 -->
-                  <!-- <div class="carousel-item myItem d-flex flex-column align-items-center">
-                        <img src="./img/they-will-perform/IgorFarafonow2x.png" class="icon d-block">
-                        <span class="person-name">Igor Farafonow</span>
-                        <span class="company-name">Uxeria</span>
-                  </div> -->
-                  <!-- Item 4 -->
-                  <!-- <div class="carousel-item myItem d-flex flex-column align-items-center">
-                        <img src="./img/they-will-perform/AndrzejGrupiński2x.png" class="icon d-block">
-                        <span class="person-name">Andrzej Grupiński</span>
-                        <span class="company-name">Santander Bank Polska S.A.</span>
-                  </div> -->
-                  <!-- Item 5 -->
-                  <!-- <div class="carousel-item myItem d-flex flex-column align-items-center">
-                        <img src="./img/they-will-perform/JennyGove2x.png" class="icon d-block">
-                        <span class="person-name">Jenny Gove</span>
-                        <span class="company-name">Google</span>
-                  </div> -->
-                  <!-- Item 6 -->
-                  <!-- <div class="carousel-item myItem d-flex flex-column align-items-center">
-                        <img src="./img/they-will-perform/RadoslawHolewa2x.png" class="icon d-block">
-                        <span class="person-name">Radoslaw Holewa</span>
-                        <span class="company-name">Miquido</span>
-                  </div> -->
-                  <!-- Item 7 -->
-                  <!-- <div class="carousel-item myItem d-flex flex-column align-items-center">
-                        <img src="./img/they-will-perform/RafalCymerys2x.png" class="icon d-block">
-                        <span class="person-name">Rafal Cymerys</span>
-                        <span class="company-name">Upside</span>
-                  </div> -->
-                  <!-- Item 8 -->
-                  <!-- <div class="carousel-item myItem d-flex flex-column align-items-center">
-                        <img src="./img/they-will-perform/KasiaRyniak2x.png" class="icon d-block">
-                        <span class="person-name">Kasia Ryniak</span>
-                        <span class="company-name">Upside</span>
-                  </div> -->
-                  <!-- Item 9 -->
-                  <!-- <div class="carousel-item myItem d-flex flex-column align-items-center">
-                        <img src="./img/they-will-perform/ErnestJakubowski2x.png" class="icon d-block">
-                        <span class="person-name">Ernest Jakubowski</span>
-                        <span class="company-name">Mobter</span>
-                  </div> -->
-                  <!-- Item 10 -->
-                  <!-- <div class="carousel-item myItem d-flex flex-column align-items-center">
-                        <img src="./img/they-will-perform/AnnaKędzierska2x.png" class="icon d-block">
-                        <span class="person-name">Anna Kędzierska</span>
-                        <span class="company-name">Artegence</span>
-                  </div> -->
+                    <!-- Item 2 -->
+                    <div class="carousel-item myItem">
+                        <img src="./img/they-will-perform/PawełDunia2x.png" class="icon">
+                        <figcaption class="d-flex flex-column align-items-center">
+                            <span class="person-name">Paweł Dunia</span>
+                            <span class="company-name">Artegence</span>
+                        </figcaption>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="carousel-item myItem">
+                        <img src="./img/they-will-perform/IgorFarafonow2x.png" class="icon">
+                        <figcaption class="d-flex flex-column align-items-center">
+                            <span class="person-name">Igor Farafonow</span>
+                            <span class="company-name">Uxeria</span>
+                        </figcaption>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="carousel-item myItem">
+                        <img src="./img/they-will-perform/AndrzejGrupiński2x.png" class="icon">
+                        <figcaption class="d-flex flex-column align-items-center">
+                            <span class="person-name">Andrzej Grupiński</span>
+                            <span class="company-name">Santander Bank Polska S.A.</span>
+                        </figcaption>
+                    </div>
+                     <!-- Item 5 -->
+                    <div class="carousel-item myItem">
+                        <img src="./img/they-will-perform/JennyGove2x.png" class="icon">
+                        <figcaption class="d-flex flex-column align-items-center">
+                            <span class="person-name">Jenny Gove</span>
+                            <span class="company-name">Google</span>
+                        </figcaption>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="carousel-item myItem">
+                        <img src="./img/they-will-perform/RadoslawHolewa2x.png" class="icon">
+                        <figcaption class="d-flex flex-column align-items-center">
+                            <span class="person-name">Radoslaw Holewa</span>
+                            <span class="company-name">Miquido</span>
+                        </figcaption>
+                    </div>
+                    <!-- Item 7 -->
+                    <div class="carousel-item myItem">
+                        <img src="./img/they-will-perform/RafalCymerys2x.png" class="icon">
+                        <figcaption class="d-flex flex-column align-items-center">
+                            <span class="person-name">Rafal Cymerys</span>
+                            <span class="company-name">Upside</span>
+                        </figcaption>
+                    </div>
+                    <!-- Item 8 -->
+                    <div class="carousel-item myItem">
+                        <img src="./img/they-will-perform/KasiaRyniak2x.png" class="icon">
+                        <figcaption class="d-flex flex-column align-items-center">
+                            <span class="person-name">Kasia Ryniak</span>
+                            <span class="company-name">Upside</span>
+                        </figcaption>
+                    </div>
+                     <!-- Item 9 -->
+                    <div class="carousel-item myItem">
+                        <img src="./img/they-will-perform/ErnestJakubowski2x.png" class="icon">
+                        <figcaption class="d-flex flex-column align-items-center">
+                            <span class="person-name">Ernest Jakubowski</span>
+                            <span class="company-name">Mobter</span>
+                        </figcaption>
+                    </div>
+                    <!-- Item 10 -->
+                    <div class="carousel-item myItem">
+                        <img src="./img/they-will-perform/AnnaKędzierska2x.png" class="icon">
+                        <figcaption class="d-flex flex-column align-items-center">
+                            <span class="person-name">Anna Kędzierska</span>
+                            <span class="company-name">Artegence</span>
+                        </figcaption>
+                    </div>
                 </div>
                 <!-- Controls -->
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -331,43 +360,50 @@
                 <div class="carousel-inner">
 
                     <!-- Item 1 -->
-                    <div class="carousel-item active myItem d-flex flex-column align-items-center">
-                          <img src="./img/opinions-icons/AdrianKielich2x.png" class="icon d-block mr-auto">
-                          <span class="person-name mr-auto">Adrian Kielich</span>
-                          <span class="company-name mr-auto">Mobext Germany</span>
-                          <p class="mr-auto">
+                    <div class="carousel-item active">
+                        <div class="item-container ml-auto mr-auto">
+                            <img src="./img/opinions-icons/AdrianKielich2x.png" class="icon d-block mr-auto">
+                            <span class="person-name mr-auto">Adrian Kielich</span>
+                            <span class="company-name mr-auto">Mobext Germany</span>
+                            <p class="mr-auto">
+                                Niesamowita możliwośc wymiany 
+                                doświadczeń, możliwośc 
+                                networkingu i poznania 
+                                nowych osób!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="carousel-item">
+                        <div class="item-container ml-auto mr-auto">
+                            <img src="./img/opinions-icons/ErnestJakubowski2x.png" class="icon d-block mr-auto">
+                            <span class="person-name mr-auto">Ernest Jakubowski</span>
+                            <span class="company-name mr-auto">Mobext Germany</span>
+                            <p class="mr-auto">
+                                Jest to najlepsza konferencja w
+                                Polsce nt. rozwiązań mobilnych,
+                                skierowane do biznesu i
+                                marketerów!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="carousel-item">
+                        <div class="item-container ml-auto mr-auto">
+                            <img src="./img/opinions-icons/BartekSibiga2x.png" class="icon d-block mr-auto">
+                            <span class="person-name mr-auto">Bartek Sibiga</span>
+                            <span class="company-name mr-auto">Mobext Germany</span>
+                            <p class="mr-auto">
                               Niesamowita możliwośc wymiany 
                               doświadczeń, możliwośc 
                               networkingu i poznania 
                               nowych osób!
-                          </p>
+                            </p>
+                        </div>
                     </div>
-                    <!-- Item 2 -->
-                    <!-- <div class="carousel-item active myItem d-flex flex-column align-items-center">
-                          <img src="./img/opinions-icons/ErnestJakubowski2x.png" class="icon d-block mr-auto">
-                          <span class="person-name mr-auto">Ernest Jakubowski</span>
-                          <span class="company-name mr-auto">Mobext Germany</span>
-                          <p class="mr-auto">
-                              Jest to najlepsza konferencja w
-                              Polsce nt. rozwiązań mobilnych,
-                              skierowane do biznesu i
-                              marketerów!
-                          </p>
-                    </div> -->
-                    <!-- Item 3 -->
-                    <!-- <div class="carousel-item active myItem d-flex flex-column align-items-center">
-                          <img src="./img/opinions-icons/BartekSibiga2x.png" class="icon d-block mr-auto">
-                          <span class="person-name mr-auto">Bartek Sibiga</span>
-                          <span class="company-name mr-auto">Mobext Germany</span>
-                          <p class="mr-auto">
-                            Niesamowita możliwośc wymiany 
-                            doświadczeń, możliwośc 
-                            networkingu i poznania 
-                            nowych osób!
-                          </p>
-                    </div> -->
                     <!-- Item 4 -->
-                    <!-- <div class="carousel-item active myItem d-flex flex-column align-items-center">
+                    <div class="carousel-item">
+                        <div class="item-container ml-auto mr-auto">
                             <img src="./img/opinions-icons/PaulinaPięta2x.png" class="icon d-block mr-auto">
                             <span class="person-name mr-auto">Paulina Pięta</span>
                             <span class="company-name mr-auto">ewentualnie.com</span>
@@ -377,12 +413,13 @@
                                 naprawdę wysoka jakość 
                                 na rynku. Przede wszystkim warto
                                 posłuchać różnorodnych tematów 
-                                wystąpień. Polecam serdecznie 
-                                nie tylko miłośnikom mobile'u.
+                                wystąpień.
                             </p>
-                    </div> -->
+                        </div>
+                    </div>
                     <!-- Item 5 -->
-                    <!-- <div class="carousel-item active myItem d-flex flex-column align-items-center">
+                    <div class="carousel-item ">
+                        <div class="item-container ml-auto mr-auto">
                             <img src="./img/opinions-icons/MonikaMikowska2x.png" class="icon d-block mr-auto">
                             <span class="person-name mr-auto">Monika Mikowska</span>
                             <span class="company-name mr-auto">Mobext Germany</span>
@@ -395,9 +432,11 @@
                                 wydarzenia w Europie.
                                 Polecam!
                             </p>
-                    </div> -->
+                        </div>
+                    </div>
                     <!-- Item 6 -->
-                    <!-- <div class="carousel-item active myItem d-flex flex-column align-items-center">
+                    <div class="carousel-item">
+                        <div class="item-container ml-auto mr-auto">
                             <img src="./img/opinions-icons/KrzysztofMarzec2x.png" class="icon mr-auto">
                             <span class="person-name mr-auto">Krzysztof Marzec</span>
                             <span class="company-name mr-auto">Mobext Germany</span>
@@ -407,9 +446,11 @@
                                 networkingu i poznania 
                                 nowych osób!
                             </p>
-                    </div> -->
+                        </div>
+                    </div>
                     <!-- Item 7 -->
-                    <!-- <div class="carousel-item active myItem d-flex flex-column align-items-center">
+                    <div class="carousel-item">
+                        <div class="item-container ml-auto mr-auto">
                             <img src="./img/opinions-icons/KamilBolek.png" class="icon mr-auto">
                             <span class="person-name mr-auto">Kamil Bolek</span>
                             <span class="company-name mr-auto">Mobext Germany</span>
@@ -419,7 +460,8 @@
                                 networkingu i poznania 
                                 nowych osób!
                             </p>
-                    </div> -->
+                        </div>
+                    </div>
                 </div>
                 <!-- Controls -->
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -449,6 +491,7 @@
                 <h2>Tak było rok temu</h2>
                 <p>Zdjęcia<span>.</span></p>
             </div>
+
             <!-- Carousel -->
             <div id="carouselExampleControls" class="carousel-4 carousel slide" data-ride="carousel">
                 
@@ -582,14 +625,90 @@
                     </div>
 
                 </div>
-
-               
                                 
             </section>
 
         </section>
+        <section class="contact">
+
+             <article class="stay-in-touch">
+                    <div class="heading d-flex flex-column align-items-start">
+                        <h2>Chcesz być bieżąco?</h2>
+                        <p>Bądźmy w kontakcie<span>.</span></p>
+                    </div>
+                    <p class="para">
+                        Śledź nas w social mediach oraz dołącz 
+                        do newslettera. 
+                        W ten sposób jako pierwszy otrzymasz 
+                        informacje o rozpoczęciu 
+                        przedsprzedaży biletów oraz zapisach 
+                        na call for papers!
+                    </p>
+             </article>
+
+             <section class="social-media d-flex align-items-center">
+                <div class="row w-100">
+                    <div class="col">
+                        <!-- facebook link -->
+                        <a href="#">
+                            <img src="./img/social-media-icons/facebook@2x.png">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <!-- twitter link -->
+                        <a href="#">
+                            <img src="./img/social-media-icons/twitter@2x.png">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <!-- instagram link -->
+                        <a href="#">
+                            <img src="./img/social-media-icons/instagram@2x.png">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <!-- linkedIn link -->
+                        <a href="#">
+                            <img src="./img/social-media-icons/linkedin@2x.png">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <!-- youtube link -->
+                        <a href="#">
+                            <img src="./img/social-media-icons/youtube@2x.png">
+                        </a>
+                    </div>
+                </div>
+             </section>
+
+             <section class="newsletter">
+                    <h2>Zapisz się do newslettera<span>.</span></h2>
+                    <input type="email" placeholder="Twój adres email" class="user-email">
+                    <button class="sign-in" type="button">zapisz się</button>
+                    <p class="para">
+                        Kliknięcie przycisku „Zapisz” oznacza wyrażenie 
+                        zgody na przetwarzanie danych osobowych 
+                        (adres e-mail) w celu umożliwienia przesyłania
+                        mi newslettera, zawierającego również treści
+                        marketingowe partnerów Administratora 
+                        Danych Osobowych. Administratorem 
+                        danych jest Robert Rachwał ClickMaster 
+                        Polska Więcej...
+                    </p>
+             </section>
+
+        </section>
+
     </main>
 
+    <footer>
+        <h2>projekt i realizacja: <a href="https://clickmaster.pl/" target="_blank"> clickmaster.pl</a></h2>
+        <nav>
+            <a href="#">kontakt</a>
+            <a href="#">polityka prywatności</a>
+            <a href="#">dla mediów</a>
+        </nav>
+    </footer>
     
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

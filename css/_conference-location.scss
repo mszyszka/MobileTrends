@@ -33,13 +33,13 @@ section.conference-location {
         }
         button.learn-more {
             @include red-button;
-            padding: 14px 40px;
-            width: 220px;
+            // padding: 14px 40px;
+            // width: 220px;
             margin: 0 0 22px 0;
         }
         button.how-to-get {
             @include white-button-with-red-border;
-            width: 220px;
+            // width: 220px;
         }
     }
 }

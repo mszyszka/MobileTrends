@@ -1,0 +1,69 @@
+section.contact {
+    background: #FEF4F3;
+    padding: 60px 40px; 
+    p.para {
+        color: $content-txt-color;
+        font-size: 12px;
+        font-weight: 600;
+        margin: 0 0 35px 0;
+    }
+    article.stay-in-touch {
+        margin: 0 0 30px 0;
+        div.heading {
+            h2 {
+                @include section-h2;
+            }
+            p {
+                @include section-first-p;
+            }
+        }
+        p {
+            max-width: 80%;
+        }
+    }
+    section.social-media {
+        margin: 0 0 70px 0;
+        height: 40px;
+        a {
+            img {
+                width: 20px;
+                transition: all ease-in-out 0.3s;
+            }
+            &:hover {
+                img {
+                    width: 24px;
+                }
+            }
+        }
+    }
+    section.newsletter {
+        h2 {
+            @include section-first-p;
+            margin: 0 0 45px 0;
+        }
+        input.user-email {
+            border: none;
+            outline: none;
+            width: 100%;
+            max-width: 300px;
+            border-radius: 100px;
+            padding: 18px 0;
+            margin: 0 0 30px 0;
+            text-indent: 27px;
+            font-size: 14px;
+            font-weight: 600;
+            -webkit-box-shadow: 10px 10px 9px 0px rgba(254,230,228,1);
+            -moz-box-shadow: 10px 10px 9px 0px rgba(254,230,228,1);
+            box-shadow: 10px 10px 9px 0px rgba(254,230,228,1);
+            &::placeholder {
+                font-size: 14px;
+                font-weight: 600;
+                text-indent: 27px;
+            }
+        }
+        button.sign-in {
+            @include red-button;
+            margin: 0 0 40px 0;
+        }
+    }
+}

@@ -16,17 +16,12 @@ section.year-ago-pictures {
                     max-width: 100%;
                 }
             }
-            a.carousel-control-prev {
-                span.carousel-control-prev-icon {
-                    background-image: url('/img/arrow-point-to-left-year-ago-pictures2x.png');
-                }
-            }
-            a.carousel-control-next {
-                span.carousel-control-next-icon {
-                    display: none;
-                    background-image: url('/img/arrow-point-to-right-year-ago-pictures2x.png');
-                }
-            }
+        }
+        a.carousel-control-prev {
+            @include carousel-control-prev-a;
+        }
+        a.carousel-control-next {
+            @include carousel-control-next-a;
         }
     }
 }

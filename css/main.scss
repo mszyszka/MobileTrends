@@ -4,7 +4,7 @@
 @import 'header';
 @import 'navbar';
 @import 'about';
-@import 'is-It-Worth-Investing';
+@import 'is-it-worth-investing';
 @import 'carousel-1';
 @import 'confirm-your-presence';
 @import 'they-will-perform';
@@ -15,6 +15,8 @@
 @import 'year-ago-pictures';
 @import 'conference-location';
 @import 'sponsors';
+@import 'contact';
+@import 'footer';
 
 * {
     font-family: 'Poppins', sans-serif;  
@@ -22,6 +24,6 @@
     margin: 0;
 }
 
-body {
-    margin-bottom: 200px;
+a {
+    text-decoration: none;
 }

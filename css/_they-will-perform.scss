@@ -1,19 +1,25 @@
 section.they-will-perform {
     margin: 0 0 100px 0;
+    // padding: 0 35px;
+    div.heading {
     padding: 0 35px;
-    h2 {
-        @include section-h2;
+    margin: 0 0 62px 0;
+        h2 {
+            @include section-h2;
+        }
+        p {
+            @include section-first-p;
+            margin: 0;
+        }
     }
-    p {
-        @include section-first-p;
-    }
+
     .carousel-2 {
-        padding: 0 15px;
+        padding: 0 50px;
         a.carousel-control-prev {
-            left: -35px;
+            height: 75%;
         }
         a.carousel-control-next {
-            right: -35px;
+            height: 75%;
         }
         .carousel-control-next-icon {
             background-image: url('/img/arrow-rightx2.png');
@@ -27,6 +33,7 @@ section.they-will-perform {
             img {
                 width: 100%;
                 margin: 0 0 27px 0;
+                max-width: 340px;
             }
             .person-name {
                 font-size: 17px;

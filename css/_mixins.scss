@@ -1,17 +1,16 @@
 @mixin red-button {
     margin: 0;
-    border: none;
+    border: 3px solid $logo-red;
     background: $logo-red;
     text-align: center;
     color: #fff;
-    padding: 14px 52px;
+    padding: 11px 50px;
     font-size: 14px;
     font-weight: 700;
     border-radius: 50px;;
-    transition: all ease-in-out 0.2s;
+    transition:  all ease-in-out 0.2s;
     &:hover, &:active {
         border: 3px solid $logo-red;
-        padding: 11px 49px;
         background: #FFFFFF;
         color: $logo-red;
         outline: none;
@@ -26,20 +25,15 @@
     border: 3px solid $logo-red;
     background: #FFFFFF;
     color: $logo-red;
-    padding: 12px 0;
-    width: 168px;
+    padding: 12px 50px;
     font-size: 14px;
     font-weight: 700;
     border-radius: 50px;;
     transition: all ease-in-out 0.2s;
     &:hover, &:active {
-        background: #FF4135;
+        background: $logo-red;
         color: #FFFFFF;
         outline: none;
-        // border: none;
-        -webkit-box-shadow: inset 0px 0px 10px 5px rgba(239,48,36,1);
-        -moz-box-shadow: inset 0px 0px 10px 5px rgba(239,48,36,1);
-        box-shadow: inset 0px 0px 10px 5px rgba(239,48,36,1);
     }
 }
 
@@ -54,5 +48,31 @@
     font-weight: 700;
     span {
         color: $logo-red;
+    }
+}
+
+@mixin carousel-control-prev-a {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,3e3e3e+0&1+0,0+100,0+100 */
+    background: -moz-linear-gradient(left,  rgba(62,62,62,1) 0%, rgba(62,62,62,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(62,62,62,1) 0%,rgba(62,62,62,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(62,62,62,1) 0%,rgba(62,62,62,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e3e3e', endColorstr='#003e3e3e',GradientType=1 ); /* IE6-9 */
+
+    span.carousel-control-prev-icon {
+        width: 14px;
+        background-image: url('/img/arrow-point-to-left-year-ago-pictures2x.png');
+    }
+}
+
+@mixin carousel-control-next-a {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,3e3e3e+0&1+0,0+100,0+100 */
+    background: -moz-linear-gradient(right,  rgba(62,62,62,1) 0%, rgba(62,62,62,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(right,  rgba(62,62,62,1) 0%,rgba(62,62,62,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to left,  rgba(62,62,62,1) 0%,rgba(62,62,62,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e3e3e', endColorstr='#003e3e3e',GradientType=1 ); /* IE6-9 */
+    
+    span.carousel-control-next-icon {
+        width: 14px;
+        background-image: url('/img/arrow-point-to-right-year-ago-pictures2x.png');
     }
 }

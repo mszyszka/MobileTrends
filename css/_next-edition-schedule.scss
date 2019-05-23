@@ -16,11 +16,12 @@ section.next-edition-schedule {
         .first-day {
             @include red-button;
             margin: 0 0 35px 0;
-            width: 168px;
-            padding: 14px 0;
+            // padding: 14px 0;
+            width: 220px;
         }
         .second-day {
             @include white-button-with-red-border;
+            width: 220px;
         }
     }
 }
