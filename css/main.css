@@ -166,42 +166,56 @@
 @media (min-width: 1918px) {
   .navbar {
     padding: 50px 0 50px 0; } }
-.about img.speaking-lady {
-  padding: 35px 40px 0 12px; }
+.about div.img-que-container {
+  margin: 0 0 40px 0; }
+  .about div.img-que-container img.speaking-lady {
+    max-width: 400px;
+    width: 100%;
+    padding: 0 60px 0 0; }
+  .about div.img-que-container div.question-mark-container span.big-question-mark {
+    display: none; }
+.about section.txt {
+  padding: 0 35px; }
 .about h2 {
   font-size: 16px;
   font-weight: 700;
   color: #EF3024;
-  padding: 0 20px 0 20px;
   margin: 0 0 10px 0; }
 .about h3 {
-  padding: 0 20px 0 20px;
   font-weight: 700;
   margin: 0 0 25px 0;
   font-size: 30px; }
 .about p {
-  padding: 0 20px 0 20px;
   font-size: 12px;
   color: #7B7B7B;
   line-height: 2.5;
   margin: 0;
   font-weight: 600; }
 
+@media (min-width: 576px) {
+  .about div.img-que-container div.question-mark-container span.big-question-mark {
+    display: inline-block;
+    color: #EF3024;
+    font-size: 150px;
+    font-weight: 700; } }
+@media (min-width: 768px) {
+  .about div.img-que-container div.question-mark-container span.big-question-mark {
+    display: none; } }
 .is-it-worth-investing h2 {
   font-size: 16px;
   font-weight: 700;
   color: #EF3024;
-  padding: 0 20px 0 20px;
+  padding: 0 35px;
   margin: 0 0 10px 0; }
 .is-it-worth-investing h3 {
-  padding: 0 20px 0 20px;
+  padding: 0 35px;
   font-size: 30px;
   font-weight: 700;
   margin: 0 0 67px 0; }
   .is-it-worth-investing h3 span {
     color: #EF3024; }
 .is-it-worth-investing p {
-  padding: 0 20px 0 20px;
+  padding: 0 35px;
   font-size: 12px;
   color: #7B7B7B;
   line-height: 2.5;

@@ -1,22 +1,33 @@
 .about {
-    img.speaking-lady {
-        padding: 35px 40px 0 12px;
+    div.img-que-container {
+        margin: 0 0 40px 0;
+        img.speaking-lady {
+            max-width: 400px;
+            width: 100%;
+            padding: 0 60px 0 0;
+        }
+        div.question-mark-container {
+    
+            span.big-question-mark {
+                display: none;
+            }
+        }
+    }
+    section.txt {
+        padding: 0 35px;
     }
     h2 {
         font-size: 16px;
         font-weight: 700;
         color: $logo-red;
-        padding: $txt-padding-xs;
         margin: 0 0 10px 0;
     }
     h3 {
-        padding: $txt-padding-xs;
         font-weight: 700;
         margin: 0 0 25px 0;
         font-size: 30px;
     }
     p {
-        padding: $txt-padding-xs;
         font-size: 12px;
         color: $content-txt-color;
         line-height: $line-height-xs;
@@ -24,3 +35,34 @@
         font-weight: 600;
     }
 }
+
+// Small devices
+@media (min-width: 576px) {
+    .about {
+        div.img-que-container { 
+
+            div.question-mark-container {
+        
+                span.big-question-mark {
+                    display: inline-block;
+                    color: $logo-red;
+                    font-size: 150px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+ }
+
+ // Medium devices
+@media (min-width: 768px) {
+    .about {
+        div.img-que-container { 
+            div.question-mark-container {
+                span.big-question-mark {
+                    display: none;
+                }
+            }
+        }
+    }
+ }
