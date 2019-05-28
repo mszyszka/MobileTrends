@@ -1,7 +1,9 @@
 section.confirm-your-presence {
     margin: 15px 0 100px 0;
     img {
+        display: block;
         width: 100%;
+        max-width: 500px;
         padding: 0 17px;
         margin: 0 0 64px 0;
     }
@@ -15,6 +17,36 @@ section.confirm-your-presence {
         }
         .buy-a-ticket {
             @include red-button;
+        }
+    }
+}
+@media(min-width: 576px) {
+    section.confirm-your-presence {
+        section.take-action {
+            text-align: center;
+            p {
+                padding: 0 100px;
+            }
+        }
+    } 
+}
+
+@media(min-width: 768px) {
+    section.confirm-your-presence {
+        img {
+            width: 50%;
+        }
+    
+        section.take-action {
+            text-align: left;
+            padding: 0 35px;
+            width: 50%;
+            p {
+                padding: 0;
+            }
+            .buy-a-ticket {
+                @include red-button;
+            }
         }
     }
 }

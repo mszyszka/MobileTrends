@@ -1,13 +1,13 @@
 .about {
-    div.img-que-container {
+    max-width: 1638px;
+    div.img-container {
         margin: 0 0 40px 0;
         img.speaking-lady {
-            max-width: 400px;
-            width: 100%;
-            padding: 0 60px 0 0;
+            max-width: 500px;
+            width: 85%;
+            margin: 30px 0 0 20px;
         }
         div.question-mark-container {
-    
             span.big-question-mark {
                 display: none;
             }
@@ -33,23 +33,29 @@
         line-height: $line-height-xs;
         margin: 0;
         font-weight: 600;
+        max-width: 90%;
     }
 }
 
 // Small devices
 @media (min-width: 576px) {
     .about {
-        div.img-que-container { 
-
+        div.img-container { 
+            img.speaking-lady {
+                margin: 30px 0 0 30px;
+            }
             div.question-mark-container {
-        
+                margin-top: 30px;
                 span.big-question-mark {
                     display: inline-block;
                     color: $logo-red;
-                    font-size: 150px;
+                    font-size: 120px;
                     font-weight: 700;
                 }
             }
+        }
+        section.txt {
+            padding: 0 45px;
         }
     }
  }
@@ -57,12 +63,58 @@
  // Medium devices
 @media (min-width: 768px) {
     .about {
-        div.img-que-container { 
+        padding: $sec-padding-md;
+        div.img-container { 
+            margin: 0;
+            width: 50%;
+            img.speaking-lady {
+                width: 90%;
+                max-width: 720px;
+                margin: 0;
+            }
             div.question-mark-container {
                 span.big-question-mark {
                     display: none;
                 }
             }
         }
+        section.txt {
+            padding: 0;
+            width: 50%;
+            // h2 {
+            //     font-size: 20px;
+            // }
+            // h3 {
+            //     font-size: 48px;
+            // }
+            // p {
+            //     font-size: 18px;
+            // }
+        }
+    }
+ }
+
+//  @media (min-width: 992px) { ... }
+
+ @media (min-width: 1200px) {
+     .about {
+        //  padding: 0 140px;
+        section.txt {
+            h2 {
+                font-size: 20px;
+            }
+            h3 {
+                font-size: 48px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+     }
+  }
+
+  @media (min-width: 1728px) {
+    .about {
+        padding: 0;
     }
  }

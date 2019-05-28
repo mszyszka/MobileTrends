@@ -35,9 +35,9 @@
       color: #EF3024;
       display: block;
       font-size: 12px;
-      width: 267px; }
+      width: 238px; }
     .site-header .place-date time {
-      font-size: 26px;
+      font-size: 22px;
       font-weight: 700; }
       .site-header .place-date time span {
         display: initial;
@@ -46,19 +46,30 @@
 
 /* /////////////////////////////////////@media///////////////////////////////// */
 @media (min-width: 480px) {
-  .site-header h1 {
-    padding: 75px 30px 30px 30px; } }
+  .site-header {
+    margin: 0 0 10px 0; }
+    .site-header h1 {
+      padding: 75px 30px 30px 30px; } }
+@media (min-width: 578px) {
+  .site-header {
+    margin: 0 0 30px 0; } }
 @media (min-width: 768px) {
-  .site-header h1 {
-    padding: 30px 30px 0 72px;
-    width: auto;
-    font-size: 26px; }
-  .site-header .place-date {
-    background: #FFFFFF;
-    width: 362px; } }
+  .site-header {
+    margin: 0 0 60px 0; }
+    .site-header h1 {
+      padding: 30px 30px 0 72px;
+      width: auto;
+      font-size: 26px; }
+    .site-header .place-date {
+      background: #FFFFFF;
+      width: 362px; } }
+@media (min-width: 992px) {
+  .site-header {
+    margin: 0 0 90px 0; } }
 @media (min-width: 1200px) {
   .site-header {
-    height: 600px; }
+    height: 600px;
+    margin: 0 0 150px 0; }
     .site-header h1 {
       font-size: 38px; }
     .site-header .place-date {
@@ -166,73 +177,133 @@
 @media (min-width: 1918px) {
   .navbar {
     padding: 50px 0 50px 0; } }
-.about div.img-que-container {
-  margin: 0 0 40px 0; }
-  .about div.img-que-container img.speaking-lady {
-    max-width: 400px;
-    width: 100%;
-    padding: 0 60px 0 0; }
-  .about div.img-que-container div.question-mark-container span.big-question-mark {
-    display: none; }
-.about section.txt {
-  padding: 0 35px; }
-.about h2 {
-  font-size: 16px;
-  font-weight: 700;
-  color: #EF3024;
-  margin: 0 0 10px 0; }
-.about h3 {
-  font-weight: 700;
-  margin: 0 0 25px 0;
-  font-size: 30px; }
-.about p {
-  font-size: 12px;
-  color: #7B7B7B;
-  line-height: 2.5;
-  margin: 0;
-  font-weight: 600; }
-
-@media (min-width: 576px) {
-  .about div.img-que-container div.question-mark-container span.big-question-mark {
-    display: inline-block;
+.about {
+  max-width: 1638px; }
+  .about div.img-container {
+    margin: 0 0 40px 0; }
+    .about div.img-container img.speaking-lady {
+      max-width: 500px;
+      width: 85%;
+      margin: 30px 0 0 20px; }
+    .about div.img-container div.question-mark-container span.big-question-mark {
+      display: none; }
+  .about section.txt {
+    padding: 0 35px; }
+  .about h2 {
+    font-size: 16px;
+    font-weight: 700;
     color: #EF3024;
-    font-size: 150px;
-    font-weight: 700; } }
-@media (min-width: 768px) {
-  .about div.img-que-container div.question-mark-container span.big-question-mark {
-    display: none; } }
-.is-it-worth-investing h2 {
-  font-size: 16px;
-  font-weight: 700;
-  color: #EF3024;
-  padding: 0 35px;
-  margin: 0 0 10px 0; }
-.is-it-worth-investing h3 {
-  padding: 0 35px;
-  font-size: 30px;
-  font-weight: 700;
-  margin: 0 0 67px 0; }
-  .is-it-worth-investing h3 span {
-    color: #EF3024; }
-.is-it-worth-investing p {
-  padding: 0 35px;
-  font-size: 12px;
-  color: #7B7B7B;
-  line-height: 2.5;
-  margin: 0; }
-.is-it-worth-investing ul.why {
-  margin-bottom: 0;
-  padding: 0 20px 0 43px;
-  list-style-image: url(/img/arrow-left.png); }
-  .is-it-worth-investing ul.why li {
+    margin: 0 0 10px 0; }
+  .about h3 {
+    font-weight: 700;
+    margin: 0 0 25px 0;
+    font-size: 30px; }
+  .about p {
     font-size: 12px;
     color: #7B7B7B;
-    padding: 0 0 0 18px;
-    margin: 0 0 43px 0;
-    font-weight: 600; }
-    .is-it-worth-investing ul.why li:last-of-type {
-      margin: 0 0 0 0; }
+    line-height: 2.5;
+    margin: 0;
+    font-weight: 600;
+    max-width: 90%; }
 
+@media (min-width: 576px) {
+  .about div.img-container img.speaking-lady {
+    margin: 30px 0 0 30px; }
+  .about div.img-container div.question-mark-container {
+    margin-top: 30px; }
+    .about div.img-container div.question-mark-container span.big-question-mark {
+      display: inline-block;
+      color: #EF3024;
+      font-size: 120px;
+      font-weight: 700; }
+  .about section.txt {
+    padding: 0 45px; } }
+@media (min-width: 768px) {
+  .about {
+    padding: 0 45px; }
+    .about div.img-container {
+      margin: 0;
+      width: 50%; }
+      .about div.img-container img.speaking-lady {
+        width: 90%;
+        max-width: 720px;
+        margin: 0; }
+      .about div.img-container div.question-mark-container span.big-question-mark {
+        display: none; }
+    .about section.txt {
+      padding: 0;
+      width: 50%; } }
+@media (min-width: 1200px) {
+  .about section.txt h2 {
+    font-size: 20px; }
+  .about section.txt h3 {
+    font-size: 48px; }
+  .about section.txt p {
+    font-size: 18px; } }
+@media (min-width: 1728px) {
+  .about {
+    padding: 0; } }
+.is-it-worth-investing {
+  margin: 40px 0 0 0; }
+  .is-it-worth-investing h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #EF3024;
+    padding: 0 35px;
+    margin: 0 0 10px 0; }
+  .is-it-worth-investing h3 {
+    padding: 0 35px;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 67px 0; }
+    .is-it-worth-investing h3 span {
+      color: #EF3024; }
+  .is-it-worth-investing p {
+    padding: 0 35px;
+    font-size: 12px;
+    color: #7B7B7B;
+    line-height: 2.5;
+    margin: 0; }
+  .is-it-worth-investing ul.why {
+    margin-bottom: 0;
+    padding: 0 20px 0 43px;
+    list-style-image: url(/img/arrow-left.png); }
+    .is-it-worth-investing ul.why li {
+      font-size: 12px;
+      color: #7B7B7B;
+      padding: 0 0 0 18px;
+      margin: 0 0 43px 0;
+      font-weight: 600; }
+      .is-it-worth-investing ul.why li:last-of-type {
+        margin: 0 0 0 0; }
+
+@media (min-width: 576px) {
+  .is-it-worth-investing {
+    margin: 60px 0 0 0; }
+    .is-it-worth-investing h2 {
+      padding: 0 45px; }
+    .is-it-worth-investing h3 {
+      padding: 0 45px; }
+    .is-it-worth-investing ul.why {
+      padding: 0 45px 0 65px; } }
+@media (min-width: 768px) {
+  .is-it-worth-investing h2 {
+    padding: 0 45px; }
+  .is-it-worth-investing h3 {
+    padding: 0 45px; }
+  .is-it-worth-investing ul.why {
+    padding: 0 45px 0 65px; }
+    .is-it-worth-investing ul.why li {
+      width: calc(100%/2); } }
+@media (min-width: 992px) {
+  .is-it-worth-investing h2 {
+    padding: 0 45px; }
+  .is-it-worth-investing h3 {
+    padding: 0 45px; }
+  .is-it-worth-investing ul.why {
+    padding: 0 45px 0 65px; }
+    .is-it-worth-investing ul.why li {
+      width: calc(100%/3); } }
 .carousel-1-section {
   margin: 30px 0 0 0; }
   .carousel-1-section .carousel-1 .carousel-control-next-icon {
@@ -268,7 +339,9 @@
 section.confirm-your-presence {
   margin: 15px 0 100px 0; }
   section.confirm-your-presence img {
+    display: block;
     width: 100%;
+    max-width: 500px;
     padding: 0 17px;
     margin: 0 0 64px 0; }
   section.confirm-your-presence section.take-action {
@@ -294,6 +367,36 @@ section.confirm-your-presence {
         color: #EF3024;
         outline: none; }
 
+@media (min-width: 576px) {
+  section.confirm-your-presence section.take-action {
+    text-align: center; }
+    section.confirm-your-presence section.take-action p {
+      padding: 0 100px; } }
+@media (min-width: 768px) {
+  section.confirm-your-presence img {
+    width: 50%; }
+  section.confirm-your-presence section.take-action {
+    text-align: left;
+    padding: 0 35px;
+    width: 50%; }
+    section.confirm-your-presence section.take-action p {
+      padding: 0; }
+    section.confirm-your-presence section.take-action .buy-a-ticket {
+      margin: 0;
+      border: 3px solid #EF3024;
+      background: #EF3024;
+      text-align: center;
+      color: #fff;
+      padding: 11px 50px;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 50px;
+      transition: all ease-in-out 0.2s; }
+      section.confirm-your-presence section.take-action .buy-a-ticket:hover, section.confirm-your-presence section.take-action .buy-a-ticket:active {
+        border: 3px solid #EF3024;
+        background: #FFFFFF;
+        color: #EF3024;
+        outline: none; } }
 section.they-will-perform {
   margin: 0 0 100px 0; }
   section.they-will-perform div.heading {
