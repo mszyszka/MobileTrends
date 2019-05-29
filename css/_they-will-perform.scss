@@ -7,8 +7,8 @@ section.they-will-perform {
         h2 {
             @include section-h2;
         }
-        p {
-            @include section-first-p;
+        h3 {
+            @include section-h3;
             margin: 0;
         }
     }
@@ -30,6 +30,7 @@ section.they-will-perform {
              width: 12px;
          }
         .carousel-item {
+            max-width: 340px;
             img {
                 width: 100%;
                 margin: 0 0 27px 0;
@@ -51,4 +52,17 @@ section.they-will-perform {
         @include red-button;
     }
 
+}
+
+@media(min-width: 1200px) {
+    section.they-will-perform {
+        div.heading {
+            h2 {
+                font-size: $h2-lg;
+            }
+            h3 {
+                font-size: $h3-lg;
+            }
+        }
+    }
 }

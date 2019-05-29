@@ -4,8 +4,8 @@ section.sponsors {
         h2 {
             @include section-h2;
         }
-        p {
-            @include section-first-p;
+        h3 {
+            @include section-h3;
             margin: 0 0 50px 0;
             span {
                 font-size: 30px;
@@ -84,4 +84,20 @@ section.sponsors {
             } 
         }
     }
+}
+
+@media(min-width: 1200px) {
+    section.sponsors {
+        div.heading {
+            h2 {
+                font-size: $h2-lg;
+            }
+            h3 {
+                font-size: $h3-lg;
+            }
+        }
+        span {
+            font-size: 20px;
+        }
+    } 
 }

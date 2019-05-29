@@ -10,8 +10,8 @@ section.next-edition-schedule {
         h2 {
             @include section-h2;
         }
-        p {
-            @include section-first-p;
+        h3 {
+            @include section-h3;
         }
         .first-day {
             @include red-button;
@@ -22,6 +22,20 @@ section.next-edition-schedule {
         .second-day {
             @include white-button-with-red-border;
             width: 220px;
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    section.next-edition-schedule {
+        section.action {
+            h2 {
+                font-size: $h2-lg;
+            }
+            h3 {
+                font-size: $h3-lg;
+            }
+            
         }
     }
 }

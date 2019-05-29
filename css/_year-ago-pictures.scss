@@ -5,8 +5,8 @@ section.year-ago-pictures {
         h2 {
             @include section-h2;
         }
-        p {
-            @include section-first-p;
+        h3 {
+            @include section-h3;
         }
     }
     div.carousel-4 {
@@ -22,6 +22,19 @@ section.year-ago-pictures {
         }
         a.carousel-control-next {
             @include carousel-control-next-a;
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    section.year-ago-pictures {
+        div.heading {
+            h2 {
+                font-size: $h2-lg;
+            }
+            h3 {
+                font-size: $h3-lg;
+            }
         }
     }
 }

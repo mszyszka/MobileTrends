@@ -1,5 +1,6 @@
 .is-it-worth-investing {
     margin: 40px 0 0 0;
+    max-width: 1600px;
     h2 {
         font-size: 16px;
         font-weight: 700;
@@ -52,10 +53,6 @@
         }
         ul.why {
             padding: 0 45px 0 65px;
-            li {
-                &:last-of-type {
-                }
-            }
         }
     }
 }
@@ -70,14 +67,9 @@
             padding: 0 45px;
         }
         ul.why {
-            // display: flex;
-            // flex-direction: row;
-            // flex-wrap: wrap;
             padding: 0 45px 0 65px;
             li {
                 width: calc(100%/2);
-                &:last-of-type {
-                }
             }
         }
     }
@@ -96,8 +88,23 @@
             padding: 0 45px 0 65px;
             li {
                 width: calc(100%/3);
-                &:last-of-type {
-                }
+            }
+        }
+    }
+}
+
+// XL devices
+@media (min-width: 1200px) {
+    .is-it-worth-investing {
+        h2 {
+            font-size: $h2-lg;
+        }
+        h3 {
+            font-size: $h3-lg;
+        }
+        ul.why {
+            li {
+                font-size: 18px;
             }
         }
     }

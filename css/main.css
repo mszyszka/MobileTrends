@@ -1,6 +1,6 @@
 .site-header {
   height: 545px;
-  max-width: 1638px;
+  max-width: 1600px;
   background-image: url("/img/header-background.png");
   background-position: 89% 50%;
   background-repeat: no-repeat;
@@ -89,7 +89,7 @@
       top: 112px; } }
 .navbar {
   padding: 25px 10px 25px 22px;
-  max-width: 1638px; }
+  max-width: 1600px; }
   .navbar .navbar-toggler {
     border: none;
     outline: none; }
@@ -178,7 +178,7 @@
   .navbar {
     padding: 50px 0 50px 0; } }
 .about {
-  max-width: 1638px; }
+  max-width: 1600px; }
   .about div.img-container {
     margin: 0 0 40px 0; }
     .about div.img-container img.speaking-lady {
@@ -189,22 +189,22 @@
       display: none; }
   .about section.txt {
     padding: 0 35px; }
-  .about h2 {
-    font-size: 16px;
-    font-weight: 700;
-    color: #EF3024;
-    margin: 0 0 10px 0; }
-  .about h3 {
-    font-weight: 700;
-    margin: 0 0 25px 0;
-    font-size: 30px; }
-  .about p {
-    font-size: 12px;
-    color: #7B7B7B;
-    line-height: 2.5;
-    margin: 0;
-    font-weight: 600;
-    max-width: 90%; }
+    .about section.txt h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #EF3024;
+      margin: 0 0 10px 0; }
+    .about section.txt h3 {
+      font-weight: 700;
+      margin: 0 0 25px 0;
+      font-size: 30px; }
+    .about section.txt p {
+      font-size: 12px;
+      color: #7B7B7B;
+      line-height: 2.5;
+      margin: 0;
+      font-weight: 600;
+      max-width: 90%; }
 
 @media (min-width: 576px) {
   .about div.img-container img.speaking-lady {
@@ -220,7 +220,7 @@
     padding: 0 45px; } }
 @media (min-width: 768px) {
   .about {
-    padding: 0 45px; }
+    padding: 0 60px; }
     .about div.img-container {
       margin: 0;
       width: 50%; }
@@ -244,7 +244,8 @@
   .about {
     padding: 0; } }
 .is-it-worth-investing {
-  margin: 40px 0 0 0; }
+  margin: 40px 0 0 0;
+  max-width: 1600px; }
   .is-it-worth-investing h2 {
     font-size: 16px;
     font-weight: 700;
@@ -304,6 +305,13 @@
     padding: 0 45px 0 65px; }
     .is-it-worth-investing ul.why li {
       width: calc(100%/3); } }
+@media (min-width: 1200px) {
+  .is-it-worth-investing h2 {
+    font-size: 20px; }
+  .is-it-worth-investing h3 {
+    font-size: 48px; }
+  .is-it-worth-investing ul.why li {
+    font-size: 18px; } }
 .carousel-1-section {
   margin: 30px 0 0 0; }
   .carousel-1-section .carousel-1 .carousel-control-next-icon {
@@ -337,66 +345,89 @@
       font-size: 15px; }
 
 section.confirm-your-presence {
-  margin: 15px 0 100px 0; }
+  margin: 15px 0 100px 0;
+  max-width: 1600px;
+  padding: 0 35px; }
   section.confirm-your-presence img {
     display: block;
     width: 100%;
-    max-width: 500px;
-    padding: 0 17px;
+    max-width: 600px;
     margin: 0 0 64px 0; }
-  section.confirm-your-presence section.take-action {
-    padding: 0 35px; }
-    section.confirm-your-presence section.take-action p {
-      font-size: 20px;
-      font-weight: 700;
-      margin: 0 0 50px 0; }
-    section.confirm-your-presence section.take-action .buy-a-ticket {
-      margin: 0;
+  section.confirm-your-presence section.take-action p {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 50px 0; }
+  section.confirm-your-presence section.take-action .buy-a-ticket {
+    margin: 0;
+    border: 3px solid #EF3024;
+    background: #EF3024;
+    text-align: center;
+    color: #fff;
+    padding: 11px 50px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all ease-in-out 0.2s; }
+    section.confirm-your-presence section.take-action .buy-a-ticket:hover, section.confirm-your-presence section.take-action .buy-a-ticket:active {
       border: 3px solid #EF3024;
-      background: #EF3024;
-      text-align: center;
-      color: #fff;
-      padding: 11px 50px;
-      font-size: 14px;
-      font-weight: 700;
-      border-radius: 50px;
-      transition: all ease-in-out 0.2s; }
-      section.confirm-your-presence section.take-action .buy-a-ticket:hover, section.confirm-your-presence section.take-action .buy-a-ticket:active {
-        border: 3px solid #EF3024;
-        background: #FFFFFF;
-        color: #EF3024;
-        outline: none; }
+      background: #FFFFFF;
+      color: #EF3024;
+      outline: none; }
 
 @media (min-width: 576px) {
-  section.confirm-your-presence section.take-action {
-    text-align: center; }
-    section.confirm-your-presence section.take-action p {
-      padding: 0 100px; } }
+  section.confirm-your-presence {
+    padding: 0 45px; }
+    section.confirm-your-presence section.take-action {
+      text-align: center; }
+      section.confirm-your-presence section.take-action p {
+        padding: 0 100px; } }
 @media (min-width: 768px) {
-  section.confirm-your-presence img {
-    width: 50%; }
-  section.confirm-your-presence section.take-action {
-    text-align: left;
-    padding: 0 35px;
-    width: 50%; }
-    section.confirm-your-presence section.take-action p {
-      padding: 0; }
-    section.confirm-your-presence section.take-action .buy-a-ticket {
-      margin: 0;
-      border: 3px solid #EF3024;
-      background: #EF3024;
-      text-align: center;
-      color: #fff;
-      padding: 11px 50px;
-      font-size: 14px;
-      font-weight: 700;
-      border-radius: 50px;
-      transition: all ease-in-out 0.2s; }
-      section.confirm-your-presence section.take-action .buy-a-ticket:hover, section.confirm-your-presence section.take-action .buy-a-ticket:active {
+  section.confirm-your-presence {
+    padding: 0 60px; }
+    section.confirm-your-presence img {
+      width: 50%; }
+    section.confirm-your-presence section.take-action {
+      text-align: left;
+      padding: 0 50px 0 0;
+      width: 50%; }
+      section.confirm-your-presence section.take-action p {
+        padding: 0; }
+      section.confirm-your-presence section.take-action .buy-a-ticket {
+        margin: 0;
         border: 3px solid #EF3024;
-        background: #FFFFFF;
-        color: #EF3024;
-        outline: none; } }
+        background: #EF3024;
+        text-align: center;
+        color: #fff;
+        padding: 11px 50px;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 50px;
+        transition: all ease-in-out 0.2s; }
+        section.confirm-your-presence section.take-action .buy-a-ticket:hover, section.confirm-your-presence section.take-action .buy-a-ticket:active {
+          border: 3px solid #EF3024;
+          background: #FFFFFF;
+          color: #EF3024;
+          outline: none; } }
+@media (min-width: 1200px) {
+  section.confirm-your-presence section.take-action p {
+    font-size: 30px;
+    max-width: 600px; }
+  section.confirm-your-presence section.take-action .buy-a-ticket {
+    margin: 0;
+    border: 3px solid #EF3024;
+    background: #EF3024;
+    text-align: center;
+    color: #fff;
+    padding: 11px 50px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all ease-in-out 0.2s; }
+    section.confirm-your-presence section.take-action .buy-a-ticket:hover, section.confirm-your-presence section.take-action .buy-a-ticket:active {
+      border: 3px solid #EF3024;
+      background: #FFFFFF;
+      color: #EF3024;
+      outline: none; } }
 section.they-will-perform {
   margin: 0 0 100px 0; }
   section.they-will-perform div.heading {
@@ -406,11 +437,11 @@ section.they-will-perform {
       font-size: 16px;
       color: #EF3024;
       font-weight: 700; }
-    section.they-will-perform div.heading p {
+    section.they-will-perform div.heading h3 {
       font-size: 30px;
       font-weight: 700;
       margin: 0; }
-      section.they-will-perform div.heading p span {
+      section.they-will-perform div.heading h3 span {
         color: #EF3024; }
   section.they-will-perform .carousel-2 {
     padding: 0 50px; }
@@ -424,18 +455,20 @@ section.they-will-perform {
     section.they-will-perform .carousel-2 .carousel-control-prev-icon {
       background-image: url("/img/arrow-point-to-left (2).png");
       width: 12px; }
-    section.they-will-perform .carousel-2 .carousel-item img {
-      width: 100%;
-      margin: 0 0 27px 0;
+    section.they-will-perform .carousel-2 .carousel-item {
       max-width: 340px; }
-    section.they-will-perform .carousel-2 .carousel-item .person-name {
-      font-size: 17px;
-      font-weight: 700; }
-    section.they-will-perform .carousel-2 .carousel-item .company-name {
-      font-size: 12px;
-      color: #EF3024;
-      font-weight: 600;
-      margin: 0 0 33px 0; }
+      section.they-will-perform .carousel-2 .carousel-item img {
+        width: 100%;
+        margin: 0 0 27px 0;
+        max-width: 340px; }
+      section.they-will-perform .carousel-2 .carousel-item .person-name {
+        font-size: 17px;
+        font-weight: 700; }
+      section.they-will-perform .carousel-2 .carousel-item .company-name {
+        font-size: 12px;
+        color: #EF3024;
+        font-weight: 600;
+        margin: 0 0 33px 0; }
   section.they-will-perform .see-everyone {
     margin: 0;
     border: 3px solid #EF3024;
@@ -453,23 +486,39 @@ section.they-will-perform {
       color: #EF3024;
       outline: none; }
 
+@media (min-width: 1200px) {
+  section.they-will-perform div.heading h2 {
+    font-size: 20px; }
+  section.they-will-perform div.heading h3 {
+    font-size: 48px; } }
 section.year-ago-video {
-  margin: 0 0 100px 0; }
-  section.year-ago-video div.heading {
-    padding: 0 35px; }
-    section.year-ago-video div.heading h2 {
-      font-size: 16px;
-      color: #EF3024;
-      font-weight: 700; }
-    section.year-ago-video div.heading p {
-      font-size: 30px;
-      font-weight: 700; }
-      section.year-ago-video div.heading p span {
-        color: #EF3024; }
+  margin: 0 0 100px 0;
+  padding: 0 35px;
+  max-width: 1360px; }
+  section.year-ago-video div.heading h2 {
+    font-size: 16px;
+    color: #EF3024;
+    font-weight: 700; }
+  section.year-ago-video div.heading h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 30px 0; }
+    section.year-ago-video div.heading h3 span {
+      color: #EF3024; }
   section.year-ago-video img {
-    max-width: 100%;
-    padding: 0 20px; }
+    width: 100%; }
 
+@media (min-width: 576px) {
+  section.year-ago-video {
+    padding: 0 60px; } }
+@media (min-width: 768px) {
+  section.year-ago-video {
+    padding: 0 60px; } }
+@media (min-width: 1200px) {
+  section.year-ago-video div.heading h2 {
+    font-size: 20px; }
+  section.year-ago-video div.heading h3 {
+    font-size: 48px; } }
 section.next-edition-schedule {
   margin: 0 0 100px 0; }
   section.next-edition-schedule img.schedule {
@@ -482,10 +531,10 @@ section.next-edition-schedule {
       font-size: 16px;
       color: #EF3024;
       font-weight: 700; }
-    section.next-edition-schedule section.action p {
+    section.next-edition-schedule section.action h3 {
       font-size: 30px;
       font-weight: 700; }
-      section.next-edition-schedule section.action p span {
+      section.next-edition-schedule section.action h3 span {
         color: #EF3024; }
     section.next-edition-schedule section.action .first-day {
       margin: 0;
@@ -521,16 +570,21 @@ section.next-edition-schedule {
         color: #FFFFFF;
         outline: none; }
 
+@media (min-width: 1200px) {
+  section.next-edition-schedule section.action h2 {
+    font-size: 20px; }
+  section.next-edition-schedule section.action h3 {
+    font-size: 48px; } }
 section.opinions div.heading {
   padding: 0 35px; }
   section.opinions div.heading h2 {
     font-size: 16px;
     color: #EF3024;
     font-weight: 700; }
-  section.opinions div.heading p {
+  section.opinions div.heading h3 {
     font-size: 30px;
     font-weight: 700; }
-    section.opinions div.heading p span {
+    section.opinions div.heading h3 span {
       color: #EF3024; }
 section.opinions .carousel-3 .carousel-inner {
   margin-bottom: 12px; }
@@ -569,6 +623,11 @@ section.opinions .carousel-control-prev-icon {
 section.opinions .carousel-item {
   padding: 0 0 25px 0; }
 
+@media (min-width: 1200px) {
+  section.opinions div.heading h2 {
+    font-size: 20px; }
+  section.opinions div.heading h3 {
+    font-size: 48px; } }
 section.join-today {
   padding: 0 40px;
   margin: 0 0 100px 0; }
@@ -604,10 +663,10 @@ section.year-ago-pictures {
       font-size: 16px;
       color: #EF3024;
       font-weight: 700; }
-    section.year-ago-pictures div.heading p {
+    section.year-ago-pictures div.heading h3 {
       font-size: 30px;
       font-weight: 700; }
-      section.year-ago-pictures div.heading p span {
+      section.year-ago-pictures div.heading h3 span {
         color: #EF3024; }
   section.year-ago-pictures div.carousel-4 div.carousel-inner div.carousel-item img {
     max-width: 100%; }
@@ -638,6 +697,11 @@ section.year-ago-pictures {
       width: 14px;
       background-image: url("/img/arrow-point-to-right-year-ago-pictures2x.png"); }
 
+@media (min-width: 1200px) {
+  section.year-ago-pictures div.heading h2 {
+    font-size: 20px; }
+  section.year-ago-pictures div.heading h3 {
+    font-size: 48px; } }
 section.conference-location {
   margin: 0 0 100px 0; }
   section.conference-location div.heading {
@@ -646,11 +710,11 @@ section.conference-location {
       font-size: 16px;
       color: #EF3024;
       font-weight: 700; }
-    section.conference-location div.heading p {
+    section.conference-location div.heading h3 {
       font-size: 30px;
       font-weight: 700;
       margin: 0 0 40px 0; }
-      section.conference-location div.heading p span {
+      section.conference-location div.heading h3 span {
         color: #EF3024; }
   section.conference-location img.logo {
     width: 200px;
@@ -700,19 +764,26 @@ section.conference-location {
       color: #FFFFFF;
       outline: none; }
 
+@media (min-width: 1200px) {
+  section.conference-location div.heading {
+    padding: 0 35px; }
+    section.conference-location div.heading h2 {
+      font-size: 20px; }
+    section.conference-location div.heading h3 {
+      font-size: 48px; } }
 section.sponsors {
   padding: 0 35px; }
   section.sponsors div.heading h2 {
     font-size: 16px;
     color: #EF3024;
     font-weight: 700; }
-  section.sponsors div.heading p {
+  section.sponsors div.heading h3 {
     font-size: 30px;
     font-weight: 700;
     margin: 0 0 50px 0; }
-    section.sponsors div.heading p span {
+    section.sponsors div.heading h3 span {
       color: #EF3024; }
-    section.sponsors div.heading p span {
+    section.sponsors div.heading h3 span {
       font-size: 30px; }
   section.sponsors span {
     color: #EF3024;
@@ -766,27 +837,34 @@ section.sponsors {
   section.sponsors section.honorary-patronage div.row .second-col {
     padding-top: 85px; }
 
+@media (min-width: 1200px) {
+  section.sponsors div.heading h2 {
+    font-size: 20px; }
+  section.sponsors div.heading h3 {
+    font-size: 48px; }
+  section.sponsors span {
+    font-size: 20px; } }
 section.contact {
   background: #FEF4F3;
   padding: 60px 40px; }
-  section.contact p.para {
-    color: #7B7B7B;
-    font-size: 12px;
-    font-weight: 600;
-    margin: 0 0 35px 0; }
   section.contact article.stay-in-touch {
     margin: 0 0 30px 0; }
     section.contact article.stay-in-touch div.heading h2 {
       font-size: 16px;
       color: #EF3024;
       font-weight: 700; }
-    section.contact article.stay-in-touch div.heading p {
+    section.contact article.stay-in-touch div.heading h3 {
       font-size: 30px;
       font-weight: 700; }
-      section.contact article.stay-in-touch div.heading p span {
+      section.contact article.stay-in-touch div.heading h3 span {
         color: #EF3024; }
     section.contact article.stay-in-touch p {
       max-width: 80%; }
+    section.contact article.stay-in-touch p.para {
+      color: #7B7B7B;
+      font-size: 12px;
+      font-weight: 600;
+      margin: 0 0 35px 0; }
   section.contact section.social-media {
     margin: 0 0 70px 0;
     height: 40px; }
@@ -796,11 +874,10 @@ section.contact {
     section.contact section.social-media a:hover img {
       width: 24px; }
   section.contact section.newsletter h2 {
-    font-size: 30px;
+    font-size: 16px;
+    color: #EF3024;
     font-weight: 700;
     margin: 0 0 45px 0; }
-    section.contact section.newsletter h2 span {
-      color: #EF3024; }
   section.contact section.newsletter input.user-email {
     border: none;
     outline: none;
@@ -837,6 +914,13 @@ section.contact {
       color: #EF3024;
       outline: none; }
 
+@media (min-width: 1200px) {
+  section.contact article.stay-in-touch div.heading h2 {
+    font-size: 20px; }
+  section.contact article.stay-in-touch div.heading h3 {
+    font-size: 48px; }
+  section.contact article.stay-in-touch p.para {
+    font-size: 18px; } }
 footer {
   text-transform: uppercase;
   color: #7B7B7B;

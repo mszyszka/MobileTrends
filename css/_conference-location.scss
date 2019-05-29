@@ -5,8 +5,8 @@ section.conference-location {
         h2 {
             @include section-h2;
         }
-        p {
-            @include section-first-p;
+        h3 {
+            @include section-h3;
             margin: 0 0 40px 0;
         }
     }
@@ -40,6 +40,20 @@ section.conference-location {
         button.how-to-get {
             @include white-button-with-red-border;
             // width: 220px;
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    section.conference-location {
+        div.heading {
+            padding: 0 35px;
+            h2 {
+                font-size: $h2-lg;
+            }
+            h3 {
+                font-size: $h3-lg;
+            }
         }
     }
 }

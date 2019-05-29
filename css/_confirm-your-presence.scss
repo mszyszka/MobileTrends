@@ -1,15 +1,17 @@
 section.confirm-your-presence {
     margin: 15px 0 100px 0;
+    max-width: 1600px;
+    padding: 0 35px;
     img {
         display: block;
         width: 100%;
-        max-width: 500px;
-        padding: 0 17px;
+        max-width: 600px;
+        // padding: 0 17px;
         margin: 0 0 64px 0;
     }
 
     section.take-action {
-        padding: 0 35px;
+        // padding: 0 35px;
         p {
             font-size: 20px;
             font-weight: 700;
@@ -22,6 +24,7 @@ section.confirm-your-presence {
 }
 @media(min-width: 576px) {
     section.confirm-your-presence {
+        padding: $sec-padding-sm;
         section.take-action {
             text-align: center;
             p {
@@ -33,16 +36,32 @@ section.confirm-your-presence {
 
 @media(min-width: 768px) {
     section.confirm-your-presence {
+        padding: $sec-padding-md;
         img {
             width: 50%;
         }
     
         section.take-action {
             text-align: left;
-            padding: 0 35px;
+            padding: 0 50px 0 0;
             width: 50%;
             p {
                 padding: 0;
+            }
+            .buy-a-ticket {
+                @include red-button;
+            }
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    section.confirm-your-presence {
+        section.take-action {
+
+            p {
+                font-size: 30px;
+                max-width: 600px;
             }
             .buy-a-ticket {
                 @include red-button;

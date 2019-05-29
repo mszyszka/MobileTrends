@@ -1,24 +1,25 @@
 section.contact {
     background: #FEF4F3;
     padding: 60px 40px; 
-    p.para {
-        color: $content-txt-color;
-        font-size: 12px;
-        font-weight: 600;
-        margin: 0 0 35px 0;
-    }
+
     article.stay-in-touch {
         margin: 0 0 30px 0;
         div.heading {
             h2 {
                 @include section-h2;
             }
-            p {
-                @include section-first-p;
+            h3 {
+                @include section-h3;
             }
         }
         p {
             max-width: 80%;
+        }
+        p.para {
+            color: $content-txt-color;
+            font-size: 12px;
+            font-weight: 600;
+            margin: 0 0 35px 0;
         }
     }
     section.social-media {
@@ -38,7 +39,7 @@ section.contact {
     }
     section.newsletter {
         h2 {
-            @include section-first-p;
+            @include section-h2;
             margin: 0 0 45px 0;
         }
         input.user-email {
@@ -64,6 +65,24 @@ section.contact {
         button.sign-in {
             @include red-button;
             margin: 0 0 40px 0;
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    section.contact {
+        article.stay-in-touch {
+            div.heading {
+                h2 {
+                    font-size: $h2-lg;
+                }
+                h3 {
+                    font-size: $h3-lg;
+                }
+            }
+            p.para {
+                font-size: 18px;
+            }
         }
     }
 }
