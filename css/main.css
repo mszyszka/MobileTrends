@@ -295,7 +295,9 @@
   .is-it-worth-investing ul.why {
     padding: 0 45px 0 65px; }
     .is-it-worth-investing ul.why li {
-      width: calc(100%/2); } }
+      width: 46%; }
+      .is-it-worth-investing ul.why li:nth-child(2n+1) {
+        margin: 0 8% 43px 0; } }
 @media (min-width: 992px) {
   .is-it-worth-investing h2 {
     padding: 0 45px; }
@@ -304,7 +306,12 @@
   .is-it-worth-investing ul.why {
     padding: 0 45px 0 65px; }
     .is-it-worth-investing ul.why li {
-      width: calc(100%/3); } }
+      width: 29%;
+      margin: 0 5% 43px 0; }
+      .is-it-worth-investing ul.why li:nth-child(2n+1) {
+        margin: 0 5% 43px 0; }
+      .is-it-worth-investing ul.why li:nth-child(3n) {
+        margin: 0 0 43px 0; } }
 @media (min-width: 1200px) {
   .is-it-worth-investing h2 {
     font-size: 20px; }
@@ -312,6 +319,65 @@
     font-size: 48px; }
   .is-it-worth-investing ul.why li {
     font-size: 18px; } }
+.red-cross .first-red-line {
+  width: 50px;
+  height: 1px;
+  background: red; }
+.red-cross .second-red-line {
+  width: 1px;
+  height: 50px;
+  background: red; }
+
+section.is-it-worth-investing-tiles {
+  padding: 0 60px;
+  max-width: 1600px;
+  margin: 0 auto 0 auto; }
+  section.is-it-worth-investing-tiles .item-container {
+    height: 400px;
+    max-width: 300px;
+    padding: 34px;
+    border-radius: 49px;
+    margin: 0 44px 50px 0;
+    -webkit-box-shadow: 4px 9px 8px 4px #efefef;
+    -moz-box-shadow: 4px 9px 8px 4px #efefef;
+    box-shadow: 4px 9px 8px 4px #efefef; }
+    section.is-it-worth-investing-tiles .item-container:nth-of-type(2n) {
+      margin: 0 0 50px 0; }
+  section.is-it-worth-investing-tiles .icon {
+    margin: 0 0 30px 0;
+    width: 30px; }
+  section.is-it-worth-investing-tiles h2 {
+    margin: 0 0 30px 0;
+    font-size: 24px;
+    font-weight: 700; }
+    section.is-it-worth-investing-tiles h2 span {
+      color: #EF3024; }
+  section.is-it-worth-investing-tiles p {
+    color: #7B7B7B;
+    font-weight: 600;
+    font-size: 15px; }
+
+@media (min-width: 992px) {
+  section.is-it-worth-investing-tiles {
+    padding: 60px 140px; }
+    section.is-it-worth-investing-tiles .item-container {
+      margin: 0 100px 60px 0; }
+      section.is-it-worth-investing-tiles .item-container:nth-of-type(2n) {
+        margin: 0 0 100px 0; } }
+@media (min-width: 1200px) {
+  section.is-it-worth-investing-tiles .item-container {
+    margin: 0 150px 100px 0; }
+    section.is-it-worth-investing-tiles .item-container:nth-of-type(2n) {
+      margin: 0 0 150px 0; } }
+@media (min-width: 1400px) {
+  section.is-it-worth-investing-tiles {
+    padding: 0 60px;
+    justify-content: space-between !important;
+    margin: 0 auto 0 auto; }
+    section.is-it-worth-investing-tiles .item-container {
+      margin: 0 0 150px 0; }
+      section.is-it-worth-investing-tiles .item-container:nth-of-type(2n) {
+        margin: 0 0 0 0; } }
 .carousel-1-section {
   margin: 30px 0 0 0; }
   .carousel-1-section .carousel-1 .carousel-control-next-icon {

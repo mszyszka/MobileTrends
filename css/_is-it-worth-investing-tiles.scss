@@ -1,0 +1,92 @@
+.red-cross {
+    .first-red-line {
+        width: 50px;
+        height: 1px;
+        background: red;
+    }
+    .second-red-line {
+        width: 1px;
+        height: 50px;
+        background: red;
+    }
+}
+// This section is displayed on md width, over 768px
+section.is-it-worth-investing-tiles {
+    padding: 0 60px;
+    max-width: 1600px;
+    margin: 0 auto 0 auto;
+
+    .item-container {
+        height: 400px;
+        max-width: 300px;
+        padding: 34px;
+        border-radius: 49px;
+        margin: 0 44px 50px 0;
+        // -webkit-box-shadow: 5px 10px 50px 0px rgba(239,239,239,0.75);
+        // -moz-box-shadow: 5px 10px 50px 0px rgba(239,239,239,0.75);
+        // box-shadow: 5px 10px 50px 0px rgba(239,239,239,0.75);
+        // zmiana
+        -webkit-box-shadow: 4px 9px 8px 4px rgba(239,239,239,1);
+        -moz-box-shadow: 4px 9px 8px 4px rgba(239,239,239,1);
+        box-shadow: 4px 9px 8px 4px rgba(239,239,239,1); 
+        &:nth-of-type(2n){
+            margin: 0 0 50px 0;
+        }
+    }       
+    .icon {
+        margin: 0 0 30px 0;
+        width: 30px;
+    }
+    h2 {
+        margin: 0 0 30px 0;
+        font-size: 24px;
+        font-weight: 700;
+        span {
+            color: $logo-red;
+        }
+    }
+    p {
+        color: $content-txt-color;
+        font-weight: 600;
+        font-size: 15px;
+    }
+}
+
+@media(min-width: 992px) {
+    section.is-it-worth-investing-tiles {
+        //Im using paddin on section to display two tiles
+        //in row below 1400px
+        padding: 60px 140px;
+        .item-container { 
+            margin: 0 100px 60px 0;
+            &:nth-of-type(2n){
+                margin: 0 0 100px 0;
+            }
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    section.is-it-worth-investing-tiles {
+        .item-container { 
+            margin: 0 150px 100px 0;
+            &:nth-of-type(2n){
+                margin: 0 0 150px 0;
+            }
+        }
+    }
+}
+
+@media(min-width: 1400px) {
+    section.is-it-worth-investing-tiles {
+        padding: 0 60px;
+        justify-content: space-between!important;
+        margin: 0 auto 0 auto;
+        .item-container { 
+            margin: 0 0 150px 0;
+            &:nth-of-type(2n){
+                margin: 0 0 0 0;
+            }
+        }
+    }
+}

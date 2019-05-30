@@ -69,7 +69,11 @@
         ul.why {
             padding: 0 45px 0 65px;
             li {
-                width: calc(100%/2);
+                // width: calc(100%/2);
+                width: 46%;
+                &:nth-child(2n+1){
+                    margin: 0 8% 43px 0;
+                }
             }
         }
     }
@@ -86,8 +90,21 @@
         }
         ul.why {
             padding: 0 45px 0 65px;
+
             li {
-                width: calc(100%/3);
+                // width: calc(100%/2);
+                width: 29%;
+                margin: 0 5% 43px 0;
+                // I need to use 2n+1 selector and set margin for li with it,
+                // otherwise it isn't working becose of CSS cascading.
+                &:nth-child(2n+1){
+                    margin: 0 5% 43px 0;
+                }
+                // I'm setting 3n selector, to set right margin of li, in third column to 0.
+                &:nth-child(3n){
+                    margin: 0 0 43px 0;
+                }
+
             }
         }
     }
