@@ -1,15 +1,16 @@
 .is-it-worth-investing {
     margin: 40px 0 0 0;
-    max-width: 1600px;
+    max-width: 1400px;
+    padding: $sec-padding-sm;
     h2 {
         font-size: 16px;
         font-weight: 700;
         color: $logo-red;
-        padding: 0 35px;
+        // padding: 0 35px;
         margin: 0 0 10px 0;
     }
     h3 {
-        padding: 0 35px;
+        // padding: 0 35px;
         font-size: 30px;
         font-weight: 700;
         margin: 0 0 67px 0;
@@ -18,7 +19,7 @@
         }
     }
     p {
-        padding: 0 35px;
+        // padding: 0 35px;
         font-size: 12px;
         color: $content-txt-color;
         line-height: $line-height-xs;
@@ -26,7 +27,7 @@
     }
     ul.why {
         margin-bottom: 0;
-        padding: 0 20px 0 43px;
+        padding: 0 0 0 20px;
         list-style-image: url(/img/arrow-left.png);
         li {
             font-size: 12px;
@@ -44,30 +45,32 @@
 // Small devices
 @media (min-width: 576px) {
     .is-it-worth-investing {
+        padding: $sec-padding-sm;
         margin: 60px 0 0 0;
-        h2 {
-            padding: 0 45px;
-        }
-        h3 {
-            padding: 0 45px;
-        }
-        ul.why {
-            padding: 0 45px 0 65px;
-        }
+        // h2 {
+        //     padding: 0 45px;
+        // }
+        // h3 {
+        //     padding: 0 45px;
+        // }
+        // ul.why {
+        //     padding: 0 45px 0 65px;
+        // }
     }
 }
 
 // Medium devices
 @media (min-width: 768px) {
     .is-it-worth-investing {
-        h2 {
-            padding: 0 45px;
-        }
-        h3 {
-            padding: 0 45px;
-        }
+        padding: $sec-padding-md;
+        // h2 {
+        //     padding: 0 45px;
+        // }
+        // h3 {
+        //     padding: 0 45px;
+        // }
         ul.why {
-            padding: 0 45px 0 65px;
+            // padding: 0 45px 0 65px;
             li {
                 // width: calc(100%/2);
                 width: 46%;
@@ -82,14 +85,15 @@
 // Large devices
 @media (min-width: 992px) {
     .is-it-worth-investing {
-        h2 {
-            padding: 0 45px;
-        }
-        h3 {
-            padding: 0 45px;
-        }
+        padding: $sec-padding-lg;
+        // h2 {
+        //     padding: 0 45px;
+        // }
+        // h3 {
+        //     padding: 0 45px;
+        // }
         ul.why {
-            padding: 0 45px 0 65px;
+            // padding: 0 45px 0 65px;
 
             li {
                 // width: calc(100%/2);
@@ -126,3 +130,11 @@
         }
     }
 }
+
+// I'm reseting left end right padding(180px together) in section.is-it-worth-investing on 1580px, becose I want max-width
+// of this section content to be 1400px. Section max-width is set to 1400px so i need to reset padding on 1580px(1580 - 180 = 1400)
+@media (min-width: 1580px) {
+    .is-it-worth-investing {
+        padding: 0;
+    }
+ }

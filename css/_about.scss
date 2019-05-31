@@ -1,11 +1,11 @@
 .about {
-    max-width: 1600px;
+    max-width: 1400px;
+    padding: $sec-padding-sm;
     div.img-container {
         margin: 0 0 40px 0;
         img.speaking-lady {
             max-width: 500px;
             width: 85%;
-            margin: 30px 0 0 20px;
         }
         div.question-mark-container {
             span.big-question-mark {
@@ -14,7 +14,6 @@
         }
     }
     section.txt {
-        padding: 0 35px;
         h2 {
             font-size: 16px;
             font-weight: 700;
@@ -38,12 +37,13 @@
 
 }
 
-// Small devices
+// SM devices
 @media (min-width: 576px) {
     .about {
+        padding: $sec-padding-sm;
         div.img-container { 
             img.speaking-lady {
-                margin: 30px 0 0 30px;
+                // margin: 30px 0 0 30px;
             }
             div.question-mark-container {
                 margin-top: 30px;
@@ -55,13 +55,10 @@
                 }
             }
         }
-        section.txt {
-            padding: 0 45px;
-        }
     }
  }
 
- // Medium devices
+ // MD devices
 @media (min-width: 768px) {
     .about {
         padding: $sec-padding-md;
@@ -82,24 +79,20 @@
         section.txt {
             padding: 0;
             width: 50%;
-            // h2 {
-            //     font-size: 20px;
-            // }
-            // h3 {
-            //     font-size: 48px;
-            // }
-            // p {
-            //     font-size: 18px;
-            // }
         }
     }
  }
 
-//  @media (min-width: 992px) { ... }
+// LG devices
+ @media (min-width: 992px) { 
+    .about {
+        padding: $sec-padding-lg;
+     }
+  }
 
+// XL devices
  @media (min-width: 1200px) {
      .about {
-        //  padding: 0 140px;
         section.txt {
             h2 {
                 font-size: 20px;
@@ -114,7 +107,9 @@
      }
   }
 
-  @media (min-width: 1728px) {
+// I'm reseting left end right padding(180px together) in section.about on 1580px, becose I want max-width
+// of this section content to be 1400px. Section max-width is set to 1400px so i need to reset padding on 1580px(1580 - 180 = 1400)
+  @media (min-width: 1580px) {
     .about {
         padding: 0;
     }

@@ -77,16 +77,6 @@
       height: 190px;
       position: relative;
       top: 112px; } }
-@media (min-width: 1500px) {
-  .site-header {
-    height: 750px; }
-    .site-header h1 {
-      font-size: 52px; }
-    .site-header .place-date {
-      width: 648px;
-      height: 219px;
-      position: relative;
-      top: 112px; } }
 .navbar {
   padding: 25px 10px 25px 22px;
   max-width: 1600px; }
@@ -178,46 +168,42 @@
   .navbar {
     padding: 50px 0 50px 0; } }
 .about {
-  max-width: 1600px; }
+  max-width: 1400px;
+  padding: 0 35px; }
   .about div.img-container {
     margin: 0 0 40px 0; }
     .about div.img-container img.speaking-lady {
       max-width: 500px;
-      width: 85%;
-      margin: 30px 0 0 20px; }
+      width: 85%; }
     .about div.img-container div.question-mark-container span.big-question-mark {
       display: none; }
-  .about section.txt {
-    padding: 0 35px; }
-    .about section.txt h2 {
-      font-size: 16px;
-      font-weight: 700;
-      color: #EF3024;
-      margin: 0 0 10px 0; }
-    .about section.txt h3 {
-      font-weight: 700;
-      margin: 0 0 25px 0;
-      font-size: 30px; }
-    .about section.txt p {
-      font-size: 12px;
-      color: #7B7B7B;
-      line-height: 2.5;
-      margin: 0;
-      font-weight: 600;
-      max-width: 90%; }
+  .about section.txt h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #EF3024;
+    margin: 0 0 10px 0; }
+  .about section.txt h3 {
+    font-weight: 700;
+    margin: 0 0 25px 0;
+    font-size: 30px; }
+  .about section.txt p {
+    font-size: 12px;
+    color: #7B7B7B;
+    line-height: 2.5;
+    margin: 0;
+    font-weight: 600;
+    max-width: 90%; }
 
 @media (min-width: 576px) {
-  .about div.img-container img.speaking-lady {
-    margin: 30px 0 0 30px; }
-  .about div.img-container div.question-mark-container {
-    margin-top: 30px; }
-    .about div.img-container div.question-mark-container span.big-question-mark {
-      display: inline-block;
-      color: #EF3024;
-      font-size: 120px;
-      font-weight: 700; }
-  .about section.txt {
-    padding: 0 45px; } }
+  .about {
+    padding: 0 35px; }
+    .about div.img-container div.question-mark-container {
+      margin-top: 30px; }
+      .about div.img-container div.question-mark-container span.big-question-mark {
+        display: inline-block;
+        color: #EF3024;
+        font-size: 120px;
+        font-weight: 700; } }
 @media (min-width: 768px) {
   .about {
     padding: 0 60px; }
@@ -233,6 +219,9 @@
     .about section.txt {
       padding: 0;
       width: 50%; } }
+@media (min-width: 992px) {
+  .about {
+    padding: 0 90px; } }
 @media (min-width: 1200px) {
   .about section.txt h2 {
     font-size: 20px; }
@@ -240,34 +229,32 @@
     font-size: 48px; }
   .about section.txt p {
     font-size: 18px; } }
-@media (min-width: 1728px) {
+@media (min-width: 1580px) {
   .about {
     padding: 0; } }
 .is-it-worth-investing {
   margin: 40px 0 0 0;
-  max-width: 1600px; }
+  max-width: 1400px;
+  padding: 0 35px; }
   .is-it-worth-investing h2 {
     font-size: 16px;
     font-weight: 700;
     color: #EF3024;
-    padding: 0 35px;
     margin: 0 0 10px 0; }
   .is-it-worth-investing h3 {
-    padding: 0 35px;
     font-size: 30px;
     font-weight: 700;
     margin: 0 0 67px 0; }
     .is-it-worth-investing h3 span {
       color: #EF3024; }
   .is-it-worth-investing p {
-    padding: 0 35px;
     font-size: 12px;
     color: #7B7B7B;
     line-height: 2.5;
     margin: 0; }
   .is-it-worth-investing ul.why {
     margin-bottom: 0;
-    padding: 0 20px 0 43px;
+    padding: 0 0 0 20px;
     list-style-image: url(/img/arrow-left.png); }
     .is-it-worth-investing ul.why li {
       font-size: 12px;
@@ -280,31 +267,18 @@
 
 @media (min-width: 576px) {
   .is-it-worth-investing {
-    margin: 60px 0 0 0; }
-    .is-it-worth-investing h2 {
-      padding: 0 45px; }
-    .is-it-worth-investing h3 {
-      padding: 0 45px; }
-    .is-it-worth-investing ul.why {
-      padding: 0 45px 0 65px; } }
+    padding: 0 35px;
+    margin: 60px 0 0 0; } }
 @media (min-width: 768px) {
-  .is-it-worth-investing h2 {
-    padding: 0 45px; }
-  .is-it-worth-investing h3 {
-    padding: 0 45px; }
-  .is-it-worth-investing ul.why {
-    padding: 0 45px 0 65px; }
+  .is-it-worth-investing {
+    padding: 0 60px; }
     .is-it-worth-investing ul.why li {
       width: 46%; }
       .is-it-worth-investing ul.why li:nth-child(2n+1) {
         margin: 0 8% 43px 0; } }
 @media (min-width: 992px) {
-  .is-it-worth-investing h2 {
-    padding: 0 45px; }
-  .is-it-worth-investing h3 {
-    padding: 0 45px; }
-  .is-it-worth-investing ul.why {
-    padding: 0 45px 0 65px; }
+  .is-it-worth-investing {
+    padding: 0 90px; }
     .is-it-worth-investing ul.why li {
       width: 29%;
       margin: 0 5% 43px 0; }
@@ -319,6 +293,9 @@
     font-size: 48px; }
   .is-it-worth-investing ul.why li {
     font-size: 18px; } }
+@media (min-width: 1580px) {
+  .is-it-worth-investing {
+    padding: 0; } }
 .red-cross .first-red-line {
   width: 50px;
   height: 1px;
@@ -378,17 +355,17 @@ section.is-it-worth-investing-tiles {
       margin: 0 0 150px 0; }
       section.is-it-worth-investing-tiles .item-container:nth-of-type(2n) {
         margin: 0 0 0 0; } }
-.carousel-1-section {
+section.carousel-1-section {
   margin: 30px 0 0 0; }
-  .carousel-1-section .carousel-1 .carousel-control-next-icon {
+  section.carousel-1-section .carousel-1 .carousel-control-next-icon {
     background-image: url("/img/arrow-rightx2.png");
     width: 12px; }
-  .carousel-1-section .carousel-1 .carousel-control-prev-icon {
-    background-image: url("/img/arrow-point-to-left (2).png");
+  section.carousel-1-section .carousel-1 .carousel-control-prev-icon {
+    background-image: url("/img/arrow-leftx2.png");
     width: 12px; }
-  .carousel-1-section .carousel-1 .carousel-item {
+  section.carousel-1-section .carousel-1 .carousel-item {
     padding: 0 0 25px 0; }
-    .carousel-1-section .carousel-1 .carousel-item .item-container {
+    section.carousel-1-section .carousel-1 .carousel-item .item-container {
       height: 400px;
       max-width: 300px;
       padding: 34px;
@@ -396,16 +373,16 @@ section.is-it-worth-investing-tiles {
       -webkit-box-shadow: 4px 9px 8px 4px #efefef;
       -moz-box-shadow: 4px 9px 8px 4px #efefef;
       box-shadow: 4px 9px 8px 4px #efefef; }
-    .carousel-1-section .carousel-1 .carousel-item .icon {
+    section.carousel-1-section .carousel-1 .carousel-item .icon {
       margin: 0 0 30px 0;
       width: 30px; }
-    .carousel-1-section .carousel-1 .carousel-item h2 {
+    section.carousel-1-section .carousel-1 .carousel-item h2 {
       margin: 0 0 30px 0;
       font-size: 24px;
       font-weight: 700; }
-      .carousel-1-section .carousel-1 .carousel-item h2 span {
+      section.carousel-1-section .carousel-1 .carousel-item h2 span {
         color: #EF3024; }
-    .carousel-1-section .carousel-1 .carousel-item p {
+    section.carousel-1-section .carousel-1 .carousel-item p {
       color: #7B7B7B;
       font-weight: 600;
       font-size: 15px; }
@@ -442,7 +419,7 @@ section.confirm-your-presence {
 
 @media (min-width: 576px) {
   section.confirm-your-presence {
-    padding: 0 45px; }
+    padding: 0 35px; }
     section.confirm-your-presence section.take-action {
       text-align: center; }
       section.confirm-your-presence section.take-action p {
@@ -519,7 +496,7 @@ section.they-will-perform {
       background-image: url("/img/arrow-rightx2.png");
       width: 12px; }
     section.they-will-perform .carousel-2 .carousel-control-prev-icon {
-      background-image: url("/img/arrow-point-to-left (2).png");
+      background-image: url("/img/arrow-leftx2.png");
       width: 12px; }
     section.they-will-perform .carousel-2 .carousel-item {
       max-width: 340px; }
@@ -599,7 +576,8 @@ section.next-edition-schedule {
       font-weight: 700; }
     section.next-edition-schedule section.action h3 {
       font-size: 30px;
-      font-weight: 700; }
+      font-weight: 700;
+      margin: 0 0 30px 0; }
       section.next-edition-schedule section.action h3 span {
         color: #EF3024; }
     section.next-edition-schedule section.action .first-day {
@@ -913,6 +891,12 @@ section.sponsors {
 section.contact {
   background: #FEF4F3;
   padding: 60px 40px; }
+  section.contact p.para {
+    color: #7B7B7B;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 0 35px 0;
+    line-height: 2.4; }
   section.contact article.stay-in-touch {
     margin: 0 0 30px 0; }
     section.contact article.stay-in-touch div.heading h2 {
@@ -921,16 +905,12 @@ section.contact {
       font-weight: 700; }
     section.contact article.stay-in-touch div.heading h3 {
       font-size: 30px;
-      font-weight: 700; }
+      font-weight: 700;
+      margin: 0 0 30px 0; }
       section.contact article.stay-in-touch div.heading h3 span {
         color: #EF3024; }
     section.contact article.stay-in-touch p {
       max-width: 80%; }
-    section.contact article.stay-in-touch p.para {
-      color: #7B7B7B;
-      font-size: 12px;
-      font-weight: 600;
-      margin: 0 0 35px 0; }
   section.contact section.social-media {
     margin: 0 0 70px 0;
     height: 40px; }
@@ -979,6 +959,14 @@ section.contact {
       background: #FFFFFF;
       color: #EF3024;
       outline: none; }
+  section.contact section.newsletter p {
+    opacity: 50%;
+    color: #7B7B7B;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 0 35px 0;
+    opacity: 0.6;
+    line-height: 2; }
 
 @media (min-width: 1200px) {
   section.contact article.stay-in-touch div.heading h2 {
