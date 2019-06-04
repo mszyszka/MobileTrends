@@ -1,4 +1,7 @@
 section.opinions {
+    padding: $sec-padding-sm;
+    margin: $sec-margin-sm;
+
     div.heading {
         padding: 0 35px;
         h2 {
@@ -6,6 +9,7 @@ section.opinions {
         }
         h3 {
             @include section-h3;
+            margin: 0 0 30px 0;
         }
     }
 
@@ -20,9 +24,7 @@ section.opinions {
             // -moz-box-shadow: 5px 10px 50px 0px rgba(239,239,239,0.75);
             // box-shadow: 5px 10px 50px 0px rgba(239,239,239,0.75);
             // zmiana
-            -webkit-box-shadow: 4px 9px 8px 4px rgba(239,239,239,1);
-            -moz-box-shadow: 4px 9px 8px 4px rgba(239,239,239,1);
-            box-shadow: 4px 9px 8px 4px rgba(239,239,239,1); 
+            @include shadow;
             .icon {
                 margin: 0 0 30px 0;
                 width: 60px;
@@ -57,6 +59,13 @@ section.opinions {
     }
     .carousel-item {
         padding: 0 0 25px 0;
+    }
+}
+
+@media(min-width: 576px) {
+    section.opinions {
+        padding: $sec-padding-sm;
+        margin: $sec-margin-sm;
     }
 }
 

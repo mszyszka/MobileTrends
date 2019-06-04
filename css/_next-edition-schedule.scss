@@ -1,12 +1,14 @@
 section.next-edition-schedule {
-    margin: 0 0 100px 0;
+    margin: $sec-margin-sm;
+    padding: $sec-padding-sm;
+    max-width: 1400px;
     img.schedule {
+        display: block;
+        max-width: 550px;
+        margin: 0 0 64px 0;
         width: 100%;
-        padding: 20px;
-        margin: 0 0 50px;
     }
-    section.action {
-        padding: 0 35px;
+    section.take-action {
         h2 {
             @include section-h2;
         }
@@ -16,20 +18,57 @@ section.next-edition-schedule {
         }
         .first-day {
             @include red-button;
-            margin: 0 0 35px 0;
-            // padding: 14px 0;
-            width: 220px;
+            margin: 0 20px 20px 0;
         }
         .second-day {
             @include white-button-with-red-border;
-            width: 220px;
+            width: 171px;
         }
     }
 }
 
+@media (min-width: 576px){
+    section.next-edition-schedule {
+        margin: $sec-margin-sm;
+        padding: $sec-padding-sm;
+    }
+}
+
+@media (min-width: 768px){
+    section.next-edition-schedule {
+        padding: $sec-padding-md;
+        margin: $sec-margin-md;
+        img.schedule {
+            margin: 0;
+            width: 50%;
+            max-width: initial;
+        }
+    
+        section.take-action {
+            width: 45%;
+            margin: 0 5% 0 0;
+            text-align: left;
+            padding: 0 0 0 0;
+        }
+    }
+}
+
+@media (min-width: 992px){
+    section.next-edition-schedule {
+        margin: $sec-margin-lg;
+        padding: $sec-padding-lg;
+        section.take-action {
+            .first-day {
+                // margin: 0 35px 35px 0;
+            }
+        }
+    }
+}
 @media(min-width: 1200px) {
     section.next-edition-schedule {
-        section.action {
+        img.schedule {
+        }
+        section.take-action {
             h2 {
                 font-size: $h2-lg;
             }
@@ -40,3 +79,11 @@ section.next-edition-schedule {
         }
     }
 }
+
+// I'm reseting left end right padding(180px together) in section.next-edition-schedule on 1580px, becose I want max-width
+// of this section content to be 1400px. Section max-width is set to 1400px so i need to reset padding on 1580px(1580 - 180 = 1400)
+@media (min-width: 1580px) {
+    section.next-edition-schedule {
+        padding: 0;
+    }
+ }

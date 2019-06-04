@@ -1,6 +1,6 @@
 section.year-ago-video {
-    margin: 0 0 100px 0;
-    padding: 0 35px;
+    margin: $sec-margin-sm;
+    padding: $sec-padding-sm;
     max-width: 1360px;
     div.heading {
         h2 {
@@ -19,7 +19,9 @@ section.year-ago-video {
 // Small devices
 @media (min-width: 576px) {
     section.year-ago-video {
-        padding: $sec-padding-md;
+        padding: $sec-padding-sm;
+        margin: $sec-margin-sm;
+
     }
 }
 
@@ -27,11 +29,16 @@ section.year-ago-video {
 @media (min-width: 768px) {
     section.year-ago-video {
         padding: $sec-padding-md;
+        margin: $sec-margin-md;
+
     }
 }
 
 @media(min-width: 1200px) {
     section.year-ago-video {
+        padding: $sec-padding-lg;
+        margin: $sec-margin-lg;
+
         div.heading {
             h2 {
                 font-size: $h2-lg;
@@ -42,3 +49,11 @@ section.year-ago-video {
         }
     }
 }
+
+// I'm reseting left end right padding(180px together) in section.year-ago-video on 1580px, becose I want max-width
+// of this section content to be 1400px. Section max-width is set to 1400px so i need to reset padding on 1580px(1580 - 180 = 1400)
+@media (min-width: 1580px) {
+    section.year-ago-video {
+        padding: 0;
+    }
+ }

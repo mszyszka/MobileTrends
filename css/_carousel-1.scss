@@ -1,5 +1,5 @@
 section.carousel-1-section {
-    margin: 30px 0 0 0;
+    margin: $sec-margin-sm;
     .carousel-1 {
         .carousel-control-next-icon {
            background-image: url('/img/arrow-rightx2.png');
@@ -20,9 +20,7 @@ section.carousel-1-section {
                 // -moz-box-shadow: 5px 10px 50px 0px rgba(239,239,239,0.75);
                 // box-shadow: 5px 10px 50px 0px rgba(239,239,239,0.75);
                 // zmiana
-                -webkit-box-shadow: 4px 9px 8px 4px rgba(239,239,239,1);
-                -moz-box-shadow: 4px 9px 8px 4px rgba(239,239,239,1);
-                box-shadow: 4px 9px 8px 4px rgba(239,239,239,1); 
+                @include shadow;
             }       
             .icon {
                 margin: 0 0 30px 0;

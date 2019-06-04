@@ -1,5 +1,5 @@
 .is-it-worth-investing {
-    margin: 40px 0 0 0;
+    margin: $sec-margin-sm;
     max-width: 1400px;
     padding: $sec-padding-sm;
     h2 {
@@ -46,7 +46,7 @@
 @media (min-width: 576px) {
     .is-it-worth-investing {
         padding: $sec-padding-sm;
-        margin: 60px 0 0 0;
+        margin: $sec-margin-sm;
         // h2 {
         //     padding: 0 45px;
         // }
@@ -63,6 +63,7 @@
 @media (min-width: 768px) {
     .is-it-worth-investing {
         padding: $sec-padding-md;
+        margin: $sec-margin-md;
         // h2 {
         //     padding: 0 45px;
         // }
@@ -86,6 +87,7 @@
 @media (min-width: 992px) {
     .is-it-worth-investing {
         padding: $sec-padding-lg;
+        margin: $sec-margin-lg;
         // h2 {
         //     padding: 0 45px;
         // }
@@ -137,4 +139,4 @@
     .is-it-worth-investing {
         padding: 0;
     }
- }
+}

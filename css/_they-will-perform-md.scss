@@ -1,0 +1,79 @@
+// This section is displayed on md width, over 768px
+section.they-will-perform-md {
+    padding: $sec-padding-md;
+    max-width: 1400px;
+    margin: $sec-margin-md;
+    div.heading {
+        padding: 0 35px;
+        margin: 0 0 50px 0;
+        width: 60%;
+            h2 {
+                @include section-h2;
+            }
+            h3 {
+                @include section-h3;
+                margin: 0;
+        }
+    }
+    .item-container {
+        max-width: 340px;
+        // three items in each row, space between them 2 x 5%
+        width: calc(90%/3);
+        margin: 0 0 50px 0;
+        img.person-img {
+            width: 100%;
+            margin: 0 0 30px 0;
+        }
+        .person-name {
+            font-size: 17px;
+            font-weight: 700;
+        }
+        .company-name {
+            font-size: 12px;
+            color: $logo-red;
+            font-weight: 600;
+        }
+    }
+    .see-everyone {
+        @include red-button;
+    }       
+
+}
+
+@media(min-width: 992px) {
+    section.they-will-perform-md {
+        margin: $sec-margin-lg;
+        padding: $sec-padding-lg;
+        div.heading {
+            width: 50%;
+                h2 {
+                    @include section-h2;
+                }
+                h3 {
+                    @include section-h3;
+                    margin: 0;
+            }
+        }
+        .item-container { 
+            // four items in each row, space between them 3 x 5%
+            width: calc(85%/4);
+            margin: 0 0 80px 0;
+
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    section.they-will-perform-md {
+        margin: $sec-margin-lg;
+    }
+}
+
+
+// I'm reseting left end right padding(180px together) in section.they-will-perform-md on 1580px, becose I want max-width
+// of this section content to be 1400px. Section max-width is set to 1400px so i need to reset padding on 1580px(1580 - 180 = 1400)
+@media (min-width: 1580px) {
+    section.they-will-perform-md {
+        padding: 0;
+    }
+ }

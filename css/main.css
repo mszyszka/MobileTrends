@@ -97,7 +97,7 @@
     background: #EF3024;
     text-align: center;
     color: #fff;
-    padding: 11px 50px;
+    padding: 11px 30px;
     font-size: 14px;
     font-weight: 700;
     border-radius: 50px;
@@ -169,7 +169,8 @@
     padding: 50px 0 50px 0; } }
 .about {
   max-width: 1400px;
-  padding: 0 35px; }
+  padding: 0 35px;
+  margin: 50px 0 0 0; }
   .about div.img-container {
     margin: 0 0 40px 0; }
     .about div.img-container img.speaking-lady {
@@ -196,7 +197,8 @@
 
 @media (min-width: 576px) {
   .about {
-    padding: 0 35px; }
+    padding: 0 35px;
+    margin: 50px 0 0 0; }
     .about div.img-container div.question-mark-container {
       margin-top: 30px; }
       .about div.img-container div.question-mark-container span.big-question-mark {
@@ -206,7 +208,8 @@
         font-weight: 700; } }
 @media (min-width: 768px) {
   .about {
-    padding: 0 60px; }
+    padding: 0 60px;
+    margin: 100px 0 0 0; }
     .about div.img-container {
       margin: 0;
       width: 50%; }
@@ -221,7 +224,8 @@
       width: 50%; } }
 @media (min-width: 992px) {
   .about {
-    padding: 0 90px; } }
+    padding: 0 90px;
+    margin: 150px 0 0 0; } }
 @media (min-width: 1200px) {
   .about section.txt h2 {
     font-size: 20px; }
@@ -233,7 +237,7 @@
   .about {
     padding: 0; } }
 .is-it-worth-investing {
-  margin: 40px 0 0 0;
+  margin: 50px 0 0 0;
   max-width: 1400px;
   padding: 0 35px; }
   .is-it-worth-investing h2 {
@@ -268,17 +272,19 @@
 @media (min-width: 576px) {
   .is-it-worth-investing {
     padding: 0 35px;
-    margin: 60px 0 0 0; } }
+    margin: 50px 0 0 0; } }
 @media (min-width: 768px) {
   .is-it-worth-investing {
-    padding: 0 60px; }
+    padding: 0 60px;
+    margin: 100px 0 0 0; }
     .is-it-worth-investing ul.why li {
       width: 46%; }
       .is-it-worth-investing ul.why li:nth-child(2n+1) {
         margin: 0 8% 43px 0; } }
 @media (min-width: 992px) {
   .is-it-worth-investing {
-    padding: 0 90px; }
+    padding: 0 90px;
+    margin: 150px 0 0 0; }
     .is-it-worth-investing ul.why li {
       width: 29%;
       margin: 0 5% 43px 0; }
@@ -296,67 +302,8 @@
 @media (min-width: 1580px) {
   .is-it-worth-investing {
     padding: 0; } }
-.red-cross .first-red-line {
-  width: 50px;
-  height: 1px;
-  background: red; }
-.red-cross .second-red-line {
-  width: 1px;
-  height: 50px;
-  background: red; }
-
-section.is-it-worth-investing-tiles {
-  padding: 0 60px;
-  max-width: 1600px;
-  margin: 0 auto 0 auto; }
-  section.is-it-worth-investing-tiles .item-container {
-    height: 400px;
-    max-width: 300px;
-    padding: 34px;
-    border-radius: 49px;
-    margin: 0 44px 50px 0;
-    -webkit-box-shadow: 4px 9px 8px 4px #efefef;
-    -moz-box-shadow: 4px 9px 8px 4px #efefef;
-    box-shadow: 4px 9px 8px 4px #efefef; }
-    section.is-it-worth-investing-tiles .item-container:nth-of-type(2n) {
-      margin: 0 0 50px 0; }
-  section.is-it-worth-investing-tiles .icon {
-    margin: 0 0 30px 0;
-    width: 30px; }
-  section.is-it-worth-investing-tiles h2 {
-    margin: 0 0 30px 0;
-    font-size: 24px;
-    font-weight: 700; }
-    section.is-it-worth-investing-tiles h2 span {
-      color: #EF3024; }
-  section.is-it-worth-investing-tiles p {
-    color: #7B7B7B;
-    font-weight: 600;
-    font-size: 15px; }
-
-@media (min-width: 992px) {
-  section.is-it-worth-investing-tiles {
-    padding: 60px 140px; }
-    section.is-it-worth-investing-tiles .item-container {
-      margin: 0 100px 60px 0; }
-      section.is-it-worth-investing-tiles .item-container:nth-of-type(2n) {
-        margin: 0 0 100px 0; } }
-@media (min-width: 1200px) {
-  section.is-it-worth-investing-tiles .item-container {
-    margin: 0 150px 100px 0; }
-    section.is-it-worth-investing-tiles .item-container:nth-of-type(2n) {
-      margin: 0 0 150px 0; } }
-@media (min-width: 1400px) {
-  section.is-it-worth-investing-tiles {
-    padding: 0 60px;
-    justify-content: space-between !important;
-    margin: 0 auto 0 auto; }
-    section.is-it-worth-investing-tiles .item-container {
-      margin: 0 0 150px 0; }
-      section.is-it-worth-investing-tiles .item-container:nth-of-type(2n) {
-        margin: 0 0 0 0; } }
 section.carousel-1-section {
-  margin: 30px 0 0 0; }
+  margin: 50px 0 0 0; }
   section.carousel-1-section .carousel-1 .carousel-control-next-icon {
     background-image: url("/img/arrow-rightx2.png");
     width: 12px; }
@@ -370,9 +317,9 @@ section.carousel-1-section {
       max-width: 300px;
       padding: 34px;
       border-radius: 49px;
-      -webkit-box-shadow: 4px 9px 8px 4px #efefef;
-      -moz-box-shadow: 4px 9px 8px 4px #efefef;
-      box-shadow: 4px 9px 8px 4px #efefef; }
+      -webkit-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35);
+      -moz-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35);
+      box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35); }
     section.carousel-1-section .carousel-1 .carousel-item .icon {
       margin: 0 0 30px 0;
       width: 30px; }
@@ -387,9 +334,64 @@ section.carousel-1-section {
       font-weight: 600;
       font-size: 15px; }
 
+section.carousel1-tiles {
+  padding: 0 60px;
+  max-width: 1400px;
+  margin: 50px auto 0 auto; }
+  section.carousel1-tiles .item-container {
+    height: 400px;
+    max-width: 300px;
+    padding: 34px;
+    border-radius: 49px;
+    margin: 0 44px 50px 0;
+    -webkit-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35); }
+    section.carousel1-tiles .item-container:nth-of-type(2n) {
+      margin: 0 0 50px 0; }
+  section.carousel1-tiles .icon {
+    margin: 0 0 30px 0;
+    width: 30px; }
+  section.carousel1-tiles h2 {
+    margin: 0 0 30px 0;
+    font-size: 24px;
+    font-weight: 700; }
+    section.carousel1-tiles h2 span {
+      color: #EF3024; }
+  section.carousel1-tiles p {
+    color: #7B7B7B;
+    font-weight: 600;
+    font-size: 15px; }
+
+@media (min-width: 992px) {
+  section.carousel1-tiles {
+    padding: 60px 140px;
+    margin: 100px auto 0 auto; }
+    section.carousel1-tiles .item-container {
+      margin: 0 100px 60px 0; }
+      section.carousel1-tiles .item-container:nth-of-type(2n) {
+        margin: 0 0 100px 0; } }
+@media (min-width: 1200px) {
+  section.carousel1-tiles {
+    margin: 150px auto 0 auto; }
+    section.carousel1-tiles .item-container {
+      margin: 0 150px 100px 0; }
+      section.carousel1-tiles .item-container:nth-of-type(2n) {
+        margin: 0 0 150px 0; } }
+@media (min-width: 1400px) {
+  section.carousel1-tiles {
+    padding: 0 60px;
+    justify-content: space-between !important; }
+    section.carousel1-tiles .item-container {
+      margin: 0 0 0 0; }
+      section.carousel1-tiles .item-container:nth-of-type(2n) {
+        margin: 0 0 0 0; } }
+@media (min-width: 1580px) {
+  section.carousel1-tiles {
+    padding: 0; } }
 section.confirm-your-presence {
-  margin: 15px 0 100px 0;
-  max-width: 1600px;
+  margin: 50px 0 0 0;
+  max-width: 1400px;
   padding: 0 35px; }
   section.confirm-your-presence img {
     display: block;
@@ -406,7 +408,7 @@ section.confirm-your-presence {
     background: #EF3024;
     text-align: center;
     color: #fff;
-    padding: 11px 50px;
+    padding: 11px 30px;
     font-size: 14px;
     font-weight: 700;
     border-radius: 50px;
@@ -419,14 +421,16 @@ section.confirm-your-presence {
 
 @media (min-width: 576px) {
   section.confirm-your-presence {
-    padding: 0 35px; }
+    padding: 0 35px;
+    margin: 50px 0 0 0; }
     section.confirm-your-presence section.take-action {
       text-align: center; }
       section.confirm-your-presence section.take-action p {
         padding: 0 100px; } }
 @media (min-width: 768px) {
   section.confirm-your-presence {
-    padding: 0 60px; }
+    padding: 0 60px;
+    margin: 100px 0 0 0; }
     section.confirm-your-presence img {
       width: 50%; }
     section.confirm-your-presence section.take-action {
@@ -441,7 +445,7 @@ section.confirm-your-presence {
         background: #EF3024;
         text-align: center;
         color: #fff;
-        padding: 11px 50px;
+        padding: 11px 30px;
         font-size: 14px;
         font-weight: 700;
         border-radius: 50px;
@@ -451,6 +455,10 @@ section.confirm-your-presence {
           background: #FFFFFF;
           color: #EF3024;
           outline: none; } }
+@media (min-width: 992px) {
+  section.confirm-your-presence {
+    padding: 0 90px;
+    margin: 150px 0 0 0; } }
 @media (min-width: 1200px) {
   section.confirm-your-presence section.take-action p {
     font-size: 30px;
@@ -461,7 +469,7 @@ section.confirm-your-presence {
     background: #EF3024;
     text-align: center;
     color: #fff;
-    padding: 11px 50px;
+    padding: 11px 30px;
     font-size: 14px;
     font-weight: 700;
     border-radius: 50px;
@@ -471,8 +479,11 @@ section.confirm-your-presence {
       background: #FFFFFF;
       color: #EF3024;
       outline: none; } }
+@media (min-width: 1580px) {
+  section.confirm-your-presence {
+    padding: 0; } }
 section.they-will-perform {
-  margin: 0 0 100px 0; }
+  margin: 50px 0 0 0; }
   section.they-will-perform div.heading {
     padding: 0 35px;
     margin: 0 0 62px 0; }
@@ -502,7 +513,7 @@ section.they-will-perform {
       max-width: 340px; }
       section.they-will-perform .carousel-2 .carousel-item img {
         width: 100%;
-        margin: 0 0 27px 0;
+        margin: 0 0 30px 0;
         max-width: 340px; }
       section.they-will-perform .carousel-2 .carousel-item .person-name {
         font-size: 17px;
@@ -518,7 +529,7 @@ section.they-will-perform {
     background: #EF3024;
     text-align: center;
     color: #fff;
-    padding: 11px 50px;
+    padding: 11px 30px;
     font-size: 14px;
     font-weight: 700;
     border-radius: 50px;
@@ -534,8 +545,82 @@ section.they-will-perform {
     font-size: 20px; }
   section.they-will-perform div.heading h3 {
     font-size: 48px; } }
+section.they-will-perform-md {
+  padding: 0 60px;
+  max-width: 1400px;
+  margin: 100px 0 0 0; }
+  section.they-will-perform-md div.heading {
+    padding: 0 35px;
+    margin: 0 0 50px 0;
+    width: 60%; }
+    section.they-will-perform-md div.heading h2 {
+      font-size: 16px;
+      color: #EF3024;
+      font-weight: 700; }
+    section.they-will-perform-md div.heading h3 {
+      font-size: 30px;
+      font-weight: 700;
+      margin: 0; }
+      section.they-will-perform-md div.heading h3 span {
+        color: #EF3024; }
+  section.they-will-perform-md .item-container {
+    max-width: 340px;
+    width: calc(90%/3);
+    margin: 0 0 50px 0; }
+    section.they-will-perform-md .item-container img.person-img {
+      width: 100%;
+      margin: 0 0 30px 0; }
+    section.they-will-perform-md .item-container .person-name {
+      font-size: 17px;
+      font-weight: 700; }
+    section.they-will-perform-md .item-container .company-name {
+      font-size: 12px;
+      color: #EF3024;
+      font-weight: 600; }
+  section.they-will-perform-md .see-everyone {
+    margin: 0;
+    border: 3px solid #EF3024;
+    background: #EF3024;
+    text-align: center;
+    color: #fff;
+    padding: 11px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all ease-in-out 0.2s; }
+    section.they-will-perform-md .see-everyone:hover, section.they-will-perform-md .see-everyone:active {
+      border: 3px solid #EF3024;
+      background: #FFFFFF;
+      color: #EF3024;
+      outline: none; }
+
+@media (min-width: 992px) {
+  section.they-will-perform-md {
+    margin: 150px 0 0 0;
+    padding: 0 90px; }
+    section.they-will-perform-md div.heading {
+      width: 50%; }
+      section.they-will-perform-md div.heading h2 {
+        font-size: 16px;
+        color: #EF3024;
+        font-weight: 700; }
+      section.they-will-perform-md div.heading h3 {
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0; }
+        section.they-will-perform-md div.heading h3 span {
+          color: #EF3024; }
+    section.they-will-perform-md .item-container {
+      width: calc(85%/4);
+      margin: 0 0 80px 0; } }
+@media (min-width: 1200px) {
+  section.they-will-perform-md {
+    margin: 150px 0 0 0; } }
+@media (min-width: 1580px) {
+  section.they-will-perform-md {
+    padding: 0; } }
 section.year-ago-video {
-  margin: 0 0 100px 0;
+  margin: 50px 0 0 0;
   padding: 0 35px;
   max-width: 1360px; }
   section.year-ago-video div.heading h2 {
@@ -553,124 +638,223 @@ section.year-ago-video {
 
 @media (min-width: 576px) {
   section.year-ago-video {
-    padding: 0 60px; } }
+    padding: 0 35px;
+    margin: 50px 0 0 0; } }
 @media (min-width: 768px) {
   section.year-ago-video {
-    padding: 0 60px; } }
+    padding: 0 60px;
+    margin: 100px 0 0 0; } }
 @media (min-width: 1200px) {
-  section.year-ago-video div.heading h2 {
-    font-size: 20px; }
-  section.year-ago-video div.heading h3 {
-    font-size: 48px; } }
+  section.year-ago-video {
+    padding: 0 90px;
+    margin: 150px 0 0 0; }
+    section.year-ago-video div.heading h2 {
+      font-size: 20px; }
+    section.year-ago-video div.heading h3 {
+      font-size: 48px; } }
+@media (min-width: 1580px) {
+  section.year-ago-video {
+    padding: 0; } }
 section.next-edition-schedule {
-  margin: 0 0 100px 0; }
+  margin: 50px 0 0 0;
+  padding: 0 35px;
+  max-width: 1400px; }
   section.next-edition-schedule img.schedule {
-    width: 100%;
-    padding: 20px;
-    margin: 0 0 50px; }
-  section.next-edition-schedule section.action {
-    padding: 0 35px; }
-    section.next-edition-schedule section.action h2 {
-      font-size: 16px;
-      color: #EF3024;
-      font-weight: 700; }
-    section.next-edition-schedule section.action h3 {
-      font-size: 30px;
-      font-weight: 700;
-      margin: 0 0 30px 0; }
-      section.next-edition-schedule section.action h3 span {
-        color: #EF3024; }
-    section.next-edition-schedule section.action .first-day {
-      margin: 0;
-      border: 3px solid #EF3024;
-      background: #EF3024;
-      text-align: center;
-      color: #fff;
-      padding: 11px 50px;
-      font-size: 14px;
-      font-weight: 700;
-      border-radius: 50px;
-      transition: all ease-in-out 0.2s;
-      margin: 0 0 35px 0;
-      width: 220px; }
-      section.next-edition-schedule section.action .first-day:hover, section.next-edition-schedule section.action .first-day:active {
-        border: 3px solid #EF3024;
-        background: #FFFFFF;
-        color: #EF3024;
-        outline: none; }
-    section.next-edition-schedule section.action .second-day {
-      margin: 0;
-      border: 3px solid #EF3024;
-      background: #FFFFFF;
-      color: #EF3024;
-      padding: 12px 50px;
-      font-size: 14px;
-      font-weight: 700;
-      border-radius: 50px;
-      transition: all ease-in-out 0.2s;
-      width: 220px; }
-      section.next-edition-schedule section.action .second-day:hover, section.next-edition-schedule section.action .second-day:active {
-        background: #EF3024;
-        color: #FFFFFF;
-        outline: none; }
-
-@media (min-width: 1200px) {
-  section.next-edition-schedule section.action h2 {
-    font-size: 20px; }
-  section.next-edition-schedule section.action h3 {
-    font-size: 48px; } }
-section.opinions div.heading {
-  padding: 0 35px; }
-  section.opinions div.heading h2 {
+    display: block;
+    max-width: 550px;
+    margin: 0 0 64px 0;
+    width: 100%; }
+  section.next-edition-schedule section.take-action h2 {
     font-size: 16px;
     color: #EF3024;
     font-weight: 700; }
-  section.opinions div.heading h3 {
+  section.next-edition-schedule section.take-action h3 {
     font-size: 30px;
-    font-weight: 700; }
-    section.opinions div.heading h3 span {
+    font-weight: 700;
+    margin: 0 0 30px 0; }
+    section.next-edition-schedule section.take-action h3 span {
       color: #EF3024; }
-section.opinions .carousel-3 .carousel-inner {
-  margin-bottom: 12px; }
-  section.opinions .carousel-3 .carousel-inner .item-container {
+  section.next-edition-schedule section.take-action .first-day {
+    margin: 0;
+    border: 3px solid #EF3024;
+    background: #EF3024;
+    text-align: center;
+    color: #fff;
+    padding: 11px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all ease-in-out 0.2s;
+    margin: 0 20px 20px 0; }
+    section.next-edition-schedule section.take-action .first-day:hover, section.next-edition-schedule section.take-action .first-day:active {
+      border: 3px solid #EF3024;
+      background: #FFFFFF;
+      color: #EF3024;
+      outline: none; }
+  section.next-edition-schedule section.take-action .second-day {
+    margin: 0;
+    border: 3px solid #EF3024;
+    background: #FFFFFF;
+    color: #EF3024;
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all ease-in-out 0.2s;
+    width: 171px; }
+    section.next-edition-schedule section.take-action .second-day:hover, section.next-edition-schedule section.take-action .second-day:active {
+      background: #EF3024;
+      color: #FFFFFF;
+      outline: none; }
+
+@media (min-width: 576px) {
+  section.next-edition-schedule {
+    margin: 50px 0 0 0;
+    padding: 0 35px; } }
+@media (min-width: 768px) {
+  section.next-edition-schedule {
+    padding: 0 60px;
+    margin: 100px 0 0 0; }
+    section.next-edition-schedule img.schedule {
+      margin: 0;
+      width: 50%;
+      max-width: initial; }
+    section.next-edition-schedule section.take-action {
+      width: 45%;
+      margin: 0 5% 0 0;
+      text-align: left;
+      padding: 0 0 0 0; } }
+@media (min-width: 992px) {
+  section.next-edition-schedule {
+    margin: 150px 0 0 0;
+    padding: 0 90px; } }
+@media (min-width: 1200px) {
+  section.next-edition-schedule section.take-action h2 {
+    font-size: 20px; }
+  section.next-edition-schedule section.take-action h3 {
+    font-size: 48px; } }
+@media (min-width: 1580px) {
+  section.next-edition-schedule {
+    padding: 0; } }
+section.opinions {
+  padding: 0 35px;
+  margin: 50px 0 0 0; }
+  section.opinions div.heading {
+    padding: 0 35px; }
+    section.opinions div.heading h2 {
+      font-size: 16px;
+      color: #EF3024;
+      font-weight: 700; }
+    section.opinions div.heading h3 {
+      font-size: 30px;
+      font-weight: 700;
+      margin: 0 0 30px 0; }
+      section.opinions div.heading h3 span {
+        color: #EF3024; }
+  section.opinions .carousel-3 .carousel-inner {
+    margin-bottom: 12px; }
+    section.opinions .carousel-3 .carousel-inner .item-container {
+      height: 450px;
+      max-width: 300px;
+      padding: 34px;
+      border-radius: 49px;
+      -webkit-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35);
+      -moz-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35);
+      box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35); }
+      section.opinions .carousel-3 .carousel-inner .item-container .icon {
+        margin: 0 0 30px 0;
+        width: 60px; }
+      section.opinions .carousel-3 .carousel-inner .item-container span.person-name {
+        display: block;
+        margin: 0 0 5px 0;
+        font-size: 24px;
+        font-weight: 700; }
+      section.opinions .carousel-3 .carousel-inner .item-container span.company-name {
+        display: block;
+        color: #EF3024;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 30px; }
+      section.opinions .carousel-3 .carousel-inner .item-container p {
+        color: #7B7B7B;
+        font-weight: 600;
+        font-size: 15px; }
+  section.opinions .carousel-control-next-icon {
+    background-image: url("/img/arrow-rightx2.png");
+    width: 14px; }
+  section.opinions .carousel-control-prev-icon {
+    background-image: url("/img/arrow-point-to-left (2).png");
+    width: 14px; }
+  section.opinions .carousel-item {
+    padding: 0 0 25px 0; }
+
+@media (min-width: 576px) {
+  section.opinions {
+    padding: 0 35px;
+    margin: 50px 0 0 0; } }
+@media (min-width: 1200px) {
+  section.opinions div.heading h2 {
+    font-size: 20px; }
+  section.opinions div.heading h3 {
+    font-size: 48px; } }
+section.opinions-md {
+  padding: 0 35px;
+  margin: 50px 0 0 0; }
+  section.opinions-md div.heading {
+    padding: 0 35px; }
+    section.opinions-md div.heading h2 {
+      font-size: 16px;
+      color: #EF3024;
+      font-weight: 700; }
+    section.opinions-md div.heading h3 {
+      font-size: 30px;
+      font-weight: 700;
+      margin: 0 0 30px 0; }
+      section.opinions-md div.heading h3 span {
+        color: #EF3024; }
+  section.opinions-md .opinions-md-item {
     height: 450px;
     max-width: 300px;
     padding: 34px;
     border-radius: 49px;
-    -webkit-box-shadow: 4px 9px 8px 4px #efefef;
-    -moz-box-shadow: 4px 9px 8px 4px #efefef;
-    box-shadow: 4px 9px 8px 4px #efefef; }
-    section.opinions .carousel-3 .carousel-inner .item-container .icon {
+    -webkit-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35); }
+    section.opinions-md .opinions-md-item .icon {
       margin: 0 0 30px 0;
       width: 60px; }
-    section.opinions .carousel-3 .carousel-inner .item-container span.person-name {
+    section.opinions-md .opinions-md-item span.person-name {
       display: block;
       margin: 0 0 5px 0;
       font-size: 24px;
       font-weight: 700; }
-    section.opinions .carousel-3 .carousel-inner .item-container span.company-name {
+    section.opinions-md .opinions-md-item span.company-name {
       display: block;
       color: #EF3024;
       font-weight: 700;
       font-size: 16px;
       margin-bottom: 30px; }
-    section.opinions .carousel-3 .carousel-inner .item-container p {
+    section.opinions-md .opinions-md-item p {
       color: #7B7B7B;
       font-weight: 600;
       font-size: 15px; }
-section.opinions .carousel-control-next-icon {
-  background-image: url("/img/arrow-rightx2.png");
-  width: 14px; }
-section.opinions .carousel-control-prev-icon {
-  background-image: url("/img/arrow-point-to-left (2).png");
-  width: 14px; }
-section.opinions .carousel-item {
-  padding: 0 0 25px 0; }
 
+@media (min-width: 576px) {
+  section.opinions-md {
+    padding: 0 35px;
+    margin: 50px 0 0 0; } }
+@media (min-width: 768px) {
+  section.opinions-md {
+    padding: 0 60px;
+    margin: 100px 0 0 0; } }
+@media (min-width: 992px) {
+  section.opinions-md {
+    padding: 0 90px;
+    margin: 150px 0 0 0; } }
 @media (min-width: 1200px) {
-  section.opinions div.heading h2 {
+  section.opinions-md div.heading h2 {
     font-size: 20px; }
-  section.opinions div.heading h3 {
+  section.opinions-md div.heading h3 {
     font-size: 48px; } }
 section.join-today {
   padding: 0 40px;
@@ -688,7 +872,7 @@ section.join-today {
     background: #EF3024;
     text-align: center;
     color: #fff;
-    padding: 11px 50px;
+    padding: 11px 30px;
     font-size: 14px;
     font-weight: 700;
     border-radius: 50px;
@@ -782,7 +966,7 @@ section.conference-location {
     background: #EF3024;
     text-align: center;
     color: #fff;
-    padding: 11px 50px;
+    padding: 11px 30px;
     font-size: 14px;
     font-weight: 700;
     border-radius: 50px;
@@ -798,7 +982,7 @@ section.conference-location {
     border: 3px solid #EF3024;
     background: #FFFFFF;
     color: #EF3024;
-    padding: 12px 50px;
+    padding: 12px 30px;
     font-size: 14px;
     font-weight: 700;
     border-radius: 50px;
@@ -836,9 +1020,9 @@ section.sponsors {
     line-height: 2.1; }
   section.sponsors .logo-container {
     border-radius: 100%;
-    -webkit-box-shadow: 4px 9px 8px 4px #efefef;
-    -moz-box-shadow: 4px 9px 8px 4px #efefef;
-    box-shadow: 4px 9px 8px 4px #efefef; }
+    -webkit-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35); }
   section.sponsors section.gold-sponsor {
     margin: 0 0 85px 0; }
     section.sponsors section.gold-sponsor .santander-logo-container {
@@ -948,7 +1132,7 @@ section.contact {
     background: #EF3024;
     text-align: center;
     color: #fff;
-    padding: 11px 50px;
+    padding: 11px 30px;
     font-size: 14px;
     font-weight: 700;
     border-radius: 50px;

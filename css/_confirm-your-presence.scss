@@ -1,17 +1,15 @@
 section.confirm-your-presence {
-    margin: 15px 0 100px 0;
-    max-width: 1600px;
-    padding: 0 35px;
+    margin: $sec-margin-sm;
+    max-width: 1400px;
+    padding: $sec-padding-sm;
     img {
         display: block;
         width: 100%;
         max-width: 600px;
-        // padding: 0 17px;
         margin: 0 0 64px 0;
     }
 
     section.take-action {
-        // padding: 0 35px;
         p {
             font-size: 20px;
             font-weight: 700;
@@ -25,6 +23,7 @@ section.confirm-your-presence {
 @media(min-width: 576px) {
     section.confirm-your-presence {
         padding: $sec-padding-sm;
+        margin: $sec-margin-sm;
         section.take-action {
             text-align: center;
             p {
@@ -37,6 +36,7 @@ section.confirm-your-presence {
 @media(min-width: 768px) {
     section.confirm-your-presence {
         padding: $sec-padding-md;
+        margin: $sec-margin-md;
         img {
             width: 50%;
         }
@@ -55,10 +55,16 @@ section.confirm-your-presence {
     }
 }
 
+@media(min-width: 992px) {
+    section.confirm-your-presence {
+        padding: $sec-padding-lg;
+        margin: $sec-margin-lg;
+    }
+}
+
 @media(min-width: 1200px) {
     section.confirm-your-presence {
         section.take-action {
-
             p {
                 font-size: 30px;
                 max-width: 600px;
@@ -69,3 +75,11 @@ section.confirm-your-presence {
         }
     }
 }
+
+// I'm reseting left end right padding(180px together) in section.confirm-your-presence on 1580px, becose I want max-width
+// of this section content to be 1400px. Section max-width is set to 1400px so i need to reset padding on 1580px(1580 - 180 = 1400)
+@media (min-width: 1580px) {
+    section.confirm-your-presence {
+        padding: 0;
+    }
+ }

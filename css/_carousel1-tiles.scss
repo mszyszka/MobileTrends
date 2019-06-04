@@ -1,21 +1,8 @@
-.red-cross {
-    .first-red-line {
-        width: 50px;
-        height: 1px;
-        background: red;
-    }
-    .second-red-line {
-        width: 1px;
-        height: 50px;
-        background: red;
-    }
-}
 // This section is displayed on md width, over 768px
-section.is-it-worth-investing-tiles {
+section.carousel1-tiles {
     padding: 0 60px;
-    max-width: 1600px;
-    margin: 0 auto 0 auto;
-
+    max-width: 1400px;
+    margin: 50px auto 0 auto;
     .item-container {
         height: 400px;
         max-width: 300px;
@@ -26,9 +13,7 @@ section.is-it-worth-investing-tiles {
         // -moz-box-shadow: 5px 10px 50px 0px rgba(239,239,239,0.75);
         // box-shadow: 5px 10px 50px 0px rgba(239,239,239,0.75);
         // zmiana
-        -webkit-box-shadow: 4px 9px 8px 4px rgba(239,239,239,1);
-        -moz-box-shadow: 4px 9px 8px 4px rgba(239,239,239,1);
-        box-shadow: 4px 9px 8px 4px rgba(239,239,239,1); 
+        @include shadow;
         &:nth-of-type(2n){
             margin: 0 0 50px 0;
         }
@@ -53,10 +38,11 @@ section.is-it-worth-investing-tiles {
 }
 
 @media(min-width: 992px) {
-    section.is-it-worth-investing-tiles {
+    section.carousel1-tiles {
         //Im using paddin on section to display two tiles
         //in row below 1400px
         padding: 60px 140px;
+        margin: 100px auto 0 auto;
         .item-container { 
             margin: 0 100px 60px 0;
             &:nth-of-type(2n){
@@ -67,7 +53,8 @@ section.is-it-worth-investing-tiles {
 }
 
 @media(min-width: 1200px) {
-    section.is-it-worth-investing-tiles {
+    section.carousel1-tiles {
+        margin: 150px auto 0 auto;
         .item-container { 
             margin: 0 150px 100px 0;
             &:nth-of-type(2n){
@@ -77,16 +64,24 @@ section.is-it-worth-investing-tiles {
     }
 }
 
+//1400px is first width that allows set tiles in row
 @media(min-width: 1400px) {
-    section.is-it-worth-investing-tiles {
+    section.carousel1-tiles {
         padding: 0 60px;
         justify-content: space-between!important;
-        margin: 0 auto 0 auto;
         .item-container { 
-            margin: 0 0 150px 0;
+            margin: 0 0 0 0;
             &:nth-of-type(2n){
                 margin: 0 0 0 0;
             }
         }
     }
 }
+
+// I'm reseting left end right padding(180px together) in section.is-it-worth-investing-tiles on 1580px, becose I want max-width
+// of this section content to be 1400px. Section max-width is set to 1400px so i need to reset padding on 1580px(1580 - 180 = 1400)
+@media (min-width: 1580px) {
+    section.carousel1-tiles {
+        padding: 0;
+    }
+ }

@@ -20,9 +20,8 @@ section.sponsors {
     }
     .logo-container {
         border-radius: 100%;
-        -webkit-box-shadow: 4px 9px 8px 4px rgba(239,239,239,1);
-        -moz-box-shadow: 4px 9px 8px 4px rgba(239,239,239,1);
-        box-shadow: 4px 9px 8px 4px rgba(239,239,239,1); 
+        @include shadow;
+
     }
     section.gold-sponsor {
         margin: 0 0 85px 0;
