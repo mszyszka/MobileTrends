@@ -1,8 +1,10 @@
 section.join-today {
-    padding: 0 40px;
-    margin: 0 0 100px 0;
-    img {
+    margin: $sec-margin-sm;
+    padding: $sec-padding-sm;
+    max-width: 1400px;
+    img.envelope-img {
         width: 100%;
+        max-width: 550px;
         margin: 0 0 40px 0;
     }
     h2 {
@@ -14,3 +16,66 @@ section.join-today {
         @include red-button;
     }
 }
+
+@media (min-width: 576px){
+    section.join-today {
+        margin: $sec-margin-sm;
+        padding: $sec-padding-sm;
+    }
+}
+
+@media (min-width: 768px){
+    section.join-today {
+        padding: $sec-padding-md;
+        margin: $sec-margin-md;
+        img.envelope-img {
+            margin: 0 0 0 0;
+            width: 50%;
+            max-width: initial;
+        }
+        div.take-action-container {
+            width: 45%;
+            margin: 0 0 0 5%;
+        }
+        section.take-action {
+            margin: 0 0 0 0;
+            text-align: left;
+            padding: 0 0 0 0;
+        }
+    }
+}
+
+@media (min-width: 992px){
+    section.join-today {
+        margin: $sec-margin-lg;
+        padding: $sec-padding-lg;
+        section.take-action {
+            .first-day {
+                // margin: 0 35px 35px 0;
+            }
+        }
+    }
+}
+@media(min-width: 1200px) {
+    section.join-today {
+        img.envelope-img {
+        }
+        section.take-action {
+            h2 {
+                font-size: $h2-lg;
+            }
+            h3 {
+                font-size: $h3-lg;
+            }
+            
+        }
+    }
+}
+
+// I'm reseting left end right padding(180px together) in section.join-today on 1580px, becose I want max-width
+// of this section content to be 1400px. Section max-width is set to 1400px so i need to reset padding on 1580px(1580 - 180 = 1400)
+@media (min-width: 1580px) {
+    section.join-today {
+        padding: 0;
+    }
+ }
