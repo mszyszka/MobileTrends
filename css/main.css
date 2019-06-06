@@ -192,8 +192,7 @@
     color: #7B7B7B;
     line-height: 2.5;
     margin: 0;
-    font-weight: 600;
-    max-width: 90%; }
+    font-weight: 600; }
 
 @media (min-width: 576px) {
   .about {
@@ -211,8 +210,7 @@
     padding: 0 60px;
     margin: 100px 0 0 0; }
     .about div.img-container {
-      margin: 0;
-      width: 50%; }
+      margin: 0; }
       .about div.img-container img.speaking-lady {
         width: 90%;
         max-width: 720px;
@@ -220,8 +218,7 @@
       .about div.img-container div.question-mark-container span.big-question-mark {
         display: none; }
     .about section.txt {
-      padding: 0;
-      width: 50%; } }
+      padding: 0; } }
 @media (min-width: 992px) {
   .about {
     padding: 0 90px;
@@ -238,8 +235,8 @@
     padding: 0; } }
 .is-it-worth-investing {
   margin: 50px 0 0 0;
-  max-width: 1400px;
-  padding: 0 35px; }
+  padding: 0 35px;
+  max-width: 1400px; }
   .is-it-worth-investing h2 {
     font-size: 16px;
     font-weight: 700;
@@ -260,6 +257,11 @@
     margin-bottom: 0;
     padding: 0 0 0 20px;
     list-style-image: url(/img/arrow-left.png); }
+    .is-it-worth-investing ul.why .row div.col-sm-12 {
+      margin: 0 0 43px 0;
+      padding-right: 30px; }
+      .is-it-worth-investing ul.why .row div.col-sm-12:last-of-type {
+        margin: 0; }
     .is-it-worth-investing ul.why li {
       font-size: 12px;
       color: #7B7B7B;
@@ -276,22 +278,11 @@
 @media (min-width: 768px) {
   .is-it-worth-investing {
     padding: 0 60px;
-    margin: 100px 0 0 0; }
-    .is-it-worth-investing ul.why li {
-      width: 46%; }
-      .is-it-worth-investing ul.why li:nth-child(2n+1) {
-        margin: 0 8% 43px 0; } }
+    margin: 100px 0 0 0; } }
 @media (min-width: 992px) {
   .is-it-worth-investing {
     padding: 0 90px;
-    margin: 150px 0 0 0; }
-    .is-it-worth-investing ul.why li {
-      width: 29%;
-      margin: 0 5% 43px 0; }
-      .is-it-worth-investing ul.why li:nth-child(2n+1) {
-        margin: 0 5% 43px 0; }
-      .is-it-worth-investing ul.why li:nth-child(3n) {
-        margin: 0 0 43px 0; } }
+    margin: 150px 0 0 0; } }
 @media (min-width: 1200px) {
   .is-it-worth-investing h2 {
     font-size: 20px; }
@@ -337,18 +328,16 @@ section.carousel-1-section {
 section.carousel1-tiles {
   padding: 0 60px;
   max-width: 1400px;
-  margin: 50px auto 0 auto; }
+  margin: 100px 0 0 0;
+  padding: 0 60px; }
   section.carousel1-tiles .item-container {
     height: 400px;
     max-width: 300px;
     padding: 34px;
     border-radius: 49px;
-    margin: 0 44px 50px 0;
     -webkit-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35);
     box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35); }
-    section.carousel1-tiles .item-container:nth-of-type(2n) {
-      margin: 0 0 50px 0; }
   section.carousel1-tiles .icon {
     margin: 0 0 30px 0;
     width: 30px; }
@@ -365,27 +354,15 @@ section.carousel1-tiles {
 
 @media (min-width: 992px) {
   section.carousel1-tiles {
-    padding: 60px 140px;
-    margin: 100px auto 0 auto; }
-    section.carousel1-tiles .item-container {
-      margin: 0 80px 80px 0; }
-      section.carousel1-tiles .item-container:nth-of-type(2n) {
-        margin: 0 0 80px 0; } }
+    margin: 150px 0 0 0;
+    padding: 0 140px; } }
 @media (min-width: 1200px) {
   section.carousel1-tiles {
-    margin: 150px auto 0 auto; }
-    section.carousel1-tiles .item-container {
-      margin: 0 150px 100px 0; }
-      section.carousel1-tiles .item-container:nth-of-type(2n) {
-        margin: 0 0 150px 0; } }
+    margin: 150px auto 0 auto; } }
 @media (min-width: 1400px) {
   section.carousel1-tiles {
     padding: 0 60px;
-    justify-content: space-between !important; }
-    section.carousel1-tiles .item-container {
-      margin: 0 0 0 0; }
-      section.carousel1-tiles .item-container:nth-of-type(2n) {
-        margin: 0 0 0 0; } }
+    justify-content: space-between !important; } }
 @media (min-width: 1580px) {
   section.carousel1-tiles {
     padding: 0; } }
@@ -431,12 +408,9 @@ section.confirm-your-presence {
   section.confirm-your-presence {
     padding: 0 60px;
     margin: 100px 0 0 0; }
-    section.confirm-your-presence img {
-      width: 50%; }
     section.confirm-your-presence section.take-action {
       text-align: left;
-      padding: 0 50px 0 0;
-      width: 50%; }
+      padding: 0 50px 0 0; }
       section.confirm-your-presence section.take-action p {
         padding: 0; }
       section.confirm-your-presence section.take-action .buy-a-ticket {
@@ -549,10 +523,12 @@ section.they-will-perform-md {
   padding: 0 60px;
   max-width: 1400px;
   margin: 100px 0 0 0; }
+  section.they-will-perform-md div.container-fluid div.row div.heading-col {
+    padding-bottom: 50px; }
   section.they-will-perform-md div.heading {
     padding: 0 35px;
-    margin: 0 0 50px 0;
-    width: 60%; }
+    padding-left: 35%;
+    margin: 0 0 50px 0; }
     section.they-will-perform-md div.heading h2 {
       font-size: 16px;
       color: #EF3024;
@@ -565,7 +541,6 @@ section.they-will-perform-md {
         color: #EF3024; }
   section.they-will-perform-md .item-container {
     max-width: 340px;
-    width: calc(90%/3);
     margin: 0 0 50px 0; }
     section.they-will-perform-md .item-container img.person-img {
       width: 100%;
@@ -598,20 +573,17 @@ section.they-will-perform-md {
   section.they-will-perform-md {
     margin: 150px 0 0 0;
     padding: 0 90px; }
-    section.they-will-perform-md div.heading {
-      width: 50%; }
-      section.they-will-perform-md div.heading h2 {
-        font-size: 16px;
-        color: #EF3024;
-        font-weight: 700; }
-      section.they-will-perform-md div.heading h3 {
-        font-size: 30px;
-        font-weight: 700;
-        margin: 0; }
-        section.they-will-perform-md div.heading h3 span {
-          color: #EF3024; }
+    section.they-will-perform-md div.heading h2 {
+      font-size: 16px;
+      color: #EF3024;
+      font-weight: 700; }
+    section.they-will-perform-md div.heading h3 {
+      font-size: 30px;
+      font-weight: 700;
+      margin: 0; }
+      section.they-will-perform-md div.heading h3 span {
+        color: #EF3024; }
     section.they-will-perform-md .item-container {
-      width: calc(85%/4);
       margin: 0 0 80px 0; } }
 @media (min-width: 1200px) {
   section.they-will-perform-md {

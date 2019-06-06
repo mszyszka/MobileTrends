@@ -5,6 +5,7 @@
 <!-- nazwy plików z małych liter -->
 <!-- cień na inpucie w footer -->
 <!-- footer - zdjęć podkreślenie na hover i zamienić na czerwony -->
+<!-- carousel1-tiles dokończyć grida na xl -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,70 +55,89 @@
     </header>
 
     <main>
-        <section class="about d-md-flex mr-auto ml-auto">
-            <div class="img-container d-flex">
-                <img src="img/Group2x.png" class="img-fluid speaking-lady align-self-center">
-                <!-- <div class="question-mark-container  d-sm-flex d-md-none align-items-center ml-auto mr-auto">
-                    <span class="big-question-mark">?</span>
-                </div> -->
+        <section class="about mr-auto ml-auto">
+            <div class="container-fluid pr-0 pl-0">
+                <div class="row mr-0 ml-0">
+                    <div class="col-md-6 pr-0 pl-0 d-flex flex-column justify-content-center">
+                          <div class="img-container">
+                              <img src="img/Group2x.png" class="img-fluid speaking-lady align-self-center">
+                          </div>
+                    </div>
+                    <div class="col-md-6 pr-0 pl-0">
+                          <section class="txt mt-auto mb-auto">
+                              <h2>O Mobile Trends Conference</h1>
+                              <h3>Dlaczego warto</h2>
+                              <p>
+                                  Święto branży mobile, na którym pojawiają się 
+                                  wszyscy najważniejsi gracze. 
+                                  7-8 marca 2019 roku odbędzie się już po raz 8. 
+                                  W Starej Zajezdni spotkają się praktycy, by wymienić 
+                                  się doświadczeniami oraz poznać nadchodzące 
+                                  trendy.</br></br>
+                                  Przyjdź, spotkaj wyjątkowych ludzi, naucz się, zainspiruj 
+                                  i nawiąż nową współpracę biznesową!
+                              </p>
+                          </section>
+                    </div>
+                </div>
             </div>
-            <section class="txt mt-auto mb-auto">
-                <h2>O Mobile Trends Conference</h1>
-                <h3>Dlaczego warto</h2>
-                <p>
-                    Święto branży mobile, na którym pojawiają się 
-                    wszyscy najważniejsi gracze. 
-                    7-8 marca 2019 roku odbędzie się już po raz 8. 
-                    W Starej Zajezdni spotkają się praktycy, by wymienić 
-                    się doświadczeniami oraz poznać nadchodzące 
-                    trendy.</br></br>
-                    Przyjdź, spotkaj wyjątkowych ludzi, naucz się, zainspiruj 
-                    i nawiąż nową współpracę biznesową!
-                </p>
-            </section>
         </section>
 
         <section class="is-it-worth-investing ml-auto mr-auto">
-            <h2>Czy warto inwestować w to wydarzenie?</h2>
-            <h3>Cóż, to zależy<span>.</span></br> 
-                Od czego?
-            </h3>
-            <ul class="why d-md-flex flex-row flex-wrap">
-                <li>
-                    Czy chcesz poznać ekspertów branży mobile 
-                    i nawiązać cenne kontakty biznesowe.
-                </li>
-                <li>
-                    Czy chcesz poznać tajniki m-commerce i 
-                    nauczyć się wykorzystywać mobile do celów 
-                    innych niż komunikacja.
-                </li>
-                <li>
-                    Czy chcesz poznać prawdziwe potrzeby 
-                    swoich klientów.
-                </li>
-                <li>
-                    Czy chcesz wiedzieć jakie są czynniki wpływające 
-                    na sukces aplikacji mobilnej.
-                </li>
-                <li>
-                    Czy gubisz się w gąszczu najnowszych trendów 
-                    i potrzebujesz pomocy z wprowadzeniem ich do 
-                    Twojego biznesu.
-                </li>
-                <li>
-                    Czy chcesz dowiedzieć się jak wykorzystać 
-                    najnowsze technologie w swoim biznesie.
-                </li>
-                <li>
-                    Czy chcesz poznać sekrety liderów, dzięki którym 
-                    są dziś bezkonkurencyjni.
-                </li>
-                <li>
-                    Czy chcesz zainspirować się najlepszymi 
-                    działaniami w kanałach mobile.
-                </li>
-            </ul>
+            <div class="container-fluid pr-0 pl-0">
+                <div class="row mr-0 ml-0">
+                    <div class="col-sm-12 pr-0 pl-0">
+                        <h2>Czy warto inwestować w to wydarzenie?</h2>
+                        <h3>Cóż, to zależy<span>.</span></br> 
+                            Od czego?
+                        </h3>
+                    </div>
+                </div>
+                <ul class="why d-md-flex flex-row flex-wrap">
+                    <div class="row no-gutter mr-0 ml-0">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <li>
+                                Czy chcesz poznać ekspertów branży mobile 
+                                i nawiązać cenne kontakty biznesowe.
+                            </li>
+                            <li>
+                                Czy chcesz poznać tajniki m-commerce i 
+                                nauczyć się wykorzystywać mobile do celów 
+                                innych niż komunikacja.
+                            </li>
+                            <li>
+                                Czy chcesz poznać prawdziwe potrzeby 
+                                swoich klientów.
+                            </li>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <li>
+                                Czy chcesz wiedzieć jakie są czynniki wpływające 
+                                na sukces aplikacji mobilnej.
+                            </li>
+                            <li>
+                                Czy gubisz się w gąszczu najnowszych trendów 
+                                i potrzebujesz pomocy z wprowadzeniem ich do 
+                                Twojego biznesu.
+                            </li>
+                            <li>
+                                Czy chcesz dowiedzieć się jak wykorzystać 
+                                najnowsze technologie w swoim biznesie.
+                            </li>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <li>
+                                Czy chcesz poznać sekrety liderów, dzięki którym 
+                                są dziś bezkonkurencyjni.
+                            </li>
+                            <li>
+                                Czy chcesz zainspirować się najlepszymi 
+                                działaniami w kanałach mobile.
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>    
         </section>
 
         <section class="carousel-1-section d-md-none">
@@ -126,7 +146,7 @@
                 <div class="carousel-inner">
                     <!-- Item 1 -->
                     <div class="carousel-item active">
-                        <div class="item-container ml-auto mr-auto">
+                        <div class="item-container ml-auto mr-auto mt-4">
                             <img src="./img/user2x.png" class="icon">
                             <h2>300+</br>
                                 uczestników</br> 
@@ -141,7 +161,7 @@
                     </div>
                     <!-- Item 2 -->
                     <div class="carousel-item no-active">
-                        <div class="item-container ml-auto mr-auto">
+                        <div class="item-container ml-auto mr-auto mt-4">
                             <img src="./img/case2x.png" class="icon">
                             <h2>75% właścicieli firm</br>
                                 oraz managerów</br>
@@ -156,7 +176,7 @@
                     </div> 
                     <!-- Item 3 -->
                     <div class="carousel-item no-active">
-                        <div class="item-container ml-auto mr-auto">
+                        <div class="item-container ml-auto mr-auto mt-4">
                             <img src="./img/presentation2x.png" class="icon">
                             <h2>25+ merytorycznych</br> 
                                 prelekcji</br>
@@ -171,7 +191,7 @@
                     </div>
                     <!-- Item 4 -->
                     <div class="carousel-item no-active">
-                        <div class="item-container ml-auto mr-auto">
+                        <div class="item-container ml-auto mr-auto mt-4">
                             <img src="./img/refresh-ccw2x.png" class="icon d-block">
                             <h2>1000+ wymienionych</br> 
                                 wizytówek pomiędzy</br> 
@@ -197,72 +217,93 @@
             </div>
         </section>
 
-        <section class="carousel1-tiles d-none d-md-flex flex-wrap flex-row justify-content-center align-content-center">
-                <!-- Item 1 -->
-                <div class="item-container">
-                    <img src="./img/user2x.png" class="icon">
-                    <h2>300+</br>
-                        uczestników</br> 
-                        konferencji <span>.</span>
-                    </h1>
-                    <p>
-                        Jeżeli chcesz poznać ekspertów 
-                        branży mobile i nawiązać cenne 
-                        kontakty biznesowe.
-                    </p>
+        <section class="carousel1-tiles d-none d-md-block">
+            <div class="container-fluid pr-0 pl-0">
+                <div class="row no-gutters ">
+                    <div class="col col-xl-3 pr-4  pb-4 d-flex justify-content-end">
+                        <!-- Item 1 -->
+                        <div class="item-container">
+                            <img src="./img/user2x.png" class="icon">
+                            <h2>300+</br>
+                                uczestników</br> 
+                                konferencji <span>.</span>
+                            </h1>
+                            <p>
+                                Jeżeli chcesz poznać ekspertów 
+                                branży mobile i nawiązać cenne 
+                                kontakty biznesowe.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col col-xl-3  pl-4 pb-4 d-flex justify-content-start">
+                        <!-- Item 2 -->
+                        <div class="item-container">
+                            <img src="./img/case2x.png" class="icon">
+                            <h2>75% właścicieli firm</br>
+                                oraz managerów</br>
+                                wysokiego szczebla<span>.</span>
+                            </h2>
+                            <p>
+                                Jeżeli chcesz poznać ekspertów 
+                                branży mobile i nawiązać cenne 
+                                kontakty biznesowe.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-100 d-xl-none"></div>
+                    <div class="col col-xl-3 pr-4  pt-4 d-flex justify-content-end">
+                        <!-- Item 3 -->
+                        <div class="item-container">
+                            <img src="./img/presentation2x.png" class="icon">
+                            <h2>25+ merytorycznych</br> 
+                                prelekcji</br> 
+                                i case study<span>.</span>
+                            </h2>
+                            <p>
+                                Jeżeli chcesz poznać ekspertów 
+                                branży mobile i nawiązać cenne 
+                                kontakty biznesowe.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col col-xl-3  pl-4 pt-4 d-flex justify-content-start">
+                        <!-- Item 4 -->
+                        <div class="item-container">
+                           <img src="./img/refresh-ccw2x.png" class="icon d-block">
+                           <h2>1000+ wymienionych</br> 
+                               wizytówek pomiędzy</br> 
+                               uczestnikami<span>.</span>
+                           </h2>
+                           <p>
+                               Jeżeli chcesz poznać ekspertów 
+                               branży mobile i nawiązać cenne 
+                               kontakty biznesowe.
+                           </p>
+                        </div> 
+                    </div>
+            </div>
+        </section>
+
+        <section class="confirm-your-presence mr-auto ml-auto">
+            <div class="container-fluid pr-0 pl-0">
+                <div class="row flex-row-reverse row no-gutters">
+                    <div class="col-md-6">
+                        <img class="ml-auto mb-md-auto jumping-lady" src="./img/confirm2x.png" alt="Girl and phone image">
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                        <section class="take-action">
+                            <p>Potwierdź swój udział
+                                i poznaj Twoich
+                                potencjalnych partnerów 
+                                biznesowych!
+                            </p>
+                            <button class="buy-a-ticket" type="button">kup bilet</button>
+                        </section>
+                    </div>
                 </div>
-                <!-- Item 2 -->
-                <div class="item-container">
-                    <img src="./img/case2x.png" class="icon">
-                    <h2>75% właścicieli firm</br>
-                        oraz managerów</br>
-                        wysokiego szczebla<span>.</span>
-                    </h2>
-                    <p>
-                        Jeżeli chcesz poznać ekspertów 
-                        branży mobile i nawiązać cenne 
-                        kontakty biznesowe.
-                    </p>
-                </div>
-                <!-- Item 3 -->
-                <div class="item-container">
-                    <img src="./img/presentation2x.png" class="icon">
-                    <h2>25+ merytorycznych</br> 
-                        prelekcji</br> 
-                        i case study<span>.</span>
-                    </h2>
-                    <p>
-                        Jeżeli chcesz poznać ekspertów 
-                        branży mobile i nawiązać cenne 
-                        kontakty biznesowe.
-                    </p>
-                </div>
-                <!-- Item 4 -->
-                <div class="item-container">
-                    <img src="./img/refresh-ccw2x.png" class="icon d-block">
-                    <h2>1000+ wymienionych</br> 
-                        wizytówek pomiędzy</br> 
-                        uczestnikami<span>.</span>
-                    </h2>
-                    <p>
-                        Jeżeli chcesz poznać ekspertów 
-                        branży mobile i nawiązać cenne 
-                        kontakty biznesowe.
-                    </p>
-                </div>
+            </div>
         </section>
         
-        <section class="confirm-your-presence d-md-flex flex-md-row-reverse mr-auto ml-auto">
-            <img class="mr-auto ml-auto mb-md-auto jumping-lady" src="./img/confirm2x.png" alt="Girl and phone image">
-            <section class="take-action align-self-baseline mt-auto mb-auto">
-                <p>Potwierdź swój udział
-                    i poznaj Twoich
-                    potencjalnych partnerów 
-                    biznesowych!
-                </p>
-                <button class="buy-a-ticket" type="button">kup bilet</button>
-            </section>
-        </section>
 
         <section class="they-will-perform d-flex flex-column d-md-none">
             <div class="heading d-flex flex-column align-items-start">
@@ -367,95 +408,130 @@
         </section>
 
         <!-- section.they-will-perform over and 768px width -->
-        <section class="they-will-perform-md d-none d-md-flex flex-wrap flex-row justify-content-between mr-auto ml-auto">
-            <div class="heading d-flex flex-column align-items-center justify-content-center p-md-0">
-                <h2>To oni u nas wystąpią.</h2>
-                <h3>Prelegenci<span>.</span></h3>
-            </div>
-                <!-- Item 1 -->
-                <div class="item-container">
-                    <img src="./img/they-will-perform/kamilBolek2x.png" class="person-img">
-                    <figcaption class="d-flex flex-column align-items-center">
-                        <span class="person-name">Kamil Bolek</span>
-                        <span class="company-name">LifeTube</span>
-                    </figcaption>
-                </div>
-                <!-- Item 2 -->
-                <div class="item-container">
-                    <img src="./img/they-will-perform/PawełDunia2x.png" class="person-img">
-                    <figcaption class="d-flex flex-column align-items-center">
-                        <span class="person-name">Paweł Dunia</span>
-                        <span class="company-name">Artegence</span>
-                    </figcaption>
-                </div>
-                <!-- Item 3 -->
-                <div class="item-container">
-                    <img src="./img/they-will-perform/IgorFarafonow2x.png" class="person-img">
-                    <figcaption class="d-flex flex-column align-items-center">
-                        <span class="person-name">Igor Farafonow</span>
-                        <span class="company-name">Uxeria</span>
-                    </figcaption>
-                </div>
-                <!-- Item 4 -->
-                <div class="item-container">
-                    <img src="./img/they-will-perform/AndrzejGrupiński2x.png" class="person-img">
-                    <figcaption class="d-flex flex-column align-items-center">
-                        <span class="person-name">Andrzej Grupiński</span>
-                        <span class="company-name">Santander Bank Polska S.A.</span>
-                    </figcaption>
-                </div>
-                 <!-- Item 5 -->
-                <div class="item-container">
-                    <img src="./img/they-will-perform/JennyGove2x.png" class="person-img">
-                    <figcaption class="d-flex flex-column align-items-center">
-                        <span class="person-name">Jenny Gove</span>
-                        <span class="company-name">Google</span>
-                    </figcaption>
-                </div>
-                <!-- Item 6 -->
-                <div class="item-container">
-                    <img src="./img/they-will-perform/RadoslawHolewa2x.png" class="person-img">
-                    <figcaption class="d-flex flex-column align-items-center">
-                        <span class="person-name">Radoslaw Holewa</span>
-                        <span class="company-name">Miquido</span>
-                    </figcaption>
-                </div>
-                <!-- Item 7 -->
-                <div class="item-container">
-                    <img src="./img/they-will-perform/RafalCymerys2x.png" class="person-img">
-                    <figcaption class="d-flex flex-column align-items-center">
-                        <span class="person-name">Rafal Cymerys</span>
-                        <span class="company-name">Upside</span>
-                    </figcaption>
-                </div>
-                <!-- Item 8 -->
-                <div class="item-container">
-                    <img src="./img/they-will-perform/KasiaRyniak2x.png" class="person-img">
-                    <figcaption class="d-flex flex-column align-items-center">
-                        <span class="person-name">Kasia Ryniak</span>
-                        <span class="company-name">Upside</span>
-                    </figcaption>
-                </div>
-                 <!-- Item 9 -->
-                <div class="item-container">
-                    <img src="./img/they-will-perform/ErnestJakubowski2x.png" class="person-img">
-                    <figcaption class="d-flex flex-column align-items-center">
-                        <span class="person-name">Ernest Jakubowski</span>
-                        <span class="company-name">Mobter</span>
-                    </figcaption>
-                </div>
-                <!-- Item 10 -->
-                <div class="item-container">
-                    <img src="./img/they-will-perform/AnnaKędzierska2x.png" class="person-img">
-                    <figcaption class="d-flex flex-column align-items-center">
-                        <span class="person-name">Anna Kędzierska</span>
-                        <span class="company-name">Artegence</span>
-                    </figcaption>
-                </div>
-                <div class="w-100"></div>
-            <button class="see-everyone mr-auto ml-auto" type="button">zobacz wszystkich</button>
-        </section>
+        <!-- Start grida to cztery rzędy po trzy kolumny -->
+        <!-- Na lg mamy tzy rzędy po cztery kolumny -->
+        <section class="they-will-perform-md d-none d-md-block mr-auto ml-auto">
+            <div class="container-fluid pl-0 pr-0">
 
+                <div class="row">
+                    <div class="heading-col col-md-8 col-lg-6 d-flex flex-column justify-content-center">
+                        <div class="heading">
+                            <h2>To oni u nas wystąpią.</h2>
+                            <h3>Prelegenci<span>.</span></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <!-- Item 1 -->
+                        <div class="item-container">
+                            <img src="./img/they-will-perform/kamilBolek2x.png" class="person-img">
+                            <figcaption class="d-flex flex-column align-items-center">
+                                <span class="person-name">Kamil Bolek</span>
+                                <span class="company-name">LifeTube</span>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <!-- Item 2 -->
+                        <div class="item-container">
+                            <img src="./img/they-will-perform/PawełDunia2x.png" class="person-img">
+                            <figcaption class="d-flex flex-column align-items-center">
+                                <span class="person-name">Paweł Dunia</span>
+                                <span class="company-name">Artegence</span>
+                            </figcaption>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-4 ">
+                        <div class="item-container">
+                            <img src="./img/they-will-perform/IgorFarafonow2x.png" class="person-img">
+                            <figcaption class="d-flex flex-column align-items-center">
+                                <span class="person-name">Igor Farafonow</span>
+                                <span class="company-name">Uxeria</span>
+                            </figcaption>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-4  ">
+                        <!-- Item 4 -->
+                        <div class="item-container">
+                            <img src="./img/they-will-perform/AndrzejGrupiński2x.png" class="person-img">
+                            <figcaption class="d-flex flex-column align-items-center">
+                                <span class="person-name">Andrzej Grupiński</span>
+                                <span class="company-name">Santander Bank Polska S.A.</span>
+                            </figcaption>
+                        </div>
+                    </div>
+                    
+                     <div class="col-lg-3 col-md-4  ">
+                         <!-- Item 5 -->
+                        <div class="item-container">
+                            <img src="./img/they-will-perform/JennyGove2x.png" class="person-img">
+                            <figcaption class="d-flex flex-column align-items-center">
+                                <span class="person-name">Jenny Gove</span>
+                                <span class="company-name">Google</span>
+                            </figcaption>
+                        </div>
+                    </div>
+                    
+                     <div class="col-lg-3 col-md-4  ">
+                        <!-- Item 6 -->
+                        <div class="item-container">
+                            <img src="./img/they-will-perform/RadoslawHolewa2x.png" class="person-img">
+                            <figcaption class="d-flex flex-column align-items-center">
+                                <span class="person-name">Radoslaw Holewa</span>
+                                <span class="company-name">Miquido</span>
+                            </figcaption>
+                        </div>
+                    </div>
+                    
+                     <div class="col-lg-3 col-md-4  ">
+                        <div class="item-container">
+                            <img src="./img/they-will-perform/RafalCymerys2x.png" class="person-img">
+                            <figcaption class="d-flex flex-column align-items-center">
+                                <span class="person-name">Rafal Cymerys</span>
+                                <span class="company-name">Upside</span>
+                            </figcaption>
+                        </div>
+                    </div>
+                    
+                     <div class="col-lg-3 col-md-4  ">
+                        <!-- Item 8 -->
+                        <div class="item-container">
+                            <img src="./img/they-will-perform/KasiaRyniak2x.png" class="person-img">
+                            <figcaption class="d-flex flex-column align-items-center">
+                                <span class="person-name">Kasia Ryniak</span>
+                                <span class="company-name">Upside</span>
+                            </figcaption>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4  ">
+                         <!-- Item 9 -->
+                        <div class="item-container">
+                            <img src="./img/they-will-perform/ErnestJakubowski2x.png" class="person-img">
+                            <figcaption class="d-flex flex-column align-items-center">
+                                <span class="person-name">Ernest Jakubowski</span>
+                                <span class="company-name">Mobter</span>
+                            </figcaption>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4  ">
+                        <!-- Item 10 -->
+                        <div class="item-container">
+                            <img src="./img/they-will-perform/AnnaKędzierska2x.png" class="person-img">
+                            <figcaption class="d-flex flex-column align-items-center">
+                                <span class="person-name">Anna Kędzierska</span>
+                                <span class="company-name">Artegence</span>
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="see-everyone mr-auto ml-auto d-block" type="button">zobacz wszystkich</button>
+        </section>
+        <div class="d-block" style='background: red'></div>
+        <div class="d-inline-block" style='background: green'></div>
         <section class="year-ago-video d-flex flex-column ml-auto mr-auto">
             <div class="heading">
                 <h2>Tak było rok temu</h2>

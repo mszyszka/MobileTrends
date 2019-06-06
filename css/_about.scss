@@ -32,7 +32,6 @@
             line-height: $line-height-xs;
             margin: 0;
             font-weight: 600;
-            max-width: 90%;
         }
     }
 
@@ -68,7 +67,6 @@
         margin: $sec-margin-md;
         div.img-container { 
             margin: 0;
-            width: 50%;
             img.speaking-lady {
                 width: 90%;
                 max-width: 720px;
@@ -82,7 +80,6 @@
         }
         section.txt {
             padding: 0;
-            width: 50%;
         }
     }
  }
