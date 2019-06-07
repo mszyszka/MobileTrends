@@ -38,17 +38,20 @@ section.next-edition-schedule {
     section.next-edition-schedule {
         padding: $sec-padding-md;
         margin: $sec-margin-md;
-        img.schedule {
-            margin: 0;
-            width: 50%;
-            max-width: initial;
-        }
-    
-        section.take-action {
-            width: 45%;
-            margin: 0 5% 0 0;
-            text-align: left;
-            padding: 0 0 0 0;
+        .container-fluid {
+            .row {
+                div img.schedule {
+                    margin: 0;
+                    max-width: initial;
+                }
+                div.col-take-action {
+                    padding: 0 50px 0 0;
+                    section.take-action {
+                        text-align: left;
+                        padding: 0 0 0 0;
+                    }
+                }
+            }
         }
     }
 }
@@ -57,25 +60,24 @@ section.next-edition-schedule {
     section.next-edition-schedule {
         margin: $sec-margin-lg;
         padding: $sec-padding-lg;
-        section.take-action {
-            .first-day {
-                // margin: 0 35px 35px 0;
-            }
-        }
     }
 }
+
 @media(min-width: 1200px) {
     section.next-edition-schedule {
-        img.schedule {
-        }
         section.take-action {
             h2 {
                 font-size: $h2-lg;
             }
             h3 {
                 font-size: $h3-lg;
+                margin: 0 0 50px 0;
             }
-            
+            nav.buttons {
+                button {
+                    margin-bottom: 0;
+                }
+            }
         }
     }
 }

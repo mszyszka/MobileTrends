@@ -687,15 +687,14 @@ section.next-edition-schedule {
   section.next-edition-schedule {
     padding: 0 60px;
     margin: 100px 0 0 0; }
-    section.next-edition-schedule img.schedule {
+    section.next-edition-schedule .container-fluid .row div img.schedule {
       margin: 0;
-      width: 50%;
       max-width: initial; }
-    section.next-edition-schedule section.take-action {
-      width: 45%;
-      margin: 0 5% 0 0;
-      text-align: left;
-      padding: 0 0 0 0; } }
+    section.next-edition-schedule .container-fluid .row div.col-take-action {
+      padding: 0 50px 0 0; }
+      section.next-edition-schedule .container-fluid .row div.col-take-action section.take-action {
+        text-align: left;
+        padding: 0 0 0 0; } }
 @media (min-width: 992px) {
   section.next-edition-schedule {
     margin: 150px 0 0 0;
@@ -704,7 +703,10 @@ section.next-edition-schedule {
   section.next-edition-schedule section.take-action h2 {
     font-size: 20px; }
   section.next-edition-schedule section.take-action h3 {
-    font-size: 48px; } }
+    font-size: 48px;
+    margin: 0 0 50px 0; }
+  section.next-edition-schedule section.take-action nav.buttons button {
+    margin-bottom: 0; } }
 @media (min-width: 1580px) {
   section.next-edition-schedule {
     padding: 0; } }
@@ -758,7 +760,7 @@ section.opinions {
     background-image: url("/img/arrow-point-to-left (2).png");
     width: 14px; }
   section.opinions .carousel-item {
-    padding: 0 0 25px 0; }
+    padding: 25px 0 25px 0; }
 
 @media (min-width: 576px) {
   section.opinions {
@@ -775,7 +777,6 @@ section.opinions-md {
   max-width: 1400px; }
   section.opinions-md div.heading {
     width: 300px;
-    margin: 0 44px 44px 0;
     padding: 130px 0 0 34px; }
     section.opinions-md div.heading h2 {
       font-size: 16px;
@@ -792,12 +793,10 @@ section.opinions-md {
     max-width: 300px;
     padding: 34px;
     border-radius: 49px;
-    margin: 0 44px 44px 0;
+    margin: 0 0 30px 0;
     -webkit-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35);
     box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35); }
-    section.opinions-md .opinions-md-item:nth-of-type(2n) {
-      margin: 0 0 44px 0; }
     section.opinions-md .opinions-md-item .icon {
       margin: 0 0 30px 0;
       width: 60px; }
@@ -817,20 +816,23 @@ section.opinions-md {
       font-weight: 600;
       font-size: 15px; }
 
-@media (min-width: 576px) {
-  section.opinions-md {
-    padding: 0 35px;
-    margin: 50px 0 0 0; } }
 @media (min-width: 768px) {
   section.opinions-md {
     padding: 0 60px;
-    margin: 100px 0 0 0; } }
+    margin: 100px 0 0 0; }
+    section.opinions-md div.container-fluid {
+      max-width: 650px; }
+      section.opinions-md div.container-fluid div.row .col-md-6 {
+        padding-right: 27px;
+        padding-left: 27px; }
+    section.opinions-md .opinions-md-item {
+      margin: 0 0 55px 0; } }
 @media (min-width: 992px) {
   section.opinions-md {
     padding: 0 90px;
     margin: 150px 0 0 0; }
     section.opinions-md div.heading {
-      margin: 0 80px 80px 0;
+      margin: 0 0 30px 0;
       padding: 130px 0 0 34px; }
       section.opinions-md div.heading h2 {
         font-size: 16px;
@@ -843,20 +845,30 @@ section.opinions-md {
         section.opinions-md div.heading h3 span {
           color: #EF3024; }
     section.opinions-md .opinions-md-item {
-      margin: 0 80px 80px 0; }
-      section.opinions-md .opinions-md-item:nth-of-type(2n) {
-        margin: 0 0 80px 0; } }
+      margin: 0 0 55px 0; } }
 @media (min-width: 1200px) {
+  section.opinions-md div.container-fluid {
+    max-width: 1400px; }
+    section.opinions-md div.container-fluid div.row .col-md-6:nth-of-type(4) {
+      position: relative;
+      bottom: 250px; }
+    section.opinions-md div.container-fluid div.row .col-md-6:nth-of-type(7) {
+      position: relative;
+      bottom: 250px; }
+    section.opinions-md div.container-fluid div.row .col-md-6:nth-of-type(3) {
+      position: relative;
+      top: 250px; }
+    section.opinions-md div.container-fluid div.row .col-md-6:nth-of-type(6) {
+      position: relative;
+      top: 250px; }
   section.opinions-md div.heading {
-    margin: 0 50px 0 0; }
+    padding: 0; }
     section.opinions-md div.heading h2 {
       font-size: 20px; }
     section.opinions-md div.heading h3 {
       font-size: 48px; }
   section.opinions-md .opinions-md-item {
-    margin: 0; }
-  section.opinions-md .opinions-md-item.margin-xl {
-    margin: 0 50px 0 0; } }
+    margin: 0 0 19% 0; } }
 section.join-today {
   margin: 50px 0 0 0;
   padding: 0 35px;
@@ -865,6 +877,8 @@ section.join-today {
     width: 100%;
     max-width: 550px;
     margin: 0 0 40px 0; }
+  section.join-today section.take-action {
+    text-align: center; }
   section.join-today h2 {
     font-size: 20px;
     font-weight: 700;
@@ -896,24 +910,24 @@ section.join-today {
     margin: 100px 0 0 0; }
     section.join-today img.envelope-img {
       margin: 0 0 0 0;
-      width: 50%;
       max-width: initial; }
-    section.join-today div.take-action-container {
-      width: 45%;
-      margin: 0 0 0 5%; }
     section.join-today section.take-action {
       margin: 0 0 0 0;
       text-align: left;
-      padding: 0 0 0 0; } }
+      padding: 0 0 0 0;
+      width: 300px; }
+    section.join-today div.col-md-6:nth-of-type(2) {
+      padding-left: 5%; } }
 @media (min-width: 992px) {
   section.join-today {
     margin: 150px 0 0 0;
     padding: 0 90px; } }
 @media (min-width: 1200px) {
-  section.join-today section.take-action h2 {
-    font-size: 20px; }
-  section.join-today section.take-action h3 {
-    font-size: 48px; } }
+  section.join-today section.take-action {
+    width: auto;
+    max-width: 545px; }
+    section.join-today section.take-action h2 {
+      font-size: 30px; } }
 @media (min-width: 1580px) {
   section.join-today {
     padding: 0; } }

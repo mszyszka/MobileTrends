@@ -5,7 +5,7 @@ section.opinions-md {
 
     div.heading {
         width: 300px;
-        margin: 0 44px 44px 0;
+        // margin: 0 40px 40px 0;
         padding: 130px 0 0 34px;
         h2 {
             @include section-h2;
@@ -25,15 +25,12 @@ section.opinions-md {
         max-width: 300px;
         padding: 34px;
         border-radius: 49px;
-        margin: 0 44px 44px 0;
+        margin: 0 0 30px 0;
         // -webkit-box-shadow: 5px 10px 50px 0px rgba(239,239,239,0.75);
         // -moz-box-shadow: 5px 10px 50px 0px rgba(239,239,239,0.75);
         // box-shadow: 5px 10px 50px 0px rgba(239,239,239,0.75);
         // zmiana
         @include shadow;
-        &:nth-of-type(2n){
-            margin: 0 0 44px 0;
-        }
         .icon {
             margin: 0 0 30px 0;
             width: 60px;
@@ -57,22 +54,26 @@ section.opinions-md {
             font-size: 15px;
         }
     }  
-    // .opinions-md-item {
-    //     padding: 0 0 25px 0;
-    // }
 }
 
-@media(min-width: 576px) {
-    section.opinions-md {
-        padding: $sec-padding-sm;
-        margin: $sec-margin-sm;
-    }
-}
 
 @media(min-width: 768px) {
     section.opinions-md {
         padding: $sec-padding-md;
         margin: $sec-margin-md;
+        div.container-fluid {
+            max-width: 650px;
+            div.row {
+                .col-md-6 {
+                    padding-right: 27px;
+                    padding-left: 27px;
+                }
+            }
+
+        }
+        .opinions-md-item {
+            margin: 0 0 55px 0; 
+        }
     }
 }
 
@@ -81,7 +82,7 @@ section.opinions-md {
         padding: $sec-padding-lg;
         margin: $sec-margin-lg;
         div.heading {
-            margin: 0 80px 80px 0;
+            margin: 0 0 30px 0;
             padding: 130px 0 0 34px;
             h2 {
                 @include section-h2;
@@ -92,18 +93,36 @@ section.opinions-md {
             }
         }
         .opinions-md-item {
-            margin: 0 80px 80px 0; 
-            &:nth-of-type(2n){
-                margin: 0 0 80px 0;
-            }
+            margin: 0 0 55px 0; 
         }
     }
 }
 
 @media(min-width: 1200px) {
     section.opinions-md {
+        div.container-fluid {
+            max-width: 1400px;
+            div.row {
+                .col-md-6:nth-of-type(4) {
+                    position: relative;
+                    bottom: 250px;
+                }
+                .col-md-6:nth-of-type(7) {
+                    position: relative;
+                    bottom: 250px;
+                }
+                .col-md-6:nth-of-type(3) {
+                    position: relative;
+                    top: 250px;
+                }
+                .col-md-6:nth-of-type(6) {
+                    position: relative;
+                    top: 250px;
+                }
+            }
+        }
         div.heading {
-            margin: 0 50px 0 0;
+            padding: 0; 
             h2 {
                 font-size: $h2-lg;
             }
@@ -112,10 +131,16 @@ section.opinions-md {
             }
         }
         .opinions-md-item {
-            margin: 0; 
+            margin: 0 0 19% 0; 
         }
-        .opinions-md-item.margin-xl {
-            margin: 0 50px 0 0;
-        }
+
     }
 }
+
+// I'm reseting left end right padding(180px together) in section.next-edition-schedule on 1580px, becose I want max-width
+// of this section content to be 1400px. Section max-width is set to 1400px so i need to reset padding on 1580px(1580 - 180 = 1400)
+// @media (min-width: 1580px) {
+//     section.opinions-md {
+//         padding: 0;
+//     }
+//  }

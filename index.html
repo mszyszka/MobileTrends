@@ -6,6 +6,7 @@
 <!-- cień na inpucie w footer -->
 <!-- footer - zdjęć podkreślenie na hover i zamienić na czerwony -->
 <!-- carousel1-tiles dokończyć grida na xl -->
+<!-- section.opinions-md dopracować marginy -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -286,9 +287,9 @@
 
         <section class="confirm-your-presence mr-auto ml-auto">
             <div class="container-fluid pr-0 pl-0">
-                <div class="row flex-row-reverse row no-gutters">
+                <div class="row flex-row-reverse no-gutters">
                     <div class="col-md-6">
-                        <img class="ml-auto mb-md-auto jumping-lady" src="./img/confirm2x.png" alt="Girl and phone image">
+                        <img class="mr-auto ml-auto mr-md-0 mb-md-auto jumping-lady" src="./img/confirm2x.png" alt="Girl and phone image">
                     </div>
                     <div class="col-md-6 d-flex flex-column justify-content-center">
                         <section class="take-action">
@@ -544,15 +545,23 @@
         </section>
 
         <section class="next-edition-schedule d-md-flex flex-md-row-reverse mr-auto ml-auto">
-            <img  class="schedule align-self-md-baseline ml-auto mr-auto ml-md-0 mr-md-0" src="./img/schedule2x.png" alt="schedule">
-            <section class="take-action d-flex flex-column justify-content-md-center">
-                    <h2>A tak planujemy kolejną edycję</h2>
-                    <h3>Program<span>.</span></h3>
-                    <nav class="buttons">
-                        <button class="first-day" type="button">dzień pierwszy</button>
-                        <button class="second-day" type="button">dzień drugi</button>
-                    </nav>
-            </section>
+            <div class="container-fluid pl-0 pr-0">
+                <div class="row flex-row-reverse no-gutters">
+                    <div class="col-md-7">
+                        <img  class="schedule ml-auto mr-auto mr-md-0" src="./img/schedule2x.png" alt="schedule">
+                    </div>
+                    <div class="col-md-5 col-take-action d-flex flex-column justify-content-center">
+                        <section class="take-action">
+                            <h2>A tak planujemy kolejną edycję</h2>
+                            <h3>Program<span>.</span></h3>
+                            <nav class="buttons">
+                                <button class="first-day" type="button">dzień pierwszy</button>
+                                <button class="second-day" type="button">dzień drugi</button>
+                            </nav>
+                        </section>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="opinions d-md-none">
@@ -680,113 +689,138 @@
         </section>
 
         <!-- section opinions on width over 768px -->
-        <section class="opinions-md mr-auto ml-auto d-none d-md-flex flex-wrap justify-content-center justify-content-xl-none ">
-            <div class="heading mb-xl-5">
-                <h2>Co o nas sądzą</h2>
-                <h3>Opinie<span>.</span></h3>
-            </div>
-            <!-- Item 1 -->
-            <div class="opinions-md-item mb-xl-5  mr-xl-5">
-                    <img src="./img/opinions-icons/AdrianKielich2x.png" class="icon d-block mr-auto">
-                    <span class="person-name mr-auto">Adrian Kielich</span>
-                    <span class="company-name mr-auto">Mobext Germany</span>
-                    <p class="mr-auto">
-                        Niesamowita możliwośc wymiany 
-                        doświadczeń, możliwośc 
-                        networkingu i poznania 
-                        nowych osób!
-                    </p>
-            </div>
-            <!-- Item 2 -->
-            <div class="opinions-md-item mb-xl-5">
-                    <img src="./img/opinions-icons/ErnestJakubowski2x.png" class="icon d-block mr-auto">
-                    <span class="person-name mr-auto">Ernest Jakubowski</span>
-                    <span class="company-name mr-auto">Mobext Germany</span>
-                    <p class="mr-auto">
-                        Jest to najlepsza konferencja w
-                        Polsce nt. rozwiązań mobilnych,
-                        skierowane do biznesu i
-                        marketerów!
-                    </p>
-            </div>
-            <!-- Item 3 -->
-            <div class="opinions-md-item mb-xl-5 mr-xl-5">
-                    <img src="./img/opinions-icons/BartekSibiga2x.png" class="icon d-block mr-auto">
-                    <span class="person-name mr-auto">Bartek Sibiga</span>
-                    <span class="company-name mr-auto">Mobext Germany</span>
-                    <p class="mr-auto">
-                      Niesamowita możliwośc wymiany 
-                      doświadczeń, możliwośc 
-                      networkingu i poznania 
-                      nowych osób!
-                    </p>
-            </div>
-            <!-- Item 4 -->
-            <div class="opinions-md-item mb-xl-5 mr-xl-5">
-                    <img src="./img/opinions-icons/PaulinaPięta2x.png" class="icon d-block mr-auto">
-                    <span class="person-name mr-auto">Paulina Pięta</span>
-                    <span class="company-name mr-auto">ewentualnie.com</span>
-                    <p class="mr-auto">
-                        Byłam w życiu na wielu 
-                        konferencjach, ale MTC to 
-                        naprawdę wysoka jakość 
-                        na rynku. Przede wszystkim warto
-                        posłuchać różnorodnych tematów 
-                        wystąpień.
-                    </p>
-            </div>
-            <!-- Item 5 -->
-            <div class="opinions-md-item mb-xl-5">
-                    <img src="./img/opinions-icons/MonikaMikowska2x.png" class="icon d-block mr-auto">
-                    <span class="person-name mr-auto">Monika Mikowska</span>
-                    <span class="company-name mr-auto">Mobext Germany</span>
-                    <p class="mr-auto">
-                        Wyjeżdżam z MTC zawsze z
-                        głową pełną nowych inspiracji
-                        i torbą wizytówek wyjątkowych
-                        ludzi z branży mobilnej.
-                        Nie ma drugiego takiego
-                        wydarzenia w Europie.
-                        Polecam!
-                    </p>
-            </div>
-            <!-- Item 6 -->
-            <div class="opinions-md-item mr-xl-5">
-                    <img src="./img/opinions-icons/KrzysztofMarzec2x.png" class="icon mr-auto">
-                    <span class="person-name mr-auto">Krzysztof Marzec</span>
-                    <span class="company-name mr-auto">Mobext Germany</span>
-                    <p class="mr-auto">
-                        Niesamowita możliwośc wymiany 
-                        doświadczeń, możliwośc 
-                        networkingu i poznania 
-                        nowych osób!
-                    </p>
-            </div>
-            <!-- Item 7 -->
-            <div class="opinions-md-item">
-                    <img src="./img/opinions-icons/KamilBolek.png" class="icon mr-auto">
-                    <span class="person-name mr-auto">Kamil Bolek</span>
-                    <span class="company-name mr-auto">Mobext Germany</span>
-                    <p class="mr-auto">
-                        Niesamowita możliwośc wymiany 
-                        doświadczeń, możliwośc 
-                        networkingu i poznania 
-                        nowych osób!
-                    </p>
+        <section class="opinions-md mr-auto ml-auto d-none d-md-block">
+            <div class="container-fluid pr-0 pl-0 mr-auto ml-auto">
+                <div class="row">
+                    <div class="col-md-6 col-xl-4">
+                        <div class="heading">
+                            <h2>Co o nas sądzą</h2>
+                            <h3>Opinie<span>.</span></h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4 d-flex justify-content-center">
+                        <!-- Item 1 -->
+                        <div class="opinions-md-item">
+                            <img src="./img/opinions-icons/AdrianKielich2x.png" class="icon d-block mr-auto">
+                            <span class="person-name mr-auto">Adrian Kielich</span>
+                            <span class="company-name mr-auto">Mobext Germany</span>
+                            <p class="mr-auto">
+                                Niesamowita możliwośc wymiany 
+                                doświadczeń, możliwośc 
+                                networkingu i poznania 
+                                nowych osób!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4 d-flex justify-content-center">
+                        <!-- Item 5 -->
+                        <div class="opinions-md-item">
+                            <img src="./img/opinions-icons/MonikaMikowska2x.png" class="icon d-block mr-auto">
+                            <span class="person-name mr-auto">Monika Mikowska</span>
+                            <span class="company-name mr-auto">Mobext Germany</span>
+                            <p class="mr-auto">
+                                Wyjeżdżam z MTC zawsze z
+                                głową pełną nowych inspiracji
+                                i torbą wizytówek wyjątkowych
+                                ludzi z branży mobilnej.
+                                Nie ma drugiego takiego
+                                wydarzenia w Europie.
+                                Polecam!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4 d-flex justify-content-center">
+                        <!-- Item 2 -->
+                        <div class="opinions-md-item ">
+                                <img src="./img/opinions-icons/ErnestJakubowski2x.png" class="icon d-block mr-auto">
+                                <span class="person-name mr-auto">Ernest Jakubowski</span>
+                                <span class="company-name mr-auto">Mobext Germany</span>
+                                <p class="mr-auto">
+                                    Jest to najlepsza konferencja w
+                                    Polsce nt. rozwiązań mobilnych,
+                                    skierowane do biznesu i
+                                    marketerów!
+                                </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4 d-flex justify-content-center">
+                        <!-- Item 3 -->
+                        <div class="opinions-md-item ">
+                            <img src="./img/opinions-icons/BartekSibiga2x.png" class="icon d-block mr-auto">
+                            <span class="person-name mr-auto">Bartek Sibiga</span>
+                            <span class="company-name mr-auto">Mobext Germany</span>
+                            <p class="mr-auto">
+                              Niesamowita możliwośc wymiany 
+                              doświadczeń, możliwośc 
+                              networkingu i poznania 
+                              nowych osób!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4 d-flex justify-content-center">
+                        <!-- Item 4 -->
+                        <div class="opinions-md-item ">
+                                <img src="./img/opinions-icons/PaulinaPięta2x.png" class="icon d-block mr-auto">
+                                <span class="person-name mr-auto">Paulina Pięta</span>
+                                <span class="company-name mr-auto">ewentualnie.com</span>
+                                <p class="mr-auto">
+                                    Byłam w życiu na wielu 
+                                    konferencjach, ale MTC to 
+                                    naprawdę wysoka jakość 
+                                    na rynku. Przede wszystkim warto
+                                    posłuchać różnorodnych tematów 
+                                    wystąpień.
+                                </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4 d-flex justify-content-center">
+                        <!-- Item 6 -->
+                        <div class="opinions-md-item ">
+                                <img src="./img/opinions-icons/KrzysztofMarzec2x.png" class="icon mr-auto">
+                                <span class="person-name mr-auto">Krzysztof Marzec</span>
+                                <span class="company-name mr-auto">Mobext Germany</span>
+                                <p class="mr-auto">
+                                    Niesamowita możliwośc wymiany 
+                                    doświadczeń, możliwośc 
+                                    networkingu i poznania 
+                                    nowych osób!
+                                </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4 d-flex justify-content-center">
+                        <!-- Item 7 -->
+                        <div class="opinions-md-item">
+                            <img src="./img/opinions-icons/KamilBolek.png" class="icon mr-auto">
+                            <span class="person-name mr-auto">Kamil Bolek</span>
+                            <span class="company-name mr-auto">Mobext Germany</span>
+                            <p class="mr-auto">
+                                Niesamowita możliwośc wymiany 
+                                doświadczeń, możliwośc 
+                                networkingu i poznania 
+                                nowych osób!
+                            </p>
+                        </div>
+                    </div>
             </div>
         </section>
 
         <section class="join-today mr-auto ml-auto d-flex flex-column align-items-center flex-md-row">
-            <img src="./img/join2x.png" class="envelope-img align-self-md-baseline ml-auto mr-auto ml-md-0 mr-md-0" alt="join us">
-            <div class="take-action-container align-items-center d-flex justify-content-center">
-                <section class="take-action d-flex flex-column">
-                    <h2>Dołącz już dzisiaj, naprawdę warto!</h2>
-                    <button class="buy-a-ticket align-self-center mr-auto ml-auto mr-md-auto ml-md-0" type="button">kupuję bilet</button>
-                </section>
+            <div class="container-fluid pl-0 pr-0">
+                <div class="row no-gutters">
+                    <div class="col-md-6">
+                        <img src="./img/join2x.png" class="envelope-img  d-block ml-auto mr-auto  mr-md-0" alt="join us">
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                        <section class="take-action d-flex flex-column mr-auto ml-auto">
+                            <h2>Dołącz już dzisiaj, naprawdę warto!</h2>
+                            <button class="buy-a-ticket align-self-center mr-auto ml-auto ml-md-0" type="button">kupuję bilet</button>
+                        </section>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="year-ago-pictures">
+        <section class="year-ago-pictures mt-5">
             <div class="heading">
                 <h2>Tak było rok temu</h2>
                 <h3>Zdjęcia<span>.</span></h3>
