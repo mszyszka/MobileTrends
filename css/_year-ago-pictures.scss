@@ -1,5 +1,7 @@
 section.year-ago-pictures {
     margin: 0 0 100px 0;
+    // padding: $sec-padding-sm;
+    margin: $sec-margin-sm;
     div.heading {
         padding: 0 35px;
         h2 {
@@ -23,6 +25,22 @@ section.year-ago-pictures {
         a.carousel-control-next {
             @include carousel-control-next-a;
         }
+    }
+}
+
+@media (min-width: 576px) {
+    section.year-ago-pictures {
+        margin: $sec-margin-sm;
+    }
+}
+@media (min-width: 768px) {
+    section.year-ago-pictures {
+        margin: $sec-margin-md;
+    }
+}
+@media (min-width: 992px) {
+    section.year-ago-pictures {
+        margin: $sec-margin-lg;
     }
 }
 

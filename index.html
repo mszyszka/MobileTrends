@@ -7,6 +7,8 @@
 <!-- footer - zdjęć podkreślenie na hover i zamienić na czerwony -->
 <!-- carousel1-tiles dokończyć grida na xl -->
 <!-- section.opinions-md dopracować marginy -->
+<!-- section.sponsors-md dopracować paddingi na columnach dla gold-sponsor i organizer -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -820,7 +822,7 @@
             </div>
         </section>
 
-        <section class="year-ago-pictures mt-5">
+        <section class="year-ago-pictures">
             <div class="heading">
                 <h2>Tak było rok temu</h2>
                 <h3>Zdjęcia<span>.</span></h3>
@@ -850,65 +852,109 @@
             </div>                
         </section>
 
-        <section class="conference-location d-flex flex-column align-items-center">
-            <div class="heading d-flex flex-column align-items-start">
-                <h2>Miejscem konferencji będzie.</h2>
-                <h3>Stara Zajezdnia Kraków<span>.</span></h3>
-            </div>
-            <img src="./img/tram-depot-logo2x.png" class="logo" alt="Old tram depod logo">
-            <article class="old-depot-article d-flex flex-column align-items-center">
-                <img src="./img/depot-article-header2x.png" class="depot-article-header-img" alt="Old depod">
-                <div class="article-txt ml-auto">
-                    <p>
-                        Stara Zajezdnia Kraków by DeSilva to miejsce
-                        łączące w sobie historię z nowoczesnością. 
-                        Na terenie obiektu znajduje się piękna hala,
-                        restauracja i dziedziniec. Wyremontowany
-                        budynek Starej Zajezdni tramwajowej 
-                        to obiekt wyjątkowy. Hala jest przykładem 
-                        rzadkiej w Krakowie drewnianej architektury 
-                        szkieletowej z wypełnieniem ceglanym,
-                        zwanej popularnie "mur pruski". 
-                        Należy do zespołu architektoniczna
-                        -budowlanego, objętego ochroną prawną - 
-                        wpisanego do rejestru zabytków 
-                        oraz na Listę Światowego Dziedzictwa 
-                        Kulturowego i Przyrodniczego UNESCO,
-                        który jest uznany za pomnik historii.  
-                    </p>
+        <section class="conference-location mr-auto ml-auto ">
+            <div class="row no-gutters">
+                <div class="col-sm-12">
+                    <div class="heading d-flex flex-column align-items-start">
+                        <h2>Miejscem konferencji będzie.</h2>
+                        <h3>Stara Zajezdnia Kraków<span>.</span></h3>
+                    </div>
                 </div>
-                <button class="learn-more" type="button">dowiedz się więcej</button>
-                <button class="how-to-get" type="button">jak dojechać?</button>
-            </article>
+            </div>
+            <div class="row">
+                <!-- logo < 1580px -->
+                <div class="col-sm-12 logo-col d-flex align-items-center">
+                    <img src="./img/tram-depot-logo2x.png" class="logo mr-auto ml-auto" alt="Old tram depod logo">
+                </div>
+                <!-- -->
+            </div>
+            <div class="main-row row d-md-flex flex-row-reverse flex-xl-row mt-md-4 mt-xl-0">
+                <!-- header img -->
+                <div class="col-md-6 col-lg-7 d-md-flex flex-column ">
+                    <img src="./img/depot-article-header2x.png" class="depot-article-header-img" alt="Old depod">
+                </div>
+                <!--  -->
+                <div class="logo-article-col col-md-6 col-lg-5  justify-content-center">
+                    <!-- logo > 1580px -->
+                    <div class="d-none logo-col-over-1580 align-items-center">
+                        <img src="./img/tram-depot-logo2x.png" class="logo mr-auto ml-auto" alt="Old tram depod logo">
+                    </div>
+                    <!-- logo -->
+                    <!-- aticle section < 992px -->
+                    <article class="old-depot-article d-flex flex-column align-items-center align-items-md-left">
+                        <div class="article-txt ml-auto ml-md-0 p-md-0">
+                            <p>
+                                <span>Stara Zajezdnia Kraków</span></br> by DeSilva to miejsce
+                                łączące w sobie historię z nowoczesnością. 
+                                Na terenie obiektu znajduje się piękna hala,
+                                restauracja i dziedziniec. Wyremontowany
+                                budynek Starej Zajezdni tramwajowej 
+                                to obiekt wyjątkowy. Hala jest przykładem 
+                                rzadkiej w Krakowie drewnianej architektury 
+                                szkieletowej z wypełnieniem ceglanym,
+                                zwanej popularnie "mur pruski". 
+                                Należy do zespołu architektoniczna
+                                -budowlanego, objętego ochroną prawną - 
+                                wpisanego do rejestru zabytków 
+                                oraz na Listę Światowego Dziedzictwa 
+                                Kulturowego i Przyrodniczego UNESCO,
+                                który jest uznany za pomnik historii.  
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="row nav-row">
+                <div class="col-sm-12">
+                    <nav class="conference-location-nav d-flex flex-column justify-content-center align-items-center flex-md-row">
+                        <button class="learn-more mb-md-0 mr-md-4" type="button">dowiedz się więcej</button>
+                        <button class="how-to-get" type="button">jak dojechać?</button>
+                    </nav>
+                </div>
+            </div>
         </section>
 
-        <section class="sponsors">
+        <section class="sponsors mr-auto ml-auto">
             <div class="heading d-flex flex-column align-items-start">
                 <h2>W tym roku wspierają nas</h2>
                 <h3>Sponsorzy<span>.</span></h3>
             </div>
-            <section class="gold-sponsor">
-                <span>Złoty sponsor</span>
-                <div class="logo-container santander-logo-container mr-auto ml-auto d-flex align-items-center">
-                    <img src="./img/santander-logo2x.png" class="santander-logo ml-auto mr-auto" alt="Santander bank logo">
+            <div class="row gold-organizer-row">
+                <div class="col-sm-12 col-lg-6 gold-sponsor-col d-flex justify-content-center justify-content-lg-end">
+                    <section class="gold-sponsor">
+                        <span>Złoty sponsor</span>
+                        <div class="logo-container santander-logo-container mr-auto ml-auto d-flex align-items-center">
+                            <img src="./img/santander-logo2x.png" class="santander-logo ml-auto mr-auto" alt="Santander bank logo">
+                        </div>
+                    </section>
                 </div>
-            </section>
-            <section class="organizer">
-                <span>Organizator</span>
-                <div class="logo-container organizer-logo-container mr-auto ml-auto d-flex align-items-center">
-                    <img src="./img/clickMaster-logo2x.png" class="click-master-logo ml-auto mr-auto" alt="ClickMaster logo">
+                <div class="col-sm-12 col-lg-6 organizer-col d-flex justify-content-center justify-content-lg-start">
+                    <section class="organizer d-flex flex-column justify-content-center">
+                        <span>Organizator</span>
+                        <div class="logo-container organizer-logo-container mr-auto ml-auto d-flex align-items-center">
+                            <img src="./img/clickMaster-logo2x.png" class="click-master-logo ml-auto mr-auto" alt="ClickMaster logo">
+                        </div>
+                    </section>
                 </div>
-            </section>
+            </div>
             <section class="rest-of-sponsors">
                 <span>Sponsorzy</span>
-                <div class="logo-container sponsor-logo-container mr-auto ml-auto d-flex align-items-center">
-                    <img src="./img/crossref-logo2x.png" class="crossref-logo ml-auto mr-auto" alt="logo">
-                </div>
-                <div class="logo-container sponsor-logo-container mr-auto ml-auto d-flex align-items-center">
-                    <img src="./img/bird-logo2x.png" class="click-master-logo ml-auto mr-auto" alt="logo">
-                </div> 
-                <div class="logo-container sponsor-logo-container mr-auto ml-auto d-flex align-items-center">
-                    <img src="./img/sun-logo2x.png" class="sun-logo ml-auto mr-auto" alt="logo">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-xl-4 first-col d-flex justify-content-center justify-content-md-end justify-content-xl-center p-xl-0">
+                        <div class="logo-container sponsor-logo-container d-flex align-items-center">
+                            <img src="./img/crossref-logo2x.png" class="crossref-logo ml-auto mr-auto" alt="logo">
+                        </div>
+                   </div>
+                   <div class="col-sm-12 col-md-6 col-xl-4 second-col d-flex justify-content-center justify-content-md-start justify-content-xl-center p-xl-0">
+                        <div class="logo-container sponsor-logo-container d-flex align-items-center">
+                            <img src="./img/bird-logo2x.png" class="click-master-logo ml-auto mr-auto" alt="logo">
+                        </div>
+                   </div>
+                   <div class="col-sm-12 d-flex col-xl-4 justify-content-center p-xl-0">
+                        <div class="logo-container sponsor-logo-container d-flex align-items-center">
+                            <img src="./img/sun-logo2x.png" class="sun-logo ml-auto mr-auto" alt="logo">
+                        </div>
+                   </div>
                 </div>
             </section>
             <section class="honorary-patronage">

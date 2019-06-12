@@ -1,36 +1,44 @@
 section.conference-location {
-    margin: 0 0 100px 0;
+    margin: $sec-margin-sm;
+    max-width: 1400px;
     div.heading {
-        padding: 0 35px;
+        padding: $sec-padding-sm;
         h2 {
             @include section-h2;
         }
         h3 {
             @include section-h3;
-            margin: 0 0 40px 0;
         }
+    }
+    .logo-col {
+        padding: 50px 0;
     }
     img.logo {
-        width: 200px;
-        margin: 0 0 50px 0;
+        width: 150px;
     }
-    article.old-depot-article {
-        img.depot-article-header-img {
-            width: 100%;
-        }
-        div.article-txt {
-            background: #ffffff;
-            width: 90%;
-            padding: 30px 50px 30px 30px;
-            position: relative;
-            bottom: 40px;
-            p {
-                color: $content-txt-color;
-                font-size: 12px;
-                font-weight: 600;
-                line-height: 3;
+    
+    img.depot-article-header-img {
+        width: 100%;
+    }
+    div.article-txt {
+        background: #ffffff;
+        width: 90%;
+        padding: 30px 50px 30px 30px;
+        position: relative;
+        bottom: 40px;
+        p {
+            color: $content-txt-color;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 3;
+            span {
+                font-size: 20px;
+                font-weight: 700;
             }
+            // margin: 0 0 50px 0;
         }
+    }
+    nav.conference-location-nav {
         button.learn-more {
             @include red-button;
             // padding: 14px 40px;
@@ -44,16 +52,88 @@ section.conference-location {
     }
 }
 
+@media(min-width: 576px) {
+    section.conference-location {
+        margin: $sec-margin-sm;
+    }
+}
+@media(min-width: 768px) {
+    section.conference-location {
+        margin: $sec-margin-md;
+        padding : $sec-padding-md;
+        div.heading {
+            padding: 0;
+        }
+        .logo-col {
+            padding: 80px 0;
+        }
+        div.article-txt {
+            width: 100%;
+            position: initial;
+        }
+        .nav-row {
+            margin: 80px 0 0 0;
+        }
+    }
+}
+@media(min-width: 992px) {
+    section.conference-location {
+        margin: $sec-margin-lg;
+        padding : $sec-padding-lg;
+        div.heading {
+            padding: 0;
+        }
+        .nav-row {
+            margin: 90px 0 0 0;
+        }
+    }
+}
 @media(min-width: 1200px) {
     section.conference-location {
         div.heading {
-            padding: 0 35px;
             h2 {
                 font-size: $h2-lg;
             }
             h3 {
                 font-size: $h3-lg;
+                // margin: 0 0 100px 0;
             }
         }
     }
 }
+
+// I'm reseting left end right padding(180px together) in section.next-edition-schedule on 1580px, becose I want max-width
+// of this section content to be 1400px. Section max-width is set to 1400px so i need to reset padding on 1580px(1580 - 180 = 1400)
+@media (min-width: 1580px) {
+    section.conference-location {
+        padding: 0;
+        .logo-col {
+            display: none!important;
+        }
+        .logo-col-over-1580 {
+            display: flex!important;
+        }
+        .old-depot-article {
+            height: 530px;
+            width: 130%;
+            position: relative;
+            left: -180px;
+            bottom: -11px;
+            padding: 90px 0 90px 90px;
+            background: #ffffff;
+        }
+        div.heading {
+            h3 {
+                margin-bottom: 100px;
+            }
+        }
+        .nav-row {
+            position: relative;
+            left: 655px;
+            bottom: 100px;
+            display: block;
+            width: 566px;
+            margin: 0;
+        }
+    }
+ }

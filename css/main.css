@@ -932,7 +932,8 @@ section.join-today {
   section.join-today {
     padding: 0; } }
 section.year-ago-pictures {
-  margin: 0 0 100px 0; }
+  margin: 0 0 100px 0;
+  margin: 50px 0 0 0; }
   section.year-ago-pictures div.heading {
     padding: 0 35px; }
     section.year-ago-pictures div.heading h2 {
@@ -973,13 +974,23 @@ section.year-ago-pictures {
       width: 14px;
       background-image: url("/img/arrow-point-to-right-year-ago-pictures2x.png"); }
 
+@media (min-width: 576px) {
+  section.year-ago-pictures {
+    margin: 50px 0 0 0; } }
+@media (min-width: 768px) {
+  section.year-ago-pictures {
+    margin: 100px 0 0 0; } }
+@media (min-width: 992px) {
+  section.year-ago-pictures {
+    margin: 150px 0 0 0; } }
 @media (min-width: 1200px) {
   section.year-ago-pictures div.heading h2 {
     font-size: 20px; }
   section.year-ago-pictures div.heading h3 {
     font-size: 48px; } }
 section.conference-location {
-  margin: 0 0 100px 0; }
+  margin: 50px 0 0 0;
+  max-width: 1400px; }
   section.conference-location div.heading {
     padding: 0 35px; }
     section.conference-location div.heading h2 {
@@ -988,27 +999,30 @@ section.conference-location {
       font-weight: 700; }
     section.conference-location div.heading h3 {
       font-size: 30px;
-      font-weight: 700;
-      margin: 0 0 40px 0; }
+      font-weight: 700; }
       section.conference-location div.heading h3 span {
         color: #EF3024; }
+  section.conference-location .logo-col {
+    padding: 50px 0; }
   section.conference-location img.logo {
-    width: 200px;
-    margin: 0 0 50px 0; }
-  section.conference-location article.old-depot-article img.depot-article-header-img {
+    width: 150px; }
+  section.conference-location img.depot-article-header-img {
     width: 100%; }
-  section.conference-location article.old-depot-article div.article-txt {
+  section.conference-location div.article-txt {
     background: #ffffff;
     width: 90%;
     padding: 30px 50px 30px 30px;
     position: relative;
     bottom: 40px; }
-    section.conference-location article.old-depot-article div.article-txt p {
+    section.conference-location div.article-txt p {
       color: #7B7B7B;
       font-size: 12px;
       font-weight: 600;
       line-height: 3; }
-  section.conference-location article.old-depot-article button.learn-more {
+      section.conference-location div.article-txt p span {
+        font-size: 20px;
+        font-weight: 700; }
+  section.conference-location nav.conference-location-nav button.learn-more {
     margin: 0;
     border: 3px solid #EF3024;
     background: #EF3024;
@@ -1020,12 +1034,12 @@ section.conference-location {
     border-radius: 50px;
     transition: all ease-in-out 0.2s;
     margin: 0 0 22px 0; }
-    section.conference-location article.old-depot-article button.learn-more:hover, section.conference-location article.old-depot-article button.learn-more:active {
+    section.conference-location nav.conference-location-nav button.learn-more:hover, section.conference-location nav.conference-location-nav button.learn-more:active {
       border: 3px solid #EF3024;
       background: #FFFFFF;
       color: #EF3024;
       outline: none; }
-  section.conference-location article.old-depot-article button.how-to-get {
+  section.conference-location nav.conference-location-nav button.how-to-get {
     margin: 0;
     border: 3px solid #EF3024;
     background: #FFFFFF;
@@ -1035,20 +1049,68 @@ section.conference-location {
     font-weight: 700;
     border-radius: 50px;
     transition: all ease-in-out 0.2s; }
-    section.conference-location article.old-depot-article button.how-to-get:hover, section.conference-location article.old-depot-article button.how-to-get:active {
+    section.conference-location nav.conference-location-nav button.how-to-get:hover, section.conference-location nav.conference-location-nav button.how-to-get:active {
       background: #EF3024;
       color: #FFFFFF;
       outline: none; }
 
+@media (min-width: 576px) {
+  section.conference-location {
+    margin: 50px 0 0 0; } }
+@media (min-width: 768px) {
+  section.conference-location {
+    margin: 100px 0 0 0;
+    padding: 0 60px; }
+    section.conference-location div.heading {
+      padding: 0; }
+    section.conference-location .logo-col {
+      padding: 80px 0; }
+    section.conference-location div.article-txt {
+      width: 100%;
+      position: initial; }
+    section.conference-location .nav-row {
+      margin: 80px 0 0 0; } }
+@media (min-width: 992px) {
+  section.conference-location {
+    margin: 150px 0 0 0;
+    padding: 0 90px; }
+    section.conference-location div.heading {
+      padding: 0; }
+    section.conference-location .nav-row {
+      margin: 90px 0 0 0; } }
 @media (min-width: 1200px) {
-  section.conference-location div.heading {
-    padding: 0 35px; }
-    section.conference-location div.heading h2 {
-      font-size: 20px; }
+  section.conference-location div.heading h2 {
+    font-size: 20px; }
+  section.conference-location div.heading h3 {
+    font-size: 48px; } }
+@media (min-width: 1580px) {
+  section.conference-location {
+    padding: 0; }
+    section.conference-location .logo-col {
+      display: none !important; }
+    section.conference-location .logo-col-over-1580 {
+      display: flex !important; }
+    section.conference-location .old-depot-article {
+      height: 530px;
+      width: 130%;
+      position: relative;
+      left: -180px;
+      bottom: -11px;
+      padding: 90px 0 90px 90px;
+      background: #ffffff; }
     section.conference-location div.heading h3 {
-      font-size: 48px; } }
+      margin-bottom: 100px; }
+    section.conference-location .nav-row {
+      position: relative;
+      left: 655px;
+      bottom: 100px;
+      display: block;
+      width: 566px;
+      margin: 0; } }
 section.sponsors {
-  padding: 0 35px; }
+  padding: 0 35px;
+  margin: 50px 0 0 0;
+  max-width: 1400px; }
   section.sponsors div.heading h2 {
     font-size: 16px;
     color: #EF3024;
@@ -1071,22 +1133,18 @@ section.sponsors {
     -webkit-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35);
     box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35); }
-  section.sponsors section.gold-sponsor {
-    margin: 0 0 85px 0; }
-    section.sponsors section.gold-sponsor .santander-logo-container {
-      width: 290px;
-      height: 290px;
-      margin: 25px 0 0 0; }
-      section.sponsors section.gold-sponsor .santander-logo-container img {
-        width: 284px; }
-  section.sponsors section.organizer {
-    margin: 0 0 85px 0; }
-    section.sponsors section.organizer .organizer-logo-container {
-      width: 250px;
-      height: 250px;
-      margin: 25px 0 0 0; }
-      section.sponsors section.organizer .organizer-logo-container img {
-        width: 135px; }
+  section.sponsors .gold-organizer-row .col-sm-12 {
+    margin: 0 0 90px 0; }
+  section.sponsors section.gold-sponsor .santander-logo-container {
+    width: 290px;
+    height: 290px; }
+    section.sponsors section.gold-sponsor .santander-logo-container img {
+      width: 284px; }
+  section.sponsors section.organizer .organizer-logo-container {
+    width: 250px;
+    height: 250px; }
+    section.sponsors section.organizer .organizer-logo-container img {
+      width: 135px; }
   section.sponsors section.rest-of-sponsors {
     margin: 0 0 100px 0; }
     section.sponsors section.rest-of-sponsors span {
@@ -1094,10 +1152,11 @@ section.sponsors {
       margin: 0 0 18px 0; }
     section.sponsors section.rest-of-sponsors .sponsor-logo-container {
       width: 185px;
-      height: 185px;
-      margin: 0 0 45px 0; }
+      height: 185px; }
       section.sponsors section.rest-of-sponsors .sponsor-logo-container img {
         width: 115px; }
+    section.sponsors section.rest-of-sponsors .row .col-sm-12 {
+      margin: 0 0 45px 0; }
   section.sponsors section.honorary-patronage span {
     display: block;
     margin: 0 0 35px 0; }
@@ -1113,13 +1172,54 @@ section.sponsors {
   section.sponsors section.honorary-patronage div.row .second-col {
     padding-top: 85px; }
 
+@media (min-width: 576px) {
+  section.sponsors {
+    margin: 50px 0 0 0;
+    padding: 0 35px; } }
+@media (min-width: 768px) {
+  section.sponsors {
+    margin: 100px 0 0 0;
+    padding: 0 60px; }
+    section.sponsors section.rest-of-sponsors .row .first-col {
+      padding: 0 22px 0 0; }
+    section.sponsors section.rest-of-sponsors .row .second-col {
+      padding: 0 0 0 22px; }
+    section.sponsors section.rest-of-sponsors .row .col-sm-12 {
+      margin: 0 0 15px 0; } }
+@media (min-width: 992px) {
+  section.sponsors {
+    margin: 150px 0 0 0;
+    padding: 0 90px; }
+    section.sponsors div.heading h3 {
+      font-size: 30px;
+      font-weight: 700;
+      margin: 0 0 80px 0; }
+    section.sponsors section.organizer span {
+      position: relative;
+      bottom: 19px; } }
 @media (min-width: 1200px) {
   section.sponsors div.heading h2 {
     font-size: 20px; }
   section.sponsors div.heading h3 {
-    font-size: 48px; }
+    font-size: 48px;
+    margin: 0 0 120px 0; }
   section.sponsors span {
-    font-size: 20px; } }
+    font-size: 20px; }
+  section.sponsors .gold-sponsor-col {
+    padding: 0 47px 0 0; }
+    section.sponsors .gold-sponsor-col section.gold-sponsor .logo-container {
+      width: 390px;
+      height: 390px; }
+  section.sponsors section.organizer span {
+    bottom: 30px; }
+  section.sponsors .organizer-col {
+    padding: 0 0 0 47px; }
+    section.sponsors .organizer-col section.organizer .logo-container {
+      width: 330px;
+      height: 330px; }
+  section.sponsors section.rest-of-sponsors .sponsor-logo-container {
+    width: 285px;
+    height: 285px; } }
 section.contact {
   background: #FEF4F3;
   padding: 60px 40px; }
