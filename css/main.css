@@ -1133,6 +1133,8 @@ section.sponsors {
     -webkit-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35);
     box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35); }
+  section.sponsors .gold-organizer-row span {
+    margin: 0 0 60px 0; }
   section.sponsors .gold-organizer-row .col-sm-12 {
     margin: 0 0 90px 0; }
   section.sponsors section.gold-sponsor .santander-logo-container {
@@ -1149,7 +1151,7 @@ section.sponsors {
     margin: 0 0 100px 0; }
     section.sponsors section.rest-of-sponsors span {
       display: block;
-      margin: 0 0 18px 0; }
+      margin: 0 0 60px 0; }
     section.sponsors section.rest-of-sponsors .sponsor-logo-container {
       width: 185px;
       height: 185px; }
@@ -1157,20 +1159,22 @@ section.sponsors {
         width: 115px; }
     section.sponsors section.rest-of-sponsors .row .col-sm-12 {
       margin: 0 0 45px 0; }
-  section.sponsors section.honorary-patronage span {
-    display: block;
-    margin: 0 0 35px 0; }
-  section.sponsors section.honorary-patronage div.row .col {
-    padding-right: 5px;
-    padding-left: 5px; }
-    section.sponsors section.honorary-patronage div.row .col .patron-logo-container {
-      width: 125px;
-      height: 125px;
-      margin: 0 0 50px 0; }
-      section.sponsors section.honorary-patronage div.row .col .patron-logo-container img {
-        width: 85px; }
-  section.sponsors section.honorary-patronage div.row .second-col {
-    padding-top: 85px; }
+  section.sponsors section.logo-triangle-layout {
+    margin: 0 0 100px 0; }
+    section.sponsors section.logo-triangle-layout span {
+      display: block;
+      margin: 0 0 60px 0; }
+    section.sponsors section.logo-triangle-layout div.row .col {
+      padding-right: 5px;
+      padding-left: 5px; }
+      section.sponsors section.logo-triangle-layout div.row .col .patron-logo-container {
+        width: 125px;
+        height: 125px;
+        margin: 0 0 50px 0; }
+        section.sponsors section.logo-triangle-layout div.row .col .patron-logo-container img {
+          width: 85px; }
+    section.sponsors section.logo-triangle-layout div.row .second-col {
+      padding-top: 85px; }
 
 @media (min-width: 576px) {
   section.sponsors {
@@ -1189,14 +1193,32 @@ section.sponsors {
 @media (min-width: 992px) {
   section.sponsors {
     margin: 150px 0 0 0;
-    padding: 0 90px; }
+    padding: 0 90px;
+    padding-bottom: 200px; }
     section.sponsors div.heading h3 {
       font-size: 30px;
       font-weight: 700;
       margin: 0 0 80px 0; }
+    section.sponsors section.gold-sponsor {
+      width: 340px; }
     section.sponsors section.organizer span {
       position: relative;
-      bottom: 19px; } }
+      bottom: 19px;
+      width: 300px; }
+    section.sponsors .gold-organizer-row span {
+      margin: 0 0 30px 0; }
+    section.sponsors .lg-row .col {
+      height: 250px; }
+      section.sponsors .lg-row .col .logo-container {
+        margin: 0 !important; }
+    section.sponsors .media-partners .lg-row .col {
+      height: 200px; }
+    section.sponsors .media-partners .second-row {
+      position: relative;
+      bottom: 40px; }
+    section.sponsors .media-partners .third-row {
+      position: relative;
+      bottom: 80px; } }
 @media (min-width: 1200px) {
   section.sponsors div.heading h2 {
     font-size: 20px; }
@@ -1210,6 +1232,10 @@ section.sponsors {
     section.sponsors .gold-sponsor-col section.gold-sponsor .logo-container {
       width: 390px;
       height: 390px; }
+  section.sponsors section.gold-sponsor {
+    width: 440px; }
+  section.sponsors section.organizer {
+    width: 380px; }
   section.sponsors section.organizer span {
     bottom: 30px; }
   section.sponsors .organizer-col {
@@ -1222,7 +1248,8 @@ section.sponsors {
     height: 285px; } }
 section.contact {
   background: #FEF4F3;
-  padding: 60px 40px; }
+  padding: 35px;
+  margin: 50px 0 0 0; }
   section.contact p.para {
     color: #7B7B7B;
     font-size: 12px;
@@ -1230,7 +1257,8 @@ section.contact {
     margin: 0 0 35px 0;
     line-height: 2.4; }
   section.contact article.stay-in-touch {
-    margin: 0 0 30px 0; }
+    margin: 0 0 30px 0;
+    max-width: 1400px; }
     section.contact article.stay-in-touch div.heading h2 {
       font-size: 16px;
       color: #EF3024;
@@ -1245,61 +1273,75 @@ section.contact {
       max-width: 80%; }
   section.contact section.social-media {
     margin: 0 0 70px 0;
-    height: 40px; }
+    height: 40px;
+    max-width: 1400px; }
     section.contact section.social-media a img {
       width: 20px;
       transition: all ease-in-out 0.3s; }
     section.contact section.social-media a:hover img {
       width: 24px; }
-  section.contact section.newsletter h2 {
-    font-size: 16px;
-    color: #EF3024;
-    font-weight: 700;
-    margin: 0 0 45px 0; }
-  section.contact section.newsletter input.user-email {
-    border: none;
-    outline: none;
-    width: 100%;
-    max-width: 300px;
-    border-radius: 100px;
-    padding: 18px 0;
-    margin: 0 0 30px 0;
-    text-indent: 27px;
-    font-size: 14px;
-    font-weight: 600;
-    -webkit-box-shadow: 10px 10px 9px 0px #fee6e4;
-    -moz-box-shadow: 10px 10px 9px 0px #fee6e4;
-    box-shadow: 10px 10px 9px 0px #fee6e4; }
-    section.contact section.newsletter input.user-email::placeholder {
+  section.contact section.newsletter {
+    max-width: 1400px; }
+    section.contact section.newsletter h2 {
+      font-size: 16px;
+      color: #EF3024;
+      font-weight: 700;
+      margin: 0 0 45px 0; }
+    section.contact section.newsletter input.user-email {
+      border: none;
+      outline: none;
+      width: 100%;
+      max-width: 300px;
+      border-radius: 100px;
+      padding: 18px 0;
+      margin: 0 0 30px 0;
+      text-indent: 27px;
       font-size: 14px;
       font-weight: 600;
-      text-indent: 27px; }
-  section.contact section.newsletter button.sign-in {
-    margin: 0;
-    border: 3px solid #EF3024;
-    background: #EF3024;
-    text-align: center;
-    color: #fff;
-    padding: 11px 30px;
-    font-size: 14px;
-    font-weight: 700;
-    border-radius: 50px;
-    transition: all ease-in-out 0.2s;
-    margin: 0 0 40px 0; }
-    section.contact section.newsletter button.sign-in:hover, section.contact section.newsletter button.sign-in:active {
+      -webkit-box-shadow: 10px 10px 9px 0px #fee6e4;
+      -moz-box-shadow: 10px 10px 9px 0px #fee6e4;
+      box-shadow: 10px 10px 9px 0px #fee6e4; }
+      section.contact section.newsletter input.user-email::placeholder {
+        font-size: 14px;
+        font-weight: 600;
+        text-indent: 27px; }
+    section.contact section.newsletter button.sign-in {
+      margin: 0;
       border: 3px solid #EF3024;
-      background: #FFFFFF;
-      color: #EF3024;
-      outline: none; }
-  section.contact section.newsletter p {
-    opacity: 50%;
-    color: #7B7B7B;
-    font-size: 12px;
-    font-weight: 400;
-    margin: 0 0 35px 0;
-    opacity: 0.6;
-    line-height: 2; }
+      background: #EF3024;
+      text-align: center;
+      color: #fff;
+      padding: 11px 30px;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 50px;
+      transition: all ease-in-out 0.2s;
+      margin: 0 0 40px 0; }
+      section.contact section.newsletter button.sign-in:hover, section.contact section.newsletter button.sign-in:active {
+        border: 3px solid #EF3024;
+        background: #FFFFFF;
+        color: #EF3024;
+        outline: none; }
+    section.contact section.newsletter p {
+      opacity: 50%;
+      color: #7B7B7B;
+      font-size: 12px;
+      font-weight: 400;
+      margin: 0;
+      opacity: 0.6;
+      line-height: 2; }
 
+@media (min-width: 576px) {
+  section.contact {
+    margin: 50px 0 0 0; } }
+@media (min-width: 768px) {
+  section.contact {
+    padding: 60px;
+    margin: 100px 0 0 0; } }
+@media (min-width: 992px) {
+  section.contact {
+    padding: 90px;
+    margin: 150px 0 0 0; } }
 @media (min-width: 1200px) {
   section.contact article.stay-in-touch div.heading h2 {
     font-size: 20px; }
@@ -1312,7 +1354,8 @@ footer {
   color: #7B7B7B;
   font-weight: 700;
   text-align: center;
-  padding: 50px 0; }
+  padding: 50px 0;
+  margin: 50px 0 0 0; }
   footer h2 {
     font-size: 14px;
     font-weight: 700; }
@@ -1323,6 +1366,15 @@ footer {
     color: #7B7B7B;
     padding: 10px 5px; }
 
+@media (min-width: 576px) {
+  footer {
+    margin: 50px 0 0 0; } }
+@media (min-width: 768px) {
+  footer {
+    margin: 100px 0 0 0; } }
+@media (min-width: 992px) {
+  footer {
+    margin: 150px 0 0 0; } }
 * {
   font-family: 'Poppins', sans-serif;
   padding: 0;

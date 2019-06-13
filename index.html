@@ -6,6 +6,7 @@
 <!-- cień na inpucie w footer -->
 <!-- footer - zdjęć podkreślenie na hover i zamienić na czerwony -->
 <!-- carousel1-tiles dokończyć grida na xl -->
+<!-- section.they-will-perform karuzela przeskakuje-->
 <!-- section.opinions-md dopracować marginy -->
 <!-- section.sponsors-md dopracować paddingi na columnach dla gold-sponsor i organizer -->
 
@@ -919,18 +920,20 @@
                 <h2>W tym roku wspierają nas</h2>
                 <h3>Sponsorzy<span>.</span></h3>
             </div>
-            <div class="row gold-organizer-row">
+            <div class="row gold-organizer-row no-gutters">
+                <span class="d-lg-none">Złoty sponsor</span>
                 <div class="col-sm-12 col-lg-6 gold-sponsor-col d-flex justify-content-center justify-content-lg-end">
                     <section class="gold-sponsor">
-                        <span>Złoty sponsor</span>
+                        <span class="d-none d-lg-block">Złoty sponsor</span>
                         <div class="logo-container santander-logo-container mr-auto ml-auto d-flex align-items-center">
                             <img src="./img/santander-logo2x.png" class="santander-logo ml-auto mr-auto" alt="Santander bank logo">
                         </div>
                     </section>
                 </div>
+                <span class="d-lg-none">Organizator</span>
                 <div class="col-sm-12 col-lg-6 organizer-col d-flex justify-content-center justify-content-lg-start">
                     <section class="organizer d-flex flex-column justify-content-center">
-                        <span>Organizator</span>
+                        <span class="d-none d-lg-block">Organizator</span>
                         <div class="logo-container organizer-logo-container mr-auto ml-auto d-flex align-items-center">
                             <img src="./img/clickMaster-logo2x.png" class="click-master-logo ml-auto mr-auto" alt="ClickMaster logo">
                         </div>
@@ -957,9 +960,9 @@
                    </div>
                 </div>
             </section>
-            <section class="honorary-patronage">
+            <section class="honorary-patronage logo-triangle-layout">
                 <span>Patronat honorowy MTA</span>
-                <div class="row">
+                <div class="row d-lg-none">
                     <div class="col">
                         <div class="logo-container patron-logo-container d-flex align-items-center ml-auto">
                             <img src="./img/honorary-patronage/12x.png" class="ml-auto mr-auto" alt="logo">
@@ -968,7 +971,7 @@
                             <img src="./img/honorary-patronage/22x.png" class="ml-auto mr-auto" alt="logo">
                         </div>
                         <div class="logo-container patron-logo-container d-flex align-items-center ml-auto">
-                                <img src="./img/honorary-patronage/32x.png" class="ml-auto mr-auto" alt="logo">
+                            <img src="./img/honorary-patronage/32x.png" class="ml-auto mr-auto" alt="logo">
                         </div>
                     </div>
                     <div class="col second-col">
@@ -976,80 +979,296 @@
                             <img src="./img/honorary-patronage/42x.png" class="ml-auto mr-auto" alt="logo">
                         </div>
                         <div class="logo-container patron-logo-container d-flex align-items-center  mr-auto">
-                                <img src="./img/honorary-patronage/52x.png" class="ml-auto mr-auto" alt="logo">
+                            <img src="./img/honorary-patronage/52x.png" class="ml-auto mr-auto" alt="logo">
                         </div>
                         <div class="logo-container patron-logo-container d-flex align-items-center  mr-auto">
                             <img src="./img/honorary-patronage/62x.png" class="ml-auto mr-auto" alt="logo">
                         </div> 
                     </div>
                 </div>
-            </section>
-        </section>
 
-        <section class="contact">
-             <article class="stay-in-touch">
-                    <div class="heading d-flex flex-column align-items-start">
-                        <h2>Chcesz być bieżąco?</h2>
-                        <h3>Bądźmy w kontakcie<span>.</span></h3>
-                    </div>
-                    <p class="para">
-                        Śledź nas w social mediach oraz dołącz 
-                        do newslettera. 
-                        W ten sposób jako pierwszy otrzymasz 
-                        informacje o rozpoczęciu 
-                        przedsprzedaży biletów oraz zapisach 
-                        na call for papers!
-                    </p>
-             </article>
-             <section class="social-media d-flex align-items-center">
-                <div class="row w-100">
+                <!-- row over 992px -->
+                <div class="row lg-row d-none d-lg-flex">
                     <div class="col">
-                        <!-- facebook link -->
-                        <a href="#">
-                            <img src="./img/social-media-icons/facebook@2x.png">
-                        </a>
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/12x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col d-flex flex-column justify-content-end">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/22x.png" class="ml-auto mr-auto" alt="logo">
+                        </div> 
                     </div>
                     <div class="col">
-                        <!-- twitter link -->
-                        <a href="#">
-                            <img src="./img/social-media-icons/twitter@2x.png">
-                        </a>
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/32x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col d-flex flex-column justify-content-end">
+                        <div class="logo-container patron-logo-container d-flex align-items-center ">
+                            <img src="./img/honorary-patronage/42x.png" class="ml-auto mr-auto" alt="logo">
+                        </div> 
                     </div>
                     <div class="col">
-                        <!-- instagram link -->
-                        <a href="#">
-                            <img src="./img/social-media-icons/instagram@2x.png">
-                        </a>
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/52x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
                     </div>
-                    <div class="col">
-                        <!-- linkedIn link -->
-                        <a href="#">
-                            <img src="./img/social-media-icons/linkedin@2x.png">
-                        </a>
-                    </div>
-                    <div class="col">
-                        <!-- youtube link -->
-                        <a href="#">
-                            <img src="./img/social-media-icons/youtube@2x.png">
-                        </a>
+                    <div class="col d-flex flex-column justify-content-end">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/62x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>  
                     </div>
                 </div>
-             </section>
-             <section class="newsletter">
-                    <h2>Zapisz się do newslettera<span>.</span></h2>
-                    <input type="email" placeholder="Twój adres email" class="user-email">
-                    <button class="sign-in" type="button">zapisz się</button>
-                    <p>
-                        Kliknięcie przycisku „Zapisz” oznacza wyrażenie 
-                        zgody na przetwarzanie danych osobowych 
-                        (adres e-mail) w celu umożliwienia przesyłania
-                        mi newslettera, zawierającego również treści
-                        marketingowe partnerów Administratora 
-                        Danych Osobowych. Administratorem 
-                        danych jest Robert Rachwał ClickMaster 
-                        Polska Więcej...
-                    </p>
-             </section>
+            </section>
+            <section class="media-partners logo-triangle-layout">
+                <span class="d-none d-lg-block">Patroni medialni</span>
+                <!-- first row -->
+                <div class="row lg-row first-row d-none d-lg-flex">
+                    <div class="col col-lg-2">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/12x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col col-lg-2  d-flex flex-column justify-content-end">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/22x.png" class="ml-auto mr-auto" alt="logo">
+                        </div> 
+                    </div>
+                    <div class="col col-lg-2">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/32x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 d-flex flex-column justify-content-end">
+                        <div class="logo-container patron-logo-container d-flex align-items-center ">
+                            <img src="./img/honorary-patronage/42x.png" class="ml-auto mr-auto" alt="logo">
+                        </div> 
+                    </div>
+                    <div class="col col-lg-2">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/52x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 d-flex flex-column justify-content-end">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/62x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>  
+                    </div>
+                </div>
+                <!-- second row -->
+                <div class="row lg-row second-row d-none d-lg-flex">
+                    <div class="col col-lg-2">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/22x.png" class="ml-auto mr-auto" alt="logo">
+                        </div> 
+                    </div>
+                    <div class="col col-lg-2 d-flex flex-column justify-content-end">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/32x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col col-lg-2">
+                        <div class="logo-container patron-logo-container d-flex align-items-center ">
+                            <img src="./img/honorary-patronage/42x.png" class="ml-auto mr-auto" alt="logo">
+                        </div> 
+                    </div>
+                    <div class="col col-lg-2 d-flex flex-column justify-content-end">
+                        <div class="logo-container patron-logo-container d-flex align-items-center ">
+                            <img src="./img/honorary-patronage/42x.png" class="ml-auto mr-auto" alt="logo">
+                        </div> 
+                    </div>
+                    <div class="col col-lg-2">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/52x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 d-flex flex-column justify-content-end">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/62x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>  
+                    </div>
+                </div>
+                <!-- third row -->
+                <div class="row lg-row third-row d-none d-lg-flex">
+                    <div class="col col-lg-2">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/12x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col col-lg-2  d-flex flex-column justify-content-end">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/22x.png" class="ml-auto mr-auto" alt="logo">
+                        </div> 
+                    </div>
+                    <div class="col col-lg-2">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/32x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 d-flex flex-column justify-content-end">
+                        <div class="logo-container patron-logo-container d-flex align-items-center ">
+                            <img src="./img/honorary-patronage/42x.png" class="ml-auto mr-auto" alt="logo">
+                        </div> 
+                    </div>
+                    <div class="col col-lg-2">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/52x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 d-flex flex-column justify-content-end">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/62x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>  
+                    </div>
+                </div>
+            </section>
+            <section class="partners logo-triangle-layout">
+                <span class="d-none d-lg-block">Partnerzy</span>
+                <!-- first row -->
+                <div class="row lg-row first-row d-none d-lg-flex">
+                    <div class="col col-lg-2">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/12x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col col-lg-2  d-flex flex-column justify-content-end">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/22x.png" class="ml-auto mr-auto" alt="logo">
+                        </div> 
+                    </div>
+                    <div class="col col-lg-2">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/32x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 d-flex flex-column justify-content-end">
+                        <div class="logo-container patron-logo-container d-flex align-items-center ">
+                            <img src="./img/honorary-patronage/42x.png" class="ml-auto mr-auto" alt="logo">
+                        </div> 
+                    </div>
+                    <div class="col col-lg-2">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/52x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 d-flex flex-column justify-content-end">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/62x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>  
+                    </div>
+                </div>
+                <!-- second row -->
+                <div class="row lg-row second-row d-none d-lg-flex">
+                    <div class="col col-lg-2">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/22x.png" class="ml-auto mr-auto" alt="logo">
+                        </div> 
+                    </div>
+                    <div class="col col-lg-2 d-flex flex-column justify-content-end">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/32x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col col-lg-2">
+                        <div class="logo-container patron-logo-container d-flex align-items-center ">
+                            <img src="./img/honorary-patronage/42x.png" class="ml-auto mr-auto" alt="logo">
+                        </div> 
+                    </div>
+                    <div class="col col-lg-2 d-flex flex-column justify-content-end">
+                        <div class="logo-container patron-logo-container d-flex align-items-center ">
+                            <img src="./img/honorary-patronage/42x.png" class="ml-auto mr-auto" alt="logo">
+                        </div> 
+                    </div>
+                    <div class="col col-lg-2">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/52x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col col-lg-2 d-flex flex-column justify-content-end">
+                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                            <img src="./img/honorary-patronage/62x.png" class="ml-auto mr-auto" alt="logo">
+                        </div>  
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="contact d-lg-flex">
+            <div class="row">
+                <div class="col-sm-12">
+                    <article class="stay-in-touch mr-auto ml-auto">
+                        <div class="heading d-flex flex-column align-items-start">
+                            <h2>Chcesz być bieżąco?</h2>
+                            <h3>Bądźmy w kontakcie<span>.</span></h3>
+                        </div>
+                        <p class="para">
+                            Śledź nas w social mediach oraz dołącz 
+                            do newslettera. 
+                            W ten sposób jako pierwszy otrzymasz 
+                            informacje o rozpoczęciu 
+                            przedsprzedaży biletów oraz zapisach 
+                            na call for papers!
+                        </p>
+                    </article>
+                </div>
+                <div class="col-sm-12">
+                    <section class="social-media d-flex align-items-center mr-auto ml-auto">
+                            <div class="row w-100">
+                                <div class="col">
+                                    <!-- facebook link -->
+                                    <a href="#">
+                                        <img src="./img/social-media-icons/facebook@2x.png">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <!-- twitter link -->
+                                    <a href="#">
+                                        <img src="./img/social-media-icons/twitter@2x.png">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <!-- instagram link -->
+                                    <a href="#">
+                                        <img src="./img/social-media-icons/instagram@2x.png">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <!-- linkedIn link -->
+                                    <a href="#">
+                                        <img src="./img/social-media-icons/linkedin@2x.png">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <!-- youtube link -->
+                                    <a href="#">
+                                        <img src="./img/social-media-icons/youtube@2x.png">
+                                    </a>
+                                </div>
+                            </div>
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <section class="newsletter mr-auto ml-auto">
+                        <h2>Zapisz się do newslettera<span>.</span></h2>
+                        <input type="email" placeholder="Twój adres email" class="user-email">
+                        <button class="sign-in" type="button">zapisz się</button>
+                        <p>
+                            Kliknięcie przycisku „Zapisz” oznacza wyrażenie 
+                            zgody na przetwarzanie danych osobowych 
+                            (adres e-mail) w celu umożliwienia przesyłania
+                            mi newslettera, zawierającego również treści
+                            marketingowe partnerów Administratora 
+                            Danych Osobowych. Administratorem 
+                            danych jest Robert Rachwał ClickMaster 
+                            Polska Więcej...
+                        </p>
+                    </section>
+                </div>
+            </div>
         </section>
 
     </main>

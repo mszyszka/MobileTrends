@@ -4,6 +4,7 @@ footer {
     font-weight: 700;
     text-align: center;
     padding: 50px 0;
+    margin: $sec-margin-sm;
     h2 {
         font-size: 14px;
         font-weight: 700;
@@ -18,4 +19,25 @@ footer {
             padding: 10px 5px;
         }
     }
+}
+
+@media(min-width: 576px) {
+    footer {
+        margin: $sec-margin-sm;
+    }
+}
+@media(min-width: 768px) {
+    footer {
+        margin: $sec-margin-md;
+    }
+}
+
+@media(min-width: 992px) {
+    footer {
+        margin: $sec-margin-lg;
+    }
+}
+
+@media(min-width: 1200px) {
+
 }
