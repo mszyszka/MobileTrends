@@ -933,6 +933,7 @@ section.join-today {
     padding: 0; } }
 section.year-ago-pictures {
   margin: 0 0 100px 0;
+  max-width: 1400px;
   margin: 50px 0 0 0; }
   section.year-ago-pictures div.heading {
     padding: 0 35px; }
@@ -987,7 +988,19 @@ section.year-ago-pictures {
   section.year-ago-pictures div.heading h2 {
     font-size: 20px; }
   section.year-ago-pictures div.heading h3 {
-    font-size: 48px; } }
+    font-size: 48px; }
+  section.year-ago-pictures #carousel4-over1200 .row:first-of-type {
+    padding: 0 0 20px 0; }
+  section.year-ago-pictures #carousel4-over1200 .col-1 {
+    padding: 0 10px 0 0; }
+  section.year-ago-pictures #carousel4-over1200 .col-2 {
+    padding: 0 0 0 10px; }
+  section.year-ago-pictures #carousel4-over1200 .col-3 {
+    padding: 0 10px 0 0; }
+  section.year-ago-pictures #carousel4-over1200 .col-4 {
+    padding: 0 10px 0 10px; }
+  section.year-ago-pictures #carousel4-over1200 .col-5 {
+    padding: 0 0 0 10px; } }
 section.conference-location {
   margin: 50px 0 0 0;
   max-width: 1400px; }

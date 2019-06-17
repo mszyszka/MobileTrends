@@ -1,5 +1,6 @@
 section.year-ago-pictures {
     margin: 0 0 100px 0;
+    max-width: 1400px;
     // padding: $sec-padding-sm;
     margin: $sec-margin-sm;
     div.heading {
@@ -52,6 +53,26 @@ section.year-ago-pictures {
             }
             h3 {
                 font-size: $h3-lg;
+            }
+        }
+        #carousel4-over1200 {
+            .row:first-of-type {
+                padding: 0 0 20px 0;
+            }
+            .col-1 {
+                padding: 0 10px 0 0;
+            }
+            .col-2 {
+                padding: 0 0 0 10px;
+            }
+            .col-3 {
+                padding: 0 10px 0 0;
+            }
+            .col-4 {
+                padding: 0 10px 0 10px;
+            }
+            .col-5 {
+                padding: 0 0 0 10px;
             }
         }
     }
