@@ -124,10 +124,8 @@ section.sponsors {
 
 @media(min-width: 992px) {
     section.sponsors {
-        margin: $sec-margin-lg;
+        margin: 150px 0 150px 0;
         padding: $sec-padding-lg;
-        padding-bottom: 200px;
-
         div.heading {
              h3 {
                 font-size: 30px;
@@ -146,6 +144,9 @@ section.sponsors {
             }
         }
         .gold-organizer-row {
+            .col-sm-12 {
+                margin: 0 0 100px 0;
+            }
             span {
                 margin: 0 0 30px 0;
             }
@@ -158,7 +159,8 @@ section.sponsors {
                 }
             }
         }
-        .media-partners {
+        .media-partners.logo-triangle-layout {
+            margin: 0 0 0 0;
             .lg-row {
                 .col {
                     height: 200px;

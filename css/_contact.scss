@@ -1,11 +1,14 @@
 section.contact {
     background: #FEF4F3;
-    padding: 35px;
-    margin: $sec-margin-sm;
+    padding: 55px 35px;
+    // margin: $sec-margin-sm;
+    .row {
+        max-width: 1400px;
+    }
     p.para {
         color: $content-txt-color;
         font-size: 12px;
-        font-weight: 400;
+        font-weight: 600;
         margin: 0 0 35px 0;
         line-height: 2.4;
     }
@@ -21,14 +24,10 @@ section.contact {
                 margin: 0 0 30px 0;
             }
         }
-        p {
-            max-width: 80%;
-        }
     }
     section.social-media {
         margin: 0 0 70px 0;
         height: 40px;
-        max-width: 1400px;
         a {
             img {
                 width: 20px;
@@ -43,15 +42,15 @@ section.contact {
     }
     section.newsletter {
         max-width: 1400px;
-        h2 {
-            @include section-h2;
+        h3 {
+            @include section-h3;
             margin: 0 0 45px 0;
         }
         input.user-email {
             border: none;
             outline: none;
             width: 100%;
-            max-width: 300px;
+            max-width: 400px;
             border-radius: 100px;
             padding: 18px 0;
             margin: 0 0 30px 0;
@@ -69,13 +68,14 @@ section.contact {
         }
         button.sign-in {
             @include red-button;
+            padding: 13px 45px;
             margin: 0 0 40px 0;
         }
         p {
             opacity: 50%;
             color: $content-txt-color;
             font-size: 12px;
-            font-weight: 400;
+            font-weight: 600;
             margin: 0;
             opacity: 0.6;
             line-height: 2;
@@ -85,22 +85,67 @@ section.contact {
 
 @media(min-width: 576px) {
     section.contact {
-        margin: $sec-margin-sm;
+
     }
 }
 @media(min-width: 768px) {
     section.contact {
         padding: 60px;
-        margin: $sec-margin-md;
+        // margin: $sec-margin-md;
+        section.social-media {
+            max-width: 75%;
+        }
+        p.para {
+            max-width: 85%;
+        }
+        section.newsletter {
+            input.user-email {
+                max-width: 500px;
+            }
+            p {
+                max-width: 85%;
+            }
+        }
     }
 }
 @media(min-width: 992px) {
     section.contact {
         padding: 90px;
-        margin: $sec-margin-lg;
+        // margin: $sec-margin-lg;
     }
 }
 @media(min-width: 1200px) {
+    section.contact {
+        article.stay-in-touch {
+            div.heading {
+                h3 {
+                    margin: 0 0 45px 0;
+                }
+            }
+            p.para {
+                margin: 0 0 45px 0;
+            }
+        }
+        section.newsletter {
+            h2 {
+                @include section-h2;
+                color: transparent;
+            }
+            h3 {
+                margin: 0 0 45px 0;
+            }
+            p {
+                max-width: 100%;
+            }
+            button.sign-in {
+                margin: 0 0 45px 0;
+            }
+        }
+    }
+}
+
+// 1500px is first width that h3(xl: 48px) can fit in one line.
+@media(min-width: 1500px) {
     section.contact {
         article.stay-in-touch {
             div.heading {
@@ -113,6 +158,17 @@ section.contact {
             }
             p.para {
                 font-size: 18px;
+                line-height: 1.8;
+            }
+        }
+        section.newsletter {
+            h2 {
+                font-size: $h2-lg;
+            }
+            h3 {
+                font-size: $h3-lg;
+            }
+            p {
             }
         }
     }

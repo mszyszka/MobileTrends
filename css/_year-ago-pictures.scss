@@ -1,15 +1,16 @@
 section.year-ago-pictures {
     margin: 0 0 100px 0;
     max-width: 1400px;
-    // padding: $sec-padding-sm;
     margin: $sec-margin-sm;
     div.heading {
-        padding: 0 35px;
+        padding: $sec-padding-sm;
+        margin: 0 0 30px 0;
         h2 {
             @include section-h2;
         }
         h3 {
             @include section-h3;
+            margin: 0;
         }
     }
     div.carousel-4 {
@@ -32,16 +33,25 @@ section.year-ago-pictures {
 @media (min-width: 576px) {
     section.year-ago-pictures {
         margin: $sec-margin-sm;
+        div.heading {
+            padding: $sec-padding-sm;
+        }
     }
 }
 @media (min-width: 768px) {
     section.year-ago-pictures {
         margin: $sec-margin-md;
+        div.heading {
+            padding: $sec-padding-md;
+        }
     }
 }
 @media (min-width: 992px) {
     section.year-ago-pictures {
         margin: $sec-margin-lg;
+        div.heading {
+            padding: $sec-padding-lg;
+        }
     }
 }
 
@@ -77,3 +87,11 @@ section.year-ago-pictures {
         }
     }
 }
+
+@media (min-width: 1580px) {
+    section.year-ago-pictures {
+        div.heading {
+            padding: 0;
+        }
+    }
+ }

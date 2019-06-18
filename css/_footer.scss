@@ -4,12 +4,12 @@ footer {
     font-weight: 700;
     text-align: center;
     padding: 50px 0;
-    margin: $sec-margin-sm;
     h2 {
         font-size: 14px;
         font-weight: 700;
         a:link,a:visited,a:hover,a:active {
             color: $logo-red;
+            text-decoration: none;
         }
     }
     nav {
@@ -17,24 +17,28 @@ footer {
             font-size: 12px;
             color: $content-txt-color;
             padding: 10px 5px;
+            text-decoration: none;
+        }
+        a:hover,a:active {
+            color: $logo-red;
         }
     }
 }
 
 @media(min-width: 576px) {
     footer {
-        margin: $sec-margin-sm;
+        padding: 60px 0;
     }
 }
 @media(min-width: 768px) {
     footer {
-        margin: $sec-margin-md;
+        padding: 70px 0;
     }
 }
 
 @media(min-width: 992px) {
     footer {
-        margin: $sec-margin-lg;
+        padding: 80px 0;
     }
 }
 
