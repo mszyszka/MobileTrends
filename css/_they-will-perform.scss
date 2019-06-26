@@ -30,9 +30,10 @@ section.they-will-perform {
              width: 12px;
          }
         .carousel-item {
-            max-width: 340px;
+            // max-width: 340px;
             img {
                 width: 100%;
+                display: block;
                 margin: 0 0 30px 0;
                 max-width: 340px;
             }

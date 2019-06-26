@@ -1,7 +1,8 @@
 section.contact {
     background: #FEF4F3;
     padding: 55px 35px;
-    // margin: $sec-margin-sm;
+    position: relative;
+    z-index: 1000;
     .row {
         max-width: 1400px;
     }
@@ -84,10 +85,8 @@ section.contact {
 }
 
 @media(min-width: 576px) {
-    section.contact {
-
-    }
 }
+
 @media(min-width: 768px) {
     section.contact {
         padding: 60px;

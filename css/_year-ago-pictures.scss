@@ -1,3 +1,44 @@
+.slide__image{
+ height: 350px;
+ background-size: cover;
+ background-position: 50% 50%;
+ background-repeat: no-repeat;
+}
+
+.loop {
+    position: relative;
+}
+
+.owl-prev {
+    position: absolute;
+    top: 45%; 
+    left: 20px;
+    color: #ffffff!important;
+    z-index: 20;
+    font-size: 50px!important;
+    transform: translateY(-50%);
+    outline: none;
+    border: none;
+}
+
+.owl-next {
+    position: absolute;
+    top: 45%; 
+    right: 20px;
+    color: #ffffff!important;
+    z-index: 20;
+    font-size: 50px!important;
+    transform: translateY(-50%);
+    outline: none;
+    border: none;
+}
+
+.gradient {
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+
 section.year-ago-pictures {
     margin: 0 0 100px 0;
     max-width: 1400px;
@@ -13,21 +54,6 @@ section.year-ago-pictures {
             margin: 0;
         }
     }
-    div.carousel-4 {
-        div.carousel-inner {
-            div.carousel-item {
-                img {
-                    max-width: 100%;
-                }
-            }
-        }
-        a.carousel-control-prev {
-            @include carousel-control-prev-a;
-        }
-        a.carousel-control-next {
-            @include carousel-control-next-a;
-        }
-    }
 }
 
 @media (min-width: 576px) {
@@ -36,14 +62,22 @@ section.year-ago-pictures {
         div.heading {
             padding: $sec-padding-sm;
         }
+        .owl-prev {
+            top: 48%; 
+            font-size: 80px!important;
+            left: 40px;
+        }
+        
+        .owl-next {
+            top: 48%; 
+            font-size: 80px!important;
+            right: 40px;
+        }
     }
 }
 @media (min-width: 768px) {
     section.year-ago-pictures {
         margin: $sec-margin-md;
-        div.heading {
-            padding: $sec-padding-md;
-        }
     }
 }
 @media (min-width: 992px) {
@@ -65,24 +99,16 @@ section.year-ago-pictures {
                 font-size: $h3-lg;
             }
         }
-        #carousel4-over1200 {
-            .row:first-of-type {
-                padding: 0 0 20px 0;
+        .owl-carousel.second {
+            .owl-prev{
+                border: none;
+                outline: none;
+                font-size: 120px!important;
             }
-            .col-1 {
-                padding: 0 10px 0 0;
-            }
-            .col-2 {
-                padding: 0 0 0 10px;
-            }
-            .col-3 {
-                padding: 0 10px 0 0;
-            }
-            .col-4 {
-                padding: 0 10px 0 10px;
-            }
-            .col-5 {
-                padding: 0 0 0 10px;
+            .owl-next{
+                border: none;
+                outline: none;
+                font-size: 120px!important;
             }
         }
     }

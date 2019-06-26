@@ -5,7 +5,8 @@
   background-position: 89% 50%;
   background-repeat: no-repeat;
   padding: 0;
-  position: relative; }
+  position: relative;
+  z-index: 1000; }
   .site-header::before {
     content: '';
     position: absolute;
@@ -77,15 +78,45 @@
       height: 190px;
       position: relative;
       top: 112px; } }
+.side-nav {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%); }
+  .side-nav a {
+    padding: 10px 30px;
+    height: 60px; }
+    .side-nav a img {
+      width: 22px; }
+    .side-nav a:hover {
+      padding: 10px 27px; }
+      .side-nav a:hover img {
+        width: 28px; }
+
+@media (min-width: 1460px) {
+  .side-nav {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%); }
+    .side-nav a {
+      padding: 10px 30px; }
+      .side-nav a img {
+        width: 22px; } }
 .navbar {
   padding: 25px 10px 25px 22px;
-  max-width: 1600px; }
+  max-width: 1600px;
+  position: relative;
+  z-index: 1000;
+  background: #ffffff; }
   .navbar .navbar-toggler {
     border: none;
     outline: none; }
   .navbar .navbar-collapse ul.navbar-nav li a {
     color: #000;
     font-weight: 500; }
+    .navbar .navbar-collapse ul.navbar-nav li a:hover {
+      cursor: pointer; }
   .navbar .navbar-collapse ul.navbar-nav li.mta {
     min-width: 112px; }
   .navbar .navbar-collapse ul.navbar-nav li.buy-ticket {
@@ -102,6 +133,7 @@
     font-weight: 700;
     border-radius: 50px;
     transition: all ease-in-out 0.2s;
+    outline: none;
     padding: 8px 40px; }
     .navbar .navbar-collapse ul.navbar-nav li.buy-ticket .buy-a-ticket:hover, .navbar .navbar-collapse ul.navbar-nav li.buy-ticket .buy-a-ticket:active {
       border: 3px solid #EF3024;
@@ -255,11 +287,9 @@
     margin: 0; }
   .is-it-worth-investing ul.why {
     margin-bottom: 0;
-    padding: 0 0 0 20px;
     list-style-image: url(/img/arrow-left.png); }
     .is-it-worth-investing ul.why .row div.col-sm-12 {
-      margin: 0 0 43px 0;
-      padding-right: 30px; }
+      margin: 0 0 43px 0; }
       .is-it-worth-investing ul.why .row div.col-sm-12:last-of-type {
         margin: 0; }
     .is-it-worth-investing ul.why li {
@@ -278,7 +308,9 @@
 @media (min-width: 768px) {
   .is-it-worth-investing {
     padding: 0 60px;
-    margin: 100px 0 0 0; } }
+    margin: 100px 0 0 0; }
+    .is-it-worth-investing ul.why .row div.col-sm-12 {
+      padding-right: 30px; } }
 @media (min-width: 992px) {
   .is-it-worth-investing {
     padding: 0 90px;
@@ -305,7 +337,7 @@ section.carousel-1-section {
     padding: 0 0 25px 0; }
     section.carousel-1-section .carousel-1 .carousel-item .item-container {
       height: 400px;
-      max-width: 300px;
+      max-width: 85%;
       padding: 34px;
       border-radius: 49px;
       -webkit-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35);
@@ -325,6 +357,9 @@ section.carousel-1-section {
       font-weight: 600;
       font-size: 15px; }
 
+@media (min-width: 375px) {
+  section.carousel-1-section .carousel-1 .carousel-item .item-container {
+    max-width: 300px; } }
 section.carousel1-tiles {
   padding: 0 60px;
   max-width: 1400px;
@@ -400,7 +435,8 @@ section.confirm-your-presence {
     font-size: 14px;
     font-weight: 700;
     border-radius: 50px;
-    transition: all ease-in-out 0.2s; }
+    transition: all ease-in-out 0.2s;
+    outline: none; }
     section.confirm-your-presence section.take-action .buy-a-ticket:hover, section.confirm-your-presence section.take-action .buy-a-ticket:active {
       border: 3px solid #EF3024;
       background: #FFFFFF;
@@ -434,7 +470,8 @@ section.confirm-your-presence {
         font-size: 14px;
         font-weight: 700;
         border-radius: 50px;
-        transition: all ease-in-out 0.2s; }
+        transition: all ease-in-out 0.2s;
+        outline: none; }
         section.confirm-your-presence section.take-action .buy-a-ticket:hover, section.confirm-your-presence section.take-action .buy-a-ticket:active {
           border: 3px solid #EF3024;
           background: #FFFFFF;
@@ -458,7 +495,8 @@ section.confirm-your-presence {
     font-size: 14px;
     font-weight: 700;
     border-radius: 50px;
-    transition: all ease-in-out 0.2s; }
+    transition: all ease-in-out 0.2s;
+    outline: none; }
     section.confirm-your-presence section.take-action .buy-a-ticket:hover, section.confirm-your-presence section.take-action .buy-a-ticket:active {
       border: 3px solid #EF3024;
       background: #FFFFFF;
@@ -494,20 +532,19 @@ section.they-will-perform {
     section.they-will-perform .carousel-2 .carousel-control-prev-icon {
       background-image: url("/img/arrow-leftx2.png");
       width: 12px; }
-    section.they-will-perform .carousel-2 .carousel-item {
+    section.they-will-perform .carousel-2 .carousel-item img {
+      width: 100%;
+      display: block;
+      margin: 0 0 30px 0;
       max-width: 340px; }
-      section.they-will-perform .carousel-2 .carousel-item img {
-        width: 100%;
-        margin: 0 0 30px 0;
-        max-width: 340px; }
-      section.they-will-perform .carousel-2 .carousel-item .person-name {
-        font-size: 17px;
-        font-weight: 700; }
-      section.they-will-perform .carousel-2 .carousel-item .company-name {
-        font-size: 12px;
-        color: #EF3024;
-        font-weight: 600;
-        margin: 0 0 33px 0; }
+    section.they-will-perform .carousel-2 .carousel-item .person-name {
+      font-size: 17px;
+      font-weight: 700; }
+    section.they-will-perform .carousel-2 .carousel-item .company-name {
+      font-size: 12px;
+      color: #EF3024;
+      font-weight: 600;
+      margin: 0 0 33px 0; }
   section.they-will-perform .see-everyone {
     margin: 0;
     border: 3px solid #EF3024;
@@ -518,7 +555,8 @@ section.they-will-perform {
     font-size: 14px;
     font-weight: 700;
     border-radius: 50px;
-    transition: all ease-in-out 0.2s; }
+    transition: all ease-in-out 0.2s;
+    outline: none; }
     section.they-will-perform .see-everyone:hover, section.they-will-perform .see-everyone:active {
       border: 3px solid #EF3024;
       background: #FFFFFF;
@@ -573,7 +611,8 @@ section.they-will-perform-md {
     font-size: 14px;
     font-weight: 700;
     border-radius: 50px;
-    transition: all ease-in-out 0.2s; }
+    transition: all ease-in-out 0.2s;
+    outline: none; }
     section.they-will-perform-md .see-everyone:hover, section.they-will-perform-md .see-everyone:active {
       border: 3px solid #EF3024;
       background: #FFFFFF;
@@ -625,7 +664,7 @@ section.year-ago-video {
     margin: 50px 0 0 0; } }
 @media (min-width: 768px) {
   section.year-ago-video {
-    padding: 0 60px;
+    padding: 0 90px;
     margin: 100px 0 0 0; } }
 @media (min-width: 1200px) {
   section.year-ago-video {
@@ -668,6 +707,7 @@ section.next-edition-schedule {
     font-weight: 700;
     border-radius: 50px;
     transition: all ease-in-out 0.2s;
+    outline: none;
     margin: 0 20px 20px 0; }
     section.next-edition-schedule section.take-action .first-day:hover, section.next-edition-schedule section.take-action .first-day:active {
       border: 3px solid #EF3024;
@@ -684,6 +724,7 @@ section.next-edition-schedule {
     font-weight: 700;
     border-radius: 50px;
     transition: all ease-in-out 0.2s;
+    outline: none;
     width: 171px; }
     section.next-edition-schedule section.take-action .second-day:hover, section.next-edition-schedule section.take-action .second-day:active {
       background: #EF3024;
@@ -722,7 +763,6 @@ section.next-edition-schedule {
   section.next-edition-schedule {
     padding: 0; } }
 section.opinions {
-  padding: 0 35px;
   margin: 50px 0 0 0; }
   section.opinions div.heading {
     padding: 0 35px; }
@@ -740,7 +780,7 @@ section.opinions {
     margin-bottom: 12px; }
     section.opinions .carousel-3 .carousel-inner .item-container {
       height: 450px;
-      max-width: 300px;
+      max-width: 85%;
       padding: 34px;
       border-radius: 49px;
       -webkit-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35);
@@ -773,6 +813,11 @@ section.opinions {
   section.opinions .carousel-item {
     padding: 25px 0 25px 0; }
 
+@media (min-width: 375px) {
+  section.opinions .carousel-3 .carousel-inner {
+    margin-bottom: 12px; }
+    section.opinions .carousel-3 .carousel-inner .item-container {
+      max-width: 300px; } }
 @media (min-width: 576px) {
   section.opinions {
     padding: 0 35px;
@@ -907,7 +952,8 @@ section.join-today {
     font-size: 14px;
     font-weight: 700;
     border-radius: 50px;
-    transition: all ease-in-out 0.2s; }
+    transition: all ease-in-out 0.2s;
+    outline: none; }
     section.join-today .buy-a-ticket:hover, section.join-today .buy-a-ticket:active {
       border: 3px solid #EF3024;
       background: #FFFFFF;
@@ -921,7 +967,7 @@ section.join-today {
 @media (min-width: 768px) {
   section.join-today {
     padding: 0 60px;
-    margin: 100px 0 0 0; }
+    margin: 50px 0 0 0; }
     section.join-today img.envelope-img {
       margin: 0 0 0 0;
       max-width: initial; }
@@ -934,7 +980,7 @@ section.join-today {
       padding-left: 5%; } }
 @media (min-width: 992px) {
   section.join-today {
-    margin: 150px 0 0 0;
+    margin: 100px 0 0 0;
     padding: 0 90px; } }
 @media (min-width: 1200px) {
   section.join-today section.take-action {
@@ -945,6 +991,42 @@ section.join-today {
 @media (min-width: 1580px) {
   section.join-today {
     padding: 0; } }
+.slide__image {
+  height: 350px;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+
+.loop {
+  position: relative; }
+
+.owl-prev {
+  position: absolute;
+  top: 45%;
+  left: 20px;
+  color: #ffffff !important;
+  z-index: 20;
+  font-size: 50px !important;
+  transform: translateY(-50%);
+  outline: none;
+  border: none; }
+
+.owl-next {
+  position: absolute;
+  top: 45%;
+  right: 20px;
+  color: #ffffff !important;
+  z-index: 20;
+  font-size: 50px !important;
+  transform: translateY(-50%);
+  outline: none;
+  border: none; }
+
+.gradient {
+  width: 100%;
+  height: 100%;
+  background: red; }
+
 section.year-ago-pictures {
   margin: 0 0 100px 0;
   max-width: 1400px;
@@ -962,45 +1044,23 @@ section.year-ago-pictures {
       margin: 0; }
       section.year-ago-pictures div.heading h3 span {
         color: #EF3024; }
-  section.year-ago-pictures div.carousel-4 div.carousel-inner div.carousel-item img {
-    max-width: 100%; }
-  section.year-ago-pictures div.carousel-4 a.carousel-control-prev {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,3e3e3e+0&1+0,0+100,0+100 */
-    background: -moz-linear-gradient(left, #3e3e3e 0%, rgba(62, 62, 62, 0) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #3e3e3e 0%, rgba(62, 62, 62, 0) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #3e3e3e 0%, rgba(62, 62, 62, 0) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e3e3e', endColorstr='#003e3e3e',GradientType=1 );
-    /* IE6-9 */ }
-    section.year-ago-pictures div.carousel-4 a.carousel-control-prev span.carousel-control-prev-icon {
-      width: 14px;
-      background-image: url("/img/arrow-point-to-left-year-ago-pictures2x.png"); }
-  section.year-ago-pictures div.carousel-4 a.carousel-control-next {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,3e3e3e+0&1+0,0+100,0+100 */
-    background: -moz-linear-gradient(right, #3e3e3e 0%, rgba(62, 62, 62, 0) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(right, #3e3e3e 0%, rgba(62, 62, 62, 0) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to left, #3e3e3e 0%, rgba(62, 62, 62, 0) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e3e3e', endColorstr='#003e3e3e',GradientType=1 );
-    /* IE6-9 */ }
-    section.year-ago-pictures div.carousel-4 a.carousel-control-next span.carousel-control-next-icon {
-      width: 14px;
-      background-image: url("/img/arrow-point-to-right-year-ago-pictures2x.png"); }
 
 @media (min-width: 576px) {
   section.year-ago-pictures {
     margin: 50px 0 0 0; }
     section.year-ago-pictures div.heading {
-      padding: 0 35px; } }
+      padding: 0 35px; }
+    section.year-ago-pictures .owl-prev {
+      top: 48%;
+      font-size: 80px !important;
+      left: 40px; }
+    section.year-ago-pictures .owl-next {
+      top: 48%;
+      font-size: 80px !important;
+      right: 40px; } }
 @media (min-width: 768px) {
   section.year-ago-pictures {
-    margin: 100px 0 0 0; }
-    section.year-ago-pictures div.heading {
-      padding: 0 60px; } }
+    margin: 100px 0 0 0; } }
 @media (min-width: 992px) {
   section.year-ago-pictures {
     margin: 150px 0 0 0; }
@@ -1011,18 +1071,14 @@ section.year-ago-pictures {
     font-size: 20px; }
   section.year-ago-pictures div.heading h3 {
     font-size: 48px; }
-  section.year-ago-pictures #carousel4-over1200 .row:first-of-type {
-    padding: 0 0 20px 0; }
-  section.year-ago-pictures #carousel4-over1200 .col-1 {
-    padding: 0 10px 0 0; }
-  section.year-ago-pictures #carousel4-over1200 .col-2 {
-    padding: 0 0 0 10px; }
-  section.year-ago-pictures #carousel4-over1200 .col-3 {
-    padding: 0 10px 0 0; }
-  section.year-ago-pictures #carousel4-over1200 .col-4 {
-    padding: 0 10px 0 10px; }
-  section.year-ago-pictures #carousel4-over1200 .col-5 {
-    padding: 0 0 0 10px; } }
+  section.year-ago-pictures .owl-carousel.second .owl-prev {
+    border: none;
+    outline: none;
+    font-size: 120px !important; }
+  section.year-ago-pictures .owl-carousel.second .owl-next {
+    border: none;
+    outline: none;
+    font-size: 120px !important; } }
 @media (min-width: 1580px) {
   section.year-ago-pictures div.heading {
     padding: 0; } }
@@ -1056,7 +1112,7 @@ section.conference-location {
       color: #7B7B7B;
       font-size: 12px;
       font-weight: 600;
-      line-height: 3; }
+      line-height: 2.9; }
       section.conference-location div.article-txt p span {
         font-size: 20px;
         font-weight: 700; }
@@ -1071,6 +1127,7 @@ section.conference-location {
     font-weight: 700;
     border-radius: 50px;
     transition: all ease-in-out 0.2s;
+    outline: none;
     margin: 0 0 22px 0; }
     section.conference-location nav.conference-location-nav button.learn-more:hover, section.conference-location nav.conference-location-nav button.learn-more:active {
       border: 3px solid #EF3024;
@@ -1086,7 +1143,8 @@ section.conference-location {
     font-size: 14px;
     font-weight: 700;
     border-radius: 50px;
-    transition: all ease-in-out 0.2s; }
+    transition: all ease-in-out 0.2s;
+    outline: none; }
     section.conference-location nav.conference-location-nav button.how-to-get:hover, section.conference-location nav.conference-location-nav button.how-to-get:active {
       background: #EF3024;
       color: #FFFFFF;
@@ -1120,7 +1178,9 @@ section.conference-location {
   section.conference-location div.heading h2 {
     font-size: 20px; }
   section.conference-location div.heading h3 {
-    font-size: 48px; } }
+    font-size: 48px; }
+  section.conference-location div.article-txt p {
+    font-size: 14px; } }
 @media (min-width: 1580px) {
   section.conference-location {
     padding: 0; }
@@ -1133,8 +1193,8 @@ section.conference-location {
       width: 130%;
       position: relative;
       left: -180px;
-      bottom: -11px;
-      padding: 90px 0 90px 90px;
+      bottom: -25px;
+      padding: 50px 0 50px 90px;
       background: #ffffff; }
     section.conference-location div.heading h3 {
       margin-bottom: 100px; }
@@ -1289,7 +1349,9 @@ section.sponsors {
     height: 285px; } }
 section.contact {
   background: #FEF4F3;
-  padding: 55px 35px; }
+  padding: 55px 35px;
+  position: relative;
+  z-index: 1000; }
   section.contact .row {
     max-width: 1400px; }
   section.contact p.para {
@@ -1356,6 +1418,7 @@ section.contact {
       font-weight: 700;
       border-radius: 50px;
       transition: all ease-in-out 0.2s;
+      outline: none;
       padding: 13px 45px;
       margin: 0 0 40px 0; }
       section.contact section.newsletter button.sign-in:hover, section.contact section.newsletter button.sign-in:active {
@@ -1419,7 +1482,10 @@ footer {
   color: #7B7B7B;
   font-weight: 700;
   text-align: center;
-  padding: 50px 0; }
+  padding: 50px 0;
+  position: relative;
+  z-index: 1000;
+  background: #ffffff; }
   footer h2 {
     font-size: 14px;
     font-weight: 700; }

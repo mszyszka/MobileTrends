@@ -30,24 +30,20 @@ section.conference-location {
             color: $content-txt-color;
             font-size: 12px;
             font-weight: 600;
-            line-height: 3;
+            line-height: 2.9;
             span {
                 font-size: 20px;
                 font-weight: 700;
             }
-            // margin: 0 0 50px 0;
         }
     }
     nav.conference-location-nav {
         button.learn-more {
             @include red-button;
-            // padding: 14px 40px;
-            // width: 220px;
             margin: 0 0 22px 0;
         }
         button.how-to-get {
             @include white-button-with-red-border;
-            // width: 220px;
         }
     }
 }
@@ -96,8 +92,10 @@ section.conference-location {
             }
             h3 {
                 font-size: $h3-lg;
-                // margin: 0 0 100px 0;
             }
+        }
+        div.article-txt p{
+            font-size: 14px;
         }
     }
 }
@@ -118,8 +116,8 @@ section.conference-location {
             width: 130%;
             position: relative;
             left: -180px;
-            bottom: -11px;
-            padding: 90px 0 90px 90px;
+            bottom: -25px;
+            padding: 50px 0 50px 90px;
             background: #ffffff;
         }
         div.heading {

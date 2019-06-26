@@ -1,5 +1,4 @@
 section.opinions {
-    padding: $sec-padding-sm;
     margin: $sec-margin-sm;
 
     div.heading {
@@ -17,7 +16,7 @@ section.opinions {
         margin-bottom: 12px;
         .item-container {
             height: 450px;
-            max-width: 300px;
+            max-width: 85%;
             padding: 34px;
             border-radius: 49px;
             // -webkit-box-shadow: 5px 10px 50px 0px rgba(239,239,239,0.75);
@@ -59,6 +58,19 @@ section.opinions {
     }
     .carousel-item {
         padding: 25px 0 25px 0;
+    }
+}
+
+
+
+@media(min-width: 375px) {
+    section.opinions {
+        .carousel-3 .carousel-inner{
+            margin-bottom: 12px;
+            .item-container {
+                max-width: 300px;
+            }
+        }
     }
 }
 

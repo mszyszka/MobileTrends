@@ -30,7 +30,7 @@ section.join-today {
 @media (min-width: 768px){
     section.join-today {
         padding: $sec-padding-md;
-        margin: $sec-margin-md;
+        margin: 50px 0 0 0;
         img.envelope-img {
             margin: 0 0 0 0;
             max-width: initial;
@@ -50,7 +50,7 @@ section.join-today {
 
 @media (min-width: 992px){
     section.join-today {
-        margin: $sec-margin-lg;
+        margin: 100px 0 0 0;
         padding: $sec-padding-lg;
         section.take-action {
             .first-day {

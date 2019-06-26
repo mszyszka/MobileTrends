@@ -9,6 +9,7 @@
     font-weight: 700;
     border-radius: 50px;;
     transition:  all ease-in-out 0.2s;
+    outline: none;
     &:hover, &:active {
         border: 3px solid $logo-red;
         background: #FFFFFF;
@@ -30,6 +31,7 @@
     font-weight: 700;
     border-radius: 50px;;
     transition: all ease-in-out 0.2s;
+    outline: none;
     &:hover, &:active {
         background: $logo-red;
         color: #FFFFFF;
