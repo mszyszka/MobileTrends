@@ -11,9 +11,16 @@ section.year-ago-video {
             margin: 0 0 30px 0;
         }
     }
-    img {
-        width: 100%;
+    div.video {
+        position: relative;
+        img {
+            width: 100%;
+        }
+        .camera-icon {
+        }
+
     }
+
 }
 
 // Small devices

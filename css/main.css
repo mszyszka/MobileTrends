@@ -655,8 +655,10 @@ section.year-ago-video {
     margin: 0 0 30px 0; }
     section.year-ago-video div.heading h3 span {
       color: #EF3024; }
-  section.year-ago-video img {
-    width: 100%; }
+  section.year-ago-video div.video {
+    position: relative; }
+    section.year-ago-video div.video img {
+      width: 100%; }
 
 @media (min-width: 576px) {
   section.year-ago-video {
@@ -1407,7 +1409,7 @@ section.contact {
         font-size: 14px;
         font-weight: 600;
         text-indent: 27px; }
-    section.contact section.newsletter button.sign-in {
+    section.contact section.newsletter .sign-in {
       margin: 0;
       border: 3px solid #EF3024;
       background: #EF3024;
@@ -1421,7 +1423,7 @@ section.contact {
       outline: none;
       padding: 13px 45px;
       margin: 0 0 40px 0; }
-      section.contact section.newsletter button.sign-in:hover, section.contact section.newsletter button.sign-in:active {
+      section.contact section.newsletter .sign-in:hover, section.contact section.newsletter .sign-in:active {
         border: 3px solid #EF3024;
         background: #FFFFFF;
         color: #EF3024;
@@ -1463,7 +1465,7 @@ section.contact {
     margin: 0 0 45px 0; }
   section.contact section.newsletter p {
     max-width: 100%; }
-  section.contact section.newsletter button.sign-in {
+  section.contact section.newsletter .sign-in {
     margin: 0 0 45px 0; } }
 @media (min-width: 1500px) {
   section.contact article.stay-in-touch div.heading h2 {
@@ -1509,7 +1511,7 @@ footer {
 @media (min-width: 992px) {
   footer {
     padding: 80px 0; } }
-* {
+*, figure {
   font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0; }

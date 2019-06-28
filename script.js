@@ -27,65 +27,34 @@ function setSectionHeight(){
 }
 
 //scrollTo
-
-// scrollTo shot v
-let links = document.getElementsByClassName('nav-link');
-
 const scrollToElem = {
     behavior : "smooth",
     block : 'start',
     inline : 'center'
 };
 
+let links = document.getElementsByClassName('nav-link');
+
 [].forEach.call(links, function(el) {
     el.addEventListener('click', function() {
-        const dataTarget = this.dataset.target;
-        console.log(dataTarget);
-        const target = document.getElementById(dataTarget);
+        let dataTarget = this.dataset.target;
+        let target = document.getElementsByClassName(dataTarget)[0];
+        const documentWidth = $(document).width();
 
+        // I need this if condition becouse I have two sections with target2 class.
+        //first one is display < 768px, second is open > 768px
+        //If I do not change the index of the searched class to [1] above 768px,
+        // the script will take class.target2 with index [0] as the target, which is no longer displayed
+        if(documentWidth >= 768 && (dataTarget = 'target2')) {
+            target = document.getElementsByClassName(dataTarget)[1];
+        }
         target.scrollIntoView(scrollToElem);
     })
 });
 
-
-
-// const link1 = document.getElementsByClassName('link1');
-// const link2 = document.getElementsByClassName('link2');
-// const link3 = document.getElementsByClassName('link3');
-// const link4 = document.getElementsByClassName('link4');
-// const link5 = document.getElementsByClassName('link5');
-// const link6 = document.getElementsByClassName('link6');
-
-// link1[0].addEventListener('click', function() {
-//     const target1 = document.getElementById('target1');
-//     target1.scrollIntoView(scrollToElem);
-// })
-
-// link2[0].addEventListener('click', function() {
-//     const target2 = document.getElementById('target2');
-//     const target2md = document.getElementById('target2-md');
-//     target2.scrollIntoView(scrollToElem);
-//     target2md.scrollIntoView(scrollToElem);
-// })
-
-// link4[0].addEventListener('click', function() {
-//     const target4 = document.getElementById('target4');
-//     target4.scrollIntoView(scrollToElem);
-// })
-
-// link5[0].addEventListener('click', function() {
-//     const target5 = document.getElementById('target5');
-//     target5.scrollIntoView(scrollToElem);
-// })
-
-// link6[0].addEventListener('click', function() {
-//     const target6 = document.getElementById('target6');
-//     target6.scrollIntoView(scrollToElem);
-// })
-
 // owl carousels 
-
 $(document).ready(function(){
+
     $('.loop.first').owlCarousel({
         center: true,
         items:1,
@@ -98,9 +67,7 @@ $(document).ready(function(){
             }
         }
     });
-});
 
-$(document).ready(function(){
     $('.loop').owlCarousel({
         center: true,
         items:2,
@@ -113,9 +80,10 @@ $(document).ready(function(){
             }
         }
     });
+
 });
 
-
+//sprawdzianie które elementy wychodzą za viewport
 var docWidth = document.documentElement.offsetWidth;
 
 [].forEach.call(

@@ -67,7 +67,7 @@ section.contact {
                 text-indent: 27px;
             }
         }
-        button.sign-in {
+        .sign-in {
             @include red-button;
             padding: 13px 45px;
             margin: 0 0 40px 0;
@@ -136,7 +136,7 @@ section.contact {
             p {
                 max-width: 100%;
             }
-            button.sign-in {
+            .sign-in {
                 margin: 0 0 45px 0;
             }
         }
