@@ -17,8 +17,9 @@ section.year-ago-video {
             width: 100%;
         }
         .camera-icon {
+            width: 100px;
+            position: absolute;
         }
-
     }
 
 }
@@ -37,7 +38,11 @@ section.year-ago-video {
     section.year-ago-video {
         padding: $sec-padding-lg;
         margin: $sec-margin-md;
-
+        div.video {
+            .camera-icon {
+                width: 150px;
+            }
+        }
     }
 }
 
@@ -45,7 +50,11 @@ section.year-ago-video {
     section.year-ago-video {
         padding: $sec-padding-lg;
         margin: $sec-margin-lg;
-
+        div.video {
+            .camera-icon {
+                width: 266px;
+            }
+        }
         div.heading {
             h2 {
                 font-size: $h2-lg;

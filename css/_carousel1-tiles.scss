@@ -5,11 +5,8 @@ section.carousel1-tiles {
     margin: $sec-margin-md;
     padding: $sec-padding-md;
     .row {
-        &:first-of-type {
-            margin-bottom: 50px;
-        }
-        .col {
-            padding: 0 25px;
+        .col-md-6 {
+            padding: 25px 25px;
         }
     }
     .item-container {
@@ -42,11 +39,8 @@ section.carousel1-tiles {
         margin: $sec-margin-lg;
         padding: 0 140px;
         .row {
-            &:first-of-type {
-                margin-bottom: 70px;
-            }
-            .col {
-                padding: 0 35px;
+            .col-md-6 {
+                padding: 35px 35px;
             }
         }
     }
@@ -55,22 +49,38 @@ section.carousel1-tiles {
 @media(min-width: 1200px) {
     section.carousel1-tiles {
         margin: 150px auto 0 auto;
+        padding: 0;
+        .item-container {
+            width: 100%;
+        }
         .row {
-            &:first-of-type {
-                margin-bottom: 100px;
-            }
-            .col {
-                padding: 0 50px;
+            .col-md-6 {
+                padding: 0 15px;
+                &:first-of-type{
+                    padding: 0 15px 0 30px;
+                }
+                &:last-of-type{
+                    padding: 0 30px 0 15px;
+                }
             }
         }
     }
 }
 
-//1400px is first width that allows set tiles in row
-@media(min-width: 1400px) {
+@media(min-width: 1260px) {
     section.carousel1-tiles {
-        padding: 0 60px;
-        justify-content: space-between!important;
+        padding: 0 50px;
+        .row {
+            .col-md-6 {
+                padding: 0 15px;
+                &:first-of-type{
+                    padding: 0 15px 0 0; 
+                }
+                &:last-of-type{
+                    padding: 0 0 0 15px;
+                }
+            }
+        }
     }
 }
 

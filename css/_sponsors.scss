@@ -105,18 +105,9 @@ section.sponsors {
         margin: $sec-margin-md;
         padding: $sec-padding-md;
         section.rest-of-sponsors {
-            .row {
-                .first-col {
-                    padding: 0 22px 0 0;
-                }
-                .second-col {
-                    padding: 0 0 0 22px;
-                }
-            }
-        }
-        section.rest-of-sponsors {
             .row .col-sm-12 {
-                margin: 0 0 15px 0;
+                margin: 0 0 30px 0;
+                max-width: 225px;
             }
         }
     }
@@ -220,9 +211,15 @@ section.sponsors {
                 }
             }
         }
-        section.rest-of-sponsors .sponsor-logo-container {
-            width: 285px;
-            height: 285px;
+        section.rest-of-sponsors {
+            .row .col-sm-12 {
+                margin: 0 0 30px 0;
+                max-width: 310px;
+            }
+            .sponsor-logo-container {
+                width: 265px;
+                height: 265px;
+            }
         }
     } 
 }

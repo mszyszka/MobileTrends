@@ -1,6 +1,40 @@
 $(window).on('resize', setSectionHeight);
 $(window).on('load', checkSectionHeight);
 
+$(window).on('scroll', function(){
+    addShadow();
+    getHeaderHeight();
+});
+
+// adding and removing shadow on .nav-container
+function addShadow() {
+    let navContainerOfsetTop = document.getElementsByClassName('nav-container')[0].offsetTop;
+    let navContainer = document.getElementsByClassName('nav-container')[0];
+    if(navContainerOfsetTop > 0) {
+        navContainer.classList.add('shadow');
+    } else  {
+        navContainer.classList.remove('shadow');
+    }
+}
+
+// make .nav-container fixed and ad shadow to it when user scroll bellow header
+function getHeaderHeight(){
+    let headerHeight = document.getElementsByClassName('site-header')[0].offsetHeight;
+    let navBarHeight = document.getElementsByClassName('nav-container')[0].offsetHeight;
+
+    let scrollPosition = window.scrollY;
+    let navContainer = document.getElementsByClassName('nav-container')[0];
+
+    if(scrollPosition >= (headerHeight + navBarHeight)) {
+        navContainer.classList.add('nav-bar-fixed');
+        navContainer.classList.add('shadow');
+
+    } else  {
+        navContainer.classList.remove('nav-bar-fixed');
+        navContainer.classList.remove('shadow');
+    }
+}
+
 //Check section.confirm-your-presence height and set it to content height
 function checkSectionHeight(){
     let windowWidth = $(window).width();
@@ -26,18 +60,16 @@ function setSectionHeight(){
     };
 }
 
-//scrollTo
+// handling scroll to section on nav links
 const scrollToElem = {
     behavior : "smooth",
     block : 'start',
     inline : 'center'
 };
 
-let links = document.getElementsByClassName('nav-link');
-
-[].forEach.call(links, function(el) {
-    el.addEventListener('click', function() {
-        let dataTarget = this.dataset.target;
+function scrollToSection() {
+    $('a[href^="#"]').on('click',function (e) {
+        let dataTarget = e.target.dataset.target;
         let target = document.getElementsByClassName(dataTarget)[0];
         const documentWidth = $(document).width();
 
@@ -45,12 +77,16 @@ let links = document.getElementsByClassName('nav-link');
         //first one is display < 768px, second is open > 768px
         //If I do not change the index of the searched class to [1] above 768px,
         // the script will take class.target2 with index [0] as the target, which is no longer displayed
-        if(documentWidth >= 768 && (dataTarget = 'target2')) {
+        if(documentWidth >= 768 && (dataTarget == 'target2')) {
             target = document.getElementsByClassName(dataTarget)[1];
         }
         target.scrollIntoView(scrollToElem);
-    })
-});
+        console.log(target);
+    });
+}
+
+scrollToSection();
+
 
 // owl carousels 
 $(document).ready(function(){
@@ -80,26 +116,5 @@ $(document).ready(function(){
             }
         }
     });
-
 });
-
-//sprawdzianie które elementy wychodzą za viewport
-var docWidth = document.documentElement.offsetWidth;
-
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function(el) {
-    if (el.offsetWidth > docWidth) {
-      console.log(el);
-    }
-  }
-);
-
-
-
-
-
-
-
-
 

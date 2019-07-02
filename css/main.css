@@ -5,8 +5,7 @@
   background-position: 89% 50%;
   background-repeat: no-repeat;
   padding: 0;
-  position: relative;
-  z-index: 1000; }
+  position: relative; }
   .site-header::before {
     content: '';
     position: absolute;
@@ -53,7 +52,10 @@
       padding: 75px 30px 30px 30px; } }
 @media (min-width: 578px) {
   .site-header {
-    margin: 0 0 30px 0; } }
+    margin: 0 0 30px 0; }
+    .site-header::before {
+      background-image: linear-gradient(to right, #EF3024, transparent);
+      opacity: 0.7; } }
 @media (min-width: 768px) {
   .site-header {
     margin: 0 0 60px 0; }
@@ -103,11 +105,22 @@
       padding: 10px 30px; }
       .side-nav a img {
         width: 22px; } }
+.nav-container {
+  background: #ffffff; }
+
+.shadow {
+  -webkit-box-shadow: 0px 10px 6px -4px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 10px 6px -4px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 10px 6px -4px rgba(0, 0, 0, 0.26); }
+
+.nav-bar-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 1000; }
+
 .navbar {
   padding: 25px 10px 25px 22px;
   max-width: 1600px;
-  position: relative;
-  z-index: 1000;
   background: #ffffff; }
   .navbar .navbar-toggler {
     border: none;
@@ -365,10 +378,8 @@ section.carousel1-tiles {
   max-width: 1400px;
   margin: 100px 0 0 0;
   padding: 0 60px; }
-  section.carousel1-tiles .row:first-of-type {
-    margin-bottom: 50px; }
-  section.carousel1-tiles .row .col {
-    padding: 0 25px; }
+  section.carousel1-tiles .row .col-md-6 {
+    padding: 25px 25px; }
   section.carousel1-tiles .item-container {
     max-width: 300px;
     padding: 34px;
@@ -394,21 +405,29 @@ section.carousel1-tiles {
   section.carousel1-tiles {
     margin: 150px 0 0 0;
     padding: 0 140px; }
-    section.carousel1-tiles .row:first-of-type {
-      margin-bottom: 70px; }
-    section.carousel1-tiles .row .col {
-      padding: 0 35px; } }
+    section.carousel1-tiles .row .col-md-6 {
+      padding: 35px 35px; } }
 @media (min-width: 1200px) {
   section.carousel1-tiles {
-    margin: 150px auto 0 auto; }
-    section.carousel1-tiles .row:first-of-type {
-      margin-bottom: 100px; }
-    section.carousel1-tiles .row .col {
-      padding: 0 50px; } }
-@media (min-width: 1400px) {
+    margin: 150px auto 0 auto;
+    padding: 0; }
+    section.carousel1-tiles .item-container {
+      width: 100%; }
+    section.carousel1-tiles .row .col-md-6 {
+      padding: 0 15px; }
+      section.carousel1-tiles .row .col-md-6:first-of-type {
+        padding: 0 15px 0 30px; }
+      section.carousel1-tiles .row .col-md-6:last-of-type {
+        padding: 0 30px 0 15px; } }
+@media (min-width: 1260px) {
   section.carousel1-tiles {
-    padding: 0 60px;
-    justify-content: space-between !important; } }
+    padding: 0 50px; }
+    section.carousel1-tiles .row .col-md-6 {
+      padding: 0 15px; }
+      section.carousel1-tiles .row .col-md-6:first-of-type {
+        padding: 0 15px 0 0; }
+      section.carousel1-tiles .row .col-md-6:last-of-type {
+        padding: 0 0 0 15px; } }
 @media (min-width: 1580px) {
   section.carousel1-tiles {
     padding: 0; } }
@@ -659,6 +678,9 @@ section.year-ago-video {
     position: relative; }
     section.year-ago-video div.video img {
       width: 100%; }
+    section.year-ago-video div.video .camera-icon {
+      width: 100px;
+      position: absolute; }
 
 @media (min-width: 576px) {
   section.year-ago-video {
@@ -667,11 +689,15 @@ section.year-ago-video {
 @media (min-width: 768px) {
   section.year-ago-video {
     padding: 0 90px;
-    margin: 100px 0 0 0; } }
+    margin: 100px 0 0 0; }
+    section.year-ago-video div.video .camera-icon {
+      width: 150px; } }
 @media (min-width: 1200px) {
   section.year-ago-video {
     padding: 0 90px;
     margin: 150px 0 0 0; }
+    section.year-ago-video div.video .camera-icon {
+      width: 266px; }
     section.year-ago-video div.heading h2 {
       font-size: 20px; }
     section.year-ago-video div.heading h3 {
@@ -1284,12 +1310,9 @@ section.sponsors {
   section.sponsors {
     margin: 100px 0 0 0;
     padding: 0 60px; }
-    section.sponsors section.rest-of-sponsors .row .first-col {
-      padding: 0 22px 0 0; }
-    section.sponsors section.rest-of-sponsors .row .second-col {
-      padding: 0 0 0 22px; }
     section.sponsors section.rest-of-sponsors .row .col-sm-12 {
-      margin: 0 0 15px 0; } }
+      margin: 0 0 30px 0;
+      max-width: 225px; } }
 @media (min-width: 992px) {
   section.sponsors {
     margin: 150px 0 150px 0;
@@ -1346,14 +1369,15 @@ section.sponsors {
     section.sponsors .organizer-col section.organizer .logo-container {
       width: 330px;
       height: 330px; }
+  section.sponsors section.rest-of-sponsors .row .col-sm-12 {
+    margin: 0 0 30px 0;
+    max-width: 310px; }
   section.sponsors section.rest-of-sponsors .sponsor-logo-container {
-    width: 285px;
-    height: 285px; } }
+    width: 265px;
+    height: 265px; } }
 section.contact {
   background: #FEF4F3;
-  padding: 55px 35px;
-  position: relative;
-  z-index: 1000; }
+  padding: 55px 35px; }
   section.contact .row {
     max-width: 1400px; }
   section.contact p.para {

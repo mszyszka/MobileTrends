@@ -1,15 +1,11 @@
-<!-- section.year-ago-pictures dodanie cienia--> 
 <!-- do 768px coś rozpycha stronę -->
+<!-- offset na scrollu nava -->
 
 <!-- HTML:
 - W3 validator pokazuje, że w niektórych mniejscach w html są złe tagi zamykające typu zamiast zamknąć h2 zamykasz h1, brakuje altów do zdjęć oraz inne błędy. - zweryfikuj
 - Sekcja Partnerzy, Patroni medialni, do przerobienia, zrobiona jest po daną ilość zdjęć, jak dodam lub usunę jedno, dwa logo to się wysypuje.
- - górne menu powinno zjeżdżać razem ze stroną
 - Slider na mobilce pokazuje tylko 1 zdjęcie.
- - Sekcja z liczbami na desktopie jest niezgodna z projektem
 - Sekcja Prelegenci brakuje tła takiego jak na projekcie
- - Filmik Promo - brakuje ikony kamery na zdjęciu
- - Ikony po prawej znikają pod sekcję z newsletterem
 -->
 <!DOCTYPE html>
 <html lang="pl">
@@ -26,27 +22,29 @@
 </head>
 <body>
     <!-- Site nav -->
-    <nav class="navbar navbar-expand-lg navbar-light container-fluid w-100">
-       <a href="#" class="navbar-brand">
-            <img src="img/mt-logo.png " class="logo" alt="MobileTrends conference logo">
-       </a>
-       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="icon-bar top-bar"></span>
-            <span class="icon-bar middle-bar"></span>
-            <span class="icon-bar bottom-bar"></span>				
-        </button>
-       <div class="collapse navbar-collapse" id="navbarMenu">
-           <ul class="navbar-nav ml-auto p-4 p-lg-0">
-               <li class="nav-item d-flex justify-content-center"><a class="nav-link link1" data-target="target1">program</a></li>
-               <li class="nav-item d-flex justify-content-center"><a class="nav-link link2" data-target="target2">prelegenci</a></li>
-               <li class="nav-item d-flex justify-content-center mta"><a class="nav-link link3" data-target="target3">nagrody MTA</a></li>
-               <li class="nav-item d-flex justify-content-center"><a class="nav-link link4" data-target="target4">miejsce</a></li>
-               <li class="nav-item d-flex justify-content-center"><a class="nav-link link5" data-target="target5">sponsorzy</a></li>
-               <li class="nav-item d-flex justify-content-center"><a class="nav-link link6" data-target="target6">kontakt</a></li>
-               <li class="nav-item d-flex justify-content-center buy-ticket d-flex align-items-center"><button class="buy-a-ticket" type="button">kup bilet</button></li>
-           </ul>
-       </div>
-    </nav>
+    <div class="nav-container w-100">
+        <nav class="navbar navbar-expand-lg navbar-light container-fluid w-100">
+            <a href="#" class="navbar-brand">
+                 <img src="img/mt-logo.png " class="logo" alt="MobileTrends conference logo">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="icon-bar top-bar"></span>
+                 <span class="icon-bar middle-bar"></span>
+                 <span class="icon-bar bottom-bar"></span>				
+             </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto p-4 p-lg-0">
+                    <li class="nav-item d-flex justify-content-center"><a class="nav-link link1" data-target="target1" href="#target1">program</a></li>
+                    <li class="nav-item d-flex justify-content-center"><a class="nav-link link2" data-target="target2" href="#target2">prelegenci</a></li>
+                    <li class="nav-item d-flex justify-content-center mta"><a class="nav-link link3" data-target="target3" href="#target3">nagrody MTA</a></li>
+                    <li class="nav-item d-flex justify-content-center"><a class="nav-link link4" data-target="target4" href="#target4">miejsce</a></li>
+                    <li class="nav-item d-flex justify-content-center"><a class="nav-link link5" data-target="target5" href="#target5">sponsorzy</a></li>
+                    <li class="nav-item d-flex justify-content-center"><a class="nav-link link6" data-target="target6" href="#target6">kontakt</a></li>
+                    <li class="nav-item d-flex justify-content-center buy-ticket d-flex align-items-center"><button class="buy-a-ticket" type="button">kup bilet</button></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
     <!-- Site header -->
     <header class="site-header container-fluid d-flex flex-column align-items-start mr-auto ml-auto">
         <h1 class="mt-sm-auto">
@@ -251,7 +249,7 @@
         <section class="carousel1-tiles d-none d-md-block">
             <div class="container-fluid pr-0 pl-0">
                 <div class="row no-gutters ">
-                    <div class="col d-flex justify-content-end">
+                    <div class="col-md-6 col-xl-3 d-flex justify-content-end justify-content-xl-center">
                         <!-- Item 1 -->
                         <div class="item-container">
                             <img src="./img/user.png" class="icon" alt="user icon">
@@ -266,7 +264,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col d-flex justify-content-start">
+                    <div class="col-md-6 col-xl-3 d-flex justify-content-start justify-content-xl-center">
                         <!-- Item 2 -->
                         <div class="item-container">
                             <img src="./img/case.png" class="icon" alt="case icon">
@@ -281,10 +279,7 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="row no-gutters">
-                    <!-- <div class="w-100 d-xl-none"></div> -->
-                    <div class="col d-flex justify-content-end">
+                    <div class="col-md-6 col-xl-3 d-flex justify-content-end justify-content-xl-center">
                         <!-- Item 3 -->
                         <div class="item-container">
                             <img src="./img/presentation.png" class="icon" alt="presentation board icon">
@@ -299,7 +294,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col d-flex justify-content-start">
+                    <div class="col-md-6  col-xl-3 d-flex justify-content-start justify-content-xl-center">
                         <!-- Item 4 -->
                         <div class="item-container">
                            <img src="./img/refresh.png" class="icon d-block" alt="refresh icon">
@@ -470,6 +465,7 @@
                             <h3>Prelegenci<span>.</span></h3>
                         </div>
                     </div>
+
                     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                         <!-- Item 1 -->
                         <div class="item-container">
@@ -482,6 +478,7 @@
                             </figure>
                         </div>
                     </div>
+
                     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                         <!-- Item 2 -->
                         <div class="item-container">
@@ -605,7 +602,7 @@
                 <h2>Tak było rok temu</h2>
                 <h3>Filmik promo<span>.</span></h3>
             </div>
-            <div class="video">
+            <div class="video d-flex flex-column justify-content-center align-items-center">
                 <img src="./img/for-video.png" alt="video screan">
                 <img src="./img/camera-icon.png" alt="camera icon" class="camera-icon">
             </div>
@@ -1093,26 +1090,33 @@
                     </section>
                 </div>
             </div>
+
             <section class="rest-of-sponsors">
                 <span>Sponsorzy</span>
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 col-xl-4 first-col d-flex justify-content-center justify-content-md-end justify-content-xl-center p-xl-0">
+                <div class="row d-flex justify-content-center ">
+                    <div class="col-sm-12 col-md-6 col-xl-4 first-col d-flex justify-content-center  p-xl-0">
                         <div class="logo-container sponsor-logo-container d-flex align-items-center">
                             <img src="./img/crossref-logo.png" class="crossref-logo ml-auto mr-auto" alt="crossref logo">
                         </div>
                    </div>
-                   <div class="col-sm-12 col-md-6 col-xl-4 second-col d-flex justify-content-center justify-content-md-start justify-content-xl-center p-xl-0">
+                   <div class="col-sm-12 col-md-6 col-xl-4 second-col d-flex justify-content-center  p-xl-0">
                         <div class="logo-container sponsor-logo-container d-flex align-items-center">
                             <img src="./img/bird-logo.png" class="click-master-logo ml-auto mr-auto" alt="bird logo">
                         </div>
                    </div>
-                   <div class="col-sm-12 d-flex col-xl-4 justify-content-center p-xl-0">
+                   <div class="col-sm-12 col-md-6 col-xl-4 second-col d-flex justify-content-center  p-xl-0">
                         <div class="logo-container sponsor-logo-container d-flex align-items-center">
-                            <img src="./img/sun-logo.png" class="sun-logo ml-auto mr-auto" alt="sun logo">
+                            <img src="./img/bird-logo.png" class="click-master-logo ml-auto mr-auto" alt="bird logo">
+                        </div>
+                   </div>
+                   <div class="col-sm-12 col-md-6 col-xl-4 first-col d-flex justify-content-center  p-xl-0">
+                        <div class="logo-container sponsor-logo-container d-flex align-items-center">
+                            <img src="./img/crossref-logo.png" class="crossref-logo ml-auto mr-auto" alt="crossref logo">
                         </div>
                    </div>
                 </div>
             </section>
+
             <section class="honorary-patronage logo-triangle-layout">
                 <span>Patronat honorowy MTA</span>
                 <div class="row d-lg-none">

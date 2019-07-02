@@ -1,8 +1,22 @@
+.nav-container {
+    // position: fixed;
+    // top: 0;
+    // z-index: 1000;
+    background: #ffffff;
+}
+.shadow {
+    -webkit-box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.26);
+    box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.26);
+}
+.nav-bar-fixed {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
 .navbar {
     padding: 25px 10px 25px 22px;
     max-width: 1600px;
-    position: relative;
-    z-index: 1000;
     background: #ffffff;
     .navbar-toggler {
         border: none;
