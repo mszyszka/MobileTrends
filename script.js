@@ -1,5 +1,5 @@
-$(window).on('resize', setSectionHeight);
-$(window).on('load', checkSectionHeight);
+$(window).on('resize', setSectionHeight, setCarouselItemHeight);
+$(window).on('load', checkSectionHeight, setCarouselItemHeight);
 
 $(window).on('scroll', function(){
     addShadow();
@@ -87,8 +87,7 @@ function scrollToSection() {
 
 scrollToSection();
 
-
-// owl carousels 
+// owl carousels start & options
 $(document).ready(function(){
 
     $('.loop.first').owlCarousel({
@@ -117,4 +116,14 @@ $(document).ready(function(){
         }
     });
 });
+
+//height for owl-carousel item base on site with to make item responsive
+
+function setCarouselItemHeight() {
+    let windowWidth = window.innerWidth;
+    let itemHeight = windowWidth - (windowWidth/2.5);
+    let carouselItem = $('.ago-carousel-item');
+    carouselItem.css('height', itemHeight);
+}
+
 

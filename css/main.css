@@ -525,7 +525,10 @@ section.confirm-your-presence {
   section.confirm-your-presence {
     padding: 0; } }
 section.they-will-perform {
-  margin: 50px 0 0 0; }
+  margin: 50px 0 0 0;
+  background-image: url("/img/they-will-perform/they-will-perform-background.png");
+  background-position: 30% 0%;
+  padding-bottom: 250px; }
   section.they-will-perform div.heading {
     padding: 0 35px;
     margin: 0 0 62px 0; }
@@ -589,10 +592,14 @@ section.they-will-perform {
     font-size: 48px; } }
 section.they-will-perform-md {
   padding: 0 60px;
-  max-width: 1400px;
-  margin: 100px 0 0 0; }
-  section.they-will-perform-md div.container-fluid div.row div.heading-col {
-    padding-bottom: 50px; }
+  padding-bottom: 550px;
+  margin: 100px 0 0 0;
+  background-image: url("/img/they-will-perform/they-will-perform-md-background.png");
+  background-position: 30% 0%; }
+  section.they-will-perform-md div.container-fluid {
+    max-width: 1400px; }
+    section.they-will-perform-md div.container-fluid div.row div.heading-col {
+      padding-bottom: 50px; }
   section.they-will-perform-md div.heading {
     padding: 0 35px;
     padding-left: 35%;
@@ -641,7 +648,8 @@ section.they-will-perform-md {
 @media (min-width: 992px) {
   section.they-will-perform-md {
     margin: 150px 0 0 0;
-    padding: 0 90px; }
+    padding: 0 90px;
+    padding-bottom: 550px; }
     section.they-will-perform-md div.heading h2 {
       font-size: 16px;
       color: #EF3024;
@@ -656,12 +664,15 @@ section.they-will-perform-md {
       margin: 0 0 80px 0; } }
 @media (min-width: 1200px) {
   section.they-will-perform-md {
-    margin: 150px 0 0 0; } }
+    margin: 150px 0 0 0;
+    padding-bottom: 550px; } }
 @media (min-width: 1580px) {
   section.they-will-perform-md {
-    padding: 0; } }
+    padding: 0;
+    padding-bottom: 450px; } }
 section.year-ago-video {
   margin: 50px 0 0 0;
+  margin-top: -200px;
   padding: 0 35px;
   max-width: 1360px; }
   section.year-ago-video div.heading h2 {
@@ -685,17 +696,20 @@ section.year-ago-video {
 @media (min-width: 576px) {
   section.year-ago-video {
     padding: 0 35px;
-    margin: 50px 0 0 0; } }
+    margin: 50px 0 0 0;
+    margin-top: -200px; } }
 @media (min-width: 768px) {
   section.year-ago-video {
     padding: 0 90px;
-    margin: 100px 0 0 0; }
+    margin: 100px 0 0 0;
+    margin-top: -450px; }
     section.year-ago-video div.video .camera-icon {
       width: 150px; } }
 @media (min-width: 1200px) {
   section.year-ago-video {
     padding: 0 90px;
-    margin: 150px 0 0 0; }
+    margin: 150px 0 0 0;
+    margin-top: -350px; }
     section.year-ago-video div.video .camera-icon {
       width: 266px; }
     section.year-ago-video div.heading h2 {
@@ -1028,27 +1042,45 @@ section.join-today {
 .loop {
   position: relative; }
 
+.owl-carousel .ago-carousel-item {
+  height: calc();
+  background-size: cover;
+  background-position: 50% 50%; }
+.owl-carousel .item1 {
+  background-image: url("/img/year-ago-pictures/1.png"); }
+.owl-carousel .item2 {
+  background-image: url("/img/year-ago-pictures/2.png"); }
+.owl-carousel .item3 {
+  background-image: url("/img/year-ago-pictures/3.png"); }
+.owl-carousel .item4 {
+  background-image: url("/img/year-ago-pictures/4.png"); }
+.owl-carousel .item5 {
+  background-image: url("/img/year-ago-pictures/5.png"); }
+
 .owl-prev {
   position: absolute;
-  top: 45%;
+  top: 49%;
   left: 20px;
   color: #ffffff !important;
   z-index: 20;
   font-size: 50px !important;
   transform: translateY(-50%);
-  outline: none;
-  border: none; }
+  outline: none !important;
+  border: none !important; }
 
 .owl-next {
   position: absolute;
-  top: 45%;
+  top: 49%;
   right: 20px;
   color: #ffffff !important;
   z-index: 20;
   font-size: 50px !important;
   transform: translateY(-50%);
-  outline: none;
-  border: none; }
+  outline: none !important;
+  border: none !important; }
+
+.owl-dots {
+  display: none; }
 
 .gradient {
   width: 100%;
@@ -1236,6 +1268,7 @@ section.conference-location {
 section.sponsors {
   padding: 0 35px;
   margin: 50px 0 0 0;
+  margin-bottom: 70px;
   max-width: 1400px; }
   section.sponsors div.heading h2 {
     font-size: 16px;
@@ -1249,6 +1282,15 @@ section.sponsors {
       color: #EF3024; }
     section.sponsors div.heading h3 span {
       font-size: 30px; }
+  section.sponsors .main-container {
+    margin: 70px 0 0 0; }
+    section.sponsors .main-container .logo-item {
+      margin: 0 0 45px 0; }
+      section.sponsors .main-container .logo-item .logo-container {
+        width: 180px;
+        height: 180px; }
+        section.sponsors .main-container .logo-item .logo-container img {
+          width: 115px; }
   section.sponsors span {
     color: #EF3024;
     font-size: 14px;
@@ -1274,48 +1316,35 @@ section.sponsors {
     section.sponsors section.organizer .organizer-logo-container img {
       width: 135px; }
   section.sponsors section.rest-of-sponsors {
-    margin: 0 0 100px 0; }
-    section.sponsors section.rest-of-sponsors span {
-      display: block;
-      margin: 0 0 60px 0; }
-    section.sponsors section.rest-of-sponsors .sponsor-logo-container {
-      width: 185px;
-      height: 185px; }
-      section.sponsors section.rest-of-sponsors .sponsor-logo-container img {
-        width: 115px; }
-    section.sponsors section.rest-of-sponsors .row .col-sm-12 {
-      margin: 0 0 45px 0; }
-  section.sponsors section.logo-triangle-layout {
-    margin: 0 0 100px 0; }
-    section.sponsors section.logo-triangle-layout span {
-      display: block;
-      margin: 0 0 60px 0; }
-    section.sponsors section.logo-triangle-layout div.row .col {
-      padding-right: 5px;
-      padding-left: 5px; }
-      section.sponsors section.logo-triangle-layout div.row .col .patron-logo-container {
-        width: 125px;
-        height: 125px;
-        margin: 0 0 50px 0; }
-        section.sponsors section.logo-triangle-layout div.row .col .patron-logo-container img {
-          width: 85px; }
-    section.sponsors section.logo-triangle-layout div.row .second-col {
-      padding-top: 85px; }
+    margin: 0 0 70px 0; }
+  section.sponsors .honorary-patronage {
+    margin: 0 0 70px 0; }
+    section.sponsors .honorary-patronage .main-container {
+      margin: 70px 0 0 0; }
+      section.sponsors .honorary-patronage .main-container .logo-item {
+        margin: 0 0 20px 0;
+        padding: 0 10px 0 10px; }
+        section.sponsors .honorary-patronage .main-container .logo-item .logo-container {
+          width: 125px;
+          height: 125px; }
+          section.sponsors .honorary-patronage .main-container .logo-item .logo-container img {
+            width: 90px; }
 
 @media (min-width: 576px) {
   section.sponsors {
     margin: 50px 0 0 0;
+    margin-bottom: 70px;
     padding: 0 35px; } }
 @media (min-width: 768px) {
   section.sponsors {
     margin: 100px 0 0 0;
+    margin-bottom: 70px;
     padding: 0 60px; }
-    section.sponsors section.rest-of-sponsors .row .col-sm-12 {
-      margin: 0 0 30px 0;
-      max-width: 225px; } }
+    section.sponsors section.rest-of-sponsors .main-container .logo-item {
+      padding: 0 25px 0 25px; } }
 @media (min-width: 992px) {
   section.sponsors {
-    margin: 150px 0 150px 0;
+    margin: 150px 0 70px 0;
     padding: 0 90px; }
     section.sponsors div.heading h3 {
       font-size: 30px;
@@ -1335,16 +1364,22 @@ section.sponsors {
       height: 250px; }
       section.sponsors .lg-row .col .logo-container {
         margin: 0 !important; }
-    section.sponsors .media-partners.logo-triangle-layout {
-      margin: 0 0 0 0; }
-      section.sponsors .media-partners.logo-triangle-layout .lg-row .col {
-        height: 200px; }
-      section.sponsors .media-partners.logo-triangle-layout .second-row {
-        position: relative;
-        bottom: 40px; }
-      section.sponsors .media-partners.logo-triangle-layout .third-row {
-        position: relative;
-        bottom: 80px; } }
+    section.sponsors .media-partners {
+      margin-bottom: 70px; }
+      section.sponsors .media-partners .main-container .logo-item {
+        padding: 0 10px 0 10px; }
+        section.sponsors .media-partners .main-container .logo-item .logo-container {
+          width: 130px;
+          height: 130px; }
+          section.sponsors .media-partners .main-container .logo-item .logo-container img {
+            width: 110px; }
+    section.sponsors .partners .main-container .logo-item {
+      padding: 0 10px 0 10px; }
+      section.sponsors .partners .main-container .logo-item .logo-container {
+        width: 130px;
+        height: 130px; }
+        section.sponsors .partners .main-container .logo-item .logo-container img {
+          width: 110px; } }
 @media (min-width: 1200px) {
   section.sponsors div.heading h2 {
     font-size: 20px; }
@@ -1369,12 +1404,16 @@ section.sponsors {
     section.sponsors .organizer-col section.organizer .logo-container {
       width: 330px;
       height: 330px; }
-  section.sponsors section.rest-of-sponsors .row .col-sm-12 {
-    margin: 0 0 30px 0;
-    max-width: 310px; }
-  section.sponsors section.rest-of-sponsors .sponsor-logo-container {
-    width: 265px;
-    height: 265px; } }
+  section.sponsors section.rest-of-sponsors .main-container .logo-item {
+    padding: 0 25px 0 25px; }
+    section.sponsors section.rest-of-sponsors .main-container .logo-item .logo-container {
+      width: 220px;
+      height: 220px; }
+  section.sponsors .honorary-patronage .main-container .logo-item .logo-container {
+    width: 165px;
+    height: 165px; }
+    section.sponsors .honorary-patronage .main-container .logo-item .logo-container img {
+      width: 120px; } }
 section.contact {
   background: #FEF4F3;
   padding: 55px 35px; }

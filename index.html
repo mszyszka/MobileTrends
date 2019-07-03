@@ -1,11 +1,6 @@
-<!-- do 768px coś rozpycha stronę -->
 <!-- offset na scrollu nava -->
-
 <!-- HTML:
 - W3 validator pokazuje, że w niektórych mniejscach w html są złe tagi zamykające typu zamiast zamknąć h2 zamykasz h1, brakuje altów do zdjęć oraz inne błędy. - zweryfikuj
-- Sekcja Partnerzy, Patroni medialni, do przerobienia, zrobiona jest po daną ilość zdjęć, jak dodam lub usunę jedno, dwa logo to się wysypuje.
-- Slider na mobilce pokazuje tylko 1 zdjęcie.
-- Sekcja Prelegenci brakuje tła takiego jak na projekcie
 -->
 <!DOCTYPE html>
 <html lang="pl">
@@ -456,8 +451,8 @@
         </section>
 
         <!-- section.they-will-perform over and 768px width -->
-        <section class="they-will-perform-md d-none d-md-block mr-auto ml-auto target2">
-            <div class="container-fluid pl-0 pr-0">
+        <section class="they-will-perform-md d-none d-md-block target2">
+            <div class="container-fluid pl-0 pr-0 mr-auto ml-auto">
                 <div class="row">
                     <div class="heading-col col-md-8 col-lg-6 d-flex flex-column justify-content-center">
                         <div class="heading">
@@ -897,12 +892,19 @@
             <!-- Carousel < 1200px-->
             <div class="owl-carousel loop first d-xl-none">
                 <!-- Item 1 -->
-                <div>
-                    <img src="./img/year-ago-pictures/1.png" class="d-block mr-auto" alt="year ago img">
+                <div class="ago-carousel-item item1">
                 </div>
                 <!-- Item 2 -->
-                <div>
-                    <img src="./img/year-ago-pictures/1.png" class="d-block mr-auto" alt="year ago img">
+                <div class="ago-carousel-item item2" >
+                </div>
+                <!-- Item 3 -->
+                <div class="ago-carousel-item item3">
+                </div>
+                <!-- Item 4 -->
+                <div class="ago-carousel-item item4">
+                </div>
+                <!-- Item 5 -->
+                <div class="ago-carousel-item item5">
                 </div>
             </div>
             <!-- Carousels > 1200px-->
@@ -1091,261 +1093,212 @@
                 </div>
             </div>
 
-            <section class="rest-of-sponsors">
-                <span>Sponsorzy</span>
-                <div class="row d-flex justify-content-center ">
-                    <div class="col-sm-12 col-md-6 col-xl-4 first-col d-flex justify-content-center  p-xl-0">
-                        <div class="logo-container sponsor-logo-container d-flex align-items-center">
+            <section class="rest-of-sponsors  d-lg-flex flex-column align-items-center">
+                <span class="mr-auto ml-lg-auto">Sponsorzy</span>
+                <!-- new -->
+                <div class="main-container d-flex flex-column flex-md-row flex-wrap  align-items-center justify-content-center">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/crossref-logo.png" class="crossref-logo ml-auto mr-auto" alt="crossref logo">
                         </div>
-                   </div>
-                   <div class="col-sm-12 col-md-6 col-xl-4 second-col d-flex justify-content-center  p-xl-0">
-                        <div class="logo-container sponsor-logo-container d-flex align-items-center">
-                            <img src="./img/bird-logo.png" class="click-master-logo ml-auto mr-auto" alt="bird logo">
-                        </div>
-                   </div>
-                   <div class="col-sm-12 col-md-6 col-xl-4 second-col d-flex justify-content-center  p-xl-0">
-                        <div class="logo-container sponsor-logo-container d-flex align-items-center">
-                            <img src="./img/bird-logo.png" class="click-master-logo ml-auto mr-auto" alt="bird logo">
-                        </div>
-                   </div>
-                   <div class="col-sm-12 col-md-6 col-xl-4 first-col d-flex justify-content-center  p-xl-0">
-                        <div class="logo-container sponsor-logo-container d-flex align-items-center">
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/crossref-logo.png" class="crossref-logo ml-auto mr-auto" alt="crossref logo">
                         </div>
-                   </div>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
+                            <img src="./img/crossref-logo.png" class="crossref-logo ml-auto mr-auto" alt="crossref logo">
+                        </div>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
+                            <img src="./img/crossref-logo.png" class="crossref-logo ml-auto mr-auto" alt="crossref logo">
+                        </div>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
+                            <img src="./img/crossref-logo.png" class="crossref-logo ml-auto mr-auto" alt="crossref logo">
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <section class="honorary-patronage logo-triangle-layout">
+            <section class="honorary-patronage d-lg-flex flex-column align-items-center">
                 <span>Patronat honorowy MTA</span>
-                <div class="row d-lg-none">
-                    <div class="col">
-                        <div class="logo-container patron-logo-container d-flex align-items-center ml-auto">
-                            <img src="./img/honorary-patronage/1.png" class="ml-auto mr-auto" alt="logo">
-                        </div>
-                        <div class="logo-container patron-logo-container d-flex align-items-center ml-auto">
-                            <img src="./img/honorary-patronage/2.png" class="ml-auto mr-auto" alt="logo">
-                        </div>
-                        <div class="logo-container patron-logo-container d-flex align-items-center ml-auto">
-                            <img src="./img/honorary-patronage/3.png" class="ml-auto mr-auto" alt="logo">
-                        </div>
-                    </div>
-                    <div class="col second-col">
-                        <div class="logo-container patron-logo-container d-flex align-items-center  mr-auto">
-                            <img src="./img/honorary-patronage/4.png" class="ml-auto mr-auto" alt="logo">
-                        </div>
-                        <div class="logo-container patron-logo-container d-flex align-items-center  mr-auto">
-                            <img src="./img/honorary-patronage/5.png" class="ml-auto mr-auto" alt="logo">
-                        </div>
-                        <div class="logo-container patron-logo-container d-flex align-items-center  mr-auto">
-                            <img src="./img/honorary-patronage/6.png" class="ml-auto mr-auto" alt="logo">
-                        </div> 
-                    </div>
-                </div>
-
-                <!-- row over 992px -->
-                <div class="row lg-row d-none d-lg-flex">
-                    <div class="col d-flex flex-column align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                <!-- new -->
+                <div class="main-container d-flex  flex-row flex-wrap  align-items-center justify-content-center">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/1.png" class="ml-auto mr-auto" alt="logo">
                         </div>
                     </div>
-                    <div class="col d-flex flex-column justify-content-end align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/2.png" class="ml-auto mr-auto" alt="logo">
-                        </div> 
+                        </div>
                     </div>
-                    <div class="col d-flex flex-column align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/3.png" class="ml-auto mr-auto" alt="logo">
                         </div>
                     </div>
-                    <div class="col d-flex flex-column justify-content-end align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center ">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/4.png" class="ml-auto mr-auto" alt="logo">
-                        </div> 
+                        </div>
                     </div>
-                    <div class="col d-flex flex-column align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/5.png" class="ml-auto mr-auto" alt="logo">
                         </div>
                     </div>
-                    <div class="col d-flex flex-column justify-content-end align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
-                            <img src="./img/honorary-patronage/6.png" class="ml-auto mr-auto" alt="logo">
-                        </div>  
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
+                            <img src="./img/honorary-patronage/1.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
+                            <img src="./img/honorary-patronage/2.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
+                            <img src="./img/honorary-patronage/3.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
+                            <img src="./img/honorary-patronage/4.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="media-partners logo-triangle-layout">
+            <section class="media-partners d-none  d-lg-flex flex-column align-items-center">
                 <span class="d-none d-lg-block">Patroni medialni</span>
-                <!-- first row -->
-                <div class="row lg-row first-row d-none d-lg-flex">
-                    <div class="col col-lg-2 d-flex flex-column align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                <div class="main-container d-flex  flex-row flex-wrap  align-items-center justify-content-center">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/1.png" class="ml-auto mr-auto" alt="logo">
                         </div>
                     </div>
-                    <div class="col col-lg-2  d-flex flex-column justify-content-end align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/2.png" class="ml-auto mr-auto" alt="logo">
-                        </div> 
+                        </div>
                     </div>
-                    <div class="col col-lg-2 d-flex flex-column align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/3.png" class="ml-auto mr-auto" alt="logo">
                         </div>
                     </div>
-                    <div class="col col-lg-2 d-flex flex-column justify-content-end align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center ">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/4.png" class="ml-auto mr-auto" alt="logo">
-                        </div> 
+                        </div>
                     </div>
-                    <div class="col col-lg-2 d-flex flex-column align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/5.png" class="ml-auto mr-auto" alt="logo">
                         </div>
                     </div>
-                    <div class="col col-lg-2 d-flex flex-column justify-content-end align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
-                            <img src="./img/honorary-patronage/6.png" class="ml-auto mr-auto" alt="logo">
-                        </div>  
-                    </div>
-                </div>
-                <!-- second row -->
-                <div class="row lg-row second-row d-none d-lg-flex">
-                    <div class="col col-lg-2 d-flex flex-column align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
-                            <img src="./img/honorary-patronage/2.png" class="ml-auto mr-auto" alt="logo">
-                        </div> 
-                    </div>
-                    <div class="col col-lg-2 d-flex flex-column justify-content-end align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
-                            <img src="./img/honorary-patronage/3.png" class="ml-auto mr-auto" alt="logo">
-                        </div>
-                    </div>
-                    <div class="col col-lg-2 d-flex flex-column align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center ">
-                            <img src="./img/honorary-patronage/4.png" class="ml-auto mr-auto" alt="logo">
-                        </div> 
-                    </div>
-                    <div class="col col-lg-2 d-flex flex-column justify-content-end align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center ">
-                            <img src="./img/honorary-patronage/4.png" class="ml-auto mr-auto" alt="logo">
-                        </div> 
-                    </div>
-                    <div class="col col-lg-2 d-flex flex-column align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
-                            <img src="./img/honorary-patronage/5.png" class="ml-auto mr-auto" alt="logo">
-                        </div>
-                    </div>
-                    <div class="col col-lg-2 d-flex flex-column justify-content-end align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
-                            <img src="./img/honorary-patronage/6.png" class="ml-auto mr-auto" alt="logo">
-                        </div>  
-                    </div>
-                </div>
-                <!-- third row -->
-                <div class="row lg-row third-row d-none d-lg-flex">
-                    <div class="col col-lg-2 d-flex flex-column align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/1.png" class="ml-auto mr-auto" alt="logo">
                         </div>
                     </div>
-                    <div class="col col-lg-2  d-flex flex-column justify-content-end align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/2.png" class="ml-auto mr-auto" alt="logo">
-                        </div> 
+                        </div>
                     </div>
-                    <div class="col col-lg-2 d-flex flex-column align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/3.png" class="ml-auto mr-auto" alt="logo">
                         </div>
                     </div>
-                    <div class="col col-lg-2 d-flex flex-column justify-content-end align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center ">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/4.png" class="ml-auto mr-auto" alt="logo">
-                        </div> 
-                    </div>
-                    <div class="col col-lg-2 d-flex flex-column align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
-                            <img src="./img/honorary-patronage/5.png" class="ml-auto mr-auto" alt="logo">
                         </div>
-                    </div>
-                    <div class="col col-lg-2 d-flex flex-column justify-content-end align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
-                            <img src="./img/honorary-patronage/6.png" class="ml-auto mr-auto" alt="logo">
-                        </div>  
                     </div>
                 </div>
             </section>
-            <section class="partners logo-triangle-layout">
+
+            <section class="partners d-lg-flex flex-column align-items-center">
                 <span class="d-none d-lg-block">Partnerzy</span>
-                <!-- first row -->
-                <div class="row lg-row first-row d-none d-lg-flex">
-                    <div class="col col-lg-2 d-flex flex-column align-items-center ">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                <div class="main-container d-none d-lg-flex flex-row flex-wrap  align-items-center justify-content-center">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/1.png" class="ml-auto mr-auto" alt="logo">
                         </div>
                     </div>
-                    <div class="col col-lg-2  d-flex flex-column justify-content-end align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/2.png" class="ml-auto mr-auto" alt="logo">
-                        </div> 
+                        </div>
                     </div>
-                    <div class="col col-lg-2 d-flex flex-column align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/3.png" class="ml-auto mr-auto" alt="logo">
                         </div>
                     </div>
-                    <div class="col col-lg-2 d-flex flex-column justify-content-end align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center ">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/4.png" class="ml-auto mr-auto" alt="logo">
-                        </div> 
+                        </div>
                     </div>
-                    <div class="col col-lg-2 d-flex flex-column align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/5.png" class="ml-auto mr-auto" alt="logo">
                         </div>
                     </div>
-                    <div class="col col-lg-2 d-flex flex-column justify-content-end align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
-                            <img src="./img/honorary-patronage/6.png" class="ml-auto mr-auto" alt="logo">
-                        </div>  
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
+                            <img src="./img/honorary-patronage/1.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
                     </div>
-                </div>
-                <!-- second row -->
-                <div class="row lg-row second-row d-none d-lg-flex">
-                    <div class="col col-lg-2 d-flex flex-column align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/2.png" class="ml-auto mr-auto" alt="logo">
-                        </div> 
+                        </div>
                     </div>
-                    <div class="col col-lg-2 d-flex flex-column justify-content-end align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/3.png" class="ml-auto mr-auto" alt="logo">
                         </div>
                     </div>
-                    <div class="col col-lg-2 d-flex flex-column align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center ">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/4.png" class="ml-auto mr-auto" alt="logo">
-                        </div> 
+                        </div>
                     </div>
-                    <div class="col col-lg-2 d-flex flex-column justify-content-end align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center ">
-                            <img src="./img/honorary-patronage/4.png" class="ml-auto mr-auto" alt="logo">
-                        </div> 
-                    </div>
-                    <div class="col col-lg-2 d-flex flex-column align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
                             <img src="./img/honorary-patronage/5.png" class="ml-auto mr-auto" alt="logo">
                         </div>
                     </div>
-                    <div class="col col-lg-2 d-flex flex-column justify-content-end align-items-center">
-                        <div class="logo-container patron-logo-container d-flex align-items-center">
-                            <img src="./img/honorary-patronage/6.png" class="ml-auto mr-auto" alt="logo">
-                        </div>  
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
+                            <img src="./img/honorary-patronage/1.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
+                            <img src="./img/honorary-patronage/2.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
+                            <img src="./img/honorary-patronage/3.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-container  d-flex align-items-center">
+                            <img src="./img/honorary-patronage/4.png" class="ml-auto mr-auto" alt="logo">
+                        </div>
                     </div>
                 </div>
             </section>

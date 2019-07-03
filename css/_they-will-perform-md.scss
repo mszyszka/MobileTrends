@@ -1,9 +1,12 @@
 // This section is displayed on md width, over 768px
 section.they-will-perform-md {
     padding: $sec-padding-md;
-    max-width: 1400px;
+    padding-bottom: 550px;
     margin: $sec-margin-md;
+    background-image: url('/img/they-will-perform/they-will-perform-md-background.png');
+    background-position: 30% 0%;
     div.container-fluid {
+        max-width: 1400px;
         div.row {
             div.heading-col {
                 padding-bottom: 50px;
@@ -49,6 +52,7 @@ section.they-will-perform-md {
     section.they-will-perform-md {
         margin: $sec-margin-lg;
         padding: $sec-padding-lg;
+        padding-bottom: 550px;
         div.heading {
                 h2 {
                     @include section-h2;
@@ -67,14 +71,15 @@ section.they-will-perform-md {
 @media(min-width: 1200px) {
     section.they-will-perform-md {
         margin: $sec-margin-lg;
+        padding-bottom: 550px;
     }
 }
-
 
 // I'm reseting left end right padding(180px together) in section.they-will-perform-md on 1580px, becose I want max-width
 // of this section content to be 1400px. Section max-width is set to 1400px so i need to reset padding on 1580px(1580 - 180 = 1400)
 @media (min-width: 1580px) {
     section.they-will-perform-md {
         padding: 0;
+        padding-bottom: 450px;
     }
  }

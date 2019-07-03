@@ -1,6 +1,7 @@
 section.sponsors {
     padding: $sec-padding-sm;
     margin: $sec-margin-sm;
+    margin-bottom: 70px;
     max-width: 1400px;
     div.heading {
         h2 {
@@ -11,6 +12,19 @@ section.sponsors {
             margin: 0 0 50px 0;
             span {
                 font-size: 30px;
+            }
+        }
+    }
+    .main-container{
+        margin: 70px 0 0 0;
+        .logo-item {
+            margin: 0 0 45px 0;
+            .logo-container {
+                width: 180px;
+                height: 180px;
+                img {
+                    width: 115px;
+                }
             }
         }
     }
@@ -52,44 +66,24 @@ section.sponsors {
         }
     }
     section.rest-of-sponsors {
-        margin: 0 0 100px 0;
-        span {
-            display: block;
-            margin: 0 0 60px 0;
-        }
-        .sponsor-logo-container {
-            width: 185px;
-            height: 185px;
-            img {
-                width: 115px;
-            }
-        }
-        .row .col-sm-12 {
-            margin: 0 0 45px 0;
-        }
+        margin: 0 0 70px 0;
     }
-    section.logo-triangle-layout {
-        margin: 0 0 100px 0;
-        span {
-            display: block;
-            margin: 0 0 60px 0;
-        }
-        div.row {
-            .col {
-                padding-right: 5px;
-                padding-left: 5px;
-                .patron-logo-container {
+
+    .honorary-patronage {
+        margin: 0 0 70px 0;
+        .main-container{
+            margin: 70px 0 0 0;
+            .logo-item {
+                margin: 0 0 20px 0;
+                padding: 0 10px 0 10px;
+                .logo-container {
                     width: 125px;
                     height: 125px;
-                    margin: 0 0 50px 0;
                     img {
-                        width: 85px;
+                        width: 90px;
                     }
                 }
             }
-            .second-col {
-                padding-top: 85px;
-            } 
         }
     }
 }
@@ -97,17 +91,20 @@ section.sponsors {
 @media(min-width: 576px) {
     section.sponsors {
         margin: $sec-margin-sm;
+        margin-bottom: 70px;
         padding: $sec-padding-sm;
     }
 }
 @media(min-width: 768px) {
     section.sponsors {
         margin: $sec-margin-md;
+        margin-bottom: 70px;
         padding: $sec-padding-md;
         section.rest-of-sponsors {
-            .row .col-sm-12 {
-                margin: 0 0 30px 0;
-                max-width: 225px;
+            .main-container{
+                .logo-item {
+                    padding: 0 25px 0 25px;
+                }
             }
         }
     }
@@ -115,7 +112,7 @@ section.sponsors {
 
 @media(min-width: 992px) {
     section.sponsors {
-        margin: 150px 0 150px 0;
+        margin: 150px 0 70px 0;
         padding: $sec-padding-lg;
         div.heading {
              h3 {
@@ -150,21 +147,33 @@ section.sponsors {
                 }
             }
         }
-        .media-partners.logo-triangle-layout {
-            margin: 0 0 0 0;
-            .lg-row {
-                .col {
-                    height: 200px;
+        .media-partners {
+             margin-bottom: 70px;
+            .main-container{
+                .logo-item {
+                    padding: 0 10px 0 10px;
+                    .logo-container {
+                        width: 130px;
+                        height: 130px;
+                        img {
+                            width: 110px;
+                        }
+                    }
                 }
             }
-            // every next row should be positioned 40px more than one before
-            .second-row {
-                position: relative;
-                bottom: 40px;
-            }
-            .third-row {
-                position: relative;
-                bottom: 80px;
+        }
+        .partners {
+            .main-container{
+                .logo-item {
+                    padding: 0 10px 0 10px;
+                    .logo-container {
+                        width: 130px;
+                        height: 130px;
+                        img {
+                            width: 110px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -212,13 +221,29 @@ section.sponsors {
             }
         }
         section.rest-of-sponsors {
-            .row .col-sm-12 {
-                margin: 0 0 30px 0;
-                max-width: 310px;
+            .main-container{
+                .logo-item {
+                    padding: 0 25px 0 25px;
+                    .logo-container {
+                        width: 220px;
+                        height: 220px;
+                        img {
+                        }
+                    }
+                }
             }
-            .sponsor-logo-container {
-                width: 265px;
-                height: 265px;
+        }
+        .honorary-patronage {
+            .main-container{
+                .logo-item {
+                    .logo-container {
+                        width: 165px;
+                        height: 165px;
+                        img {
+                            width: 120px;
+                        }
+                    }
+                }
             }
         }
     } 
