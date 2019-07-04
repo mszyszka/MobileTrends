@@ -26,12 +26,14 @@ function getHeaderHeight(){
     let navContainer = document.getElementsByClassName('nav-container')[0];
 
     if(scrollPosition >= (headerHeight + navBarHeight)) {
-        navContainer.classList.add('nav-bar-fixed');
+        navContainer.classList.add('nav-container-fixed');
         navContainer.classList.add('shadow');
 
+
     } else  {
-        navContainer.classList.remove('nav-bar-fixed');
+        navContainer.classList.remove('nav-container-fixed');
         navContainer.classList.remove('shadow');
+
     }
 }
 
@@ -60,15 +62,8 @@ function setSectionHeight(){
     };
 }
 
-// handling scroll to section on nav links
-const scrollToElem = {
-    behavior : "smooth",
-    block : 'start',
-    inline : 'center'
-};
-
 function scrollToSection() {
-    $('a[href^="#"]').on('click',function (e) {
+    $('a[href^="#"]').on('click',function(e) {
         let dataTarget = e.target.dataset.target;
         let target = document.getElementsByClassName(dataTarget)[0];
         const documentWidth = $(document).width();
@@ -80,8 +75,7 @@ function scrollToSection() {
         if(documentWidth >= 768 && (dataTarget == 'target2')) {
             target = document.getElementsByClassName(dataTarget)[1];
         }
-        target.scrollIntoView(scrollToElem);
-        console.log(target);
+        $(window).scrollTo(target, 500, {offset:-220});
     });
 }
 

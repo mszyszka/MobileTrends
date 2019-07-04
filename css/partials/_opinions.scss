@@ -19,10 +19,6 @@ section.opinions {
             max-width: 85%;
             padding: 34px;
             border-radius: 49px;
-            // -webkit-box-shadow: 5px 10px 50px 0px rgba(239,239,239,0.75);
-            // -moz-box-shadow: 5px 10px 50px 0px rgba(239,239,239,0.75);
-            // box-shadow: 5px 10px 50px 0px rgba(239,239,239,0.75);
-            // zmiana
             @include shadow;
             .icon {
                 margin: 0 0 30px 0;

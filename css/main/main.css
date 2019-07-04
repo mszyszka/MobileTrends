@@ -26,7 +26,7 @@
     text-transform: uppercase; }
   .site-header .place-date {
     background: #FFFFFF;
-    width: 332px;
+    width: 295px;
     height: 103px;
     position: relative;
     top: 1px;
@@ -45,6 +45,9 @@
         font-size: 24px; }
 
 /* /////////////////////////////////////@media///////////////////////////////// */
+@media (min-width: 375px) {
+  .site-header .place-date {
+    width: 332px; } }
 @media (min-width: 480px) {
   .site-header {
     margin: 0 0 10px 0; }
@@ -113,7 +116,7 @@
   -moz-box-shadow: 0px 10px 6px -4px rgba(0, 0, 0, 0.26);
   box-shadow: 0px 10px 6px -4px rgba(0, 0, 0, 0.26); }
 
-.nav-bar-fixed {
+.nav-container-fixed {
   position: fixed;
   top: 0;
   z-index: 1000; }
@@ -122,6 +125,8 @@
   padding: 25px 10px 25px 22px;
   max-width: 1600px;
   background: #ffffff; }
+  .navbar .top-nav-logo {
+    width: 70px; }
   .navbar .navbar-toggler {
     border: none;
     outline: none; }
@@ -190,7 +195,9 @@
 /* /////////////////////////////////////@media///////////////////////////////// */
 @media (min-width: 576px) {
   .navbar {
-    padding: 25px 30px 25px 42px; } }
+    padding: 25px 30px 25px 42px; }
+    .navbar .top-nav-logo {
+      width: 88px; } }
 @media (min-width: 768px) {
   .navbar {
     padding: 25px 60px 25px 72px; } }
@@ -202,6 +209,8 @@
 @media (min-width: 1200px) {
   .navbar {
     padding: 36px 72px 36px 72px; }
+    .navbar .top-nav-logo {
+      width: 100px; }
     .navbar .navbar-collapse ul.navbar-nav li.buy-ticket {
       margin: 0 0 0 100px; } }
 @media (min-width: 1500px) {
