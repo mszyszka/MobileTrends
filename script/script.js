@@ -22,11 +22,16 @@ function addShadowToNavbarContainer(){
 function changeSizeOfNavbar() {
     let scrollPosition = window.scrollY;
     let navbar = document.getElementById('navbarId');
+    let body = document.querySelector('body');
+
 
     if(scrollPosition >=1) {
         navbar.classList.add('navbar-fixed');
+        body.classList.add('bodyWhenNavbarFixed');
+
     } else {
         navbar.classList.remove('navbar-fixed');
+        body.classList.remove('bodyWhenNavbarFixed');
     }
 
 }

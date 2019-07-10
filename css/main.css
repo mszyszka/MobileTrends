@@ -30,24 +30,25 @@
     height: 103px;
     position: relative;
     top: 1px;
-    z-index: 100; }
+    z-index: 100;
+    text-align: left;
+    padding: 0 28px 0 28px; }
     .site-header .place-date span {
-      color: #EF3024;
-      display: block;
-      font-size: 12px;
-      width: 238px; }
+      color: #ef3024;
+      font-size: 12px; }
     .site-header .place-date time {
       font-size: 22px;
       font-weight: 700; }
       .site-header .place-date time span {
         display: initial;
-        color: #EF3024;
+        color: #ef3024;
         font-size: 24px; }
 
 /* /////////////////////////////////////@media///////////////////////////////// */
 @media (min-width: 375px) {
   .site-header .place-date {
-    width: 332px; } }
+    width: 332px;
+    padding: 0 42px 0 42px; } }
 @media (min-width: 480px) {
   .site-header {
     margin: 0 0 10px 0; }
@@ -68,7 +69,8 @@
       font-size: 26px; }
     .site-header .place-date {
       background: #FFFFFF;
-      width: 362px; } }
+      width: 362px;
+      padding: 0 57px 0 57px; } }
 @media (min-width: 992px) {
   .site-header {
     margin: 0 0 90px 0; } }
@@ -82,7 +84,22 @@
       width: 416px;
       height: 190px;
       position: relative;
-      top: 112px; } }
+      top: 112px;
+      padding: 0 35px 0 35px;
+      border-bottom: 1px solid rgba(239, 48, 36, 0.3);
+      border-right: 1px solid rgba(239, 48, 36, 0.3); }
+      .site-header .place-date span {
+        color: #ef3024;
+        display: block;
+        font-size: 16px;
+        width: 238px; }
+      .site-header .place-date time {
+        font-size: 32px;
+        font-weight: 700; }
+        .site-header .place-date time span {
+          display: initial;
+          color: #ef3024;
+          font-size: 24px; } }
 .side-nav {
   position: fixed;
   right: 0;
@@ -112,18 +129,21 @@
   background: #ffffff;
   position: fixed;
   top: 0;
-  z-index: 1000; }
+  z-index: 1000;
+  transition: box-shadow ease-in-out 200ms; }
 
 .shadow {
   -webkit-box-shadow: 0px 10px 6px -4px rgba(0, 0, 0, 0.26);
   -moz-box-shadow: 0px 10px 6px -4px rgba(0, 0, 0, 0.26);
-  box-shadow: 0px 10px 6px -4px rgba(0, 0, 0, 0.26); }
+  box-shadow: 0px 10px 6px -4px rgba(0, 0, 0, 0.26);
+  transition: box-shadow ease-in-out 200ms; }
 
 .navbar-fixed {
   padding: 15px 10px 15px 22px !important; }
 
 .navbar {
   padding: 25px 10px 25px 22px;
+  transition: padding ease-in-out 250ms;
   max-width: 1600px;
   background: #ffffff; }
   .navbar .top-nav-logo {
@@ -143,8 +163,8 @@
     min-width: 115px; }
   .navbar .navbar-collapse ul.navbar-nav li.buy-ticket .buy-a-ticket {
     margin: 0;
-    border: 3px solid #EF3024;
-    background: #EF3024;
+    border: 3px solid #ef3024;
+    background: #ef3024;
     text-align: center;
     color: #fff;
     padding: 11px 30px;
@@ -155,15 +175,15 @@
     outline: none;
     padding: 8px 40px; }
     .navbar .navbar-collapse ul.navbar-nav li.buy-ticket .buy-a-ticket:hover, .navbar .navbar-collapse ul.navbar-nav li.buy-ticket .buy-a-ticket:active {
-      border: 3px solid #EF3024;
+      border: 3px solid #ef3024;
       background: #FFFFFF;
-      color: #EF3024;
+      color: #ef3024;
       outline: none; }
 
 .icon-bar {
   width: 22px;
   height: 2px;
-  background-color: #EF3024;
+  background-color: #ef3024;
   display: block;
   transition: all 0.2s;
   margin-top: 4px; }
@@ -195,14 +215,23 @@
 
 /* /////////////////////////////////////@media///////////////////////////////// */
 @media (min-width: 576px) {
+  .navbar-fixed {
+    padding: 15px 30px 15px 42px !important; }
+
   .navbar {
     padding: 25px 30px 25px 42px; }
     .navbar .top-nav-logo {
       width: 88px; } }
 @media (min-width: 768px) {
+  .navbar-fixed {
+    padding: 15px 60px 15px 72px !important; }
+
   .navbar {
     padding: 25px 60px 25px 72px; } }
 @media (min-width: 992px) {
+  .navbar-fixed {
+    padding: 15px 72px 15px 72px !important; }
+
   .navbar {
     padding: 25px 72px 25px 72px; }
     .navbar .navbar-collapse ul.navbar-nav li.buy-ticket {
@@ -236,7 +265,7 @@
   .about section.txt h2 {
     font-size: 16px;
     font-weight: 700;
-    color: #EF3024;
+    color: #ef3024;
     margin: 0 0 10px 0; }
   .about section.txt h3 {
     font-weight: 700;
@@ -257,7 +286,7 @@
       margin-top: 30px; }
       .about div.img-container div.question-mark-container span.big-question-mark {
         display: inline-block;
-        color: #EF3024;
+        color: #ef3024;
         font-size: 120px;
         font-weight: 700; } }
 @media (min-width: 768px) {
@@ -295,14 +324,14 @@
   .is-it-worth-investing h2 {
     font-size: 16px;
     font-weight: 700;
-    color: #EF3024;
+    color: #ef3024;
     margin: 0 0 10px 0; }
   .is-it-worth-investing h3 {
     font-size: 30px;
     font-weight: 700;
     margin: 0 0 67px 0; }
     .is-it-worth-investing h3 span {
-      color: #EF3024; }
+      color: #ef3024; }
   .is-it-worth-investing p {
     font-size: 12px;
     color: #7B7B7B;
@@ -374,7 +403,7 @@ section.carousel-1-section {
       font-size: 24px;
       font-weight: 700; }
       section.carousel-1-section .carousel-1 .carousel-item h2 span {
-        color: #EF3024; }
+        color: #ef3024; }
     section.carousel-1-section .carousel-1 .carousel-item p {
       color: #7B7B7B;
       font-weight: 600;
@@ -405,7 +434,7 @@ section.carousel1-tiles {
     font-size: 24px;
     font-weight: 700; }
     section.carousel1-tiles h2 span {
-      color: #EF3024; }
+      color: #ef3024; }
   section.carousel1-tiles p {
     color: #7B7B7B;
     font-weight: 600;
@@ -456,8 +485,8 @@ section.confirm-your-presence {
     margin: 0 0 50px 0; }
   section.confirm-your-presence section.take-action .buy-a-ticket {
     margin: 0;
-    border: 3px solid #EF3024;
-    background: #EF3024;
+    border: 3px solid #ef3024;
+    background: #ef3024;
     text-align: center;
     color: #fff;
     padding: 11px 30px;
@@ -467,9 +496,9 @@ section.confirm-your-presence {
     transition: all ease-in-out 0.2s;
     outline: none; }
     section.confirm-your-presence section.take-action .buy-a-ticket:hover, section.confirm-your-presence section.take-action .buy-a-ticket:active {
-      border: 3px solid #EF3024;
+      border: 3px solid #ef3024;
       background: #FFFFFF;
-      color: #EF3024;
+      color: #ef3024;
       outline: none; }
 
 @media (min-width: 576px) {
@@ -491,8 +520,8 @@ section.confirm-your-presence {
         padding: 0; }
       section.confirm-your-presence section.take-action .buy-a-ticket {
         margin: 0;
-        border: 3px solid #EF3024;
-        background: #EF3024;
+        border: 3px solid #ef3024;
+        background: #ef3024;
         text-align: center;
         color: #fff;
         padding: 11px 30px;
@@ -502,9 +531,9 @@ section.confirm-your-presence {
         transition: all ease-in-out 0.2s;
         outline: none; }
         section.confirm-your-presence section.take-action .buy-a-ticket:hover, section.confirm-your-presence section.take-action .buy-a-ticket:active {
-          border: 3px solid #EF3024;
+          border: 3px solid #ef3024;
           background: #FFFFFF;
-          color: #EF3024;
+          color: #ef3024;
           outline: none; } }
 @media (min-width: 992px) {
   section.confirm-your-presence {
@@ -516,8 +545,8 @@ section.confirm-your-presence {
     max-width: 600px; }
   section.confirm-your-presence section.take-action .buy-a-ticket {
     margin: 0;
-    border: 3px solid #EF3024;
-    background: #EF3024;
+    border: 3px solid #ef3024;
+    background: #ef3024;
     text-align: center;
     color: #fff;
     padding: 11px 30px;
@@ -527,9 +556,9 @@ section.confirm-your-presence {
     transition: all ease-in-out 0.2s;
     outline: none; }
     section.confirm-your-presence section.take-action .buy-a-ticket:hover, section.confirm-your-presence section.take-action .buy-a-ticket:active {
-      border: 3px solid #EF3024;
+      border: 3px solid #ef3024;
       background: #FFFFFF;
-      color: #EF3024;
+      color: #ef3024;
       outline: none; } }
 @media (min-width: 1580px) {
   section.confirm-your-presence {
@@ -544,14 +573,14 @@ section.they-will-perform {
     margin: 0 0 62px 0; }
     section.they-will-perform div.heading h2 {
       font-size: 16px;
-      color: #EF3024;
+      color: #ef3024;
       font-weight: 700; }
     section.they-will-perform div.heading h3 {
       font-size: 30px;
       font-weight: 700;
       margin: 0; }
       section.they-will-perform div.heading h3 span {
-        color: #EF3024; }
+        color: #ef3024; }
   section.they-will-perform .carousel-2 {
     padding: 0 50px; }
     section.they-will-perform .carousel-2 a.carousel-control-prev {
@@ -574,13 +603,13 @@ section.they-will-perform {
       font-weight: 700; }
     section.they-will-perform .carousel-2 .carousel-item .company-name {
       font-size: 12px;
-      color: #EF3024;
+      color: #ef3024;
       font-weight: 600;
       margin: 0 0 33px 0; }
   section.they-will-perform .see-everyone {
     margin: 0;
-    border: 3px solid #EF3024;
-    background: #EF3024;
+    border: 3px solid #ef3024;
+    background: #ef3024;
     text-align: center;
     color: #fff;
     padding: 11px 30px;
@@ -590,9 +619,9 @@ section.they-will-perform {
     transition: all ease-in-out 0.2s;
     outline: none; }
     section.they-will-perform .see-everyone:hover, section.they-will-perform .see-everyone:active {
-      border: 3px solid #EF3024;
+      border: 3px solid #ef3024;
       background: #FFFFFF;
-      color: #EF3024;
+      color: #ef3024;
       outline: none; }
 
 @media (min-width: 1200px) {
@@ -616,14 +645,14 @@ section.they-will-perform-md {
     margin: 0 0 50px 0; }
     section.they-will-perform-md div.heading h2 {
       font-size: 16px;
-      color: #EF3024;
+      color: #ef3024;
       font-weight: 700; }
     section.they-will-perform-md div.heading h3 {
       font-size: 30px;
       font-weight: 700;
       margin: 0; }
       section.they-will-perform-md div.heading h3 span {
-        color: #EF3024; }
+        color: #ef3024; }
   section.they-will-perform-md .item-container {
     max-width: 340px;
     margin: 0 0 50px 0; }
@@ -635,12 +664,12 @@ section.they-will-perform-md {
       font-weight: 700; }
     section.they-will-perform-md .item-container .company-name {
       font-size: 12px;
-      color: #EF3024;
+      color: #ef3024;
       font-weight: 600; }
   section.they-will-perform-md .see-everyone {
     margin: 0;
-    border: 3px solid #EF3024;
-    background: #EF3024;
+    border: 3px solid #ef3024;
+    background: #ef3024;
     text-align: center;
     color: #fff;
     padding: 11px 30px;
@@ -650,9 +679,9 @@ section.they-will-perform-md {
     transition: all ease-in-out 0.2s;
     outline: none; }
     section.they-will-perform-md .see-everyone:hover, section.they-will-perform-md .see-everyone:active {
-      border: 3px solid #EF3024;
+      border: 3px solid #ef3024;
       background: #FFFFFF;
-      color: #EF3024;
+      color: #ef3024;
       outline: none; }
 
 @media (min-width: 992px) {
@@ -662,14 +691,14 @@ section.they-will-perform-md {
     padding-bottom: 550px; }
     section.they-will-perform-md div.heading h2 {
       font-size: 16px;
-      color: #EF3024;
+      color: #ef3024;
       font-weight: 700; }
     section.they-will-perform-md div.heading h3 {
       font-size: 30px;
       font-weight: 700;
       margin: 0; }
       section.they-will-perform-md div.heading h3 span {
-        color: #EF3024; }
+        color: #ef3024; }
     section.they-will-perform-md .item-container {
       margin: 0 0 80px 0; } }
 @media (min-width: 1200px) {
@@ -687,14 +716,14 @@ section.year-ago-video {
   max-width: 1360px; }
   section.year-ago-video div.heading h2 {
     font-size: 16px;
-    color: #EF3024;
+    color: #ef3024;
     font-weight: 700; }
   section.year-ago-video div.heading h3 {
     font-size: 30px;
     font-weight: 700;
     margin: 0 0 30px 0; }
     section.year-ago-video div.heading h3 span {
-      color: #EF3024; }
+      color: #ef3024; }
   section.year-ago-video div.video {
     position: relative; }
     section.year-ago-video div.video img {
@@ -740,18 +769,18 @@ section.next-edition-schedule {
     width: 100%; }
   section.next-edition-schedule section.take-action h2 {
     font-size: 16px;
-    color: #EF3024;
+    color: #ef3024;
     font-weight: 700; }
   section.next-edition-schedule section.take-action h3 {
     font-size: 30px;
     font-weight: 700;
     margin: 0 0 30px 0; }
     section.next-edition-schedule section.take-action h3 span {
-      color: #EF3024; }
+      color: #ef3024; }
   section.next-edition-schedule section.take-action .first-day {
     margin: 0;
-    border: 3px solid #EF3024;
-    background: #EF3024;
+    border: 3px solid #ef3024;
+    background: #ef3024;
     text-align: center;
     color: #fff;
     padding: 11px 30px;
@@ -762,15 +791,15 @@ section.next-edition-schedule {
     outline: none;
     margin: 0 20px 20px 0; }
     section.next-edition-schedule section.take-action .first-day:hover, section.next-edition-schedule section.take-action .first-day:active {
-      border: 3px solid #EF3024;
+      border: 3px solid #ef3024;
       background: #FFFFFF;
-      color: #EF3024;
+      color: #ef3024;
       outline: none; }
   section.next-edition-schedule section.take-action .second-day {
     margin: 0;
-    border: 3px solid #EF3024;
+    border: 3px solid #ef3024;
     background: #FFFFFF;
-    color: #EF3024;
+    color: #ef3024;
     padding: 12px 30px;
     font-size: 14px;
     font-weight: 700;
@@ -779,7 +808,7 @@ section.next-edition-schedule {
     outline: none;
     width: 171px; }
     section.next-edition-schedule section.take-action .second-day:hover, section.next-edition-schedule section.take-action .second-day:active {
-      background: #EF3024;
+      background: #ef3024;
       color: #FFFFFF;
       outline: none; }
 
@@ -820,14 +849,14 @@ section.opinions {
     padding: 0 35px; }
     section.opinions div.heading h2 {
       font-size: 16px;
-      color: #EF3024;
+      color: #ef3024;
       font-weight: 700; }
     section.opinions div.heading h3 {
       font-size: 30px;
       font-weight: 700;
       margin: 0 0 30px 0; }
       section.opinions div.heading h3 span {
-        color: #EF3024; }
+        color: #ef3024; }
   section.opinions .carousel-3 .carousel-inner {
     margin-bottom: 12px; }
     section.opinions .carousel-3 .carousel-inner .item-container {
@@ -848,7 +877,7 @@ section.opinions {
         font-weight: 700; }
       section.opinions .carousel-3 .carousel-inner .item-container span.company-name {
         display: block;
-        color: #EF3024;
+        color: #ef3024;
         font-weight: 700;
         font-size: 16px;
         margin-bottom: 30px; }
@@ -888,14 +917,14 @@ section.opinions-md {
     padding: 130px 0 0 34px; }
     section.opinions-md div.heading h2 {
       font-size: 16px;
-      color: #EF3024;
+      color: #ef3024;
       font-weight: 700; }
     section.opinions-md div.heading h3 {
       font-size: 30px;
       font-weight: 700;
       margin: 0 0 30px 0; }
       section.opinions-md div.heading h3 span {
-        color: #EF3024; }
+        color: #ef3024; }
   section.opinions-md .opinions-md-item {
     height: 450px;
     max-width: 300px;
@@ -914,7 +943,7 @@ section.opinions-md {
       font-weight: 700; }
     section.opinions-md .opinions-md-item span.company-name {
       display: block;
-      color: #EF3024;
+      color: #ef3024;
       font-weight: 700;
       font-size: 16px;
       margin-bottom: 30px; }
@@ -941,14 +970,14 @@ section.opinions-md {
       padding: 130px 0 0 34px; }
       section.opinions-md div.heading h2 {
         font-size: 16px;
-        color: #EF3024;
+        color: #ef3024;
         font-weight: 700; }
       section.opinions-md div.heading h3 {
         font-size: 30px;
         font-weight: 700;
         margin: 0 0 30px 0; }
         section.opinions-md div.heading h3 span {
-          color: #EF3024; }
+          color: #ef3024; }
     section.opinions-md .opinions-md-item div.container-fluid div.row .col-md-6 {
       padding: 0 35px 0 35px;
       margin: 0 0 70px 0; } }
@@ -996,8 +1025,8 @@ section.join-today {
     margin: 0 0 40px 0; }
   section.join-today .buy-a-ticket {
     margin: 0;
-    border: 3px solid #EF3024;
-    background: #EF3024;
+    border: 3px solid #ef3024;
+    background: #ef3024;
     text-align: center;
     color: #fff;
     padding: 11px 30px;
@@ -1007,9 +1036,9 @@ section.join-today {
     transition: all ease-in-out 0.2s;
     outline: none; }
     section.join-today .buy-a-ticket:hover, section.join-today .buy-a-ticket:active {
-      border: 3px solid #EF3024;
+      border: 3px solid #ef3024;
       background: #FFFFFF;
-      color: #EF3024;
+      color: #ef3024;
       outline: none; }
 
 @media (min-width: 576px) {
@@ -1106,14 +1135,14 @@ section.year-ago-pictures {
     margin: 0 0 30px 0; }
     section.year-ago-pictures div.heading h2 {
       font-size: 16px;
-      color: #EF3024;
+      color: #ef3024;
       font-weight: 700; }
     section.year-ago-pictures div.heading h3 {
       font-size: 30px;
       font-weight: 700;
       margin: 0; }
       section.year-ago-pictures div.heading h3 span {
-        color: #EF3024; }
+        color: #ef3024; }
 
 @media (min-width: 576px) {
   section.year-ago-pictures {
@@ -1159,13 +1188,13 @@ section.conference-location {
     padding: 0 35px; }
     section.conference-location div.heading h2 {
       font-size: 16px;
-      color: #EF3024;
+      color: #ef3024;
       font-weight: 700; }
     section.conference-location div.heading h3 {
       font-size: 30px;
       font-weight: 700; }
       section.conference-location div.heading h3 span {
-        color: #EF3024; }
+        color: #ef3024; }
   section.conference-location .logo-col {
     padding: 50px 0; }
   section.conference-location img.logo {
@@ -1188,8 +1217,8 @@ section.conference-location {
         font-weight: 700; }
   section.conference-location nav.conference-location-nav button.learn-more {
     margin: 0;
-    border: 3px solid #EF3024;
-    background: #EF3024;
+    border: 3px solid #ef3024;
+    background: #ef3024;
     text-align: center;
     color: #fff;
     padding: 11px 30px;
@@ -1200,15 +1229,15 @@ section.conference-location {
     outline: none;
     margin: 0 0 22px 0; }
     section.conference-location nav.conference-location-nav button.learn-more:hover, section.conference-location nav.conference-location-nav button.learn-more:active {
-      border: 3px solid #EF3024;
+      border: 3px solid #ef3024;
       background: #FFFFFF;
-      color: #EF3024;
+      color: #ef3024;
       outline: none; }
   section.conference-location nav.conference-location-nav button.how-to-get {
     margin: 0;
-    border: 3px solid #EF3024;
+    border: 3px solid #ef3024;
     background: #FFFFFF;
-    color: #EF3024;
+    color: #ef3024;
     padding: 12px 30px;
     font-size: 14px;
     font-weight: 700;
@@ -1216,7 +1245,7 @@ section.conference-location {
     transition: all ease-in-out 0.2s;
     outline: none; }
     section.conference-location nav.conference-location-nav button.how-to-get:hover, section.conference-location nav.conference-location-nav button.how-to-get:active {
-      background: #EF3024;
+      background: #ef3024;
       color: #FFFFFF;
       outline: none; }
 
@@ -1282,14 +1311,14 @@ section.sponsors {
   max-width: 1400px; }
   section.sponsors div.heading h2 {
     font-size: 16px;
-    color: #EF3024;
+    color: #ef3024;
     font-weight: 700; }
   section.sponsors div.heading h3 {
     font-size: 30px;
     font-weight: 700;
     margin: 0 0 50px 0; }
     section.sponsors div.heading h3 span {
-      color: #EF3024; }
+      color: #ef3024; }
     section.sponsors div.heading h3 span {
       font-size: 30px; }
   section.sponsors .main-container {
@@ -1302,7 +1331,7 @@ section.sponsors {
         section.sponsors .main-container .logo-item .logo-container img {
           width: 115px; }
   section.sponsors span {
-    color: #EF3024;
+    color: #ef3024;
     font-size: 14px;
     font-weight: 600;
     line-height: 2.1; }
@@ -1440,14 +1469,14 @@ section.contact {
     max-width: 1400px; }
     section.contact article.stay-in-touch div.heading h2 {
       font-size: 16px;
-      color: #EF3024;
+      color: #ef3024;
       font-weight: 700; }
     section.contact article.stay-in-touch div.heading h3 {
       font-size: 30px;
       font-weight: 700;
       margin: 0 0 30px 0; }
       section.contact article.stay-in-touch div.heading h3 span {
-        color: #EF3024; }
+        color: #ef3024; }
   section.contact section.social-media {
     margin: 0 0 70px 0;
     height: 40px; }
@@ -1463,7 +1492,7 @@ section.contact {
       font-weight: 700;
       margin: 0 0 45px 0; }
       section.contact section.newsletter h3 span {
-        color: #EF3024; }
+        color: #ef3024; }
     section.contact section.newsletter input.user-email {
       border: none;
       outline: none;
@@ -1484,8 +1513,8 @@ section.contact {
         text-indent: 27px; }
     section.contact section.newsletter .sign-in {
       margin: 0;
-      border: 3px solid #EF3024;
-      background: #EF3024;
+      border: 3px solid #ef3024;
+      background: #ef3024;
       text-align: center;
       color: #fff;
       padding: 11px 30px;
@@ -1497,9 +1526,9 @@ section.contact {
       padding: 13px 45px;
       margin: 0 0 40px 0; }
       section.contact section.newsletter .sign-in:hover, section.contact section.newsletter .sign-in:active {
-        border: 3px solid #EF3024;
+        border: 3px solid #ef3024;
         background: #FFFFFF;
-        color: #EF3024;
+        color: #ef3024;
         outline: none; }
     section.contact section.newsletter p {
       opacity: 50%;
@@ -1531,7 +1560,7 @@ section.contact {
     margin: 0 0 45px 0; }
   section.contact section.newsletter h2 {
     font-size: 16px;
-    color: #EF3024;
+    color: #ef3024;
     font-weight: 700;
     color: transparent; }
   section.contact section.newsletter h3 {
@@ -1565,7 +1594,7 @@ footer {
     font-size: 14px;
     font-weight: 700; }
     footer h2 a:link, footer h2 a:visited, footer h2 a:hover, footer h2 a:active {
-      color: #EF3024;
+      color: #ef3024;
       text-decoration: none; }
   footer nav a:link, footer nav a:visited, footer nav a:hover, footer nav a:active {
     font-size: 12px;
@@ -1573,7 +1602,7 @@ footer {
     padding: 10px 5px;
     text-decoration: none; }
   footer nav a:hover, footer nav a:active {
-    color: #EF3024; }
+    color: #ef3024; }
 
 @media (min-width: 576px) {
   footer {
@@ -1593,10 +1622,17 @@ a {
   text-decoration: none; }
 
 body {
-  padding-top: 117px; }
+  padding-top: 117px;
+  transition: padding-top ease-in-out 250ms; }
+
+.bodyWhenNavbarFixed {
+  padding-top: 97px !important; }
 
 @media (min-width: 1200px) {
   body {
-    padding-top: 163px; } }
+    padding-top: 163px; }
+
+  .bodyWhenNavbarFixed {
+    padding-top: 121px !important; } }
 
 /*# sourceMappingURL=main.css.map */

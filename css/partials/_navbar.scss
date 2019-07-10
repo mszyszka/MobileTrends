@@ -3,17 +3,23 @@
     position: fixed;
     top: 0;
     z-index: 1000;
+    transition: box-shadow ease-in-out 200ms;
 }
 .shadow {
     -webkit-box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.26);
     -moz-box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.26);
     box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.26);
+    transition: box-shadow ease-in-out 200ms;
+
 }
 .navbar-fixed {
     padding: 15px 10px 15px 22px!important;
+    // transition: padding ease-in-out 200ms;
+
 }
 .navbar {
     padding: 25px 10px 25px 22px;
+    transition: padding ease-in-out 250ms;
     max-width: 1600px;
     background: #ffffff;
     .top-nav-logo {
@@ -94,6 +100,9 @@
 
 /* /////////////////////////////////////@media///////////////////////////////// */
 @media (min-width: 576px) {
+    .navbar-fixed {
+        padding: 15px 30px 15px 42px!important;
+    }
     .navbar {
         //padding is smaler on right, becouse hamburger have own.
         padding: 25px 30px 25px 42px;
@@ -104,11 +113,17 @@
 }
 
 @media (min-width: 768px) { 
+    .navbar-fixed {
+        padding: 15px 60px 15px 72px!important;
+    }
     .navbar {
         padding: 25px 60px 25px 72px;
     }    
  }
  @media (min-width: 992px) { 
+    .navbar-fixed {
+        padding: 15px 72px 15px 72px!important;
+    }
     .navbar {
         padding: 25px 72px 25px 72px;
         .navbar-collapse {

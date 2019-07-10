@@ -1,12 +1,12 @@
 /*
 Error: File to import not found or unreadable: foundation/functions.
-       Load path: C:/Users/MobileTrends/Desktop/Projekty/MobileTrends/OwlCarousel2-2.3.4/docs_src/assets/scss
-        on line 13 of C:/Users/MobileTrends/Desktop/Projekty/MobileTrends/OwlCarousel2-2.3.4/docs_src/assets/scss/_settings.scss
-        from line 1 of C:\Users\MobileTrends\Desktop\Projekty\MobileTrends\OwlCarousel2-2.3.4\docs_src\assets\scss\docs.theme.scss
+       Load path: C:/Users/Dell/Desktop/Programowanie/MobileTrends/OwlCarousel2-2.3.4/docs_src/assets/scss
+        on line 13 of C:/Users/Dell/Desktop/Programowanie/MobileTrends/OwlCarousel2-2.3.4/docs_src/assets/scss/_settings.scss
+        from line 1 of C:\Users\Dell\Desktop\Programowanie\MobileTrends\OwlCarousel2-2.3.4\docs_src\assets\scss\docs.theme.scss
 
 Backtrace:
-C:/Users/MobileTrends/Desktop/Projekty/MobileTrends/OwlCarousel2-2.3.4/docs_src/assets/scss/_settings.scss:13
-C:\Users\MobileTrends\Desktop\Projekty\MobileTrends\OwlCarousel2-2.3.4\docs_src\assets\scss\docs.theme.scss:1
+C:/Users/Dell/Desktop/Programowanie/MobileTrends/OwlCarousel2-2.3.4/docs_src/assets/scss/_settings.scss:13
+C:\Users\Dell\Desktop\Programowanie\MobileTrends\OwlCarousel2-2.3.4\docs_src\assets\scss\docs.theme.scss:1
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -57,4 +57,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: foundation/functions.\A        Load path: C:/Users/MobileTrends/Desktop/Projekty/MobileTrends/OwlCarousel2-2.3.4/docs_src/assets/scss\A         on line 13 of C:/Users/MobileTrends/Desktop/Projekty/MobileTrends/OwlCarousel2-2.3.4/docs_src/assets/scss/_settings.scss\A         from line 1 of C:\Users\MobileTrends\Desktop\Projekty\MobileTrends\OwlCarousel2-2.3.4\docs_src\assets\scss\docs.theme.scss"; }
+  content: "Error: File to import not found or unreadable: foundation/functions.\A        Load path: C:/Users/Dell/Desktop/Programowanie/MobileTrends/OwlCarousel2-2.3.4/docs_src/assets/scss\A         on line 13 of C:/Users/Dell/Desktop/Programowanie/MobileTrends/OwlCarousel2-2.3.4/docs_src/assets/scss/_settings.scss\A         from line 1 of C:\Users\Dell\Desktop\Programowanie\MobileTrends\OwlCarousel2-2.3.4\docs_src\assets\scss\docs.theme.scss"; }

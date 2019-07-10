@@ -35,11 +35,11 @@
           position: relative;
           top: 1px;
           z-index: 100;
+          text-align: left;
+          padding: 0 28px 0 28px;
           span {
             color: $logo-red;
-            display: block;
             font-size: 12px;
-            width: 238px;
           }
           time {
             font-size: 22px;
@@ -58,6 +58,8 @@
   .site-header {
     .place-date {
       width: 332px;
+      padding: 0 42px 0 42px;
+
     }
   }
 }
@@ -91,6 +93,7 @@
     .place-date {
       background: $white;
       width: 362px;
+      padding: 0 57px 0 57px;
     }
   }
 }
@@ -114,6 +117,24 @@
       height: 190px;
       position: relative;
       top: 112px;
+      padding: 0 35px 0 35px;
+      border-bottom: 1px solid rgba(239, 48, 36, 0.3);
+      border-right: 1px solid rgba(239, 48, 36, 0.3);
+      span {
+        color: $logo-red;
+        display: block;
+        font-size: 16px;
+        width: 238px;
+      }
+      time {
+        font-size: 32px;
+        font-weight: 700;
+        span {
+          display: initial;
+          color: $logo-red;
+          font-size: 24px;
+        }
+      }
     }
   }
 }

@@ -34,10 +34,19 @@ a {
 
 body {
     padding-top: 117px;
+    transition: padding-top ease-in-out 250ms;
+
+}
+
+.bodyWhenNavbarFixed {
+    padding-top: 97px!important;
 }
 
 @media (min-width: 1200px) { 
     body {
         padding-top: 163px;
+    }
+    .bodyWhenNavbarFixed {
+        padding-top: 121px!important;
     }
 }
