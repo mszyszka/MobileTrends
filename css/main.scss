@@ -31,3 +31,13 @@
 a {
     text-decoration: none;
 }
+
+body {
+    padding-top: 117px;
+}
+
+@media (min-width: 1200px) { 
+    body {
+        padding-top: 163px;
+    }
+}

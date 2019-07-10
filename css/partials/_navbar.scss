@@ -1,17 +1,13 @@
 .nav-container {
     background: #ffffff;
     position: fixed;
+    top: 0;
     z-index: 1000;
 }
 .shadow {
     -webkit-box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.26);
     -moz-box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.26);
     box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.26);
-}
-.nav-container-fixed {
-    position: fixed;
-    top: 0;
-    z-index: 1000;
 }
 
 .navbar {

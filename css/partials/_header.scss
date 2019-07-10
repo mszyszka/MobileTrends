@@ -3,11 +3,9 @@
     max-width: 1600px;
     background-image: url('/img/header-background.png');
     background-position: 89% 50%;
-    // background-size: auto 100%;
     background-repeat: no-repeat;
     padding: 0;
     position: relative;
-    // z-index: 1000;
     &::before {
         content: '';
         position: absolute;
@@ -107,6 +105,7 @@
   .site-header {
     height: 600px;
     margin: 0 0 150px 0;
+    // top: 163px;
     h1 {
       font-size: 38px;
     }

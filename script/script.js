@@ -2,40 +2,36 @@ $(window).on('resize', setSectionHeight, setCarouselItemHeight);
 $(window).on('load', checkSectionHeight, setCarouselItemHeight);
 
 $(window).on('scroll', function(){
-    addShadow();
-    // getHeaderHeight();
+    addShadowToNavbarContainer();
+    // changeSizeOfNavbar();
 });
 
-// adding and removing shadow on .nav-container
-function addShadow() {
-    let navContainerOfsetTop = document.getElementsByClassName('nav-container')[0].offsetTop;
+// make .nav-container fixed and ad shadow to it when user scroll bellow header
+function addShadowToNavbarContainer(){
+    let scrollPosition = window.scrollY;
     let navContainer = document.getElementsByClassName('nav-container')[0];
-    if(navContainerOfsetTop > 0) {
+
+    if(scrollPosition >= 1) {
         navContainer.classList.add('shadow');
     } else  {
         navContainer.classList.remove('shadow');
     }
 }
 
-// make .nav-container fixed and ad shadow to it when user scroll bellow header
-// function getHeaderHeight(){
-//     let headerHeight = document.getElementsByClassName('site-header')[0].offsetHeight;
-//     let navBarHeight = document.getElementsByClassName('nav-container')[0].offsetHeight;
+//change size of navbar when scroll position Y is > 0
+function changeSizeOfNavbar() {
+    let scrollPosition = window.scrollY;
+    let navbar = document.getElementById('navbarId');
 
-//     let scrollPosition = window.scrollY;
-//     let navContainer = document.getElementsByClassName('nav-container')[0];
+    if(scrollPosition >=1) {
+        navbar.classList.remove('navbar');
+        navbar.classList.add('navbar-fixed');
+    } else {
+        navbar.classList.add('navbar');
+        navbar.classList.remove('navbar-fixed');
+    }
 
-//     console.log(scrollPosition);
-
-//     if(scrollPosition >= (headerHeight + navBarHeight)) {
-//         navContainer.classList.add('nav-container-fixed');
-//         navContainer.classList.add('shadow');
-
-//     } else  {
-//         navContainer.classList.remove('nav-container-fixed');
-//         navContainer.classList.remove('shadow');
-//     }
-// }
+}
 
 //Check section.confirm-your-presence height and set it to content height
 function checkSectionHeight(){
