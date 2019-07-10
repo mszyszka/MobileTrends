@@ -3,7 +3,7 @@ $(window).on('load', checkSectionHeight, setCarouselItemHeight);
 
 $(window).on('scroll', function(){
     addShadowToNavbarContainer();
-    // changeSizeOfNavbar();
+    changeSizeOfNavbar();
 });
 
 // make .nav-container fixed and ad shadow to it when user scroll bellow header
@@ -24,10 +24,8 @@ function changeSizeOfNavbar() {
     let navbar = document.getElementById('navbarId');
 
     if(scrollPosition >=1) {
-        navbar.classList.remove('navbar');
         navbar.classList.add('navbar-fixed');
     } else {
-        navbar.classList.add('navbar');
         navbar.classList.remove('navbar-fixed');
     }
 
