@@ -1,0 +1,33 @@
+//Imports
+@import 'mixins&var/var';
+@import 'mixins&var/mixins';
+@import 'partials/header';
+@import 'partials/side-nav';
+@import 'partials/navbar';
+@import 'partials/about';
+@import 'partials/is-it-worth-investing';
+@import 'partials/carousel-1';
+@import 'partials/carousel1-tiles';
+@import 'partials/confirm-your-presence';
+@import 'partials/they-will-perform';
+@import 'partials/they-will-perform-md';
+@import 'partials/year-ago-video';
+@import 'partials/next-edition-schedule';
+@import 'partials/opinions';
+@import 'partials/opinions-md';
+@import 'partials/join-today';
+@import 'partials/year-ago-pictures';
+@import 'partials/conference-location';
+@import 'partials/sponsors';
+@import 'partials/contact';
+@import 'partials/footer';
+
+*, figure {
+    font-family: 'Poppins', sans-serif;  
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}

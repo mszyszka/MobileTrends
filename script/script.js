@@ -3,7 +3,7 @@ $(window).on('load', checkSectionHeight, setCarouselItemHeight);
 
 $(window).on('scroll', function(){
     addShadow();
-    getHeaderHeight();
+    // getHeaderHeight();
 });
 
 // adding and removing shadow on .nav-container
@@ -18,24 +18,24 @@ function addShadow() {
 }
 
 // make .nav-container fixed and ad shadow to it when user scroll bellow header
-function getHeaderHeight(){
-    let headerHeight = document.getElementsByClassName('site-header')[0].offsetHeight;
-    let navBarHeight = document.getElementsByClassName('nav-container')[0].offsetHeight;
+// function getHeaderHeight(){
+//     let headerHeight = document.getElementsByClassName('site-header')[0].offsetHeight;
+//     let navBarHeight = document.getElementsByClassName('nav-container')[0].offsetHeight;
 
-    let scrollPosition = window.scrollY;
-    let navContainer = document.getElementsByClassName('nav-container')[0];
+//     let scrollPosition = window.scrollY;
+//     let navContainer = document.getElementsByClassName('nav-container')[0];
 
-    if(scrollPosition >= (headerHeight + navBarHeight)) {
-        navContainer.classList.add('nav-container-fixed');
-        navContainer.classList.add('shadow');
+//     console.log(scrollPosition);
 
+//     if(scrollPosition >= (headerHeight + navBarHeight)) {
+//         navContainer.classList.add('nav-container-fixed');
+//         navContainer.classList.add('shadow');
 
-    } else  {
-        navContainer.classList.remove('nav-container-fixed');
-        navContainer.classList.remove('shadow');
-
-    }
-}
+//     } else  {
+//         navContainer.classList.remove('nav-container-fixed');
+//         navContainer.classList.remove('shadow');
+//     }
+// }
 
 //Check section.confirm-your-presence height and set it to content height
 function checkSectionHeight(){
