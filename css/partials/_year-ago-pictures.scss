@@ -13,6 +13,22 @@
         height: calc();
         background-size: cover;
         background-position: 50% 50%;
+        &::before,
+        &::after{
+            content: "";
+            position: absolute;
+            display: block;
+            width: 15%;
+            height: 100%;
+        }
+        &::before{
+            left: 0;
+            background: linear-gradient(to right, #333 0%, transparent 100%);
+        }
+        &::after{
+            right: 0;
+            background: linear-gradient(to left, #333 0%, transparent 100%);
+        }
     }
     .item1 {
         background-image: url('/img/year-ago-pictures/1.png');
@@ -62,11 +78,11 @@
 }
 section.year-ago-pictures {
     margin: 0 0 100px 0;
-    max-width: 1400px;
     margin: $sec-margin-sm;
     div.heading {
         padding: $sec-padding-sm;
         margin: 0 0 30px 0;
+        max-width: 1400px;
         h2 {
             @include section-h2;
         }
@@ -113,6 +129,7 @@ section.year-ago-pictures {
 @media(min-width: 1200px) {
     section.year-ago-pictures {
         div.heading {
+            margin: 0 0 70px 0;
             h2 {
                 font-size: $h2-lg;
             }
@@ -121,6 +138,25 @@ section.year-ago-pictures {
             }
         }
         .owl-carousel.second {
+            &::before,
+            &::after{
+                content: "";
+                position: absolute;
+                top: 0;
+                display: block;
+                width: 15%;
+                height: 100%;
+            }
+            &::before{
+                z-index: 10;
+                left: 0;
+                background: linear-gradient(to right, #333 0%, transparent 100%);
+            }
+            &::after{
+                z-index: 10;
+                right: 0;
+                background: linear-gradient(to left, #333 0%, transparent 100%);
+            }
             .owl-prev{
                 border: none;
                 outline: none;

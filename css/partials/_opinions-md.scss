@@ -15,7 +15,7 @@ section.opinions-md {
     }
     .opinions-md-item {
         height: 450px;
-        max-width: 300px;
+        max-width: 330px;
         padding: 34px;
         border-radius: 49px;
         @include shadow;
@@ -94,7 +94,7 @@ section.opinions-md {
 @media(min-width: 1200px) {
     section.opinions-md {
         div.container-fluid {
-            max-width: 1400px;
+            max-width: 1044px;
             div.row {
                 .col-md-6 {
                     // padding: 0 50px 0 50px;
@@ -133,10 +133,10 @@ section.opinions-md {
 @media(min-width: 1400px) {
     section.opinions-md {
         div.container-fluid {
-            max-width: 1400px;
+            // max-width: 1400px;
             div.row {
                 .col-md-6 {
-                    margin: 0 0 100px 0;
+                    // margin: 0 0 100px 0;
                 }
                 .col-md-6:nth-of-type(1) {
                     margin: 0 0 0 0;

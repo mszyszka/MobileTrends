@@ -1,5 +1,4 @@
 section.year-ago-video {
-    margin: $sec-margin-sm;
     margin-top: -200px;
     padding: $sec-padding-sm;
     max-width: 1360px;
@@ -28,7 +27,6 @@ section.year-ago-video {
 @media (min-width: 576px) {
     section.year-ago-video {
         padding: $sec-padding-sm;
-        margin: $sec-margin-sm;
         margin-top: -200px;
     }
 }
@@ -37,7 +35,6 @@ section.year-ago-video {
 @media (min-width: 768px) {
     section.year-ago-video {
         padding: $sec-padding-lg;
-        margin: $sec-margin-md;
         margin-top: -450px;
         div.video {
             .camera-icon {
@@ -50,8 +47,7 @@ section.year-ago-video {
 @media(min-width: 1200px) {
     section.year-ago-video {
         padding: $sec-padding-lg;
-        margin: $sec-margin-lg;
-        margin-top: -350px;
+        margin-top: -451px;
 
         div.video {
             .camera-icon {
@@ -74,5 +70,6 @@ section.year-ago-video {
 @media (min-width: 1580px) {
     section.year-ago-video {
         padding: 0;
+        margin-top: -350px;
     }
  }

@@ -1,6 +1,13 @@
-$(window).on('resize', setSectionHeight, setCarouselItemHeight);
-$(window).on('load', checkSectionHeight, setCarouselItemHeight);
-
+$(window).on('resize', function() {
+    setSectionHeight();
+    setCarouselItemHeight();
+});
+$(window).on('load', function(){
+    checkSectionHeight();
+    changeSizeOfNavbar();
+    addShadowToNavbarContainer();
+    setCarouselItemHeight();
+});
 $(window).on('scroll', function(){
     addShadowToNavbarContainer();
     changeSizeOfNavbar();
@@ -23,17 +30,22 @@ function changeSizeOfNavbar() {
     let scrollPosition = window.scrollY;
     let navbar = document.getElementById('navbarId');
     let body = document.querySelector('body');
-
+    let logo = document.querySelector('.top-nav-logo');
 
     if(scrollPosition >=1) {
         navbar.classList.add('navbar-fixed');
+        //add padding to body so it fit new navbar height
         body.classList.add('bodyWhenNavbarFixed');
+        //make logo smaller so it look ok in smaller navbar
+        logo.classList.add('logoWhenNavbarFixed');
 
     } else {
         navbar.classList.remove('navbar-fixed');
+        // remove added padding from body do it fit base navbar height again
         body.classList.remove('bodyWhenNavbarFixed');
+        //bring back normal logo height
+        logo.classList.remove('logoWhenNavbarFixed');
     }
-
 }
 
 //Check section.confirm-your-presence height and set it to content height
@@ -114,7 +126,7 @@ $(document).ready(function(){
 
 function setCarouselItemHeight() {
     let windowWidth = window.innerWidth;
-    let itemHeight = windowWidth - (windowWidth/2.5);
+    let itemHeight = windowWidth - (windowWidth/2);
     let carouselItem = $('.ago-carousel-item');
     carouselItem.css('height', itemHeight);
 }

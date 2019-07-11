@@ -79,7 +79,7 @@ section.they-will-perform-md {
 // of this section content to be 1400px. Section max-width is set to 1400px so i need to reset padding on 1580px(1580 - 180 = 1400)
 @media (min-width: 1580px) {
     section.they-will-perform-md {
-        padding: 0;
-        padding-bottom: 450px;
+        padding: 0 0 450px 0;
+        // padding-bottom: 450px;
     }
  }

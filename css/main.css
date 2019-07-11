@@ -86,8 +86,8 @@
       position: relative;
       top: 112px;
       padding: 0 35px 0 35px;
-      border-bottom: 1px solid rgba(239, 48, 36, 0.3);
-      border-right: 1px solid rgba(239, 48, 36, 0.3); }
+      border-bottom: 1px solid rgba(239, 48, 36, 0.2);
+      border-right: 1px solid rgba(239, 48, 36, 0.2); }
       .site-header .place-date span {
         color: #ef3024;
         display: block;
@@ -130,16 +130,19 @@
   position: fixed;
   top: 0;
   z-index: 1000;
-  transition: box-shadow ease-in-out 200ms; }
+  transition: box-shadow ease-in-out 250ms; }
 
 .shadow {
   -webkit-box-shadow: 0px 10px 6px -4px rgba(0, 0, 0, 0.26);
   -moz-box-shadow: 0px 10px 6px -4px rgba(0, 0, 0, 0.26);
   box-shadow: 0px 10px 6px -4px rgba(0, 0, 0, 0.26);
-  transition: box-shadow ease-in-out 200ms; }
+  transition: box-shadow ease-in-out 250ms; }
 
 .navbar-fixed {
   padding: 15px 10px 15px 22px !important; }
+
+.logoWhenNavbarFixed {
+  width: 55px !important; }
 
 .navbar {
   padding: 25px 10px 25px 22px;
@@ -147,38 +150,41 @@
   max-width: 1600px;
   background: #ffffff; }
   .navbar .top-nav-logo {
-    width: 70px; }
+    width: 70px;
+    transition: all ease-in-out 250ms; }
   .navbar .navbar-toggler {
     border: none;
     outline: none; }
-  .navbar .navbar-collapse ul.navbar-nav li a {
-    color: #000;
-    font-weight: 500; }
-    .navbar .navbar-collapse ul.navbar-nav li a:hover {
-      cursor: pointer; }
-  .navbar .navbar-collapse ul.navbar-nav li.mta {
-    min-width: 112px; }
-  .navbar .navbar-collapse ul.navbar-nav li.buy-ticket {
-    margin: 50px 0 0 0;
-    min-width: 115px; }
-  .navbar .navbar-collapse ul.navbar-nav li.buy-ticket .buy-a-ticket {
-    margin: 0;
-    border: 3px solid #ef3024;
-    background: #ef3024;
-    text-align: center;
-    color: #fff;
-    padding: 11px 30px;
-    font-size: 14px;
-    font-weight: 700;
-    border-radius: 50px;
-    transition: all ease-in-out 0.2s;
-    outline: none;
-    padding: 8px 40px; }
-    .navbar .navbar-collapse ul.navbar-nav li.buy-ticket .buy-a-ticket:hover, .navbar .navbar-collapse ul.navbar-nav li.buy-ticket .buy-a-ticket:active {
+  .navbar .navbar-collapse ul.navbar-nav {
+    font-size: 14px; }
+    .navbar .navbar-collapse ul.navbar-nav li a {
+      color: #000;
+      font-weight: 500; }
+      .navbar .navbar-collapse ul.navbar-nav li a:hover {
+        cursor: pointer; }
+    .navbar .navbar-collapse ul.navbar-nav li.mta {
+      min-width: 112px; }
+    .navbar .navbar-collapse ul.navbar-nav li.buy-ticket {
+      margin: 50px 0 0 0;
+      min-width: 115px; }
+    .navbar .navbar-collapse ul.navbar-nav li.buy-ticket .buy-a-ticket {
+      margin: 0;
       border: 3px solid #ef3024;
-      background: #FFFFFF;
-      color: #ef3024;
-      outline: none; }
+      background: #ef3024;
+      text-align: center;
+      color: #fff;
+      padding: 11px 30px;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 50px;
+      transition: all ease-in-out 0.2s;
+      outline: none;
+      padding: 8px 40px; }
+      .navbar .navbar-collapse ul.navbar-nav li.buy-ticket .buy-a-ticket:hover, .navbar .navbar-collapse ul.navbar-nav li.buy-ticket .buy-a-ticket:active {
+        border: 3px solid #ef3024;
+        background: #FFFFFF;
+        color: #ef3024;
+        outline: none; }
 
 .icon-bar {
   width: 22px;
@@ -223,6 +229,9 @@
     .navbar .top-nav-logo {
       width: 88px; } }
 @media (min-width: 768px) {
+  .logoWhenNavbarFixed {
+    width: 70px !important; }
+
   .navbar-fixed {
     padding: 15px 60px 15px 72px !important; }
 
@@ -241,11 +250,15 @@
     padding: 36px 72px 36px 72px; }
     .navbar .top-nav-logo {
       width: 100px; }
-    .navbar .navbar-collapse ul.navbar-nav li.buy-ticket {
-      margin: 0 0 0 100px; } }
+    .navbar .logoWhenNavbarFixed {
+      width: 85px !important; }
+    .navbar .navbar-collapse ul.navbar-nav {
+      font-size: 16px; }
+      .navbar .navbar-collapse ul.navbar-nav li.buy-ticket {
+        margin: 0 0 0 100px; } }
 @media (min-width: 1500px) {
   .navbar .navbar-nav {
-    font-size: 20px; }
+    font-size: 18px; }
   .navbar .navbar-collapse ul.navbar-nav li.buy-ticket {
     margin: 0 0 0 150px; } }
 @media (min-width: 1918px) {
@@ -313,7 +326,7 @@
   .about section.txt h3 {
     font-size: 48px; }
   .about section.txt p {
-    font-size: 18px; } }
+    font-size: 14px; } }
 @media (min-width: 1580px) {
   .about {
     padding: 0; } }
@@ -373,7 +386,7 @@
   .is-it-worth-investing h3 {
     font-size: 48px; }
   .is-it-worth-investing ul.why li {
-    font-size: 18px; } }
+    font-size: 14px; } }
 @media (min-width: 1580px) {
   .is-it-worth-investing {
     padding: 0; } }
@@ -707,10 +720,8 @@ section.they-will-perform-md {
     padding-bottom: 550px; } }
 @media (min-width: 1580px) {
   section.they-will-perform-md {
-    padding: 0;
-    padding-bottom: 450px; } }
+    padding: 0 0 450px 0; } }
 section.year-ago-video {
-  margin: 50px 0 0 0;
   margin-top: -200px;
   padding: 0 35px;
   max-width: 1360px; }
@@ -735,20 +746,17 @@ section.year-ago-video {
 @media (min-width: 576px) {
   section.year-ago-video {
     padding: 0 35px;
-    margin: 50px 0 0 0;
     margin-top: -200px; } }
 @media (min-width: 768px) {
   section.year-ago-video {
     padding: 0 90px;
-    margin: 100px 0 0 0;
     margin-top: -450px; }
     section.year-ago-video div.video .camera-icon {
       width: 150px; } }
 @media (min-width: 1200px) {
   section.year-ago-video {
     padding: 0 90px;
-    margin: 150px 0 0 0;
-    margin-top: -350px; }
+    margin-top: -451px; }
     section.year-ago-video div.video .camera-icon {
       width: 266px; }
     section.year-ago-video div.heading h2 {
@@ -757,7 +765,8 @@ section.year-ago-video {
       font-size: 48px; } }
 @media (min-width: 1580px) {
   section.year-ago-video {
-    padding: 0; } }
+    padding: 0;
+    margin-top: -350px; } }
 section.next-edition-schedule {
   margin: 50px 0 0 0;
   padding: 0 35px;
@@ -927,7 +936,7 @@ section.opinions-md {
         color: #ef3024; }
   section.opinions-md .opinions-md-item {
     height: 450px;
-    max-width: 300px;
+    max-width: 330px;
     padding: 34px;
     border-radius: 49px;
     -webkit-box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.35);
@@ -983,7 +992,7 @@ section.opinions-md {
       margin: 0 0 70px 0; } }
 @media (min-width: 1200px) {
   section.opinions-md div.container-fluid {
-    max-width: 1400px; }
+    max-width: 1044px; }
     section.opinions-md div.container-fluid div.row .col-md-6:nth-of-type(4) {
       position: relative;
       bottom: 250px; }
@@ -1003,12 +1012,8 @@ section.opinions-md {
     section.opinions-md div.heading h3 {
       font-size: 48px; } }
 @media (min-width: 1400px) {
-  section.opinions-md div.container-fluid {
-    max-width: 1400px; }
-    section.opinions-md div.container-fluid div.row .col-md-6 {
-      margin: 0 0 100px 0; }
-    section.opinions-md div.container-fluid div.row .col-md-6:nth-of-type(1) {
-      margin: 0 0 0 0; } }
+  section.opinions-md div.container-fluid div.row .col-md-6:nth-of-type(1) {
+    margin: 0 0 0 0; } }
 section.join-today {
   margin: 50px 0 0 0;
   padding: 0 35px;
@@ -1061,7 +1066,7 @@ section.join-today {
       padding-left: 5%; } }
 @media (min-width: 992px) {
   section.join-today {
-    margin: 100px 0 0 0;
+    margin: 50px 0 0 0;
     padding: 0 90px; } }
 @media (min-width: 1200px) {
   section.join-today section.take-action {
@@ -1085,6 +1090,18 @@ section.join-today {
   height: calc();
   background-size: cover;
   background-position: 50% 50%; }
+  .owl-carousel .ago-carousel-item::before, .owl-carousel .ago-carousel-item::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 15%;
+    height: 100%; }
+  .owl-carousel .ago-carousel-item::before {
+    left: 0;
+    background: linear-gradient(to right, #333 0%, transparent 100%); }
+  .owl-carousel .ago-carousel-item::after {
+    right: 0;
+    background: linear-gradient(to left, #333 0%, transparent 100%); }
 .owl-carousel .item1 {
   background-image: url("/img/year-ago-pictures/1.png"); }
 .owl-carousel .item2 {
@@ -1128,11 +1145,11 @@ section.join-today {
 
 section.year-ago-pictures {
   margin: 0 0 100px 0;
-  max-width: 1400px;
   margin: 50px 0 0 0; }
   section.year-ago-pictures div.heading {
     padding: 0 35px;
-    margin: 0 0 30px 0; }
+    margin: 0 0 30px 0;
+    max-width: 1400px; }
     section.year-ago-pictures div.heading h2 {
       font-size: 16px;
       color: #ef3024;
@@ -1166,10 +1183,27 @@ section.year-ago-pictures {
     section.year-ago-pictures div.heading {
       padding: 0 90px; } }
 @media (min-width: 1200px) {
-  section.year-ago-pictures div.heading h2 {
-    font-size: 20px; }
-  section.year-ago-pictures div.heading h3 {
-    font-size: 48px; }
+  section.year-ago-pictures div.heading {
+    margin: 0 0 70px 0; }
+    section.year-ago-pictures div.heading h2 {
+      font-size: 20px; }
+    section.year-ago-pictures div.heading h3 {
+      font-size: 48px; }
+  section.year-ago-pictures .owl-carousel.second::before, section.year-ago-pictures .owl-carousel.second::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 15%;
+    height: 100%; }
+  section.year-ago-pictures .owl-carousel.second::before {
+    z-index: 10;
+    left: 0;
+    background: linear-gradient(to right, #333 0%, transparent 100%); }
+  section.year-ago-pictures .owl-carousel.second::after {
+    z-index: 10;
+    right: 0;
+    background: linear-gradient(to left, #333 0%, transparent 100%); }
   section.year-ago-pictures .owl-carousel.second .owl-prev {
     border: none;
     outline: none;
@@ -1587,8 +1621,6 @@ footer {
   font-weight: 700;
   text-align: center;
   padding: 50px 0;
-  position: relative;
-  z-index: 1000;
   background: #ffffff; }
   footer h2 {
     font-size: 14px;
@@ -1626,13 +1658,13 @@ body {
   transition: padding-top ease-in-out 250ms; }
 
 .bodyWhenNavbarFixed {
-  padding-top: 97px !important; }
+  padding-top: 85px !important; }
 
 @media (min-width: 1200px) {
   body {
     padding-top: 163px; }
 
   .bodyWhenNavbarFixed {
-    padding-top: 121px !important; } }
+    padding-top: 109px !important; } }
 
 /*# sourceMappingURL=main.css.map */

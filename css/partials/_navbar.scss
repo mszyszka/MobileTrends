@@ -3,19 +3,20 @@
     position: fixed;
     top: 0;
     z-index: 1000;
-    transition: box-shadow ease-in-out 200ms;
+    transition: box-shadow ease-in-out 250ms;
 }
 .shadow {
     -webkit-box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.26);
     -moz-box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.26);
     box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.26);
-    transition: box-shadow ease-in-out 200ms;
+    transition: box-shadow ease-in-out 250ms;
 
 }
 .navbar-fixed {
     padding: 15px 10px 15px 22px!important;
-    // transition: padding ease-in-out 200ms;
-
+}
+.logoWhenNavbarFixed {
+    width: 55px!important;
 }
 .navbar {
     padding: 25px 10px 25px 22px;
@@ -24,6 +25,7 @@
     background: #ffffff;
     .top-nav-logo {
         width: 70px;
+        transition: all ease-in-out 250ms;
     }
     .navbar-toggler {
         border: none;
@@ -31,7 +33,7 @@
     }
     .navbar-collapse {
         ul.navbar-nav {
-            // padding: 50px 0 50px 0;
+            font-size: 14px;
             li a {
                 color: #000;
                 font-weight: 500;
@@ -113,6 +115,9 @@
 }
 
 @media (min-width: 768px) { 
+    .logoWhenNavbarFixed {
+        width: 70px!important;
+    }
     .navbar-fixed {
         padding: 15px 60px 15px 72px!important;
     }
@@ -143,8 +148,12 @@
         .top-nav-logo {
             width: 100px;
         }
+        .logoWhenNavbarFixed {
+            width: 85px!important;
+        }
         .navbar-collapse {
             ul.navbar-nav {
+                font-size: 16px;
                 li.buy-ticket {
                     margin: 0 0 0 100px;
                 }
@@ -156,7 +165,7 @@
 @media (min-width: 1500px) { 
     .navbar {
         .navbar-nav {
-            font-size: 20px;
+            font-size: 18px;
         }
         .navbar-collapse {
             ul.navbar-nav {
